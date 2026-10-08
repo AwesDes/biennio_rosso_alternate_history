@@ -5,6 +5,6 @@ max-visits: 1
 on-arrival: ppi_leader = "De Gasperi" if ppi_leader == "Sturzo";
 tags: event
 
-Luigi Sturzo, head of the PPI, has suddenly and shockingly resigned as party leader after a meeting with Pope Pius XI, though our sources indicate that [+ prime_minister +] had negotiated an agreement with the Holy See to do so. Alcide De Gasparri takes his place as party leader.
+Luigi Sturzo, head of the <span style="font-weight: bold; color:#87CEFA;">PPI</span>, has suddenly and shockingly resigned as party leader after a meeting with Pope Pius XI, though our sources indicate that [+ prime_minister +] had negotiated an agreement with the <span style="font-weight: bold; color:#A88D37;">Holy See</span> to do so. Alcide De Gasparri takes his place as party leader.
 
 - @root: Concerning.

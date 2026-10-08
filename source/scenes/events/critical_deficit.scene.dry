@@ -11,7 +11,7 @@ The Banca d'Italia, our National Bank, has informed us that our debt has reached
 - @deficit_insurance: Cut funding to the Unemployment Insurance Program.
 - @deficit_workers: Cut the size of the Unemployment Insurance Program.
 - @deficit_taxes: Increase taxes across the board.
-- @deficit_relations: Can we convince our Entente allies to give us more time?
+- @deficit_relations: Can we convince our <span style="font-weight: bold; color:#C8102E">Ent</span><span style="font-weight: bold; color:#000091">ente</span> allies to give us more time?
 - @deficit_renege: Void our debts with our international debtors.
 
 @deficit_austerity
@@ -132,7 +132,7 @@ choose-if: entente_relation >= 6 and deficit_extension == 0
 unavailable-subtitle: [? if entente_relation <= 5: Our relations are too low. ?][? if deficit_extension == 1: We have already asked them for an extension. ?]
 on-arrival: deficit_timer = 6; deficit_extension = 1; 
 
-We are able to convince the Entente to grant us another 6 months to resolve this.
+We are able to convince the <span style="font-weight: bold; color:#C8102E">Ent</span><span style="font-weight: bold; color:#000091">ente</span> to grant us another 6 months to resolve this.
 
 @deficit_renege
 view-if: welfare < 1 and not unemployment_insurance_founded and not unemployment_insurance_expanded and (upper_tax_rates > 5 or lower_tax_rates > 5) and ((entente_relation < 6 and deficit_extension == 0) or deficit_extension == 1)

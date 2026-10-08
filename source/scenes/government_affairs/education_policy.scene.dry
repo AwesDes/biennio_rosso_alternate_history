@@ -23,16 +23,16 @@ Education in Italy is an area of mixed responsibility between the national gover
 - @cancel_advisor_action
 
 @education_secularise
-subtitle: This will **irreversibly** harm our relations with the PPI. 
+subtitle: This will **irreversibly** harm our relations with the <span style="font-weight: bold; color:#87CEFA;">PPI</span>. 
 on-arrival: secularised_education = 1; ppi_relation -= 8*(1-dissent); catholic_psi -= 15; economic_growth += 0.3 if economic_growth < 0; workers_psi += 3*(1-dissent) if not in_unstable_coalition; workers_clc += 3*(1-dissent) if centre_left_coalition; middle_class_psi += 5*(1-dissent) if not in_unstable_coalition; middle_class_clc += 5*(1-dissent) if centre_left_coalition; rural_psi += 1*(1-dissent) if not in_unstable_coalition; rural_clc += 1*(1-dissent) if centre_left_coalition; papal_relation -= 3; psri_relation += 5*(1-dissent); ppi_moderates += 4; ppi_right += 2
 choose-if: not socialist_catholic_coalition and not papal_education_offered
-unavailable-subtitle: [? if socialist_catholic_coalition : The PPI are threatening a pre-emptive Vote-of-No-Confidence if we go through with this. ?][? if papal_education_offered : This will violate the current agreement with have with the Holy See. ?]
+unavailable-subtitle: [? if socialist_catholic_coalition : The <span style="font-weight: bold; color:#87CEFA;">PPI</span> are threatening a pre-emptive Vote-of-No-Confidence if we go through with this. ?][? if papal_education_offered : This will violate the current agreement with have with the <span style="font-weight: bold; color:#A88D37;">Holy See</span>. ?]
 max-visits: 1
 go-to: catholic_vote_of_no_confidence.let_it_happen if (pnf_seating_disp + ppi_seating_disp > 50) and not violent_revolution
 
-Our decision to secularise education is met with immense backlash from [+ ppi_leader +] and the People's Party alongside the Catholic Church, who denounce us and vow never to work with us again.
+Our decision to secularise education is met with immense backlash from [+ ppi_leader +] and the <span style="font-weight: bold; color:#87CEFA;">People's Party</span> alongside the Catholic Church, who denounce us and vow never to work with us again.
 
-[? if ppi_seating_disp > 50 : The PPI call a vote of no-confidence against us, and are able to succeed. ?]
+[? if ppi_seating_disp > 50 : The <span style="font-weight: bold; color:#87CEFA;">PPI</span> call a vote of no-confidence against us, and are able to succeed. ?]
 
 @education_funding 
 subtitle: -1 Budget - This has broad popular support across the workers and middle class. [? if budget < 0 and liberal_budget_accepted : This will put us into a deficit! ?]
@@ -44,7 +44,7 @@ max-visits: 3
 
 We begin a new round of funding for the public education system, allowing schools to expand their capacity and hire more teachers with improved access to education.
 
-[? if ldr_promise_failed and budget < 0 : Unfortunately, increasing funding has led us to enter a deficit, breaking our agreement with the Liberals, and their representatives have already requested a meeting with us. ?]
+[? if ldr_promise_failed and budget < 0 : Unfortunately, increasing funding has led us to enter a deficit, breaking our agreement with the <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">rals</span>, and their representatives have already requested a meeting with us. ?]
 
 @curriculum_reform
 subtitle: This will affect both public and religious schools. [? if catholic_education_accepted : Reforming catholic education will violate our coalition agreements! ?]
@@ -87,7 +87,7 @@ Q.ppi_left -= 0.1;
 max-visits: 3
 go-to: catholic_promise_vonc if ppi_promise_failed == 1
 
-Our efforts to reform the curriculum is opposed every step of the way by the Catholics and the PPI, who criticise 'government overreach'.
+Our efforts to reform the curriculum is opposed every step of the way by the <span style="font-weight: bold; color:#87CEFA;">Catholics</span> and the <span style="font-weight: bold; color:#87CEFA;">PPI</span>, who criticise 'government overreach'.
 
 @trade_schools
 subtitle: -1 Budget - Our voter base is fond of this policy.  [? if budget <= 0 and liberal_budget_accepted : This will put us into a deficit! ?]
@@ -145,4 +145,4 @@ go-to: ldr_promise_vonc if ldr_promise_failed = 1
 
 Our funding of trade school appeases our traditional worker base, alongside swaying rural voters to our side.
 
-[? if ldr_promise_failed and budget < 0 : Unfortunately, increasing funding has led us to enter a deficit, breaking our agreement with the Liberals, and their representatives have already requested a meeting with us. ?]
+[? if ldr_promise_failed and budget < 0 : Unfortunately, increasing funding has led us to enter a deficit, breaking our agreement with the <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">rals</span>, and their representatives have already requested a meeting with us. ?]

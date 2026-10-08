@@ -1,4 +1,4 @@
-title: King [+ king +] rescinds support for the PNF
+title: King [+ king +] rescinds support for the <span style="font-weight: bold; color:#3D3D3D;">PNF</span>
 audio: clear shuffle music/post/FischiaIlVento.mp3 music/main/Innodeilavoratori.mp3 music/main/FraIl19FraLAnno20.mp3 music/main/BandieraRossa.mp3 music/main/Canzonieredelventorosso.mp3 music/main/WorkersHymn.mp3 music/main/LeOttoOre.mp3 music/main/CantoDeiReclusi.mp3 music/main/MarciaSocialistaMondiale.mp3 music/main/QuattroSignoriAParigiVanno.mp3
 set-bg: img/background.png
 view-if: pnf_in_power = 1 and pnf_in_government = 0 and pnf_leader = "D'Annunzio"
@@ -35,10 +35,10 @@ achievement: ritorno_trionfale
 
 = King rescinds support for the PNF 
 
-Following the recent elections & the fascists' failure to consolidate power, King [+ king +] has rescinded his support for the PNF, denouncing [+ pnf_leader +] and the party for its ineffectiveness and failures to stabilise the country.
+Following the recent elections & the fascists' failure to consolidate power, King [+ king +] has rescinded his support for the <span style="font-weight: bold; color:#3D3D3D;">PNF</span>, denouncing [+ pnf_leader +] and the party for its ineffectiveness and failures to stabilise the country.
 
-Already, we have seen a significant drop in support for the fascists, as voters return to less radical parties, and D'Annunzio announces his retirement from politics.
+Already, we have seen a significant drop in support for the <span style="color:#3D3D3D;">fascists</span>, as voters return to less radical parties, and D'Annunzio announces his retirement from politics.
 
-Fascism is dead, at least in Italy.
+Fascism is dead, at least in <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>.
 
 - @root: Thus falls the failed experiment.

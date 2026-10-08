@@ -12,7 +12,7 @@ tags: govt_affairs
 
 = Constitutional Reform
 
-The Statuto Albertino, the constitution of the current Kingdom of Italy and the Kingdom of Sardinia preceding it, has often been changed to keep up with modern times. The 1919 amendment to give all men the right to vote and alter the electoral system to a proportional representation system are the most recent examples.
+The Statuto Albertino, the constitution of the current <span style="font-weight: bold; color:#008C45">Kingdom</span> <span style="font-weight: bold; color:#CFCFCF">of</span> <span style="font-weight: bold; color:#CD212A">Italy</span> and the Kingdom of Sardinia preceding it, has often been changed to keep up with modern times. The 1919 amendment to give all men the right to vote and alter the electoral system to a proportional representation system are the most recent examples.
 
 Now that we control a sizeable bloc in the Chamber of Deputies, we are able to alter the Statuto Albertino as well. We will need an absolute majority of the Chamber of Deputies as well as the approval of the Senate and the King to pass any reforms. 
 
@@ -60,6 +60,6 @@ choose-if: king_relation >= 85 and return_to_normalcy
 unavailable-subtitle: [? if king_relation >= 85 : The King would not approve this. ?][? if not return_to_normalcy : It is too turbulent of a time to present this. Perhaps it would be better upon a return to normalcy. ?]
 on-arrival: king = "N/A"; monarchy_gone = 1; socialist_sentiment += 9
 
-The reform passes with the slightest of margins, removing the Statuto Albertino as the constitution of the Kingdom of Italy. A new constitutional congress is to be held in the coming weeks as the King officially abdicates the throne.
+The reform passes with the slightest of margins, removing the Statuto Albertino as the constitution of the <span style="font-weight: bold; color:#008C45">Kingdom</span> <span style="font-weight: bold; color:#CFCFCF">of</span> <span style="font-weight: bold; color:#CD212A">Italy</span>. A new constitutional congress is to be held in the coming weeks as the King officially abdicates the throne.
 
 - @post_war_peaceful: It is time to decide our new agenda.

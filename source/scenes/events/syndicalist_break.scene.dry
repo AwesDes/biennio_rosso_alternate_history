@@ -1,15 +1,15 @@
-title: USI breaks from the Party
+title: <span style="color:#2F2F2F">USI</span> breaks from the Party
 new-page: true 
-subtitle: Syndicalist disagreements with our policies have grown too severe.
+subtitle: <span style="color:#2F2F2F">Syndicalist</span> disagreements with our policies have grown too severe.
 tags: event
 view-if: syndicalist_dissent >= 60 and syndicalist_active = 1
 on-arrival: syndicalist_break = 1; workers_psi *= 0.9; rg_strength *= 0.8; veterans_psi *= 0.9; workers_psri += 5; workers_pnf *= 0.05; n_advisors -= 1 if divittorio_advisor == 1; divittorio_advisor = 0; n_advisors -= 1 if deambris_advisor == 1; deambris_advisor = 0; syndicalist_strength *= 0.5
 max-visits: 1
 
-= USI breaks from the [+ psi_name +]
+= <span style="color:#2F2F2F">USI</span> breaks from the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>
 
-Our policy choices have greatly offended the syndicalist movement. Union leaders of the *Unione Sindacale Italiana* have declared that they are independent of any political party, and some have been seen seeking accommodation with the PSRI and even the PNF.
+Our policy choices have greatly offended the <span style="color:#2F2F2F">syndicalist</span> movement. Union leaders of the <span style="color:#2F2F2F">Unione Sindacale Italiana</span> have declared that they are independent of any political party, and some have been seen seeking accommodation with the <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> and even the <span style="font-weight: bold; color:#3D3D3D;">PNF</span>.
 
-Some workers remain loyal to the [+ psi_name +], although their affiliation is less solid. Many workers move away from us[? if (pcdi_formed or psu_formed) : ,joining our splinter parties?]. Others move in a more nationalist direction, as the CGL and USI signals its willingness to work with the right to solve the economic crisis.
+Some workers remain loyal to the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>, although their affiliation is less solid. Many workers move away from us[? if (pcdi_formed or psu_formed) : ,joining our splinter parties?]. Others move in a more <span style="color:#522A00">nationalist</span> direction, as the CGL and USI signals its willingness to work with the right to solve the economic crisis.
 
-Much of our working-class base has defected, and labour's influence in our party has greatly diminished.
+Much of our working-class base has defected, and <span style="color:#B22222">labour</span>'s influence in our party has greatly diminished.

@@ -10,24 +10,24 @@ tags: govt_affairs
 
 = The Roman Question
 
-Following the Risorgimento, the newly formed Kingdom of Italy seized Rome from the Holy See, as the Pope declared himself 'Prisoner of the Vatican'. Though attempts have been made to resolve this issue since, the situation has largely not changed. 
+Following the Risorgimento, the newly formed <span style="font-weight: bold; color:#008C45">Kingdom</span> <span style="font-weight: bold; color:#CFCFCF">of</span> <span style="font-weight: bold; color:#CD212A">Italy</span> seized Rome from the <span style="font-weight: bold; color:#A88D37;">Holy See</span>, as the Pope declared himself 'Prisoner of the <span style="font-weight: bold; color:#A88D37;">Vatican</span>'. Though attempts have been made to resolve this issue since, the situation has largely not changed. 
 
-Now that we are in power, we might be able to resolve this issue with the Holy See.
+Now that we are in power, we might be able to resolve this issue with the <span style="font-weight: bold; color:#A88D37;">Holy See</span>.
 
 # list of demands you have to fufill, relation good less demands to fufill, relation bad more demands to fufill, etc
 @papal_menu
 
-- @papal_negotiations: Let us begin negotiations with the Holy See.
+- @papal_negotiations: Let us begin negotiations with the <span style="font-weight: bold; color:#A88D37;">Holy See</span>.
 - @root: Let us open negotiations another time.
 - @easy_discard
 
 @papal_negotiations
 
-- @papal_compensation: Offer compensation to the Papacy for its loss of territories.
-- @papal_state: Offer recognition of the sovereignty of the Holy See in Vatican City.
-- @papal_defence: Offer the Holy See a commitment to defend its borders.
+- @papal_compensation: Offer compensation to the <span style="font-weight: bold; color:#A88D37;">Papacy</span> for its loss of territories.
+- @papal_state: Offer recognition of the sovereignty of the <span style="font-weight: bold; color:#A88D37;">Holy See</span> in Vatican City.
+- @papal_defence: Offer the <span style="font-weight: bold; color:#A88D37;">Holy See</span> a commitment to defend its borders.
 - @papal_education: Offer the Holy See unfettered authority over religious schools.
-- @papal_sign: Sign the Lateran Treaty with the Holy See.
+- @papal_sign: Sign the Lateran Treaty with the <span style="font-weight: bold; color:#A88D37;">Holy See</span>.
 - @papal_return: Let's recall our delegates for now.
 
 @papal_compensation
@@ -58,7 +58,7 @@ go-to: papal_negotiations
 
 @papal_sign
 choose-if: papal_appeased >= negotiating_power
-unavailable-subtitle: The Holy See would refuse this offer.
+unavailable-subtitle: The <span style="font-weight: bold; color:#A88D37;">Holy See</span> would refuse this offer.
 on-arrival: papal_relation += 2; roman_question_answered = 1; ppi_relation += 15; catholic_psi += 7*(1-dissent); budget -= 3 if papal_compensation_offered = 1; ldr_promise_failed = 1 if (budget < 0 and liberal_budget_accepted = 1); army_loyalty -= 0.05 if papal_defence_offered = 1; army_strength -= 50 if papal_defence_offered = 1; secularised_education = 0 if (papal_education_offered = 1 and secularised_education = 1); communist_dissent += 10 if papal_education_offered = 1; maximalist_dissent += 10 if papal_education_offered = 1; ppi_left += 3; peace_timer = time + 7; catholic_psi += 4;
 go-to: ldr_promise_vonc if ldr_promise_failed
 

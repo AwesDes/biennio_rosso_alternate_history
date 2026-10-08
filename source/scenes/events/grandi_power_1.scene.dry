@@ -22,28 +22,28 @@ if (Q.rg_banned == 1) {
 
 = Address to the Nation
 
-Prime Minister Dino Grandi has officially assumed power following the fall of Gabriele D'Annunzio, beginning his first address to the nation. Grandi has emphasised the need for unity, order and respect across the nation, vowing to quell forces causing the instability plaguing Italy today. 
+Prime Minister Dino Grandi has officially assumed power following the fall of Gabriele D'Annunzio, beginning his first address to the nation. Grandi has emphasised the need for unity, order and respect across the nation, vowing to quell forces causing the instability plaguing <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span> today. 
 
-More specifically, Grandi has called out our own paramilitary, the Red Guard as the main culprits of lawlessness and disorder plaguing the streets, vowing to eliminate reckless violence unsanctioned by the state. Already, we have seen a crackdown of our forces within Italy, as Red Guard leaders and workers are arrested on trumped up charges. Fortunately, our forces are able to adequately defend themselves and minimal losses have occurred.
+More specifically, Grandi has called out our own paramilitary, the <span style="color:#c2352b">Red Guard</span> as the main culprits of lawlessness and disorder plaguing the streets, vowing to eliminate reckless violence unsanctioned by the state. Already, we have seen a crackdown of our forces within <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>, as <span style="color:#c2352b">Red Guard</span> leaders and workers are arrested on trumped up charges. Fortunately, our forces are able to adequately defend themselves and minimal losses have occurred.
 
-The PNF has, naturally, not taken to this well, and Grandi's own allies are seemingly pressuring the new Prime Minister to act further to crush dissent and begin his term with stability.
+The <span style="font-weight: bold; color:#3D3D3D;">PNF</span> has, naturally, not taken to this well, and Grandi's own allies are seemingly pressuring the new Prime Minister to act further to crush dissent and begin his term with stability.
 
-- @grandi_blackshirts: The Squadrismo are organised into a National Militia placed under the state.
-- @grandi_violent: The Squadrismo are granted expanded powers to suppress dissent.
+- @grandi_blackshirts: The <span style="color:#3D3D3D;">Squadrismo</span> are organised into a National Militia placed under the state.
+- @grandi_violent: The <span style="color:#3D3D3D;">Squadrismo</span> are granted expanded powers to suppress dissent.
 
 @grandi_blackshirts
 view-if: paranoia_stat <= 0
 on-arrival: grandi_good += 1; rg_strength *= 0.8; rg_militancy *= 0.9; blackshirts_formed = 1
 
-The *Squadrismo* are been reorganised into the MVSN, or *Milizia Volontaria per la Sicurezza Nazionale*, integrating the organisation into the Regio Esercito under [+ pnf_leader +]'s orders. 
+The <span style="color:#3D3D3D;">Squadrismo</span> are been reorganised into the MVSN, or *Milizia Volontaria per la Sicurezza Nazionale*, integrating the organisation into the <span style="color:#008C45">Regi</span><span style="color:#CFCFCF">o Eser</span><span style="color:#CD212A">cito</span> under [+ pnf_leader +]'s orders. 
 
-This has given a significant boost to the strength of the paramilitary, effectively legalising violence that can be used against us, sanctioned by the King. The Red Guards are hit hard as our bases are raided.
+This has given a significant boost to the strength of the paramilitary, effectively legalising violence that can be used against us, sanctioned by the King. The <span style="color:#c2352b">Red Guards</span> are hit hard as our bases are raided.
 
 @grandi_violent
 view-if: paranoia_stat > 0
 on-arrival: grandi_bad += 1; rg_strength *= 0.7; rg_militancy *= 0.8;
 
-In an effort to suppress us, Grandi has authorised more 'unconventional' powers to suppress the Red Guards. We have seen an uptick in violent attacks on workers affiliated with the Red Guards, even socialists in general in an effort to undermine left-wing support within the country.
+In an effort to suppress us, Grandi has authorised more 'unconventional' powers to suppress the <span style="color:#c2352b">Red Guards</span>. We have seen an uptick in violent attacks on workers affiliated with the <span style="color:#c2352b">Red Guards</span>, even <span style="color:#ED2855">socialists</span> in general in an effort to undermine left-wing support within the country.
 
-Murmurs of discontent within some have not gone unnoticed, however, as many are skeptical of these powers granted to a non-governmental force, especially following Grandi's speech emphasising the curtailment of reckless violence on the streets. Nevertheless, the Red Guards, and even some of our support will take a significant hit as long as the Squadrismo remains active.
+Murmurs of discontent within some have not gone unnoticed, however, as many are skeptical of these powers granted to a non-governmental force, especially following Grandi's speech emphasising the curtailment of reckless violence on the streets. Nevertheless, the <span style="color:#c2352b">Red Guards</span>, and even some of our support will take a significant hit as long as the <span style="color:#3D3D3D;">Squadrismo</span> remains active.
 

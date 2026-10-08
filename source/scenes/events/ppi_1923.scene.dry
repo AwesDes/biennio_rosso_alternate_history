@@ -1,5 +1,5 @@
-title: 1923 Congress of the Partito Popolare Italiano
-subtitle: The PPI elects its Secretary General.
+title: 1923 Congress of the <span style="font-weight: bold; color:#87CEFA;">Partito Popolare Italiano</span>
+subtitle: The <span style="font-weight: bold; color:#87CEFA;">PPI</span> elects its Secretary General.
 new-page: true
 view-if: year = 1923 and month = 4 and week = 1 and not ppi_banned
 on-arrival: {!
@@ -43,11 +43,11 @@ if (Q.largest_party === "PNF") {
 max-visits: 1
 tags: event
 
-= 1923 Partito Popolare Italiano Congress
+= 1923 <span style="font-weight: bold; color:#87CEFA;">Partito Popolare Italiano</span> Congress
 
-The *Partito Popolare Italiano*, known also as the PPI or the Italian People's Party have begun their fourth Congress. It's two factional bloc, with Sturzo on the left-wing of the party and De Gasperi's moderate-wing of the party is still prominent, but it seems the the right-wing of the party, represented by the Triumvirate has gained significant power within the party as well.
+The <span style="font-weight: bold; color:#87CEFA;">Partito Popolare Italiano</span>, known also as the <span style="font-weight: bold; color:#87CEFA;">PPI</span> or the <span style="font-weight: bold; color:#87CEFA;">Italian People's Party</span> have begun their fourth Congress. It's two factional bloc, with Sturzo on the left-wing of the party and De Gasperi's moderate-wing of the party is still prominent, but it seems the the right-wing of the party, represented by the Triumvirate has gained significant power within the party as well.
 
-While Sturzo commands the support of the Christian Democrats and the 'White' Peasant Leagues, De Gasperi is supported by Moderate Clericalists and the Clergy. On the other hand, the Triumvirate is supported by Hardliner Clericalists & the National-Conservatives of the party.
+While Sturzo commands the support of the Christian Democrats and the 'White' <span style="color:#C0DCED;">Peasant Leagues</span>, De Gasperi is supported by Moderate Clericalists and the Clergy. On the other hand, the Triumvirate is supported by Hardliner Clericalists & the <span style="color:#522A00">National</span>-<span style="color:#0047AB;">Conservatives</span> of the party.
 
 - @ppi_fourth: The party votes...
 
@@ -64,11 +64,11 @@ It seems the progressives have managed to sway the party, as Luigi Sturzo is ele
 face-image: img/portraits/DeGasperi.jpg
 on-arrival: ppi_relation -= 7; ppi_leader = "De Gasperi"; ppi_moderates += 2;
 
-Alcide De Gasperi, with his support base, has been elected the fourth Secretary General of the Party. Representing a turn from the left, the PPI will cooperate further with the liberal parties.
+Alcide De Gasperi, with his support base, has been elected the fourth Secretary General of the Party. Representing a turn from the left, the <span style="font-weight: bold; color:#87CEFA;">PPI</span> will cooperate further with the <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">ral</span> parties.
 
 @triumvirate_1923
 on-arrival: ppi_right += 2; ppi_leader = "Triumvirate"; ppi_relation -= 10;
 
-Shockingly, the Triumvirate have been able to achieve a plurality, establishing a joint Vice-Secretariat Position of the three. This represents a sharp turn from the PPI's roots, and we should assume the PPI will be willing to cooperate with the Fascists.
+Shockingly, the Triumvirate have been able to achieve a plurality, establishing a joint Vice-Secretariat Position of the three. This represents a sharp turn from the <span style="font-weight: bold; color:#87CEFA;">PPI</span>'s roots, and we should assume the <span style="font-weight: bold; color:#87CEFA;">PPI</span> will be willing to cooperate with the <span style="color:#3D3D3D;">fascists</span>.
 
 - @root: Damn it.

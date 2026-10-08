@@ -9,7 +9,7 @@ max-visits: 8
 
 = Questions of Ideology
 
-The [+ psi_name +] is torn between many different ideological currents. What should be our primary ideological guidance for now?
+The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> is torn between many different ideological currents. What should be our primary ideological guidance for now?
 
 [? if ideology != 0 : We have previously chosen a [+ ideology +] ideology. Changing it will likely have drawbacks. ?]
 
@@ -30,7 +30,7 @@ if (Q.ideology && Q.ideology != "left") {
 go-to: changed if changed = 1
 on-departure: ideology = "left"; communist_strength += 10; communist_dissent -= 5; ldr_relation -= 3; ul_relation -= 5; ldr_moderates -= 0.2; socialist_sentiment += 2*(1-dissent); radicalisation += 0.1;
 
-The radical left of the party supports a course of class struggle, and violent revolution.
+The radical <span style="color:#8B0000">left</span> of the party supports a course of class struggle, and violent revolution.
 
 @centrist
 on-arrival: {!
@@ -41,7 +41,7 @@ if (Q.ideology && Q.ideology != "centrist") {
 go-to: changed if changed = 1
 on-departure: ideology = "centrist"; maximalist_strength += 10; maximalist_dissent -= 10; communist_dissent -= 5; reformist_dissent -= 5
 
-The Center Marxists, represented by Serrati's faction, support a middle course of preparing for revolution while building up the consciousness of the working class.
+The <span style="color:#DC143C">Center Marxists</span>, represented by Serrati's faction, support a middle course of preparing for revolution while building up the consciousness of the working class.
 
 @labour
 on-arrival: {!
@@ -52,7 +52,7 @@ if (Q.ideology && Q.ideology != "labour") {
 go-to: changed if changed = 1
 on-departure: ideology = "labour"; labour_strength += 10; labour_dissent -= 5; 
 
-The labour wing of the party supports continued participation in government in order to provide benefits to the workers, and the creation of public works programs for employment.
+The <span style="color:#B22222">labour</span> wing of the party supports continued participation in government in order to provide benefits to the workers, and the creation of public works programs for employment.
 
 @syndicalism
 on-arrival: {!
@@ -63,7 +63,7 @@ if (Q.ideology && Q.ideology != "syndicalist") {
 go-to: changed if changed = 1
 on-departure: ideology = "syndicalist"; syndicalist_strength += 10; syndicalist_dissent -= 5 if syndicalist_active; 
 
-The minor syndicalist wing of the party supports violent means in order to provide benefits to the workers, such as strikes and factory occupations.
+The minor <span style="color:#2F2F2F">syndicalist</span> wing of the party supports violent means in order to provide benefits to the workers, such as strikes and factory occupations.
 
 @reform
 on-arrival: {!
@@ -74,7 +74,7 @@ if (Q.ideology && Q.ideology != "reformist") {
 go-to: changed if changed = 1
 on-departure: ideology = "reformist"; reformist_strength += 10; democratisation += 1; reformist_dissent -= 5; ldr_relation += 5; ul_relation += 5; republican_sentiment += 3*(1-dissent); radicalisation -= 0.1;
 
-The reformist wing of the party seeks to preserve continued participation in government, and is most supportive of coalitions with the other pro-democracy parties.
+The <span style="color:#FF6961">reformist</span> wing of the party seeks to preserve continued participation in government, and is most supportive of coalitions with the other pro-democracy parties.
 
 @changed
 on-arrival: communist_dissent += 5; maximalist_dissent += 5; labour_dissent += 5; reformist_dissent += 5; syndicalist_dissent += 5 if syndicalist_active

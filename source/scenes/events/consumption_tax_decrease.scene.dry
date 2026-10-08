@@ -6,7 +6,7 @@ max-visits: 1
 
 = Immediate Motion Filed
 
-In order to finance the war effort, the liberal government raised consumption taxes that affected the workers and unemployed significantly. Now that we are in power, and more importantly, control the Finance Ministry, our support base have requested we bring consumption taxes back to pre-war levels.
+In order to finance the war effort, the <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">ral</span> government raised consumption taxes that affected the workers and unemployed significantly. Now that we are in power, and more importantly, control the Finance Ministry, our support base have requested we bring consumption taxes back to pre-war levels.
 
 - @consumption_taxes_accept: -2 Budget - Bring consumption taxes down.
 - @consumption_taxes_refuse: Reject the motion.
@@ -63,7 +63,7 @@ Q.economic_growth += 0.5;
 Q.budget -= 2;
 !}
 
-The liberal parties berate our actions, criticising our lack of care for the economy and the current economic situation. They use this as a recruiting tool amongst the industrialists and middle class, while we see an increase in support from our workers.
+The <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">ral</span> parties berate our actions, criticising our lack of care for the economy and the current economic situation. They use this as a recruiting tool amongst the industrialists and middle class, while we see an increase in support from our workers.
 
 @consumption_taxes_refuse
 subtitle: We can't afford to upset the economy in this time of crisis.
@@ -95,4 +95,4 @@ if (Q.syndicalist_active) {
 }
 !}
 
-The workers are unsurprisingly angered by this betrayal, as we see defections to the PSRI and PPI, who disapprove of our decision. The liberal parties, however, laud our decision and care to not upset or worsen the current economic situation.
+The workers are unsurprisingly angered by this betrayal, as we see defections to the <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> and <span style="font-weight: bold; color:#87CEFA;">PPI</span>, who disapprove of our decision. The <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">ral</span> parties, however, laud our decision and care to not upset or worsen the current economic situation.

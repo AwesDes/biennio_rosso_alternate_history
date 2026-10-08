@@ -9,12 +9,12 @@ max-visits: 15
 
 = Party Organisations
 
-In addition to being a political party, the [+ psi_name +] is a social world onto itself, with a vast array of associated organisations which serve the social needs of their members from cradle to grave.
+In addition to being a political party, the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> is a social world onto itself, with a vast array of associated organisations which serve the social needs of their members from cradle to grave.
 
 - @newspapers: Fund more newspapers and journalists.
 - @welfare: Fund more mutual aid and welfare programs.
 - @culture: Fund sports leagues, educational, and cultural programs.
-- @rg: Fund the Red Guards, our paramilitary organisation.
+- @rg: Fund the <span style="color:#c2352b">Red Guards</span>, our paramilitary organisation.
 - @nothing: Do not increase funding for any program.
 - @easy_discard
 - @cancel_advisor_action
@@ -40,7 +40,7 @@ unavailable-subtitle: Not enough resources.
 subtitle: -1 resources
 on-arrival: resources -= 1; maximalist_dissent -= 6; communist_dissent -= 6; labour_dissent -= 6; reformist_dissent -= 6; syndicalist_dissent -= 6 if syndicalist_active; socialist_sentiment += 2*(1-dissent);
 
-It is not enough for the [+ psi_name +] to solely be a political party. Our schools, libraries, cultural events and initiatives are crucial to our members' lives. Funding these organisations makes our members more committed to the party, even when our policies might not be to their liking.
+It is not enough for the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> to solely be a political party. Our schools, libraries, cultural events and initiatives are crucial to our members' lives. Funding these organisations makes our members more committed to the party, even when our policies might not be to their liking.
 
 @rg
 choose-if: resources > 0
@@ -48,7 +48,7 @@ unavailable-subtitle: Not enough resources.
 subtitle: -1 resources
 on-arrival: resources -= 1; rg_strength += 15*revolutionary_exhaustion; rg_militancy += 0.01*revolutionary_exhaustion; red_guards_timer = 3;
 
-We have increased recruiting to the Red Guards.
+We have increased recruiting to the <span style="color:#c2352b">Red Guards</span>.
 
 @nothing
 

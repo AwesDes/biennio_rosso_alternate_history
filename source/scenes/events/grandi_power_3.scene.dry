@@ -1,4 +1,4 @@
-title: Italian Conferences on Reparations
+title: <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">al</span><span style="font-weight: bold; color:#CD212A">ian</span> Conferences on Reparations
 subtitle: Grandi takes position as both Foreign and Prime Minister.
 view-if: pnf_in_power and pnf_leader = "Grandi" and grandi_economy_seen and time >= dannunzio_time and (not uk_debts_over or not us_debts_over)
 max-visits: 1
@@ -39,12 +39,12 @@ go-to: uk_italy_menu if not uk_debts_over; us_italy_menu if uk_debts_over
 
 @uk_italy_menu
 
-= Italo-British Conference on Reparations
+= <span style="font-weight: bold; color:#008C45">Italo</span>-<span style="color:#C8102E">British</span> Conference on Reparations
 
-With the collapse of D'Annunzio's rule and the establishment of Grandi's reign as Prime Minister; Foreign reactions have been mixed, albeit wary of the new nationalistic direction of the Italian state. In an effort to reassure these claims, as well as further improve confidence in the Italian economy, Dino Grandi, Prime Minister as well as Foreign Minister, has first met with British Ambassador [+ british_ambassador +] in an effort to cultivate relations as well as renegotiate debts with the United Kingdom accumulated through the First World War.
+With the collapse of D'Annunzio's rule and the establishment of Grandi's reign as Prime Minister; Foreign reactions have been mixed, albeit wary of the new <span style="color:#522A00">nationalistic</span> direction of the <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">al</span><span style="font-weight: bold; color:#CD212A">ian</span> state. In an effort to reassure these claims, as well as further improve confidence in the <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">al</span><span style="font-weight: bold; color:#CD212A">ian</span> economy, Dino Grandi, Prime Minister as well as Foreign Minister, has first met with <span style="color:#C8102E">British</span> Ambassador [+ british_ambassador +] in an effort to cultivate relations as well as renegotiate debts with the <span style="color:#C8102E">United Kingdom</span> accumulated through the First World War.
 
-- @grandi_uk_success: Grandi successfully negotiates a debt plan to restore confidence in Italy.
-- @grandi_uk_failure: Negotiations between the United Kingdom and Italy stall.
+- @grandi_uk_success: Grandi successfully negotiates a debt plan to restore confidence in <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>.
+- @grandi_uk_failure: Negotiations between the <span style="color:#C8102E">United Kingdom</span> and <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span> stall.
 
 @grandi_uk_success
 view-if: debt_stat > 0
@@ -53,9 +53,9 @@ Q.grandi_good += 2;
 !}
 go-to: us_italy_menu if not us_debts_over
 
-Through negotiations with the United Kingdom, combined with previous fostered goodwill, the United Kingdom and Italy are able to sign an agreement, with an initial repayment of debts, followed by an Amortisation plan to repay the remnants of the debt, of which is able to be sustained by reparations given to Italy due to its victory in the First World War.
+Through negotiations with the <span style="color:#C8102E">United Kingdom</span>, combined with previous fostered goodwill, the <span style="color:#C8102E">United Kingdom</span> and <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span> are able to sign an agreement, with an initial repayment of debts, followed by an Amortisation plan to repay the remnants of the debt, of which is able to be sustained by reparations given to <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span> due to its victory in the First World War.
 
-Though a significant victory for the Italian economy, this does not bode well for us, as Grandi has been lauded for being able to restore confidence within the Italian economy, the PNF receiving a sizable boost in popularity and making on its promises to restore Italy back to prominence as compared to the other parties.
+Though a significant victory for the <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">al</span><span style="font-weight: bold; color:#CD212A">ian</span> economy, this does not bode well for us, as Grandi has been lauded for being able to restore confidence within the <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">al</span><span style="font-weight: bold; color:#CD212A">ian</span> economy, the <span style="font-weight: bold; color:#3D3D3D;">PNF</span> receiving a sizable boost in popularity and making on its promises to restore <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span> back to prominence as compared to the other parties.
 
 @grandi_uk_failure
 view-if: debt_stat <= 0
@@ -64,7 +64,7 @@ Q.grandi_bad += 1;
 !}
 go-to: us_italy_menu if not us_debts_over
 
-Whether through diplomatic missteps or the current economic situations, negotiations between the British Ambassador Graham and Grandi have stalled, resulting in the failure of any agreements to be signed, as well as marking the failure of Grandi's first diplomatic visit as Foreign Minister.
+Whether through diplomatic missteps or the current economic situations, negotiations between the <span style="color:#C8102E">British</span> Ambassador Graham and Grandi have stalled, resulting in the failure of any agreements to be signed, as well as marking the failure of Grandi's first diplomatic visit as Foreign Minister.
 
 @us_italy_menu
 on-arrival: debt_stat = 0 {!
@@ -96,12 +96,12 @@ if (Q.american_relation > 6) {
 }
 !}
 
-= Italo-American Conference on Reparations
+= <span style="font-weight: bold; color:#008C45">Italo</span>-<span style="color:#002868">Amer</span><span style="color:#B31942">ican</span> Conference on Reparations
 
-Foreign Minister Dino Grandi has approached the United States for a diplomatic meeting to cultivate ties, as well as to renegotiate debt accumulated from the First World War. With [+ us_ambassador +], the American Ambassador and promoter of Italian fascism, leading the American delegation, it is likely that these negotiations will be fruitful, boosting Grandi's role and influence in the state.
+Foreign Minister Dino Grandi has approached the <span style="color:#002868">United</span> <span style="color:#B31942">States</span> for a diplomatic meeting to cultivate ties, as well as to renegotiate debt accumulated from the First World War. With [+ us_ambassador +], the <span style="color:#002868">United</span> <span style="color:#B31942">States</span> Ambassador and promoter of <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">al</span><span style="font-weight: bold; color:#CD212A">ian</span> fascism, leading delegation, it is likely that these negotiations will be fruitful, boosting Grandi's role and influence in the state.
 
-- @grandi_us_success: Grandi successfully negotiates a debt plan to restore confidence in Italy.
-- @grandi_us_failure: Negotiations between the United States and Italy stall.
+- @grandi_us_success: Grandi successfully negotiates a debt plan to restore confidence in <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>.
+- @grandi_us_failure: Negotiations between the <span style="color:#002868">United</span> <span style="color:#B31942">States</span> and <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span> stall.
 
 @grandi_us_success
 view-if: debt_stat > 0
@@ -109,9 +109,9 @@ on-arrival: us_debts_over = 1; american_debts = 0; budget += 3; coalition_dissen
 Q.grandi_good += 1;
 !}
 
-Through negotiations with the United States, combined with previous fostered goodwill and a supportive American ambassador, the United States and Italy are able to sign an agreement, with an initial repayment of debts, followed by an Amortisation plan to repay the remnants of the debt, of which is able to be sustained by reparations given to Italy due to its victory in the First World War.
+Through negotiations with the <span style="color:#002868">United</span> <span style="color:#B31942">States</span>, combined with previous fostered goodwill and a supportive ambassador, the <span style="color:#002868">United</span> <span style="color:#B31942">States</span> and <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span> are able to sign an agreement, with an initial repayment of debts, followed by an Amortisation plan to repay the remnants of the debt, of which is able to be sustained by reparations given to <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span> due to its victory in the First World War.
 
-Though a significant victory for the Italian economy, this does not bode well for us, as Grandi has been lauded for being able to restore confidence within the Italian economy, the PNF receiving a sizable boost in popularity and making on its promises to restore Italy back to prominence as compared to the other parties.
+Though a significant victory for the <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">al</span><span style="font-weight: bold; color:#CD212A">ian</span> economy, this does not bode well for us, as Grandi has been lauded for being able to restore confidence within the <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">al</span><span style="font-weight: bold; color:#CD212A">ian</span> economy, the <span style="font-weight: bold; color:#3D3D3D;">PNF</span> receiving a sizable boost in popularity and making on its promises to restore <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span> back to prominence as compared to the other parties.
 
 @grandi_us_failure
 view-if: debt_stat <= 0
@@ -119,4 +119,4 @@ on-arrival: american_relation -= 1 if american_relation > 0 {!
 Q.grandi_bad += 1;
 !}
 
-Whether through diplomatic missteps or the current economic situations, negotiations between the American Ambassador [+ us_ambassador +] and Grandi, though with close personal ties, have stalled, resulting in the failure of any agreements to be signed, as well as marking the failure of Grandi's diplomatic visit as Foreign Minister.
+Whether through diplomatic missteps or the current economic situations, negotiations between the <span style="color:#002868">Amer</span><span style="color:#B31942">ican</span> Ambassador [+ us_ambassador +] and Grandi, though with close personal ties, have stalled, resulting in the failure of any agreements to be signed, as well as marking the failure of Grandi's diplomatic visit as Foreign Minister.

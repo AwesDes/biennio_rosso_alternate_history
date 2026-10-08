@@ -1,15 +1,15 @@
 title: CGL breaks from the Party
 new-page: true 
-subtitle: Labour disagreements with our policies have grown too severe.
+subtitle: <span style="color:#B22222">Labour</span> disagreements with our policies have grown too severe.
 tags: event
 view-if: labour_dissent >= 60
-on-arrival: unions_break = 1; workers_psi *= 0.6; rg_strength *= 0.7; veterans_psi *= 0.9; workers_psri += 5; workers_pnf += 5; n_advisors -= 1 if rigola_advisor == 1; rigola_advisor = 0; labour_strength = labour_strength/2
+on-arrival: unions_break = 1; workers_psi *= 0.6; rg_strength *= 0.7; veterans_psi *= 0.9; workers_psri += 5; workers_pnf += 5; labour_strength = labour_strength/2
 max-visits: 1
 
-= CGdL breaks from the [+ psi_name +]
+= CGdL breaks from the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>
 
-Our policy choices have greatly offended the labour movement. Union leaders of the *Confederazione Generale del Lavoro* have declared that they are independent of any political party, and some have been seen seeking accommodation with the PSRI and even the PNF.
+Our policy choices have greatly offended the <span style="color:#B22222">labour</span> movement. Union leaders of the *Confederazione Generale del Lavoro* have declared that they are independent of any political party, and some have been seen seeking accommodation with the <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> and even the <span style="font-weight: bold; color:#3D3D3D;">PNF</span>.
 
-Some workers remain loyal to the [+ psi_name +], although their affiliation is less solid. Many workers move away from us[? if (pcdi_formed or psu_formed) : ,joining our splinter parties?]. Others move in a more nationalist direction, as the CGL and USI signals its willingness to work with the right to solve the economic crisis.
+Some workers remain loyal to the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>, although their affiliation is less solid. Many workers move away from us[? if (pcdi_formed or psu_formed) : ,joining our splinter parties?]. Others move in a more <span style="color:#522A00">nationalist</span> direction, as the CGL and <span style="color:#2F2F2F">USI</span> signals its willingness to work with the right to solve the economic crisis.
 
-Much of our working-class base has defected, and labour's influence in our party has greatly diminished.
+Much of our working-class base has defected, and <span style="color:#B22222">labour</span>'s influence in our party has greatly diminished.

@@ -7,8 +7,8 @@ new-page: true
 
 = Collapse of the National Bloc
 
-[? if giolitti_betrayed = 1 : [+ ul_leader +] has fallen as Prime Minister, betrayed by [+ pnf_leader +] and his National Fascist Party during the Vote-of-No-Confidence. As such, the anti-socialist National Bloc has been dissolved. ?]
+[? if giolitti_betrayed = 1 : [+ ul_leader +] has fallen as Prime Minister, betrayed by [+ pnf_leader +] and his <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_full_name +]</span> during the Vote-of-No-Confidence. As such, the anti-socialist National Bloc has been dissolved. ?]
 
-[? if not giolitti_betrayed = 1 : Owing to recent political developments, the National Bloc has collapsed into infighting, as the National Fascist Party and the Social Democrats have both left the Liberal anti-socialist Bloc. ?]
+[? if not giolitti_betrayed = 1 : Owing to recent political developments, the National Bloc has collapsed into infighting, as the <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_full_name +]</span> and the <span style="font-weight: bold; color:#1E99C5;">Social Democrats</span> have both left the <span style="font-weight: bold; color:#0047AB;">Liberal</span> anti-socialist Bloc. ?]
 
 - @root: Good riddance.

@@ -7,7 +7,7 @@ new-page: true
 
 = Umberto Terracini
 
-Terracini is a member of the Communist faction of the [+ psi_name +]. A lawyer and writer, he is one of the founders of *L'Ordine Nuovo*, a communist newspaper.
+Terracini is a Turin-based member of the <span style=" color:#8B0000">Communist</span> faction of the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>, the youngest of the grouping and a staunch pacifist.
 
 - @comintern_relations
 - @constitutional_reform_terracini
@@ -15,7 +15,7 @@ Terracini is a member of the Communist faction of the [+ psi_name +]. A lawyer a
 - @root: Return to main
 
 @comintern_relations
-title: Comintern Relations
+title: <span style=" color:#CE0000">Comintern</span> Relations
 subtitle: Improve our standing with the our international allies.
 choose-if: advisor_action_timer = 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
@@ -25,15 +25,15 @@ go-to: international_relations
 @constitutional_reform_terracini
 title: Constitutional Reform
 subtitle: Having gathered enough support in the Chamber, it is time to reform the Italian Constitution into one more suited to our likeness.
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if not psi_in_government : The [+ psi_name +] is not in government. ?] [? if psi_in_government and coalition_dissent > 3 : Coalition dissent is too high for us to even suggest reforming the Constitution. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if not psi_in_government : The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> is not in government. ?] [? if psi_in_government and coalition_dissent > 3 : Coalition dissent is too high for us to even suggest reforming the Constitution. ?]
 choose-if: advisor_action_timer = 0 and psi_in_government
 view-if: not national_congress_seen
 on-arrival: advisor_action_timer = 6; constitutional_reform_timer -= 9; last_advisor_action = 1
 go-to: constitutional_reform
 
 @fasci_urgency
-title: Confronting the Fasci
-subtitle: Socialist & Fasci violence has only intensified in recent months; we have to act.
+title: Confronting the <span style="color:#3D3D3D;">Fasci</span>
+subtitle: <span style="color:#ED2855">Socialist</span> & <span style="color:#3D3D3D;">Fasci</span> violence has only intensified in recent months; we have to act.
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
 choose-if: advisor_action_timer = 0
 view-if: not national_congress_seen

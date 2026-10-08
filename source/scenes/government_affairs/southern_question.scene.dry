@@ -30,30 +30,30 @@ Where should we begin?
 subtitle: -2 Budget - This will **irreversibly** damage our relations with the Liberals.
 choose-if: not centre_left_coalition and (king_relation >= 60 or national_congress_seen) and (not national_economic_recovery or budget >= 2)
 view-if: southern_land_reformed == 0 and moderate_plan_adopted
-unavailable-subtitle: [? if centre_left_coalition : The Liberals are threatening a pre-emptive Vote-of-No-Confidence if this bill hits the Chamber floor. ?][? if king_relation < 60 and not (violent_revolution or peaceful_revolution) : The King has informed us he will veto this bill upon arrival regardless. ?][? if national_economic_recovery and budget < 2: Not enough budget. (Need 2) ?]
+unavailable-subtitle: [? if centre_left_coalition : The <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">rals</span> are threatening a pre-emptive Vote-of-No-Confidence if this bill hits the Chamber floor. ?][? if king_relation < 60 and not (violent_revolution or peaceful_revolution) : The King has informed us he will veto this bill upon arrival regardless. ?][? if national_economic_recovery and budget < 2: Not enough budget. (Need 2) ?]
 on-arrival: southern_land_reformed = 1; budget -= 2; ldr_relation -= 30; rural_psi += 17*(1-dissent); industrialists_ldr -= 7*(1-dissent); industrialists_pnf += 12*(1-dissent); middle_class_pnf += 4*(1-dissent); unemployment -= 0.9; inflation += 0.4; inflation += 0.1 if budget < 0; economic_growth += 0.6; fasci_coup_progress += 1; capital_strike_progress += 1; ldr_right += 3; rural += 4
 go-to: liberal_vote_of_no_confidence.let_it_happen if ldr_seating_disp + ul_seating_disp + pnf_seating_disp >= 50 and not violent_revolution
 
-The bill is barely able to pass the floor, and the liberals are in an uproar. Already, our contacts within the [+ ldr_name +] have informed us of an exodus of their landowner backers from the party, instead seeking to align further with the far-right. [+ ldr_leader +] and the [+ ldr_name +] vow never to work with us in future coalitions, as the fascists use this opportunity to paint us as property-seizing radicals to the middle class.
+The bill is barely able to pass the floor, and the <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">rals</span> are in an uproar. Already, our contacts within the <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span> have informed us of an exodus of their landowner backers from the party, instead seeking to align further with the far-right. [+ ldr_leader +] and the <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span> vow never to work with us in future coalitions, as the <span style="color:#3D3D3D;">fascists</span> use this opportunity to paint us as property-seizing radicals to the middle class.
 
-[? if ldr_seating_disp + ul_seating_disp + pnf_seating_disp > 50: The liberals are able to rally a majority to call a vote of no-confidence against us, and are able to succeed. ?]
+[? if ldr_seating_disp + ul_seating_disp + pnf_seating_disp > 50: The <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">rals</span> are able to rally a majority to call a vote of no-confidence against us, and are able to succeed. ?]
 
 @southern_land_reform_rg
-subtitle: [? if not national_congress_seen : -[+ reform_cost +] Paramilitary Resources ?][? if national_congress_seen : -[+ reform_cost +] Resources ?] - This will **irreversibly** damage our relations with the Liberals. [? if grand_coalition_r >= 50 and not violent_revolution : We can expect a Vote-of-No-Confidence to succeed if we go through with this. ?] [? if rg_militancy >= 0.44 : The high militancy of the Red Guards have reduced the cost of this action. ?]
+subtitle: [? if not national_congress_seen : -[+ reform_cost +] Paramilitary Resources ?][? if national_congress_seen : -[+ reform_cost +] Resources ?] - This will **irreversibly** damage our relations with the <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">rals</span>. [? if grand_coalition_r >= 50 and not violent_revolution : We can expect a Vote-of-No-Confidence to succeed if we go through with this. ?] [? if rg_militancy >= 0.44 : The high militancy of the <span style="color:#c2352b">Red Guards</span> have reduced the cost of this action. ?]
 choose-if: para_resources >= 4 or (national_congress_seen and resources >= 4)
 unavailable-subtitle: [? if not national_congress_seen : Not enough paramilitary resources. (Need [+ reform_cost +]) ?] [? if national_congress_seen : Not enough resources. (Need [+ reform_cost +]) ?]
 view-if: southern_land_reformed == 0 and nationalisation_adopted
 on-arrival: southern_land_reformed = 1; para_resources -= reform_cost if not national_congress_seen; resources -= reform_cost if national_congress_seen; ldr_relation -= 35; rural_psi += 13*(1-dissent); industrialists_ldr -= 17*(1-dissent); industrialists_pnf += 17*(1-dissent); middle_class_pnf += 7*(1-dissent); unemployment -= 0.9; inflation += 0.5; economic_growth += 0.2; fasci_coup_progress += 2; capital_strike_progress += 2; ldr_right += 4; rural += 4
 go-to: liberal_vote_of_no_confidence.let_it_happen if grand_coalition_r >= 50 and not violent_revolution
 
-The Red Guard, under our orders begin forceful seizures of landowner properties and the liberals are in an uproar. Already, our contacts within the [+ ldr_name +] have informed us of an exodus of their landowner backers from the party, instead seeking to align further with the far-right. [+ ldr_leader +] and the [+ ldr_name +] vow never to work with us again, as the fascists use this opportunity to paint us as violent radicals to the middle class.
+The <span style="color:#c2352b">Red Guard</span>, under our orders begin forceful seizures of landowner properties and the <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">rals</span> are in an uproar. Already, our contacts within the <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span> have informed us of an exodus of their landowner backers from the party, instead seeking to align further with the far-right. [+ ldr_leader +] and the <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span> vow never to work with us again, as the <span style="color:#3D3D3D;">fascists</span> use this opportunity to paint us as violent radicals to the middle class.
 
 [? if grand_coalition_r > 50: The liberals are able to rally a majority to call a vote of no-confidence against us, and are able to succeed. ?]
 
 @southern_infrastructure
 subtitle: -1 Budget [? if budget < 1 and liberal_budget_accepted :- This will put us into a deficit! ?]
 choose-if: public_works_minister_party = psi_name and (not national_economic_recovery or budget >= 1)
-unavailable-subtitle: [? if public_works_minister_party != psi_name : The [+ psi_name +] does not control the Public Works Ministry. ?][? if national_economic_recovery and budget < 1 : Not enough budget. (Need 1) ?]
+unavailable-subtitle: [? if public_works_minister_party != psi_name : The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> does not control the Public Works Ministry. ?][? if national_economic_recovery and budget < 1 : Not enough budget. (Need 1) ?]
 on-arrival: {!
 Q.southern_infrastructure_funded += 1; 
 Q.budget -= 1; 
@@ -97,12 +97,12 @@ go-to: ldr_promise_vonc if ldr_promise_failed = 1
 
 We begin a series of infrastructural projects directed by the Public Works Ministry, leading to decreased unemployment in the region. 
 
-[? if ldr_promise_failed : Unfortunately, our funding of new projects has led to a budget deficit, breaking our agreement with the Liberals, who have already requested a meeting. ?]
+[? if ldr_promise_failed : Unfortunately, our funding of new projects has led to a budget deficit, breaking our agreement with the <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">rals</span>, who have already requested a meeting. ?]
 
 @southern_literacy
 subtitle: -1 Budget [? if budget = 0 and liberal_budget_accepted :- This will put us into a deficit! ?]
 choose-if: public_education_minister_party = psi_name and (not national_economic_recovery or budget >= 1)
-unavailable-subtitle: [? if public_education_minister_party != psi_name : The [+ psi_name +] does not control the Public Education Ministry. ?][? if national_economic_recovery and budget < 1: Not enough budget. (Need 1) ?]
+unavailable-subtitle: [? if public_education_minister_party != psi_name : The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> does not control the Public Education Ministry. ?][? if national_economic_recovery and budget < 1: Not enough budget. (Need 1) ?]
 on-arrival: {!
 Q.southern_education_funded += 1; 
 Q.budget -= 1; 
@@ -153,20 +153,20 @@ Q.ppi_relation -= 4;
 max-visits: 2
 go-to: ldr_promise_vonc if ldr_promise_failed = 1
 
-We expand education institutes, targeting the South, hiring teachers, building schools and the like. Both the landowners and the catholics certainly aren't pleased with our intrusion into the South.
+We expand education institutes, targeting the South, hiring teachers, building schools and the like. Both the landowners and the <span style="color:#87CEFA;">Catholics</span> certainly aren't pleased with our intrusion into the South.
 
-[? if ldr_promise_failed : Unfortunately, our expansion of the education system has led to a budget deficit, breaking our agreement with the Liberals, who have already requested a meeting. ?]
+[? if ldr_promise_failed : Unfortunately, our expansion of the education system has led to a budget deficit, breaking our agreement with the <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">rals</span>, who have already requested a meeting. ?]
 
 @southern_mafia
 choose-if: interior_minister_party = psi_name and mafia_strength > 0
-unavailable-subtitle: [? if not interior_minister_party = psi_name: The [+ psi_name +] does not control the Interior Ministry. ?][? if mafia_strength < 1 : The various forces of the mafia are too disorganised to be a threat to us. ?]
+unavailable-subtitle: [? if not interior_minister_party = psi_name: The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> does not control the Interior Ministry. ?][? if mafia_strength < 1 : The various forces of the mafia are too disorganised to be a threat to us. ?]
 go-to: investigate_mafia_success if interior_police_loyalty >= 0.5 and judicial_reform > 1; investigate_mafia_failure if interior_police_loyalty < 0.5 or judicial_reform < 2
 
 @investigate_mafia_success
 on-arrival: mafia_investigation += 1; rural_psi += 3*(1-dissent) if not in_unstable_coalition; rural_clc += 3*(1-dissent) if centre_left_coalition; rural_scc += 3*(1-dissent) if socialist_catholic_coalition; industrialists_psi -= 2*(1-dissent) if not in_unstable_coalition; industrialists_clc -= 2*(1-dissent) if centre_left_coalition; industrialists_scc -= 2*(1-dissent) if socialist_catholic_coalition; industrialists_pnf += 4*(1-dissent); mafia_strength -= 1; 
 
-The Carabinieri are able to uncover files regarding illegal activity among a number of high-value individuals, and we are able to conduct raids and arrests the following day.
+The <span style="color:#FF2400">Carabinieri</span> are able to uncover files regarding illegal activity among a number of high-value individuals, and we are able to conduct raids and arrests the following day.
 
 @investigate_mafia_failure
 
-Unfortunately, our raids have turned up empty, our arrest warrants stalled. Rumors are that the targets of our investigation were tipped off by infiltrators within the Carabinieri.
+Unfortunately, our raids have turned up empty, our arrest warrants stalled. Rumors are that the targets of our investigation were tipped off by infiltrators within the <span style="color:#FF2400">Carabinieri</span>.

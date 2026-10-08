@@ -8,88 +8,88 @@ go-to: list_menu
 
 = Electoral List Preparations
 
-Following the passing of the Acerbo Law, it seems all but certain that the PNF will secure a majority in the Chamber of Deputies and consolidate a one-party dictatorship. However, we should not give up just yet. Though at a disadvantage, we can establish a united Anti-Fascist List against the PNF.
+Following the passing of the Acerbo Law, it seems all but certain that the <span style="font-weight: bold; color:#3D3D3D;">PNF</span> will secure a majority in the Chamber of Deputies and consolidate a one-party dictatorship. However, we should not give up just yet. Though at a disadvantage, we can establish a united Anti-Fascist List against the <span style="font-weight: bold; color:#3D3D3D;">PNF</span>.
 
 @list_menu
 
-- @contact_pcdi: Convince the PCd'I.
-- @contact_psu: Convince the PSU.
-- @contact_psri: Convince the PSRI.
-- @contact_pll: Convince the PLL.
-- @contact_pri: Convince the PRI.
-- @contact_ppi: Contact the PPI.
-- @contact_ds: Convince the PDSI
-- @contact_ldr: Convince the PLDI.
+- @contact_pcdi: Convince the <span style="font-weight: bold; color:#C72F35">PCd'I</span>.
+- @contact_psu: Convince the <span style="font-weight: bold; color:#E35A5A">PSU</span>.
+- @contact_psri: Convince the <span style="font-weight: bold; color:#FFC0CB;">PSRI</span>.
+- @contact_pll: Convince the <span style="font-weight: bold; color:#FFD1D9;">PLL</span>.
+- @contact_pri: Convince the <span style="font-weight: bold; color:#3CB371">PRI</span>.
+- @contact_ppi: Contact the <span style="font-weight: bold; color:#87CEFA;">PPI</span>.
+- @contact_ds: Convince the <span style="font-weight: bold; color:#1E99C5;">PSDI</span>
+- @contact_ldr: Convince the <span style="font-weight: bold; color:#FFD700;">PLDI</span>.
 - @root: We have done all we can.
 
 @contact_pcdi
 view-if: pcdi_formed
 choose-if: false
-unavailable-subtitle: The Communists would never form a joint list with us.
+unavailable-subtitle: The <span style="color:#8B0000">Communists</span> would never form a joint list with us.
 max-visits: 1
 
 @contact_psu
 view-if: psu_formed
 choose-if: psu_relation >= 55
-unavailable-subtitle: Our relations with the PSU are too poor for this.
+unavailable-subtitle: Our relations with the <span style="font-weight: bold; color:#E35A5A">PSU</span> are too poor for this.
 on-arrival: anti_fas_psu = 1
 go-to: list_menu
 max-visits: 1
 
-We are able to negotiate an form a joint list with the PSU! This will aid our efforts in combatting fascism.
+We are able to negotiate an form a joint list with the <span style="font-weight: bold; color:#E35A5A">PSU</span>! This will aid our efforts in combatting fascism.
 
 @contact_psri
 choose-if: not psri_joint_pll and not psri_joint_pri and not psri_joint_pri
-unavailable-subtitle: The PSRI is already in a joint list with another party.
+unavailable-subtitle: The <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> is already in a joint list with another party.
 on-arrival: anti_fas_psri = 1
 go-to: list_menu
 max-visits: 1
 
-We are able to negotiate an form a joint list with the PSRI! This will aid our efforts in combatting fascism.
+We are able to negotiate an form a joint list with the <span style="font-weight: bold; color:#FFC0CB;">PSRI</span>! This will aid our efforts in combatting fascism.
 
 @contact_pll
 view-if: pll_formed
 choose-if: pll_relation >= 55
-unavailable-subtitle: Our relations with the PLL are too poor for this.
+unavailable-subtitle: Our relations with the <span style="font-weight: bold; color:#FFD1D9;">PLL</span> are too poor for this.
 on-arrival: anti_fas_pll = 1
 go-to: list_menu
 max-visits: 1
 
-We are able to negotiate an form a joint list with the PLL! This will aid our efforts in combatting fascism.
+We are able to negotiate an form a joint list with the <span style="font-weight: bold; color:#FFD1D9;">PLL</span>! This will aid our efforts in combatting fascism.
 
 @contact_pri
 view-if: pri_prominent
 choose-if: pri_relation >= 45
-unavailable-subtitle: Our relations with the PRI are too poor for this.
+unavailable-subtitle: Our relations with the <span style="font-weight: bold; color:#3CB371">PRI</span> are too poor for this.
 on-arrival: anti_fas_pri = 1
 go-to: list_menu
 max-visits: 1
 
-We are able to negotiate an form a joint list with the PRI! This will aid our efforts in combatting fascism.
+We are able to negotiate an form a joint list with the <span style="font-weight: bold; color:#3CB371">PRI</span>! This will aid our efforts in combatting fascism.
 
 @contact_ppi
 choose-if: ppi_leader == "Sturzo" and ppi_relation >= 60
-unavailable-subtitle: Our relations with the PPI are too poor for this.
+unavailable-subtitle: Our relations with the <span style="font-weight: bold; color:#87CEFA;">PPI</span> are too poor for this.
 on-arrival: anti_fas_ppi = 1
 go-to: list_menu
 max-visits: 1
 
-We are able to negotiate an form a joint list with the PPI! This will aid our efforts in combatting fascism.
+We are able to negotiate an form a joint list with the <span style="font-weight: bold; color:#87CEFA;">PPI</span>! This will aid our efforts in combatting fascism.
 
 @contact_ds
 choose-if: ds_leader != "Carnazza" and ((ds_relation >= 55 and ds_leader == "Giuffrida") or (ds_relation >= 70 and ds_leader == "Colonna"))
-unavailable-subtitle: [? if ds_leader != "Carnazza" : Our relations with the [+ ds_name +] are too poor for this. ?][? if ds_leader == "Carnazza" : The [+ ds_name +] would never form a joint list with us. ?]
+unavailable-subtitle: [? if ds_leader != "Carnazza" : Our relations with the <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span> are too poor for this. ?][? if ds_leader == "Carnazza" : The <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span> would never form a joint list with us. ?]
 on-arrival: anti_fas_ds = 1
 go-to: list_menu
 max-visits: 1
 
-We are able to negotiate an form a joint list with the [+ ds_name +]! This will aid our efforts in combatting fascism.
+We are able to negotiate an form a joint list with the <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span>! This will aid our efforts in combatting fascism.
 
 @contact_ldr
 choose-if: ldr_leader == "Nitti" and ldr_relation >= 65
-unavailable-subtitle: The [+ ldr_name +] would never form a joint list with us.
+unavailable-subtitle: The <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span> would never form a joint list with us.
 on-arrival: anti_fas_ldr = 1
 go-to: list_menu
 max-visits: 1
 
-We are able to negotiate an form a joint list with the [+ ldr_name +]! This will aid our efforts in combatting fascism.
+We are able to negotiate an form a joint list with the <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span>! This will aid our efforts in combatting fascism.

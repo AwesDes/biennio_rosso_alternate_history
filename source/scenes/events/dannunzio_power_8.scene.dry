@@ -1,14 +1,14 @@
 title: Grandi makes his move!
-subtitle: The Squadrismo attempt to coup D'Annunzio!
+subtitle: The <span style="color:#3D3D3D;">Squadrismo</span> attempt to coup D'Annunzio!
 view-if: pnf_in_power and pnf_leader = "D'Annunzio" and dannunzio_struggle_seen and dannunzio_time <= time
 max-visits: 1
 tags: event
 new-page: true
 on-arrival: dannunzio_coup_seen = 1; dannunzio_time = time + 1
 
-The rivalry between Grandi and D'Annunzio has reached its peak. Forces loyal to Grandi have attempted to kidnap and bring down D'Annunzio. Brazen streetfighting has begun to occur across Italy, as members of the [+ pnf_full_italian +] turn against each other, both on the streets and in the Chamber of Deputies.
+The rivalry between Grandi and D'Annunzio has reached its peak. Forces loyal to Grandi have attempted to kidnap and bring down D'Annunzio. Brazen streetfighting has begun to occur across <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>, as members of the <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_full_italian +]</span> turn against each other, both on the streets and in the Chamber of Deputies.
 
-The Unione Sindacale Italiana has, naturally, thrown its weight behind D'Annunzio, rallying its forces to oppose Grandi and his coup, while the Squadrismo and Ras are supporting Grandi. 
+The <span style="color:#2F2F2F">Unione Sindacale Italiana</span> has, naturally, thrown its weight behind D'Annunzio, rallying its forces to oppose Grandi and his coup, while the <span style="color:#3D3D3D;">Squadrismo</span> and Ras are supporting Grandi. 
 
 In the legislative, A vote-of-no-confidence within the Grand Council of Fascism has begun in an attempt to oust D'Annunzio. 
 
@@ -21,7 +21,7 @@ Eventually, as the dust settles...
 view-if: pnf_left >= pnf_right
 on-arrival: fdc_strength *= 0.7; fdc_militancy *= 0.6;
 
-The vote-of-no-confidence within the Grand Council fails, as the Army is called to quell the unrest on the streets under orders of the King. The Squadrismo are forcefully suppressed, as prominent Ras leaders flee. Grandi himself decides to flee north to Switzerland.
+The vote-of-no-confidence within the Grand Council fails, as the Army is called to quell the unrest on the streets under orders of the King. The <span style="color:#3D3D3D;">Squadrismo</span> are forcefully suppressed, as prominent Ras leaders flee. Grandi himself decides to flee north to Switzerland.
 
 The coup is over. D'Annunzio consolidates his control over the party.
 
@@ -47,6 +47,6 @@ Q.ds_in_government = 0;
 Q.ppi_in_government = 0;
 !}
 
-The King turns a blind eye to Grandi's actions as the vote to oust D'Annunzio succeeds. The Squadrismo occupy the streets as the USI is forced to go into hiding. D'Annunzio himself 'willingly' enters exile, deciding to retire from politics entirely.
+The King turns a blind eye to Grandi's actions as the vote to oust D'Annunzio succeeds. The <span style="color:#3D3D3D;">Squadrismo</span> occupy the streets as the <span style="color:#2F2F2F">USI</span> is forced to go into hiding. D'Annunzio himself 'willingly' enters exile, deciding to retire from politics entirely.
 
 The coup is over. The party returns to its roots.

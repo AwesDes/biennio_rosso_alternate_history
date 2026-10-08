@@ -1,5 +1,5 @@
-title: [+ year +] [+ ldr_name +] Party Congress
-subtitle: The [+ ldr_name +] holds its Biennial Congress.
+title: [+ year +] <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span> Party Congress
+subtitle: The <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span> holds its Biennial Congress.
 new-page: true
 view-if: ldr_congress_trigger = 1 and not ldr_banned
 on-arrival: {!
@@ -34,17 +34,17 @@ if ((Q.ldr_r - Q.old_ldr_r) > 0) {
 !}
 tags: event
 
-= [+ year +] [+ ldr_name +] Party Congress
+= [+ year +] <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span> Party Congress
 
-The Biennial Party Congress of the [+ ldr_full_name +] has begun in order to elect the party's next leader. 
+The Biennial Party Congress of the <span style="font-weight: bold; color:#FFD700;">[+ ldr_full_name +]</span> has begun in order to elect the party's next leader. 
 
-[? if ldr_defunct : Following the merger of the PLDI and PLI, the remnants of the PLDI have remained as a defunct party. though still participating in elections via its own national electoral lists. ?]
+[? if ldr_defunct : Following the merger of the <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span> and <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span>, the remnants of the <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span> have remained as a defunct party. though still participating in elections via its own national electoral lists. ?]
 
-[? if not ldr_defunct and pli_formed : Following the failures of the merger between the PLDI and PLI, ?][? if not pli_formed : The liberals in Italy, unlike the Popular and Socialist Parties, are divided into two parties, with the PLDI representing a more moderate wing of liberalism compared to Giolitti's [? if pli_formed : and Salandra's ?] National Conservatism. ?]
+[? if not ldr_defunct and pli_formed : Following the failures of the merger between the <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span> and <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span>, ?][? if not pli_formed : The <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">rals</span> in <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>, unlike the <span style="font-weight: bold; color:#87CEFA;">Popular</span> and <span style="font-weight: bold; color:#ED2855">Socialist</span> Parties, are divided into two parties, with the <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span> representing a more moderate wing of <span style="color:#0047AB;">liber</span><span style="color:#FFD700;">alism</span> compared to Giolitti's [? if pli_formed : and Salandra's ?] <span style="color:#522A00">National</span> <span style="color:#0047AB;">Conservatism</span>. ?]
 
-[? if pli_formed : Following Salandra's defection to the PLI, the party is divided between two candidates; Orlando has consolidated the remaining right-wing of the party, as well as sympathetic moderates to his side, advocating for the PLDI's continuance to Conservative Liberalism. On the other end is Francesco Saverio Nitti, who has emerged as leader of the left-wing of the party. Nitti is, at the very least, one of the few people who oppose cooperation with fascism in the liberal parties, and his electoral victory could certainly sway the party against the tendencies of the right. ?]
+[? if pli_formed : Following Salandra's defection to the <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span>, the party is divided between two candidates; Orlando has consolidated the remaining right-wing of the party, as well as sympathetic moderates to his side, advocating for the <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span>'s continuance to <span style="color:#0047AB;">Conservative</span> <span style="font-weight: bold; color:#FFD700;">Liberalism</span>. On the other end is Francesco Saverio Nitti, who has emerged as leader of the left-wing of the party. Nitti is, at the very least, one of the few people who oppose cooperation with <span style="color:#3D3D3D;">fascism</span> in the <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">ral</span> parties, and his electoral victory could certainly sway the party against the tendencies of the right. ?]
 
-[? if not pli_formed : The party is divided between two candidates; Salandra leads the right-wing of the party, advocating for the party's continued ideological path of National Conservatism, as well as a strong willingness to cooperate with the far-right in order to restore stability to the nation. On the other end, Orlando has the backing of the moderates of the party, as well as reluctant members of the left-wing of the party, who might be able to quell his conservative tendencies. ?]
+[? if not pli_formed : The party is divided between two candidates; Salandra leads the right-wing of the party, advocating for the party's continued ideological path of <span style="color:#522A00">National</span> <span style="color:#0047AB;">Conservatism</span>, as well as a strong willingness to cooperate with the far-right in order to restore stability to the nation. On the other end, Orlando has the backing of the moderates of the party, as well as reluctant members of the left-wing of the party, who might be able to quell his <span style="color:#0047AB;">conservative</span> tendencies. ?]
 
 - @salandra_elected: Antonio Salandra is elected leader of the party once more.
 - @orlando_elected: Vittorio Emanuele Orlando secures leadership of the party.
@@ -55,13 +55,13 @@ view-if: not pli_formed
 choose-if: ldr_right >= ldr_moderates
 unavailable-subtitle: The right-wing of the party has been weakened.
 
-Antonio Salandra has been able to continue his leadership role within the PLDI. He will continue the party's direction towards National Conservatism.
+Antonio Salandra has been able to continue his leadership role within the <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span>. He will continue the party's direction towards <span style="color:#522A00">National</span> <span style="color:#0047AB;">Conservatism</span>.
 
 @orlando_elected
 view-if: ((ldr_moderates > ldr_right) and not pli_formed) or ((ldr_right >= ldr_moderates) and pli_formed)
 on-arrival: ldr_leader = "Orlando"
 
-Vittorio Emanuele Orlando has been able to secure leadership of the PLDI, having swayed sympathetic party members towards his side. Orlando will continue the party's ideological direction of liberalism against threat of the Popular & Socialist Parties.
+Vittorio Emanuele Orlando has been able to secure leadership of the <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span>, having swayed sympathetic party members towards his side. Orlando will continue the party's ideological direction of <span style="color:#0047AB;">liber</span><span style="color:#FFD700;">alism</span> against threat of the <span style="font-weight: bold; color:#87CEFA;">Popular</span> and <span style="font-weight: bold; color:#ED2855">Socialist</span> Parties.
 
 @nitti_elected
 view-if: pli_formed
@@ -69,4 +69,4 @@ choose-if: ldr_moderates > ldr_right
 unavailable-subtitle: The party's right-wing is strong enough to overcome the opposition.
 on-arrival: ldr_leader = "Nitti"
 
-Francesco Saverio Nitti has secured a majority in the party leadership, utilising the consolidated left of the party to seize control of the PLDI. Nitti, unlike many in the liberal parties, is wary of collaboration with the far-right, specifically [+ pnf_leader +] and his [+ pnf_full_name +].
+Francesco Saverio Nitti has secured a majority in the party leadership, utilising the consolidated left of the party to seize control of the <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span>. Nitti, unlike many in the liberal parties, is wary of collaboration with the far-right, specifically [+ pnf_leader +] and his <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_full_name +]</span>.

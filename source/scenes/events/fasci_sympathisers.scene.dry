@@ -1,13 +1,13 @@
-title: Fascist Sympathisers in the Party
+title: <span style="color:#3D3D3D;">Fascist</span> Sympathisers in the Party
 subtitle: We have caught wind of some interesting information...
 new-page: true
 view-if: fasci_urgency > 5
 tags: event
 max-visits: 1
 
-= Fascist Sympathisers in the [+ psi_name +]
+= <span style="color:#3D3D3D;">Fascist</span> Sympathisers in the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>
 
-We have caught wind of some information that some [+ psi_name +] leaders are sympathetic to [+ pnf_leader +] and his Fasces of Combat, even in light of their threat to us. Should we expel them from the party?
+We have caught wind of some information that some <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> leaders are sympathetic to [+ pnf_leader +] and his <span style="font-weight: bold; color:#3D3D3D;">Fasces of Combat</span>, even in light of their threat to us. Should we expel them from the party?
 
 - @expel: Expel the sympathisers!
 - @no_expel: Allow the sympathizers to remain.
@@ -16,7 +16,7 @@ We have caught wind of some information that some [+ psi_name +] leaders are sym
 subtitle: Enrico Ferri & Nicola Bombacci will be expelled!
 on-arrival: sympathiser_expelled = 1; n_advisors -= 1 if ferri_advisor = 1; n_advisors -= 1 if bombacci_advisor = 1; maximalist_strength -= 6*(1-dissent); bombacci_advisor = 0; ferri_advisor = 0;
 
-We expel the sympathisers, who turn out to be prominent members of the Maximalist faction, weakening them.
+We expel the sympathisers, who turn out to be prominent members of the <span style="color:#DC143C">Maximalist</span> faction, weakening them.
 
 @no_expel
 subtitle: Why act on baseless rumors?

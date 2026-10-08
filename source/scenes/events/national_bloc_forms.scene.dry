@@ -7,8 +7,8 @@ new-page: true
 
 = Formation of the National Bloc
 
-[? if prime_minister_party = ul_name : Following [+ prime_minister +]'s recent appointment and snap election, he has formed the National Bloc, consisting of his *[+ ul_full_name +]*, the *Italian Nationalist Association*, and more importantly, the *National Fascist Party*. ?]
+[? if prime_minister_party = ul_name : Following [+ prime_minister +]'s recent appointment and snap election, he has formed the National Bloc, consisting of his <span style="font-weight: bold; color:#0047AB;">[+ ul_full_name +]</span>, the <span style="font-weight: bold; color:#00008B;">Italian Nationalist Association</span>, and more importantly, the <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_full_name +]</span>. ?]
 
-[? if not prime_minister_party = ul_name : Following recent developments in the political sphere, [+ ul_leader +] has formed the National Bloc, consisting of his *[+ ul_name +]*, the *Italian Nationalist Association*, and more importantly, the *National Fascist Party*. ?]
+[? if not prime_minister_party = ul_name : Following recent developments in the political sphere, [+ ul_leader +] has formed the National Bloc, consisting of his <span style="font-weight: bold; color:#0047AB;">[+ ul_full_name +]</span>, the <span style="font-weight: bold; color:#00008B;">Italian Nationalist Association</span>, and more importantly, the <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_full_name +]</span>. ?]
 
 - @root: Concerning.

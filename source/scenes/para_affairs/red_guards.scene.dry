@@ -6,14 +6,14 @@ view-if: red_guards_timer <= 0
 card-image: img/RedGuards.jpg
 on-arrival: week_actions += 1; red_guards_timer = 2; rg_militarisation_cost = 2 if rg_militancy > 0.5 else rg_militarisation_cost = 1; rg_militarisation_cost = 3 if rg_militancy > 0.75
 
-= Red Guards
+= <span style="color:#c2352b">Red Guards</span>
 
-The *Guardie Rosse*, also known as the Red Guards is a paramilitary organisation affiliated with our party. We have historically supported the party, having seen it as the *de facto* paramilitary wing of the party and utilising the organisation to advance our goals.
+The <span style="color:#c2352b">Guardie Rosse</span>, also known as the <span style="color:#c2352b">Red Guards</span> is a paramilitary organisation affiliated with our party. We have historically supported the party, having seen it as the *de facto* paramilitary wing of the party and utilising the organisation to advance our goals.
 
-- @militant: Fund more military-style training and equipment for the Red Guards.
-- @militant_2: Use our existing resources to support more training for the Red Guards.
-- @same: Keep the Red Guards as it is.
-- @cut_rg: Cut funding for the Red Guards.
+- @militant: Fund more military-style training and equipment for the <span style="color:#c2352b">Red Guards</span>.
+- @militant_2: Use our existing resources to support more training for the <span style="color:#c2352b">Red Guards</span>.
+- @same: Keep the <span style="color:#c2352b">Red Guards</span> as it is.
+- @cut_rg: Cut funding for the <span style="color:#c2352b">Red Guards</span>.
 - @easy_discard
 
 @militant
@@ -22,19 +22,19 @@ unavailable-subtitle: Not enough paramilitary resources ([+ rg_militarisation_co
 subtitle: -[+ rg_militarisation_cost +] paramilitary resources
 on-arrival: para_resources -= rg_militarisation_cost; rg_investment += 1; rg_strength += 15*revolutionary_exhaustion; rg_militancy += 0.04*revolutionary_exhaustion; communist_strength += 2; communist_dissent -= 2; reformist_dissent += 5; radicalisation += 0.1; workers_psi += 2*(1-dissent); veterans_psi += 2*(1-dissent); middle_class_psi -= 5*(1-dissent); rg_militancy += 0.02 if veterans_psi_normalised >= 40; rg_strength += 5 if veterans_psi_normalised >= 40
 
-We continue funding the Red Guards, who begin recruitment of more members and are able to acquire more effective weaponry.
+We continue funding the <span style="color:#c2352b">Red Guards</span>, who begin recruitment of more members and are able to acquire more effective weaponry.
 
 
 @militant_2
 view-if: rg_investment >= 1
 on-arrival: rg_militancy += 0.02; rg_investment -= 1; rg_militancy += 0.01 if veterans_psi_normalised >= 40
 
-As we have already funded resources towards the Red Guards, we can invest in building up their militancy.
+As we have already funded resources towards the <span style="color:#c2352b">Red Guards</span>, we can invest in building up their militancy.
 
 
 @same
 
-The Red Guards is already serving the purpose it needs to serve. There is no reason to change what already works.
+The <span style="color:#c2352b">Red Guards</span> is already serving the purpose it needs to serve. There is no reason to change what already works.
 
 - @return: Continue...
 
@@ -42,4 +42,4 @@ The Red Guards is already serving the purpose it needs to serve. There is no rea
 subtitle: +1 paramilitary resources
 on-arrival: para_resources += 1; rg_strength -= 15; rg_militancy -= 0.05; communist_strength -= 2; communist_dissent -= 2; radicalisation -= 0.05; workers_pnf += 2; veterans_psri += 2; violent_prevalence -= 0.01;
 
-Cutting resources to the Red Guards causes a drop in the membership, and leads some would-be members to join the PSRI or the PNF instead.
+Cutting resources to the <span style="color:#c2352b">Red Guards</span> causes a drop in the membership, and leads some would-be members to join the <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> or the <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_name +]</span> instead.

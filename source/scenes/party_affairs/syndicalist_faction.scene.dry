@@ -7,11 +7,11 @@ card-image: img/ItalianSyndicalistUnion.jpg
 on-arrival: shuffle_leadership_timer = 0; syndicalist_active = 1;
 max-visits: 1
 
-= Syndicalism rises into prominence
+= <span style="color:#2F2F2F">Syndicalism</span> rises into prominence
 
-The Unione Sindacale Italiana, also known as the Italian Syndicalist Union, splintered from the majority labour faction of the General Confederation of Labour in 1912, remaining more aligned with the left-wing of the party, retaining low influence amongst the party. However, it seems that recent actions have cause the USI to gain notable influence within the party.
+The <span style="color:#2F2F2F">Unione Sindacale Italiana</span>, also known as the <span style="color:#2F2F2F">Italian Syndicalist Union</span>, splintered from the majority <span style="color:#B22222">labour</span> faction of the General Confederation of Labour in 1912, remaining more aligned with the <span style="color:#8B0000">left</span>-wing of the party, retaining low influence amongst the party. However, it seems that recent actions have caused the <span style="color:#2F2F2F">USI</span> to gain notable influence within the party.
 
-- @support_syn: Support the syndicalist movement.
+- @support_syn: Support the <span style="color:#2F2F2F">syndicalist</span> movement.
 - @no_new_ideas: We don't need any new ideas.
 
 @support_syn
@@ -25,4 +25,4 @@ We support the new leaders, and start using new-style propaganda techniques in o
 @no_new_ideas
 on-arrival: syndicalist_strength -= 10; syndicalist_active = 0; maximalist_strength += 7;
 
-We do not need these new ideas; they seem to imitate too closely those of the fascists.
+We do not need these new ideas; they seem to imitate too closely those of the <span style="color:#3D3D3D;">fascists</span>.

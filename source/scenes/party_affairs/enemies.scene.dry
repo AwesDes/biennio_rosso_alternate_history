@@ -13,11 +13,11 @@ In our media and campaign materials, who should we consider as our main opponent
 
 [? if enemies != 0 : Previously, we had considered the [+ enemies +] as our prior enemies. Is a change of direction necessary? ?]
 
-- @anti_dem: The anti-democratic parties of the far right and left - the PCd'I, and the [+ pnf_name +].
-- @communists: The PCd'I alone.
-- @pnf: The [+ pnf_name +] alone.
-- @religious: The Religious parties - the PPI.
-- @bourgeois: The Bourgeois parties - the [+ ldr_name +] and [+ ul_name +].
+- @anti_dem: The anti-democratic parties of the far right and left - the <span style="font-weight: bold; color:#C72F35">PCd'I</span>, and the <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_name +]</span>.
+- @communists: The <span style="font-weight: bold; color:#C72F35">PCd'I</span> alone.
+- @pnf: The <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_name +]</span> alone.
+- @religious: The Religious parties - the <span style="font-weight: bold; color:#87CEFA;">PPI</span>.
+- @bourgeois: The <span style="color:#0047AB;">Bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> parties - the <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span> and <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span>.
 - @easy_discard
 - @cancel_advisor_action
 
@@ -25,25 +25,25 @@ In our media and campaign materials, who should we consider as our main opponent
 view-if: pcdi_formed
 on-arrival: enemies = "anti-democratic parties"; maximalist_strength += 5; reformist_strength += 5; communist_dissent += 5; workers_pcdi -= 2; workers_pnf -= 2; radicalisation -= 0.05;
 
-Attacking the far right and left is popular among all but the left wing of our party, who would prefer to be fighting the bourgeois parties.
+Attacking the far right and left is popular among all but the left wing of our party, who would prefer to be fighting the <span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> parties.
 
 @communists
 view-if: pcdi_formed
 on-arrival: enemies = "PCd'I"; reformist_strength += 5; communist_dissent += 8; reformist_dissent -= 5; pcdi_relation -= 15; ldr_relation += 3; ul_relation += 5; ppi_relation += 5; workers_pcdi -= 4; radicalisation -= 0.05;
 
-Attacking the PCd'I is supported by all but the most left-wing socialists, and wins us some measure of approval among the bourgeois parties. However, If we are to reconcile with the communists, this may not be the best choice.
+Attacking the <span style="font-weight: bold; color:#C72F35">PCd'I</span> is supported by all but the most left-wing <span style="color:#ED2855">socialists</span>, and wins us some measure of approval among the <span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> parties. However, If we are to reconcile with the <span style="color:#8B0000">communists</span>, this may not be the best choice.
 
 @pnf
 on-arrival: enemies = pnf_name; fasci_urgency += 1; workers_pnf -= 4; nationalist_sentiment -= 3*(1-dissent); workers_pnf += 4 if pnf_votes < 2; veterans_pnf += 8 if pnf_votes < 2
 
-[? if (fasci_urgency == 0 or pnf_seating_disp < 10) and prime_minister_party != pnf_name : The [+ pnf_name +] is a tiny party right now, with more bark than bite. Many in our party are questioning our choices. ?][? if (fasci_urgency > 0 and pnf_seating_disp >= 10) or prime_minister_party == pnf_name : The fascists are the most urgent problem for us to deal with. ?][? if pnf_votes < 2 and not pnf_in_government : Worse, giving them attention while they're such a small party only attracts attention to them. ?]
+[? if (fasci_urgency == 0 or pnf_seating_disp < 10) and prime_minister_party != pnf_name : The <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_name +]</span> is a tiny party right now, with more bark than bite. Many in our party are questioning our choices. ?][? if (fasci_urgency > 0 and pnf_seating_disp >= 10) or prime_minister_party == pnf_name : The <span style="color:#3D3D3D;">fascists</span> are the most urgent problem for us to deal with. ?][? if pnf_votes < 2 and not pnf_in_government : Worse, giving them attention while they're such a small party only attracts attention to them. ?]
 
 @religious
 on-arrival: enemies = "religious parties"; communist_strength += 5; reformist_dissent += 8; communist_dissent -= 5; ppi_relation -= 15; workers_ppi -= 4; republican_sentiment -= 4; coalition_dissent += 1 if socialist_catholic_coalition
 
-Attacking the PPI certainly aligns with our secular ideals, and wins us some measure of approval among the left. However, it may make it harder to build the coalitions that are necessary for government in the future.
+Attacking the <span style="font-weight: bold; color:#87CEFA;">PPI</span> certainly aligns with our secular ideals, and wins us some measure of approval among the left. However, it may make it harder to build the coalitions that are necessary for government in the future.
 
 @bourgeois
 on-arrival: enemies = "bourgeois parties"; left_strength += 8; left_dissent -= 5; ldr_relation -= 5; ul_relation -= 5; reformist_dissent += 8; workers_ldr -= 3; coalition_dissent += 1 if centre_left_coalition; republican_sentiment -= 3
 
-Our anti-bourgeois rhetoric is popular among the left, but may make it harder to build the coalitions that are necessary for government in the future.
+Our anti-<span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> rhetoric is popular among the left, but may make it harder to build the coalitions that are necessary for government in the future.

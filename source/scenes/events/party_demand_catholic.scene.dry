@@ -24,7 +24,7 @@ We will have to choose one to complete, or we could refuse their demands entirel
 
 - @catholic_demand_secularise: Reverse our decision to secularise education.
 - @catholic_demand_reforms: Roll back our educational curriculum reforms targeting religious schools.
-- @catholic_demand_welfare: Increase funding for Catholic-aligned welfare.
+- @catholic_demand_welfare: Increase funding for <span style="color:#87CEFA;">Catholic</span>-aligned welfare.
 - @catholic_demand_refuse: Refuse the demands.
 
 @catholic_demand_secularise

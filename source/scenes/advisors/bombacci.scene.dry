@@ -7,7 +7,7 @@ new-page: true
 
 = Nicola Bombacci
 
-Bombacci is one of the prominent figures of the Maximalist faction of the [+ psi_name +].
+Bombacci is a militant socialist, as well as one of the most prominent figures of the <span style="color:#DC143C">Maximalists</span>.
 
 - @bombacci_orders
 - @question_of_ideology
@@ -16,8 +16,8 @@ Bombacci is one of the prominent figures of the Maximalist faction of the [+ psi
 - @root: Return to main
 
 @bombacci_orders
-title: Ordering the Red Guards
-subtitle: We can use the Red Guards to act.
+title: Ordering the <span style="color:#c2352b">Red Guards</span>
+subtitle: We can use the <span style="color:#c2352b">Red Guards</span> to act.
 choose-if: advisor_action_timer = 0 
 view-if: not national_congress_seen
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
@@ -46,5 +46,5 @@ subtitle: We can begin the revolution! - This will lead us into a civil war.
 on-arrival: participating = 0; maximalist_participating = 1; not_participating = 0
 view-if: year > 1922 or (year = 1922 and month > 11) and not national_congress_seen
 choose-if: revolutionary_fervour >= 65 and advisor_action_timer == 0 
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if revolutionary_fervour < 65 : The bulk of the party does not support this. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if revolutionary_fervour < 65 : The bulk of the party does not support this action. ?]
 go-to: civil_war

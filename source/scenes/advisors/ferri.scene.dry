@@ -7,7 +7,7 @@ new-page: true
 
 = Enrico Ferri
 
-Ferri is a member of the Maximalist faction of the [+ psi_name +]. Having served as the editor of *Avanti!* and a criminologist, he has influence in writing.
+Ferri is a member of the <span style=" color:#DC143C">Maximalists</span> faction of the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>. Having served as the editor of *Avanti!* and a criminologist, his primary influence is in writing.
 
 - @emergency_fundraising_ferri
 - @faction_support_ferri
@@ -32,21 +32,21 @@ on-arrival: advisor_action_timer = 6
 
 Which faction should we support?
 
-- @support_left: Communists
-- @support_center: Maximalist
-- @support_labor: Labour
-- @support_reform: Reformists
-- @support_synd: Syndicalists
+- @support_left: <span style=" color:#8B0000">Communists</span>.
+- @support_center: <span style=" color:#DC143C">Maximalists</span>.
+- @support_labor: <span style=" color:#B22222">Labour</span>.
+- @support_reform: <span style=" color:#FF6961">Reformists</span>.
+- @support_synd: <span style=" color:#2F2F2F">Syndicalist</span>.
 
 @support_left
 on-arrival: communist_dissent -= 8;  communist_strength += 8
 
-*Avanti!* prints editorials in support of Communist positions.
+*Avanti!* prints editorials in support of <span style=" color:#8B0000">Communists</span> positions.
 
 @support_center
 on-arrival: maximalist_dissent -= 8; maximalist_strength += 8
 
-*Avanti!* prints editorials in support of Maximalist positions.
+*Avanti!* prints editorials in support of <span style=" color:#DC143C">Maximalists</span> positions.
 
 @support_labor
 on-arrival: labour_dissent -= 8; labour_strength += 8
@@ -56,13 +56,13 @@ on-arrival: labour_dissent -= 8; labour_strength += 8
 @support_reform
 on-arrival: reformist_dissent -= 8; reformist_strength += 8;
 
-*Avanti!* prints editorials in support of the reformist policies.
+*Avanti!* prints editorials in support of <span style=" color:#FF6961">reformist</span> policies.
 
 @support_synd
 view-if: syndicalist_active
 on-arrival: syndicalist_dissent -= 8; syndicalist_strength += 8
 
-*Avanti!* prints editorials in support of syndicalist ideas.
+*Avanti!* prints editorials in support of <span style=" color:#2F2F2F">syndicalist</span> ideas.
 
 @media_ferri
 title: Media

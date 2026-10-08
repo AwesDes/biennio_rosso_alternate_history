@@ -1,4 +1,4 @@
-title: Formation of the Italian Liberal Party
+title: Formation of the <span style="font-weight: bold; color:#0047AB;">Italian Liberal Party</span>
 on-arrival: ul_name = "PLI"; ul_full_italian = "Partito Liberale Italiano"; ul_full_name = "Italian Liberal Party"; ul_party = 1; ul_list = 0; prime_minister_party = ul_name if prime_minister_party == "UL"; pli_formed = 1
 view-if: year = 1922 and month = 10 and week = 1 and ul_list = 1
 new-page: true
@@ -6,11 +6,11 @@ max-visits: 1
 tags: event
 face-image: img/PLI.png
 
-= Formation of the Italian Liberal Party
+= Formation of the <span style="font-weight: bold; color:#0047AB;">Italian Liberal Party</span>
 
-The Italian Liberal Party has been formed. A merger of the parties under the Liberal List, a consolidated party for the liberals has been formed, alongside the Italian Democratic Liberal Party.
+The <span style="font-weight: bold; color:#0047AB;">Italian Liberal Party</span> has been formed. A merger of the parties under the Liberal List, a consolidated party for the liberals has been formed, alongside the <span style="font-weight: bold; color:#FFD700;">Italian Democratic Liberal Party</span>
 
-In fact, there has been strong support from both sides of the party to form a united party, in order to further consolidate the liberal vote in the face of the Socialists and Catholics.
+In fact, there has been strong support from both sides of the party to form a united party, in order to further consolidate the liberal vote in the face of the <span style="font-weight: bold; color:#ED2855">Socialists</span> and <span style="font-weight: bold; color:#87CEFA;">Catholics</span>.
 
 - @merger_check: The party votes...
 
@@ -123,15 +123,15 @@ if (Q.ldr_leader === "Salandra") {
 
 !}
 
-As expected, the [+ ldr_name +] have merged with the [+ ul_name +], consolidating the liberal vote into one political party that will stand against the other parties in the Chamber of Deputies. The PLDI will continue to exist as a weakened, defunct party, as figures such as Francesco Saverio Nitti and Vittorio Emanuele Orlando refuse to join the PLI.
+As expected, the <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span> have merged with the <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span>, consolidating the liberal vote into one political party that will stand against the other parties in the Chamber of Deputies. The <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span> will continue to exist as a weakened, defunct party, as figures such as Francesco Saverio Nitti and Vittorio Emanuele Orlando refuse to join the <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span>.
 
 - @root: Interesting.
 
 @pldi_refuse
 on-arrival: ul_congress_trigger = 1; ldr_leader = "Orlando" if ldr_leader == "Salandra"
 
-Surprisingly, whether it is because of the poor relations, the PLDI's ideological differences with the [+ ul_name +] or something else, the [+ ldr_name +] have refused to merge with the [+ ul_name +], remaining as an independent party running its own electoral list.
+Surprisingly, whether it is because of the poor relations, the <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span>'s ideological differences with the <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span> or something else, the <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span> have refused to merge with the <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span>, remaining as an independent party running its own electoral list.
 
-In response, however, Antonio Salandra and his right-wing bloc have defected to the PLI, seeing the PLDI as a sinking ship. The PLI will hold its first Party Congress shortly. 
+In response, however, Antonio Salandra and his right-wing bloc have defected to the <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span>, seeing the <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span> as a sinking ship. The <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span> will hold its first Party Congress shortly. 
 
 - @root: Interesting.

@@ -1,7 +1,7 @@
 
-(..2) Imminent
-(2..4) Soon 
-(4..6) Expected
-(6..8) Possible
-(8..12) Unlikely 
-(12..) Remote 
+(..2) <span style="color:#d42f2f">Imminent</span>
+(2..4) <span style="color:#db5858">Soon</span> 
+(4..6) <span style="color:#FFB74D">Expected</span>
+(6..8) <span style="color:#FFD54F">Possible</span>
+(8..12) <span style="color:#81C784">Unlikely</span> 
+(12..) <span style="color:#66BB6A">Remote</span>

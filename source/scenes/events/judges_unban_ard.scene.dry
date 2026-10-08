@@ -1,8 +1,8 @@
-title: Arditismo unbanned
-subtitle: The judges have re-legalized the Arditismo.
+title: <span style="color:#3D3D3D;">Arditismo</span> unbanned
+subtitle: The judges have re-legalized the <span style="color:#3D3D3D;">Arditismo</span>.
 new-page: true
 view-if: ard_banned == 1 and ard_ban_timer == 0 and (judicial_reform < 2 or pnf_in_government) and not national_congress_seen and not pnf_banned and not march_failed
 on-arrival: ard_banned = 0; ard_strength += 20; ard_militancy += 0.04; nationalist_sentiment += 6;
 tags: event
 
-Judges have ordered the Arditismo to be re-legalized. They immediately return to mass recruiting and arming.
+Judges have ordered the <span style="color:#3D3D3D;">Arditismo</span> to be re-legalized. They immediately return to mass recruiting and arming.

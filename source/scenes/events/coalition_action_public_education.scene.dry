@@ -49,8 +49,8 @@ tags: event
 
 = [+ public_education_minister +] guts funding for Trade Schools
 
-The [+ ldr_name +]-led Public Education Ministry have begun to gut funding of the already-existing Trade Schools funded by the previous government due to the budget deficit, causing another wave of unemployment.
+The <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span>-led Public Education Ministry have begun to gut funding of the already-existing Trade Schools funded by the previous government due to the budget deficit, causing another wave of unemployment.
 
-[? if psi_in_government : Our traditional rural and worker base criticise our inability to prevent this, as do our middle class supporters who benefit from this the most. The fascists are able to utilise both our incompetence and the [+ public_education_minister_party +]'s callousness to recruit more supporters. ?][? if not psi_in_government : We use this opportunity to recruit those disillusion with the liberal status-quo, as do the fascists. ?]
+[? if psi_in_government : Our traditional rural and worker base criticise our inability to prevent this, as do our middle class supporters who benefit from this the most. The <span style="color:#3D3D3D;">fascists</span> are able to utilise both our incompetence and the <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span>'s callousness to recruit more supporters. ?][? if not psi_in_government : We use this opportunity to recruit those disillusion with the <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">ral</span> status-quo, as do the <span style="color:#3D3D3D;">fascists</span>. ?]
 
 - @root: There is nothing we can do.

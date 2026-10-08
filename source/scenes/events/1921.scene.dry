@@ -6,6 +6,6 @@ view-if: year = 1921 and month = 1
 priority: 2
 max-visits: 1
 
-A new year begins. The economic crisis seems to have improved slightly, [? if psi_in_government : thanks to us. ?][? if not psi_in_government : no thanks to government inaction. ?] The conflict between us and the Fasci have only intensified, and it seems stability is a far reach from reality.
+A new year begins. The economic crisis seems to have improved slightly, [? if psi_in_government : thanks to us. ?][? if not psi_in_government : no thanks to government inaction. ?] The conflict between us and the <span style="font-weight: bold; color:#3D3D3D;">Fasci</span> have only intensified, and it seems stability is a far reach from reality.
 
 [? if psi_in_government : Our budget has increased due to the yearly tax. ?]

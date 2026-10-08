@@ -9,13 +9,13 @@ tags: party_affairs
 
 = Rallying against Mussolini
 
-Our worst fears have come true. A fascist is in control of Italy, assuming the office of Prime Minister. Benito Mussolini. Former member of the [+ psi_name +] and dangerous – politically ambiguous and apt, he will seemingly do everything in his power to maintain power.
+Our worst fears have come true. A <span style="color:#3D3D3D;">fascist</span> is in control of <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>, assuming the office of Prime Minister. Benito Mussolini. Former member of the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> and dangerous – politically ambiguous and apt, he will seemingly do everything in his power to maintain power.
 
 What should we do?
 
 - @mussolini_rally: Rally against Mussolini's authoritarianism and violence.
 - @mussolini_relation: Strengthen ties with the other parties.
-- @mussolini_fund: Continue funding the Red Guards to oppose the Squadrismo.
+- @mussolini_fund: Continue funding the <span style="color:#c2352b">Red Guards</span> to oppose the <span style="color:#3D3D3D;">Squadrismo</span>.
 - @mussolini_dissent: Unify the party and reduce dissent.
 - @root: Do nothing for now.
 - @easy_discard
@@ -30,7 +30,7 @@ We rally workers and farmhands against Mussolini, weakening his support base.
 subtitle: Mussolini's radicalism mean we might be able to sway the other parties against supporting him.
 on-arrival: ds_relation += 5; psri_relation += 5; ldr_relation += 5; ppi_relation += 5;
 
-We reaffirm our ties with our fellow left-wing parties, as well as cultivate ties with the liberals and Catholics to aid us against Mussolini should the time come.
+We reaffirm our ties with our fellow left-wing parties, as well as cultivate ties with the <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">rals</span> and <span style="color:#87CEFA;">Catholics</span> to aid us against Mussolini should the time come.
 
 @mussolini_fund
 subtitle: -1 Paramilitary Resources 
@@ -38,7 +38,7 @@ choose-if: para_resources >= rg_militarisation_cost
 unavailable-subtitle: Not enough paramilitary resources. (Need [+ rg_militarisation_cost +])
 on-arrival: para_resources -= rg_militarisation_cost; rg_investment += 1; rg_strength += 15*revolutionary_exhaustion; rg_militancy += 0.04*revolutionary_exhaustion; communist_strength += 2; communist_dissent -= 2; reformist_dissent += 5; radicalisation += 0.1; workers_psi += 2*(1-dissent); veterans_psi += 2*(1-dissent); middle_class_psi -= 5*(1-dissent); rg_militancy += 0.02 if veterans_psi_normalised >= 40; rg_strength += 5 if veterans_psi_normalised >= 40
 
-We continue funding the Red Guards, who begin recruitment of more members and are able to acquire more effective weaponry.
+We continue funding the <span style="color:#c2352b">Red Guards</span>, who begin recruitment of more members and are able to acquire more effective weaponry.
 
 @mussolini_dissent
 subtitle: The party has to be united in this time of crisis.

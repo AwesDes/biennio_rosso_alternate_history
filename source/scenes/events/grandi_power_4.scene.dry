@@ -1,5 +1,5 @@
 title: Political Consolidation
-subtitle: The PNF reaches out to the Conservatives.
+subtitle: The <span style="font-weight: bold; color:#3D3D3D;">PNF</span> reaches out to the <span style="color:#0047AB;">Conservatives</span>.
 view-if: pnf_in_power and pnf_leader = "Grandi" and (grandi_foreign_seen or (us_debts_over and uk_debts_over)) and time >= dannunzio_time
 max-visits: 1
 tags: event
@@ -121,23 +121,23 @@ Q.grandi_coalition = Number(Q.pnf_seating_disp);
 !}
 go-to: coalition_menu
 
-Currently, the PNF is in power only via an Emergency Government as authorised by King Vittorio Emanuele III following the ousting of Gabriele D'Annunzio. However, the King has recently announced his intention to revoke his decree, forcing the PNF to begin forming coalitions once more.
+Currently, the <span style="font-weight: bold; color:#3D3D3D;">PNF</span> is in power only via an Emergency Government as authorised by King Vittorio Emanuele III following the ousting of Gabriele D'Annunzio. However, the King has recently announced his intention to revoke his decree, forcing the <span style="font-weight: bold; color:#3D3D3D;">PNF</span> to begin forming coalitions once more.
 
-Though D'Annunzio's economic policies had alienated the conservative right, Grandi's pivot back towards the right has warmed the party back up with the Conservatives, and though some skeptical, it is likely at least some of the parties are willing to coalition with the PNF. It is unclear whether it will be enough to form a majority government once more, but being unable to do so will significantly harm Grandi's influence and control as Prime Minister.
+Though D'Annunzio's economic policies had alienated the conservative right, Grandi's pivot back towards the right has warmed the party back up with the <span style="color:#0047AB;">Conservatives</span>, and though some skeptical, it is likely at least some of the parties are willing to coalition with the <span style="font-weight: bold; color:#3D3D3D;">PNF</span>. It is unclear whether it will be enough to form a majority government once more, but being unable to do so will significantly harm Grandi's influence and control as Prime Minister.
 
 @coalition_menu
 
-- @grandi_ul: The [+ ul_full_name +] enters the National Coalition.
-- @grandi_ppi: The Italian People's Party enters the National Coalition.
-- @grandi_ldr: The [+ ldr_full_name +] enters the National Coalition.
-- @grandi_pcs: The Christian Social Party enters the National Coalition.
-- @grandi_ds: The [+ ds_full_name +] enters the National Coalition.
+- @grandi_ul: The <span style="font-weight: bold; color:#0047AB;">[+ ul_full_name +]</span> enters the National Coalition.
+- @grandi_ppi: The <span style="font-weight: bold; color:#87CEFA;">Italian People's Party</span> enters the National Coalition.
+- @grandi_ldr: The <span style="font-weight: bold; color:#FFD700;">[+ ldr_full_name +]</span> enters the National Coalition.
+- @grandi_pcs: The <span style="font-weight: bold; color:#656573;">Christian Social Party</span> enters the National Coalition.
+- @grandi_ds: The <span style="font-weight: bold; color:#1E99C5;">[+ ds_full_name +]</span> enters the National Coalition.
 - @grandi_no: The National Coalition is unable to secure a majority in the Chamber of Deputies.
 - @grandi_yes: The National Coalition is able to form a stable government, with Dino Grandi as Prime Minister.
 
 @grandi_ul
 choose-if: ul_sway >= 0
-unavailable-subtitle: The [+ ul_full_name +] are unwilling to join the National Coalition.
+unavailable-subtitle: The <span style="font-weight: bold; color:#0047AB;">[+ ul_full_name +]</span> are unwilling to join the National Coalition.
 on-arrival: {!
 Q.grandi_coalition += Number(Q.ul_seating_disp);
 Q.ul_seen = 1;
@@ -146,11 +146,11 @@ Q.ul_in_government = 1;
 max-visits: 1
 go-to: coalition_menu
 
-With [+ ul_leader +] leading the [+ ul_full_name +], Grandi is able to negotiate the [+ ul_name +]'s entry into the National Coalition.
+With [+ ul_leader +] leading the <span style="font-weight: bold; color:#0047AB;">[+ ul_full_name +]</span>, Grandi is able to negotiate the <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span>'s entry into the National Coalition.
 
 @grandi_ppi
 choose-if: ppi_sway >= 0
-unavailable-subtitle: The Italian People's Party are unwilling to join the National Coalition.
+unavailable-subtitle: The <span style="font-weight: bold; color:#87CEFA;">Italian People's Party</span> are unwilling to join the National Coalition.
 
 on-arrival: {!
 Q.grandi_coalition += Number(Q.ppi_seating_disp);
@@ -160,11 +160,11 @@ Q.ppi_in_government = 1;
 max-visits: 1
 go-to: coalition_menu
 
-With reassurances to respect religious freedoms within Italy, the Italian People's Party enters the National Coalition.
+With reassurances to respect religious freedoms within Italy, the <span style="font-weight: bold; color:#87CEFA;">Italian People's Party</span>  enters the National Coalition.
 
 @grandi_ldr
 choose-if: ldr_sway >= 0
-unavailable-subtitle: The [+ ldr_full_name +] are unwilling to join the National Coalition.
+unavailable-subtitle: The <span style="font-weight: bold; color:#FFD700;">[+ ldr_full_name +]</span> are unwilling to join the National Coalition.
 on-arrival: {!
 Q.grandi_coalition += Number(Q.ldr_seating_disp);
 Q.ldr_seen = 1;
@@ -173,7 +173,7 @@ Q.ldr_in_government = 1;
 max-visits: 1
 go-to: coalition_menu
 
-The [+ ldr_full_name +] enters the National Coalition, influenced by the leadership of [+ ldr_leader +] with promises to restore the Italian economy.
+The <span style="font-weight: bold; color:#FFD700;">[+ ldr_full_name +]</span> enters the National Coalition, influenced by the leadership of [+ ldr_leader +] with promises to restore the Italian economy.
 
 @grandi_pcs
 choose-if: pcs_sway >= 0
@@ -186,11 +186,11 @@ Q.pcs_in_government = 1;
 max-visits: 1
 go-to: coalition_menu
 
-The Christian Social Party, ideologically aligned with the PNF, joins the National Coalition to support them.
+The <span style="font-weight: bold; color:#656573;">Christian Social Party</span>, ideologically aligned with the <span style="font-weight: bold; color:#3D3D3D;">PNF</span>, joins the National Coalition to support them.
 
 @grandi_ds
 choose-if: ds_sway >= 0
-unavailable-subtitle: The [+ ds_full_name +] are unwilling to join the National Coalition.
+unavailable-subtitle: The <span style="font-weight: bold; color:#1E99C5;">[+ ds_full_name +]</span> are unwilling to join the National Coalition.
 on-arrival: {!
 Q.grandi_coalition += Number(Q.ds_seating_disp);
 Q.ds_seen = 1;
@@ -199,7 +199,7 @@ Q.ds_in_government = 1;
 max-visits: 1
 go-to: coalition_menu
 
-The [+ ds_full_name +] enter the National Coalition, influenced by [+ ds_leader +] who is seemingly ideologically aligned or opportunistically aligned with the PNF in an effort to side with the winning party.
+The <span style="font-weight: bold; color:#1E99C5;">[+ ds_full_name +]</span> enter the National Coalition, influenced by [+ ds_leader +] who is seemingly ideologically aligned or opportunistically aligned with the <span style="font-weight: bold; color:#3D3D3D;">PNF</span> in an effort to side with the winning party.
 
 @grandi_no
 choose-if: (ul_sway < 0 or ul_seen) and (ppi_sway < 0 or ppi_seen) and (ldr_sway < 0 or ldr_seen) and (pcs_sway < 0 or pcs_seen or not pcs_formed) and (ds_sway < 0 or ds_seen)
@@ -212,7 +212,7 @@ Q.pcs_in_government = 0;
 Q.ds_in_government = 0;
 !}
 
-The Fascists are, thankfully, unable to form a majority coalition with the other parties. Unfortunately, Grandi is able to convince the King to allow the Emergency Government to continue at the very least until new elections in which a new government majority can be formed.
+The <span style="color:#3D3D3D;">Fascists</span> are, thankfully, unable to form a majority coalition with the other parties. Unfortunately, Grandi is able to convince the King to allow the Emergency Government to continue at the very least until new elections in which a new government majority can be formed.
 
 @grandi_yes
 choose-if: (ul_sway < 0 or ul_seen) and (ppi_sway < 0 or ppi_seen) and (ldr_sway < 0 or ldr_seen) and (pcs_sway < 0 or pcs_seen or not pcs_formed) and (ds_sway < 0 or ds_seen)
@@ -250,4 +250,4 @@ if (Q.ds_in_government == 1) {
 
 !}
 
-Shockingly, the PNF is able to reconcile with the other conservative parties, allowing it to form a stable majority coalition and the revocation of the King's emergency government, granting Grandi's government significant legitimacy in the eyes of the people.
+Shockingly, the <span style="font-weight: bold; color:#3D3D3D;">PNF</span> is able to reconcile with the other <span style="color:#0047AB;">conservative</span> parties, allowing it to form a stable majority coalition and the revocation of the King's emergency government, granting Grandi's government significant legitimacy in the eyes of the people.

@@ -892,7 +892,7 @@ go-to: coalition_menu
 
 [? if pcs_formed and pnf_r < 5 : {!<tr><td>!} -Christian Social Party {!</td></tr>!} ?]
 
-[? if not pnf_in_bn and (pnf_r >= 5) and not pnf_banned: {!<tr><td><div class="box" style='background-color:#000000'> </div>!} [? if not pnf_in_power : Fascist List ?][? if pnf_in_power : National List ?]: {!</td><td>!} [+ pnf_r_disp +]% {!</td><td>!} [+ str_change_pnf +]% {!</td><td>!} [+ pnf_seating +] {!</td><td>!} [+ pnf_seating_disp +]% {!</td></tr>!} ?]
+[? if not pnf_in_bn and (pnf_r >= 5) and not pnf_banned: {!<tr><td><div class="box" style='background-color:#3D3D3D'> </div>!} [? if not pnf_in_power : Fascist List ?][? if pnf_in_power : National List ?]: {!</td><td>!} [+ pnf_r_disp +]% {!</td><td>!} [+ str_change_pnf +]% {!</td><td>!} [+ pnf_seating +] {!</td><td>!} [+ pnf_seating_disp +]% {!</td></tr>!} ?]
 
 [? if not pnf_in_bn and (pnf_r >= 5) and not pnf_banned: {!<tr><td>!} -[+ pnf_full_name +] {!</td></tr>!} ?]
 
@@ -923,25 +923,25 @@ go-to: coalition_menu
 
 **Potential Coalitions:**
 
-Left-Wing Coalition ([+ psi_name +] + PSRI [? if pri_allies :+ PRI?] [? if psu_coalitioning :+ PSU?] [? if ds_allies :+ [+ ds_name +]?] [? if pll_formed :+ PLL?]): [+ left_wing_coalition_r +]%
+<span style="color:#ED2855">Left-Wing</span> Coalition (<span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> + <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> [? if pri_allies :+ <span style="font-weight: bold; color:#3CB371">PRI</span>?] [? if psu_coalitioning :+ <span style="font-weight: bold; color:#E35A5A">PSU</span>?] [? if ds_allies :+ <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span>?] [? if pll_formed :+ <span style="font-weight: bold; color:#FFD1D9;">PLL</span>?]): [+ left_wing_coalition_r +]%
 
-Centre-Left Coalition ([+ psi_name +] + PSRI + [+ ldr_name +] [? if pri_allies :+ PRI?] [? if ds_allies :+ [+ ds_name +]?] [? if ul_allies:+ [+ ul_name +]?] [? if pll_formed :+ PLL?]): [+ centre_left_coalition_r +]%
+<span style="color:#FFD700">Centre</span>-<span style="color:#ED2855">Left</span> Coalition (<span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> + <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> + <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span> [? if pri_allies :+ <span style="font-weight: bold; color:#3CB371">PRI</span>?] [? if ds_allies :+ <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span>?] [? if ul_allies:+ <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span>?] [? if pll_formed :+ <span style="font-weight: bold; color:#FFD1D9;">PLL</span>?]): [+ centre_left_coalition_r +]%
 
-Socialist-Catholic Coalition ([+ psi_name +] + PSRI + PPI [? if pri_allies :+ PRI?] [? if ds_allies :+ [+ ds_name +] ?] [? if pll_formed :+ PLL?]): [+ socialist_catholic_coalition_r +]%
+<span style="color:#ED2855">Socialist</span>-<span style="color:#87CEFA">Catholic</span> Coalition (<span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> + <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> + <span style="font-weight: bold; color:#87CEFA;">PPI</span> [? if pri_allies :+ <span style="font-weight: bold; color:#3CB371">PRI</span>?] [? if ds_allies :+ <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span> ?] [? if pll_formed :+ <span style="font-weight: bold; color:#FFD1D9;">PLL</span>?]): [+ socialist_catholic_coalition_r +]%
  
-Grand Coalition (PSRI + PPI + [+ ldr_name +] + [+ ul_name +] + [+ ds_name +] + Others [? if pll_formed :+ PLL?]): [+ grand_coalition_r +]%
+<span style="color:#87CEFA">Gr</span><span style="color:#FFD700">an</span><span style="color:#1E99C5">d</span> Coalition (<span style="font-weight: bold; color:#FFC0CB;">PSRI</span> + <span style="font-weight: bold; color:#87CEFA;">PPI</span> + <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span> + <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span> + Others [? if pll_formed :+ <span style="font-weight: bold; color:#FFD1D9;">PLL</span>?]): [+ grand_coalition_r +]%
 
-Centre-Right Coalition (PNF + [+ ul_name +] [? if ds_enemies:+ [+ ds_name +]?] [? if ldr_enemies:+ [+ ldr_name +]?] [? if pcs_formed :+ PCS ?]): [+ centre_right_coalition_r +]%
+<span style="color:#FFD700">Centre</span>-<span style="color:#0047AB">Right</span> Coalition (<span style="font-weight: bold; color:#3D3D3D;">PNF</span> + <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span> [? if ds_enemies:+ <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span>?] [? if ldr_enemies:+ <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span>?] [? if pcs_formed :+ <span style="font-weight: bold; color:#656573;">PCS</span> ?]): [+ centre_right_coalition_r +]%
 
-Anti-Socialist Coalition (PNF + [+ ul_name +] [? if ds_enemies:+ [+ ds_name +]?] [? if ldr_enemies:+ [+ ldr_name +]?]  [? if pcs_formed :+ PCS ?]): [+ anti_socialist_coalition_r +]%
+<span style="color:#3D3D3D">Anti-Socialist</span> Coalition (<span style="font-weight: bold; color:#3D3D3D;">PNF</span> + <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span> [? if ds_enemies:+ <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span>?] [? if ldr_enemies:+ <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span>?]  [? if pcs_formed :+ <span style="font-weight: bold; color:#656573;">PCS</span> ?]): [+ anti_socialist_coalition_r +]%
 
-[? if fasci_urgency <= 2 and pnf_seating_disp >= 15 : The rapid rise in [+ pnf_name +] votes is extremely worrying. Many had believed that the party was moribund; now, some of us consider it to be the greatest obstacle to socialism in Italy. ?]
+[? if fasci_urgency <= 2 and pnf_seating_disp >= 15 : The rapid rise in <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_name +]</span> votes is extremely worrying. Many had believed that the party was moribund; now, some of us consider it to be the greatest obstacle to <span style="color:#ED2855">socialism</span> in Italy. ?]
 
-[? if abstentionist_psi : In accordance with the XVI Congress, all [+ psi_name +] deputies will refuse to take up their seats. ?]
+[? if abstentionist_psi : In accordance with the XVI Congress, all <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> deputies will refuse to take up their seats. ?]
 
 [? if vacant_seating_disp >= 35 : Our strong showing even without taking up seats has reinviograted the party towards revolutionary means. ?]
 
-[? if prime_minister_party == pnf_name : Numerous deputies of the PPI, [+ ul_name +], [+ ds_name +] and [+ ldr_name +] have defected to the PNF. ?]
+[? if prime_minister_party == pnf_name : Numerous deputies of the <span style="font-weight: bold; color:#87CEFA;">PPI</span>, <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span>, <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span> and <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span> have defected to the <span style="font-weight: bold; color:#3D3D3D;">PNF</span>. ?]
 
 There are some potential coalition arrangements.
 
@@ -981,33 +981,33 @@ Q.catholic_women_accepted = 0;
 - @anti_socialist_coalition
 
 @pnf_majority
-title: PNF majority alone
-subtitle: PNF: [+ pnf_seating_disp +]%
+title: <span style="font-weight: bold; color:#3D3D3D;">PNF</span> majority alone
+subtitle: <span style="font-weight: bold; color:#3D3D3D;">PNF</span>: [+ pnf_seating_disp +]%
 view-if: pnf_seating_disp >= 50 and prime_minister != "D'Annunzio"
 on-arrival: {!
 Q.prime_minister_party = "PNF";
 Q.prime_minister = Q.pnf_leader;
 !}
 
-Our worst fears have come true. The PNF have managed to gain a majority in the elections, and secure a two-thirds majority in the Chamber of Deputies.
+Our worst fears have come true. The <span style="font-weight: bold; color:#3D3D3D;">PNF</span> have managed to gain a majority in the elections, and secure a two-thirds majority in the Chamber of Deputies.
 
 What now?
 
-- @civil_war: We cannot wait any longer. Mobilise the Red Guards!
+- @civil_war: We cannot wait any longer. Mobilise the <span style="color:#c2352b">Red Guards</span>!
 - @nothing: Bide our time further.
 
 @nothing
 subtitle: This will end the game.
 
-[+ pnf_leader +] acts fast, as the Red Guards are harassed and attacked by both government and right-wing paramilitaries. In the Chamber of Deputies, the assassination of Giacomo Matteotti by government forces sparks momentary outrage while [+ pnf_leader +] seizes the opportunity and quickly consolidates Italy into one-party dictatorship.
+[+ pnf_leader +] acts fast, as the <span style="color:#c2352b">Red Guards</span> are harassed and attacked by both government and right-wing paramilitaries. In the Chamber of Deputies, the assassination of Giacomo Matteotti by government forces sparks momentary outrage while [+ pnf_leader +] seizes the opportunity and quickly consolidates <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span> into one-party dictatorship.
 
-Italy is lost.
+<span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span> is lost.
 
 - @game_over: Game over.
 
 @psi_majority
-title: [+ psi_name +] majority alone
-subtitle: [+ psi_name +]: [+ psi_seating_disp +]%
+title: <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> majority alone
+subtitle: <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>: [+ psi_seating_disp +]%
 view-if: psi_seating_disp >= 50
 on-arrival: {!
 
@@ -1057,16 +1057,16 @@ Q.public_works_minister = "Vella";
 !}
 achievement: governo_monocolore
 
-Finally, the [+ psi_name +] can govern alone! Our long campaign of electioneering has paid off. We do not need to worry about coalition government; anything is possible. 
+Finally, the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> can govern alone! Our long campaign of electioneering has paid off. We do not need to worry about coalition government; anything is possible. 
 
 [+ prime_minister +] is elected within the party to become Prime Minister.
 
 @left_wing_coalition
-title: Can we form a Left-Wing Coalition?
-subtitle: [+ psi_name +] [? if psri_relation >= psri_min_relations :+ PSRI ?] [? if pri_allies :+ PRI?] [? if psu_coalitioning :+ PSU?] [? if ds_allies :+ [+ ds_name +]?] [? if pll_formed :+ PLL?]: ([+ left_wing_coalition_r +]%) [? if left_wing_coalition_r < 50: Dissident Republicans, Socialists [? if pri_prominent = 0:& the Italian Republican Party?] are willing to provide toleration to the coalition. ?]
+title: Can we form a <span style="color:#ED2855">Left-Wing</span> Coalition?
+subtitle: <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> [? if psri_relation >= psri_min_relations :+ <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> ?] [? if pri_allies :+ <span style="font-weight: bold; color:#3CB371">PRI</span>?] [? if psu_coalitioning :+ <span style="font-weight: bold; color:#E35A5A">PSU</span>?] [? if ds_allies :+ <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span>?] [? if pll_formed :+ <span style="font-weight: bold; color:#FFD1D9;">PLL</span>?]: ([+ left_wing_coalition_r +]%) [? if left_wing_coalition_r < 50: Dissident <span style="color:#3CB371">Republicans</span>, <span style="color:#ED2855">Socialists</span> [? if pri_prominent = 0:& the <span style="font-weight: bold; color:#3CB371">Italian Republican Party</span>?] are willing to provide toleration to the coalition. ?]
 view-if: left_wing_coalition_r >= left_wing_minimum
 choose-if: (participating = 1 or maximalist_participating = 1) and psri_relation >= psri_min_relations and left_wing_coalition_failed = 0
-unavailable-subtitle: [+ psi_name +] + PSRI [? if pri_allies :+ PRI?] [? if psu_coalitioning :+ PSU?] [? if ds_allies :+ [+ ds_name +]?] [? if pll_formed :+ PLL?]: ([+ left_wing_coalition_r +]%). [? if not_participating = 1: The party has already decided against parliamentary means. ?][? if psri_relation < psri_min_relations : Our relations with the PSRI are too poor. ?][? if left_wing_coalition_failed : Our coalition partners refuse to form another government so soon after the previous one failed. ?]
+unavailable-subtitle: [? if not_participating = 1: The party has already decided against parliamentary means. ?][? if psri_relation < psri_min_relations : Our relations with the <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> are too poor. ?][? if left_wing_coalition_failed : Our coalition partners refuse to form another government so soon after the previous one failed. ?]
 on-arrival: {!
 Q.leverage = Q.leverage * 1.5;
 Q.psi_in_government = 1;
@@ -1120,9 +1120,9 @@ Who should we select to be Prime Minister?
 - @bonomi
 
 @centre_left_coalition
-title: Open negotiations with the Liberal parties.
-subtitle: [+ psi_name +] + PSRI + [+ ldr_name +] [? if pri_allies :+ PRI?] [? if ds_allies :+ [+ ds_name +]?] [? if ul_allies:+ [+ ul_name +]?] [? if pll_formed :+ PLL?]: ([+ centre_left_coalition_r +]%). [? if (((centre_left_coalition_r + ul_seating_disp) >= 50) and (centre_left_coalition_r <= 50)) and not ul_allies : We will have to negotiate with the [+ ul_name +] to secure a majority coalition. ?]
-unavailable-subtitle: [+ psi_name +] + PSRI + [+ ldr_name +] [? if pri_allies :+ PRI?] [? if ds_allies :+ [+ ds_name +]?] [? if ul_allies:+ [+ ul_name +]?] [? if pll_formed :+ PLL?]: ([+ centre_left_coalition_r +]%). [? if not_participating = 1 : The party has already decided against parliamentary means. ?][? if maximalist_participating = 1 : The party has decided against coalitions with any bourgeois parties. ?][? if ldr_relation < ldr_min_relations : We do not have adequate relations with the [+ ldr_name +]. ?][? if ldr_negotiations_failed : The liberals are unwilling to enter into talks again. ?][? if southern_land_reformed = 1 : The [+ ldr_name +] has vowed against coalitions with us since our southern land reforms. ?][? if centre_left_coalition_failed : Our coalition partners refuse to form another government so soon after the previous one failed. ?]
+title: Open negotiations with the <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">ral</span> parties.
+subtitle: <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> + <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> + <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span> [? if pri_allies :+ <span style="font-weight: bold; color:#3CB371">PRI</span>?] [? if ds_allies :+ <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span>?] [? if ul_allies:+ <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span>?] [? if pll_formed :+ <span style="font-weight: bold; color:#FFD1D9;">PLL</span>?]: ([+ centre_left_coalition_r +]%). [? if (((centre_left_coalition_r + ul_seating_disp) >= 50) and (centre_left_coalition_r <= 50)) and not ul_allies : We will have to negotiate with the <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span> to secure a majority coalition. ?]
+unavailable-subtitle: [? if not_participating = 1 : The party has already decided against parliamentary means. ?][? if maximalist_participating = 1 : The party has decided against coalitions with any <span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> parties. ?][? if ldr_relation < ldr_min_relations : We do not have adequate relations with the <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span>. ?][? if ldr_negotiations_failed : The <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">rals</span> are unwilling to enter into talks again. ?][? if southern_land_reformed = 1 : The <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span> has vowed against coalitions with us since our southern land reforms. ?][? if centre_left_coalition_failed : Our coalition partners refuse to form another government so soon after the previous one failed. ?]
 view-if: centre_left_coalition_r >= 50
 choose-if: participating = 1 and ldr_relation >= ldr_min_relations and ldr_negotiations_failed = 0 and southern_land_reformed = 0 and centre_left_coalition_failed = 0
 on-arrival: {!
@@ -1182,9 +1182,9 @@ on-departure: liberal_negotiations = 0;
 go-to: liberal_demands
 
 @socialist_catholic_coalition 
-title: Open negotiations with the People's Party.
-subtitle: [+ psi_name +] + PSRI + PPI [? if pri_allies :+ PRI?] [? if ds_allies :+ [+ ds_name +] ?] [? if pll_formed :+ PLL?]: ([+ socialist_catholic_coalition_r +]%).
-unavailable-subtitle: [+ psi_name +] + PSRI + PPI [? if pri_allies :+ PRI?] [? if ds_allies :+ [+ ds_name +] ?] [? if pll_formed :+ PLL?]: ([+ socialist_catholic_coalition_r +]%). [? if not_participating = 1 : The party has already decided against parliamentary means. ?][? if maximalist_participating = 1 : The party has decided against coalitions with any bourgeois parties. ?][? if ppi_relation < ppi_min_relations : We do not have adequate relations with the PPI. ?][? if ppi_negotiations_failed = 1 : We have already tried negotiating with the Catholics. ?][? if catholic_coalition_failed : The Catholics are unwilling to accept another coalition right after the previous one failed. ?][? if secularised_education = 1 : The PPI has vowed against coalitions with us since our education reforms. ?][? if papal_relation < 5 : Our relations with the Holy See are too poor. ?][? if socialist_catholic_coalition_failed : Our coalition partners refuse to form another government so soon after the previous one failed. ?]
+title: Open negotiations with the <span style="font-weight: bold; color:#87CEFA;">People's Party</span>.
+subtitle: <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> + <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> + <span style="font-weight: bold; color:#87CEFA;">PPI</span> [? if pri_allies :+ <span style="font-weight: bold; color:#3CB371">PRI</span>?] [? if ds_allies :+ <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span> ?] [? if pll_formed :+ <span style="font-weight: bold; color:#FFD1D9;">PLL</span>?]: ([+ socialist_catholic_coalition_r +]%).
+unavailable-subtitle: [? if not_participating = 1 : The party has already decided against parliamentary means. ?][? if maximalist_participating = 1 : The party has decided against coalitions with any <span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> parties. ?][? if ppi_relation < ppi_min_relations : We do not have adequate relations with the <span style="font-weight: bold; color:#87CEFA;">PPI</span>. ?][? if ppi_negotiations_failed = 1 : We have already tried negotiating with the <span style="font-weight: bold; color:#87CEFA;">Catholics</span>. ?][? if catholic_coalition_failed : The <span style="font-weight: bold; color:#87CEFA;">Catholics</span> are unwilling to accept another coalition right after the previous one failed. ?][? if secularised_education = 1 : The <span style="font-weight: bold; color:#87CEFA;">PPI</span> has vowed against coalitions with us since our education reforms. ?][? if papal_relation < 5 : Our relations with the <span style="font-weight: bold; color:#A88D37;">Holy See</span> are too poor. ?][? if socialist_catholic_coalition_failed : Our coalition partners refuse to form another government so soon after the previous one failed. ?]
 view-if: socialist_catholic_coalition_r >= 50 and catholic_coalition_failed = 0
 choose-if: participating = 1 and ppi_relation >= ppi_min_relations and ppi_negotiations_failed = 0 and secularised_education = 0 and socialist_catholic_coalition_failed = 0
 on-arrival: {!
@@ -1235,9 +1235,9 @@ on-departure: catholic_negotiations = 0
 go-to: catholic_demands
 
 @grand_coalition
-title: [? if (socialist_catholic_coalition_r >= 50) or (centre_left_coalition_r >= 50) : Refuse to form a government, and let the other parties assume responsibility. ?][? if (socialist_catholic_coalition_r < 50) and (centre_left_coalition_r < 50) : We are unable to form a government. The task is handed over to the Liberals. ?]
+title: [? if (socialist_catholic_coalition_r >= 50) or (centre_left_coalition_r >= 50) : Refuse to form a government, and let the other parties assume responsibility. ?][? if (socialist_catholic_coalition_r < 50) and (centre_left_coalition_r < 50) : We are unable to form a government. The task is handed over to the <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">rals</span>. ?]
 view-if: centre_right_coalition_r < 50 and anti_socialist_coalition_r < 50
-subtitle: PSRI + PPI + [+ ldr_name +] + [+ ul_name +] + [+ ds_name +] + Others [? if pll_formed :+ PLL?]: ([+ grand_coalition_r +]%). 
+subtitle: <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> + <span style="font-weight: bold; color:#87CEFA;">PPI</span> + <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span> + <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span> + <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span> + Others [? if pll_formed :+ <span style="font-weight: bold; color:#FFD1D9;">PLL</span>?]: ([+ grand_coalition_r +]%). 
 go-to: grand_coalition_yes if (socialist_catholic_coalition_r < 50) or (centre_left_coalition_r < 50 and ul_allies) or ((centre_left_coalition_r + ul_seating_disp < 50) and (not ul_allies)) or not_participating = 1
 
 Are we sure we wish to give up our opportunity to form the government?
@@ -1246,8 +1246,8 @@ Are we sure we wish to give up our opportunity to form the government?
 - @coalition_menu: Actually, we wish to form a coalition after all.
 
 @centre_right_coalition
-title: Centre-Right Coalition
-subtitle: PNF + [+ ul_name +] [? if ds_enemies:+ [+ ds_name +]?] [? if ldr_enemies:+ [+ ldr_name +]?] [? if pcs_formed :+ PCS ?]: ([+ centre_right_coalition_r +]%)..
+title: <span style="color:#FFD700">Centre</span>-<span style="color:#0047AB">Right</span> Coalition
+subtitle: <span style="font-weight: bold; color:#3D3D3D;">PNF</span> + <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span> [? if ds_enemies:+ <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span>?] [? if ldr_enemies:+ <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span>?] [? if pcs_formed :+ <span style="font-weight: bold; color:#656573;">PCS</span> ?]: ([+ centre_right_coalition_r +]%)..
 on-arrival: {!
 Q.centre_right_coalition = 1;
 Q.pnf_in_government = 1;
@@ -1294,8 +1294,8 @@ Q.public_works_minister_party = "PNF";
 view-if: centre_right_coalition_r >= 50 and ul_seating_disp + ldr_seating_disp >= pnf_seating_disp 
 
 @anti_socialist_coalition
-title: Anti-Socialist Coalition
-subtitle: PNF + [+ ul_name +] [? if ds_enemies:+ [+ ds_name +]?] [? if ldr_enemies:+ [+ ldr_name +]?]  [? if pcs_formed :+ PCS ?]: ([+ anti_socialist_coalition_r +]%).
+title: <span style="color:#3D3D3D">Anti-Socialist</span> Coalition
+subtitle: <span style="font-weight: bold; color:#3D3D3D;">PNF</span> + <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span> [? if ds_enemies:+ <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span>?] [? if ldr_enemies:+ <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span>?]  [? if pcs_formed :+ <span style="font-weight: bold; color:#656573;">PCS</span> ?]: ([+ anti_socialist_coalition_r +]%).
 on-arrival: {!
 Q.anti_socialist_coalition = 1;
 Q.pnf_in_government = 1;
@@ -1348,25 +1348,25 @@ Q.public_works_minister_party = "PNF";
 view-if: anti_socialist_coalition_r >= 50 and pnf_seating_disp > ul_seating_disp + ldr_seating_disp and (prime_minister_party != "PNF" or prime_minister = "D'Annunzio")
 go-to: dannunzio_power if prime_minister = "D'Annunzio"
 
-It seems our radicalism and abstentionism has pushed the Liberals to ally with the National Fascist Party, as a junior partner to their list. [+ pnf_leader +] has made himself crucial to this coalition, and been able to come out on top in the inter-party struggle, being appointed Prime Minister by the King.
+It seems our radicalism and abstentionism has pushed the <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">rals</span> to ally with the <span style="font-weight: bold; color:#3D3D3D;">PNF</span>, as a junior partner to their list. [+ pnf_leader +] has made himself crucial to this coalition, and been able to come out on top in the inter-party struggle, being appointed Prime Minister by the King.
 
 - @pnf_prime_minister: What now?
 
 @dannunzio_power
 
-The National Fascist Party, under the leadership of Gabriele D'Annunzio, is able to form a coalition, keeping himself as Prime Minister in a majority coalition.
+The <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_full_name +]</span>, under the leadership of Gabriele D'Annunzio, is able to form a coalition, keeping himself as Prime Minister in a majority coalition.
 
 What now?
 
-- @civil_war: We cannot wait any longer. Mobilise the Red Guards!
+- @civil_war: We cannot wait any longer. Mobilise the <span style="color:#c2352b">Red Guards</span>!
 - @nothing_dannunzio: Bide our time further.
 
 @nothing_dannunzio
 subtitle: This will end the game.
 
-[+ pnf_leader +] acts fast, consolidating Italy into a corporative state and empowering the PNF and D'Annunzio into effective dictators of Italy for the foresseable future.
+[+ pnf_leader +] acts fast, consolidating <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span> into a corporative state and empowering the <span style="font-weight: bold; color:#3D3D3D;">PNF</span> and D'Annunzio into effective dictators of Italy for the foresseable future.
 
-Italy is lost.
+<span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span> is lost.
 
 - @game_over: Game over.
 
@@ -1404,13 +1404,13 @@ Q.agriculture_minister_party = "LDR";
 Q.labour_minister_party = "UL";
 !}
 
-Though tense negotiations between the Liberals and newly formed Catholic parties, the coalition of the PPI, [+ ldr_name +], [+ ul_name +] and [+ ds_name +] is established.
+Though tense negotiations between the <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">rals</span> and newly formed <span style="font-weight: bold; color:#87CEFA;">Catholic</span> parties, the coalition of the <span style="font-weight: bold; color:#87CEFA;">PPI</span>, <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span>, <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span> and <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span> is established.
 
 @turati
 title: Filippo Turati for Prime Minister
-subtitle: Turati leads the reformist wing, and is an acceptable candidate for Prime Minister.
+subtitle: Turati leads the <span style="color:#FF6961">reformist</span> wing, and is an acceptable candidate for Prime Minister.
 choose-if: reformists_defect = 0
-unavailable-subtitle: Turati is no longer a member of the [+ psi_name +].
+unavailable-subtitle: Turati is no longer a member of the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>.
 on-arrival: psi_in_government = 1; prime_minister = "Turati"; prime_minister_party = psi_name;
 go-to: ministries
 
@@ -1419,47 +1419,47 @@ Filippo Turati's appointment as Prime Minister is approved by all our potential 
 @bissolati
 title: Leonida Bissolati for Prime Minister
 view-if: not bissolati_dead
-subtitle: Bissolati is a prominent leader of the PSRI, formerly affiliated with the [+ psi_name +].
+subtitle: Bissolati is a prominent leader of the <span style="font-weight: bold; color:#FFC0CB;">PSRI</span>, formerly affiliated with the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>.
 on-arrival: psi_in_government = 1; prime_minister = "Bissolati"; prime_minister_party = "PSRI"; leverage += 5; maximalist_dissent += 2; communist_dissent += 5;
 go-to: ministries
 
-This is highly unexpected, but Bissolati's PSRI roots, as well as his committment to socialism, leaves little grumbling from our party.
+This is highly unexpected, but Bissolati's <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> roots, as well as his committment to <span style="color:#ED2855">socialism</span>, leaves little grumbling from our party.
 
 @bonomi
 title: Ivanoe Bonomi for Prime Minister
 view-if: bissolati_dead
-subtitle: Bonomi is a prominent leader of the PSRI, formerly affiliated with the [+ psi_name +].
+subtitle: Bonomi is a prominent leader of the <span style="font-weight: bold; color:#FFC0CB;">PSRI</span>, formerly affiliated with the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>.
 on-arrival: psi_in_government = 1; prime_minister = "Bonomi"; prime_minister_party = "PSRI"; leverage += 5; maximalist_dissent += 4; communist_dissent += 7;
 go-to: ministries
 
-This is highly unexpected, but Bonomi's PSRI roots leaves merely some grumbling from our party.
+This is highly unexpected, but Bonomi's <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> roots leaves merely some grumbling from our party.
 
 @orlando
-title: Let the [+ ldr_name +] have their Prime Minister. This will improve our leverage.
+title: Let the <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span> have their Prime Minister. This will improve our leverage.
 subtitle: Vittorio Emanuele Orlando will be reappointed Prime Minister. This is unexpected and will cause internal dissent, but may give us a better position in negotiating for other cabinet positions.
 on-arrival: reformist_dissent += 5; maximalist_dissent += 5; communist_dissent += 10; ldr_relation += 10; ds_relation += 5; prime_minister = "Orlando"; prime_minister_party = ldr_name; psi_in_government = 1; leverage += 10
 go-to: ministries
 
 @giolitti
-title: Let the [+ ul_name +] have their Prime Minister. This will improve our leverage.
+title: Let the <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span> have their Prime Minister. This will improve our leverage.
 subtitle: Giovanni Giolitti will be reappointed Prime Minister. Allowing Giolitti to become Prime Minister is unexpected, and controversial within the party.
 on-arrival: reformist_dissent += 7; maximalist_dissent += 9; communist_dissent += 12; ldr_relation += 5; ul_relation += 10; prime_minister = "Giolitti"; prime_minister_party = ul_name; psi_in_government = 1; leverage += 10
 go-to: ministries
 
-This is highly unexpected, and many in the centre and even the reformists of our party are criticizing this decision.
+This is highly unexpected, and many in the <span style="color:#DC143C">centre</span> and even the <span style="color:#FF6961">reformists</span> of our party are criticizing this decision.
 
 @gasperi
-title: Let the People's Party have their Prime Minister. This will improve over leverage.
+title: Let the <span style="font-weight: bold; color:#87CEFA;">People's Party</span> have their Prime Minister. This will improve over leverage.
 subtitle: Alcide De Gasperi will be appointed Prime Minister. This is unexpected and will cause internal dissent, but may give us a better position in negotiating for other cabinet positions.
 on-arrival: reformist_dissent += 5; maximalist_dissent += 5; communist_dissent += 10; ppi_relation += 10; prime_minister = "De Gasperi"; prime_minister_party = "PPI"; psi_in_government = 1; leverage += 5
 go-to: ministries
 
-This is highly unexpected, and many in the centre and even the reformists of our party are criticizing this decision.
+This is highly unexpected, and many in the <span style="color:#DC143C">centre</span> and even the <span style="color:#FF6961">reformists</span> of our party are criticizing this decision.
 
 @liberal_demands
 go-to: l_demands_menu
 
-Having met with representatives from the [+ ldr_name +], they have put forward a series of demands we are to either complete or policies we cannot change while in power.
+Having met with representatives from the <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span>, they have put forward a series of demands we are to either complete or policies we cannot change while in power.
 While it seems do have a bit of wiggle room to negotiate, we certainly cannot outright refuse them. What do we do?
 
 **We will have one year to complete the crackdown of violence if given to us.**
@@ -1485,7 +1485,7 @@ view-if: liberal_reform_accepted = 0
 on-arrival: liberal_reform_accepted = 1; liberal_negotiations += 20;
 go-to: l_demands_menu
 
-This is a major point of conjecture for the Liberals, and secures us significant progress in negotiations.
+This is a major point of conjecture for the <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">rals</span>, and secures us significant progress in negotiations.
 
 @liberal_crackdown
 title: Begin a crack down of violence in the streets, including the Red Guards.
@@ -1495,7 +1495,7 @@ view-if: liberal_crackdown_accepted = 0
 on-arrival: liberal_crackdown_accepted = 1; liberal_negotiations += 20; liberal_crackdown_timer = 12;
 go-to: l_demands_menu
 
-This is a major point of conjecture for the Liberals, and secures us significant progress in negotiations.
+This is a major point of conjecture for the <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">rals</span>, and secures us significant progress in negotiations.
 
 @liberal_nationalisation
 title: Reject any form of nationalisation to the Italian economy.
@@ -1505,7 +1505,7 @@ view-if: liberal_nationalisation_accepted = 0
 on-arrival: liberal_nationalisation_accepted = 1; liberal_negotiations += 20;
 go-to: l_demands_menu
 
-This is a major point of conjecture for the Liberals, and secures us significant progress in negotiations.
+This is a major point of conjecture for the <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">rals</span>, and secures us significant progress in negotiations.
 
 @liberal_budget
 title: Maintain a budget surplus.
@@ -1515,27 +1515,27 @@ view-if: liberal_budget_accepted = 0
 on-arrival: liberal_budget_accepted = 1; liberal_negotiations += 10;
 go-to: l_demands_menu
 
-This is a minor point of conjecture for the Liberals, and secures us some progress in negotiations.
+This is a minor point of conjecture for the <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">rals</span>, and secures us some progress in negotiations.
 
 @liberal_foreign
-title: Maintain our current alignment with the Entente.
+title: Maintain our current alignment with the <span style="font-weight: bold; color:#C8102E">Ent</span><span style="font-weight: bold; color:#000091">ente</span>.
 subtitle: This will hamper our actions if we are to control the Foreign Ministry.
 tags: libdem_minor
 view-if: liberal_foreign_accepted = 0
 on-arrival: liberal_foreign_accepted = 1; liberal_negotiations += 10;
 go-to: l_demands_menu
 
-This is a minor point of conjecture for the Liberals, and secures us some progress in negotiations.
+This is a minor point of conjecture for the <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">rals</span>, and secures us some progress in negotiations.
 
 @liberal_aid
-title: Reject any form of aid to the Soviet Union.
-subtitle: This will limit our ability to improve relations with the Soviet Union.
+title: Reject any form of aid to the <span style="font-weight: bold; color:#CC0000">Soviet Union</span>.
+subtitle: This will limit our ability to improve relations with the <span style="font-weight: bold; color:#CC0000">Soviet Union</span>.
 tags: libdem_minor
 view-if: liberal_aid_accepted = 0
 on-arrival: liberal_aid_accepted = 1; liberal_negotiations += 10;
 go-to: l_demands_menu
 
-This is a minor point of conjecture for the Liberals, and secures us some progress in negotiations.
+This is a minor point of conjecture for the <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">rals</span>, and secures us some progress in negotiations.
 
 @drop_liberal_reform
 title: Drop our promise to reject land reform.
@@ -1566,14 +1566,14 @@ on-arrival: liberal_budget_accepted = 0; liberal_negotiations -= 10;
 go-to: liberal_demands
 
 @drop_liberal_foreign
-title: Drop our promise to keep alignment with the Entente.
+title: Drop our promise to keep alignment with the <span style="font-weight: bold; color:#C8102E">Ent</span><span style="font-weight: bold; color:#000091">ente</span>.
 tags: drop_libdem_minor
 view-if: liberal_foreign_accepted = 1
 on-arrival: liberal_foreign_accepted = 0; liberal_negotiations -= 10;
 go-to: l_demands_menu
 
 @drop_liberal_aid
-title: Drop our promise to reject aid to the Soviet Union.
+title: Drop our promise to reject aid to the <span style="font-weight: bold; color:#CC0000">Soviet Union</span>.
 tags: drop_libdem_minor
 view-if: liberal_aid_accepted = 1
 on-arrival: liberal_aid_accepted = 0; liberal_negotiations -= 10;
@@ -1581,7 +1581,7 @@ go-to: l_demands_menu
 
 @refuse_libdem
 title: It seems we cannot come to an agreement.
-subtitle: Maybe one with the Catholics might work?
+subtitle: Maybe one with the <span style="font-weight: bold; color:#87CEFA;">Catholics</span> might work?
 on-departure: ldr_negotiations_failed = 1
 go-to: coalition_menu 
 
@@ -1589,7 +1589,7 @@ go-to: coalition_menu
 title: It seems we have come to an agreement.
 subtitle: This is an unstable coalition, to say the least.
 choose-if: liberal_negotiations >= ldr_negotiations_min
-unavailable-subtitle: The Liberals are not satisfied with the current arrangement.
+unavailable-subtitle: The <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">rals</span> are not satisfied with the current arrangement.
 on-departure: catholic_coalition_failed = 0; 
 
 With the coalition agreed upon, it is time to choose a Prime Minister.
@@ -1603,7 +1603,7 @@ With the coalition agreed upon, it is time to choose a Prime Minister.
 @catholic_demands
 go-to: c_demands_menu
 
-Having met with representatives from the PPI, they have put forward a series of demands we are to either complete or policies we cannot change while in power.
+Having met with representatives from the <span style="font-weight: bold; color:#87CEFA;">PPI</span>, they have put forward a series of demands we are to either complete or policies we cannot change while in power.
 While it seems do have a bit of wiggle room to negotiate, we certainly cannot outright refuse them. What do we do?
 
 **We will have one year to complete the Roman Question if demanded to us.**
@@ -1622,24 +1622,24 @@ While some minor ones are Charity, Nationalisations and the Prime Minister.
 - #drop_catholic_minor
 
 @catholic_papacy
-title: Resolve the Roman Question with the Papacy.
-subtitle: This will benefit our Catholic bloc as well if we can form a compromise in time.
+title: Resolve the Roman Question with the <span style="font-weight: bold; color:#A88D37;">Papacy</span>.
+subtitle: This will benefit our <span style="font-weight: bold; color:#87CEFA;">Catholic</span> bloc as well if we can form a compromise in time.
 tags: catholic_major
 view-if: catholic_papacy_accepted = 0 and roman_question_answered = 0
 on-arrival: catholic_papacy_accepted = 1; catholic_negotiations += 20; catholic_papacy_timer = 12;
 go-to: c_demands_menu
 
-This is a major point of conjecture for the Catholics, and secures us significant progress in negotiations.
+This is a major point of conjecture for the <span style="font-weight: bold; color:#87CEFA;">Catholics</span>, and secures us significant progress in negotiations.
 
 @catholic_education
-title: Reject any changes to Catholic schools.
+title: Reject any changes to <span style="font-weight: bold; color:#87CEFA;">Catholic</span> schools.
 subtitle: This will limit our abilities to secularise education.
 tags: catholic_major
 view-if: catholic_education_accepted = 0
 on-arrival: catholic_education_accepted = 1; catholic_negotiations += 20;
 go-to: c_demands_menu
 
-This is a major point of conjecture for the Catholics, and secures us significant progress in negotiations.
+This is a major point of conjecture for the <span style="font-weight: bold; color:#87CEFA;">Catholics</span>, and secures us significant progress in negotiations.
 
 @catholic_women
 title: Reject any changes to the traditional family structure and women's rights.
@@ -1649,17 +1649,17 @@ view-if: catholic_women_accepted = 0
 on-arrival: catholic_women_accepted = 1; catholic_negotiations += 20;
 go-to: c_demands_menu
 
-This is a major point of conjecture for the Catholics, and secures us significant progress in negotiations.
+This is a major point of conjecture for the <span style="font-weight: bold; color:#87CEFA;">Catholics</span>, and secures us significant progress in negotiations.
 
 @catholic_charity
-title: Expand welfare only through Catholic-aligned welfare programs.
-subtitle: This will solely increase the support for the People's Party if we are to fund welfare.
+title: Expand welfare only through <span style="font-weight: bold; color:#87CEFA;">Catholic</span>-aligned welfare programs.
+subtitle: This will solely increase the support for the <span style="font-weight: bold; color:#87CEFA;">People's Party</span> if we are to fund welfare.
 tags: catholic_minor
 view-if: catholic_charity_accepted = 0
 on-arrival: catholic_charity_accepted = 1; catholic_negotiations += 10;
 go-to: c_demands_menu
 
-This is a minor point of conjecture for the Catholics, and secures us some progress in negotiations.
+This is a minor point of conjecture for the <span style="font-weight: bold; color:#87CEFA;">Catholics</span>, and secures us some progress in negotiations.
 
 @catholic_nationalisation
 title: Protect Church-owned lands from nationalisation or seizure.
@@ -1669,7 +1669,7 @@ view-if: catholic_nationalisation_accepted = 0
 on-arrival: catholic_nationalisation_accepted = 1; catholic_negotiations += 10;
 go-to: c_demands_menu
 
-This is a minor point of conjecture for the Catholics, and secures us some progress in negotiations.
+This is a minor point of conjecture for the <span style="font-weight: bold; color:#87CEFA;">Catholics</span>, and secures us some progress in negotiations.
 
 @catholic_pm
 title: Elect De Gasperi as Prime Minister.
@@ -1679,7 +1679,7 @@ view-if: catholic_pm_accepted = 0
 on-arrival: catholic_pm_accepted = 1; catholic_negotiations += 10;
 go-to: c_demands_menu
 
-This is a minor point of conjecture for the Catholics, and secures us some progress in negotiations.
+This is a minor point of conjecture for the <span style="font-weight: bold; color:#87CEFA;">Catholics</span>, and secures us some progress in negotiations.
 
 @drop_catholic_papacy
 title: Drop our promise to resolve the Roman Question.
@@ -1689,7 +1689,7 @@ on-arrival: catholic_papacy_accepted = 0; catholic_negotiations -= 20; catholic_
 go-to: c_demands_menu
 
 @drop_catholic_education
-title: Drop our promise to reject changes to Catholic schools.
+title: Drop our promise to reject changes to <span style="font-weight: bold; color:#87CEFA;">Catholic</span> schools.
 tags: drop_catholic_major
 view-if: catholic_education_accepted = 1
 on-arrival: catholic_education_accepted = 0; catholic_negotiations -= 20;
@@ -1703,7 +1703,7 @@ on-arrival: catholic_women_accepted = 0; catholic_negotiations -= 20;
 go-to: c_demands_menu
 
 @drop_catholic_charity
-title: Drop our promise to expand Catholic-aligned welfare.
+title: Drop our promise to expand <span style="font-weight: bold; color:#87CEFA;">Catholic</span>-aligned welfare.
 tags: drop_catholic_minor
 view-if: catholic_charity_accepted = 1
 on-arrival: catholic_charity_accepted = 0; catholic_negotiations -= 10;
@@ -1725,7 +1725,7 @@ go-to: c_demands_menu
 
 @refuse_catholic
 title: It seems we cannot come to an agreement.
-subtitle: Maybe one with the Liberals might work?
+subtitle: Maybe one with the <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">rals</span> might work?
 on-departure: ppi_negotiations_failed = 1
 go-to: coalition_menu
 
@@ -1733,7 +1733,7 @@ go-to: coalition_menu
 title: It seems we have come to an agreement.
 subtitle: This is an unstable coalition, to say the least.
 choose-if: catholic_negotiations >= ppi_negotiations_min
-unavailable-subtitle: The Catholics are not satisfied with the current arrangement.
+unavailable-subtitle: The <span style="font-weight: bold; color:#87CEFA;">Catholics</span> are not satisfied with the current arrangement.
 on-departure: socialist_catholic_coalition = 1; liberal_coalition_failed = 0;
 go-to: chooseable_pm if not catholic_pm_accepted; nonchooseable_pm if catholic_pm_accepted
 
@@ -1767,7 +1767,7 @@ view-if: labour_minister_party != psi_name
 on-arrival: leverage -= 5; labour_minister_party = psi_name; labour_minister = "Rigola"
 go-to: ministries
 
-Rinaldo Rigola of the [+ psi_name +] has been appointed Labour and Social Security minister.
+Rinaldo Rigola of the <span style="font-weight: bold; color:#ed2855">[+ psi_name +]</span> has been appointed Labour and Social Security minister.
 
 @interior
 title: Interior Ministry
@@ -1779,9 +1779,9 @@ view-if: interior_minister_party != psi_name
 on-arrival: leverage -= 10; interior_minister_party = psi_name; interior_minister = "Turati" if not reformists_defect; interior_minister = "Bacci" if reformists_defect;
 go-to: ministries
 
-[? if not reformists_defect : Filippo Turati of the [+ psi_name +] has been appointed Interior Minister. ?]
+[? if not reformists_defect : Filippo Turati of the <span style="font-weight: bold; color:#ed2855">[+ psi_name +]</span> has been appointed Interior Minister. ?]
 
-[? if reformists_defect : Giovanni Bacci of the [+ psi_name +] has been appointed Interior Minister. ?]
+[? if reformists_defect : Giovanni Bacci of the <span style="font-weight: bold; color:#ed2855">[+ psi_name +]</span> has been appointed Interior Minister. ?]
 
 @finance
 title: Finance Ministry
@@ -1793,7 +1793,7 @@ view-if: finance_minister_party != psi_name
 on-arrival: leverage -= 10; finance_minister_party = psi_name; finance_minister = "Lazzari"
 go-to: ministries
 
-Constantinto Lazzari of the [+ psi_name +] has been appointed Finance Minister.
+Constantinto Lazzari of the <span style="font-weight: bold; color:#ed2855">[+ psi_name +]</span> has been appointed Finance Minister.
 
 @treasury
 title: Treasury Ministry
@@ -1805,7 +1805,7 @@ view-if: treasury_minister_party != psi_name
 on-arrival: leverage -= 10; treasury_minister_party = psi_name; treasury_minister = "Modigliani"
 go-to: ministries
 
-Emanuele Modigliani of the [+ psi_name +] has been appointed Treasury Minister.
+Emanuele Modigliani of the <span style="font-weight: bold; color:#ed2855">[+ psi_name +]</span> has been appointed Treasury Minister.
 
 @justice
 title: Justice Ministry
@@ -1817,7 +1817,7 @@ view-if: justice_minister_party != psi_name
 on-arrival: leverage -= 10; justice_minister_party = psi_name; justice_minister = "Treves"
 go-to: ministries
 
-Claudio Treves of the [+ psi_name +] has been appointed Justice Minister.
+Claudio Treves of the <span style="font-weight: bold; color:#ed2855">[+ psi_name +]</span> has been appointed Justice Minister.
 
 @public_works
 title: Public Works Ministry
@@ -1829,7 +1829,7 @@ view-if: public_works_minister_party != psi_name
 on-arrival: leverage -= 10; public_works_minister_party = psi_name; public_works_minister = "Vella"
 go-to: ministries
 
-Arturo Vella of the [+ psi_name +] has been appointed Public Works Minister.
+Arturo Vella of the <span style="font-weight: bold; color:#ed2855">[+ psi_name +]</span> has been appointed Public Works Minister.
 
 @public_education
 title: Public Education Ministry
@@ -1841,9 +1841,9 @@ view-if: public_education_minister_party != psi_name
 on-arrival: leverage -= 5; public_education_minister_party = psi_name; public_education_minister = "Togliatti" if not communist_split; public_education_minister = "Zibordi" if communist_split;
 go-to: ministries
 
-[? if not communist_split : Palmiro Togliatti of the [+ psi_name +] has been appointed Public Education Minister. ?]
+[? if not communist_split : Palmiro Togliatti of the <span style="font-weight: bold; color:#ed2855">[+ psi_name +]</span> has been appointed Public Education Minister. ?]
 
-[? if communist_split : Giovanni Zibordi of the [+ psi_name +] has been appointed Public Education Minister. ?]
+[? if communist_split : Giovanni Zibordi of the <span style="font-weight: bold; color:#ed2855">[+ psi_name +]</span> has been appointed Public Education Minister. ?]
 
 @foreign
 title: Foreign Ministry
@@ -1855,9 +1855,9 @@ view-if: foreign_minister_party != psi_name
 on-arrival: leverage -= 10; foreign_minister_party = psi_name; foreign_minister = "Matteotti" if not reformists_defect; foreign_minister = "Morgari" if reformists_defect;
 go-to: ministries
 
-[? if not reformists_defect : Giacomo Matteotti of the [+ psi_name +] has been appointed Foreign Minister. ?]
+[? if not reformists_defect : Giacomo Matteotti of the <span style="font-weight: bold; color:#ed2855">[+ psi_name +]</span> has been appointed Foreign Minister. ?]
 
-[? if reformists_defect : Oddino Morgari of the [+ psi_name +] has been appointed Foreign Minister. ?]
+[? if reformists_defect : Oddino Morgari of the <span style="font-weight: bold; color:#ed2855">[+ psi_name +]</span> has been appointed Foreign Minister. ?]
 
 @agriculture
 title: Agricultural Ministry
@@ -1869,7 +1869,7 @@ on-arrival: leverage -= 5; agriculture_minister_party = psi_name; agriculture_mi
 go-to: ministries
 tags: mins_1919
 
-Antonio Graziadei of the [+ psi_name +] has been appointed Agriculture Minister.
+Antonio Graziadei of the <span style="font-weight: bold; color:#ed2855">[+ psi_name +]</span> has been appointed Agriculture Minister.
 
 @no_more
 title: No more ministries.

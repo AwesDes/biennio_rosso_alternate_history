@@ -35,7 +35,7 @@ These policies mean that our party is increasing in popularity among the "new wo
 @women_demand_law
 on-arrival: family_law += 1; womens_rights += 1; middle_class_psi += 2*(1-dissent); workers_psi += 3*(1-dissent); industrialists_psi -= 2; rural_psi -= 2; catholic_psi -= 4; ppi_relation -= 4; ppi_moderates += 0.1 if ppi_right < ppi_left; ppi_right += 0.1 if ppi_left > ppi_right;
 
-These policies aim to ensure that women have equal rights within a marriage, including the right to divorce. The more conservative segments of society treat our reforms as deleterious to the social fabric.
+These policies aim to ensure that women have equal rights within a marriage, including the right to divorce. The more <span style="color:#0047AB;">conservatives</span> segments of society treat our reforms as deleterious to the social fabric.
 
 @women_demand_welfare
 subtitle: -1 Budget

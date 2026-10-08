@@ -1,5 +1,5 @@
-title: [+ year +] [+ ds_name +] Party Congress
-subtitle: The [+ ds_name +] holds its Biennial Congress.
+title: [+ year +] <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span> Party Congress
+subtitle: The <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span> holds its Biennial Congress.
 new-page: true
 view-if: ds_congress_trigger = 1 and not (pll_formed or pcs_formed) and not ds_banned
 on-arrival: {!
@@ -26,11 +26,11 @@ if (Q.ds_left < 0) {
 !}
 tags: event
 
-= [+ year +] [+ ds_name +] Party Congress
+= [+ year +] <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span> Party Congress
 
-The Biennial Party Congress of the [+ ds_full_name +] has begun in order to elect the party's next leader. 
+The Biennial Party Congress of the <span style="font-weight: bold; color:#1E99C5;">[+ ds_full_name +]</span> has begun in order to elect the party's next leader. 
 
-Three factions make up the [+ ds_name +]. The left of the party, led by Vincenzo Giuffrida, supports collaboration with the socialist parties, having been elected himself on a joint Socialist-Liberal list. On the other end of the party lies Gabriello Carnazza, advocating for collaboration with the right; more specifically the [+ pnf_full_name +], viewing them as being able to combat the left.
+Three factions make up the <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span>. The left of the party, led by Vincenzo Giuffrida, supports collaboration with the socialist parties, having been elected himself on a joint <span style="color:#ED2855">Socialist</span>-<span style="font-weight: bold; color:#FFD700;">Liberal</span> list. On the other end of the party lies Gabriello Carnazza, advocating for collaboration with the right; more specifically the <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_full_name +]</span>, viewing them as being able to combat the left.
 
 And in the middle lies Giovanni Antonio Colonna di Cesarò, who has for the most part, been able to keep the party stable, though the triumph of the other two factions might provoke a split within the party.
 
@@ -105,13 +105,13 @@ for (var record of Q.party_support_records) {
 }
 !}
 
-In a surprising twist, Vincenzo Giuffrida has been elected to the leadership position. The right, in response, have left the party, establishing their own "Christian Social Party" and have begun pursuing a more closer relationship and cooperation with the [+ pnf_name +].
+In a surprising twist, Vincenzo Giuffrida has been elected to the leadership position. The right, in response, have left the party, establishing their own <span style="font-weight: bold; color:#656573;">Christian Social Party</span> and have begun pursuing a more closer relationship and cooperation with the <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_name +]</span>.
 
 @colonna_elected
 choose-if: (ds_moderates >= ds_right) and (ds_moderates >= ds_left)
 unavailable-subtitle: The party cannot hold.
 
-As expected, Carnazza has continued his role in the leadership position. Though this keeps the party intact, it is unsure how long this will last, or how long it will take for the other factions to break with the [+ ds_name +].
+As expected, Carnazza has continued his role in the leadership position. Though this keeps the party intact, it is unsure how long this will last, or how long it will take for the other factions to break with the <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span>.
 
 @carnazza_elected
 view-if: ds_right >= ds_moderates and ds_right >= ds_left
@@ -176,4 +176,4 @@ for (var record of Q.party_support_records) {
 
 !}
 
-In a surprising twist, Gabriello Carnazza has been elected to the leadership position. The left, in response, have left the party, establishing their own "Liberal Workers' Party" and have begun pursuing a more closer relation with the left, including us.
+In a surprising twist, Gabriello Carnazza has been elected to the leadership position. The left, in response, have left the party, establishing their own <span style="font-weight: bold; color:#FFD1D9;">Liberal Workers' Party</span> and have begun pursuing a more closer relation with the left, including us.

@@ -1,5 +1,5 @@
 title: Labour Minister [+ labour_minister +] rolls back our reforms
-subtitle: Labour Minister [+ public_education_minister +] is retaliating against us.
+subtitle: Labour Minister [+ labour_minister +] is retaliating against us.
 view-if: gov_cooldown_timer <= 0 and gov_labour_timer <= 0 and ((labour_minister_party == ldr_name and (ldr_relation <= 30 or radicalisation >= 7)) or (labour_minister_party == ul_name and (ul_relation <= 30 or radicalisation >= 7)) or (labour_minister_party == "DS" and ds_leader != "Giuffrida" and (ldr_relation <= 30 or radicalisation >= 7))) and (working_hours > 2 or workers_safety > 2 or wage_increase > 2)
 on-arrival: gov_cooldown_timer = 3 and gov_labour_timer = 9
 new-page: true
@@ -7,7 +7,7 @@ tags: event
 
 = Labour Minister [+ labour_minister +] rolls back our Labour reforms
 
-The [+ labour_minister_party +]-led Labour Ministry have begun to gut and roll back our labour reforms that benefit our workers.
+The [? if labour_minister_party == ul_name : <span style="font-weight: bold; color:#0047AB;">[+ labour_minister_party +]</span> ?][? if labour_minister_party == ldr_name : <span style="font-weight: bold; color:#FFD700;">[+ labour_minister_party +]</span> ?][? if labour_minister_party == "DS" : <span style="font-weight: bold; color:#1E99C5;">[+ labour_minister_party +]</span> ?]-led Labour Ministry have begun to gut and roll back our labour reforms that benefit our workers.
 
 - @gut_cut: Our reforms to working hours is gutted.
 - @gut_safety: Our reforms to workers safety is gutted.
@@ -49,7 +49,7 @@ Q.inflation -= 0.3;
 Q.socialist_sentiment -= 5; 
 !}
 
-The Labour Ministry has been rolling back our reforms to the national working hours and reinstituting regressive hours at the advice of the industrialists and landowners. [? if not psi_in_government : We utilise this as propaganda to show the callousness of the liberal parties, as do the fascists. ?][? if psi_in_government : We are criticised by our worker support base for failing to prevent this, and the fascists use this as propaganda against both us and the liberals callousness. ?]
+The Labour Ministry has been rolling back our reforms to the national working hours and reinstituting regressive hours at the advice of the industrialists and landowners. [? if not psi_in_government : We utilise this as propaganda to show the callousness of the <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">ral</span> parties, as do the fascists. ?][? if psi_in_government : We are criticised by our worker support base for failing to prevent this, and the <span style="color:#3D3D3D;">fascists</span> use this as propaganda against both us and the <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">rals</span> callousness. ?]
 
 - @root: There is nothing we can do.
 
@@ -89,7 +89,7 @@ Q.inflation -= 0.3;
 Q.socialist_sentiment -= 2; 
 !}
 
-The Labour Ministry begins a overhaul of the safety regulations, gutting and removing regulations deemed 'too excessive' by them and under advice of their industrialist supporters. [? if not psi_in_government : We utilise this as propaganda to show the callousness of the liberal parties, as do the fascists. ?][? if psi_in_government : We are criticised by our worker support base for failing to prevent this, and the fascists use this as propaganda against both us and the liberals callousness. ?]
+The Labour Ministry begins a overhaul of the safety regulations, gutting and removing regulations deemed 'too excessive' by them and under advice of their industrialist supporters. [? if not psi_in_government : We utilise this as propaganda to show the callousness of the <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">ral</span> parties, as do the <span style="color:#3D3D3D;">fascists</span>. ?][? if psi_in_government : We are criticised by our worker support base for failing to prevent this, and the <span style="color:#3D3D3D;">fascists</span> use this as propaganda against both us and the <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">rals</span> callousness. ?]
 
 - @root: There is nothing we can do.
 
@@ -129,6 +129,6 @@ Q.inflation -= 0.4;
 Q.socialist_sentiment -= 5; 
 !}
 
-The Labour Ministry, though unable to decrease the minimum wage directly, alters regulation to include loopholes that the industrialists, of course, exploit for their gain. [? if not psi_in_government : We utilise this as propaganda to show the callousness of the liberal parties, as do the fascists. ?][? if psi_in_government : We are criticised by our worker support base for failing to prevent this, and the fascists use this as propaganda against both us and the liberals callousness. ?]
+The Labour Ministry, though unable to decrease the minimum wage directly, alters regulation to include loopholes that the industrialists, of course, exploit for their gain. [? if not psi_in_government : We utilise this as propaganda to show the callousness of the <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">rals</span> parties, as do the <span style="color:#3D3D3D;">fascists</span>. ?][? if psi_in_government : We are criticised by our worker support base for failing to prevent this, and the <span style="color:#3D3D3D;">fascists</span> use this as propaganda against both us and the <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">rals</span> callousness. ?]
 
 - @root: There is nothing we can do.

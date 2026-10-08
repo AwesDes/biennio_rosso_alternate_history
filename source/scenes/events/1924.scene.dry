@@ -6,6 +6,6 @@ view-if: year = 1924 and month = 1
 priority: 2
 max-visits: 1
 
-A new year has come to Italy. [? if not national_economic_recovery :The economy continues to struggle following the end of the war. ?][? if prime_minister_party == "PNF": [+ prime_minister +] continues to consolidate his rule, and we are experiencing worse and worse violence against us each passing day.?]
+A new year has come to <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>. [? if not national_economic_recovery :The economy continues to struggle following the end of the war. ?][? if prime_minister_party == "PNF": <span style="font-weight: bold; color:#3D3D3D;">[+ prime_minister +]</span> continues to consolidate his rule, and we are experiencing worse and worse violence against us each passing day.?]
 
 [? if psi_in_government : Our budget has increased due to the yearly tax. ?]

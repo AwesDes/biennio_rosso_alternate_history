@@ -628,3 +628,7 @@ table {
     text-decoration: underline;
     text-decoration-style: dotted;
 }
+
+.color-off-mode span {
+  color: inherit !important;
+}

@@ -805,7 +805,7 @@ go-to: coalition_menu
 
 [? if pcs_formed and pnf_r < 5 : {!<tr><td>!} -Christian Social Party {!</td></tr>!} ?]
 
-[? if not pnf_in_bn and (pnf_r >= 5) and not pnf_banned: {!<tr><td><div class="box" style='background-color:#000000'> </div>!} [? if not pnf_in_power : Fascist List ?][? if pnf_in_power : National List ?]: {!</td><td>!} [+ pnf_r_disp +]% {!</td><td>!} [+ str_change_pnf +]% {!</td><td>!} [+ pnf_seating +] {!</td><td>!} [+ pnf_seating_disp +]% {!</td></tr>!} ?]
+[? if not pnf_in_bn and (pnf_r >= 5) and not pnf_banned: {!<tr><td><div class="box" style='background-color:#3D3D3D'> </div>!} [? if not pnf_in_power : Fascist List ?][? if pnf_in_power : National List ?]: {!</td><td>!} [+ pnf_r_disp +]% {!</td><td>!} [+ str_change_pnf +]% {!</td><td>!} [+ pnf_seating +] {!</td><td>!} [+ pnf_seating_disp +]% {!</td></tr>!} ?]
 
 [? if not pnf_in_bn and (pnf_r >= 5) and not pnf_banned: {!<tr><td>!} -[+ pnf_full_name +] {!</td></tr>!} ?]
 
@@ -828,9 +828,9 @@ go-to: coalition_menu
 
 **Potential Coalitions:**
 
-New Grand Coalition (PSI + PSRI [? if psu_formed : + PSU ?] [? if pll_formed : + PLL ?] [? if pri_prominent: + PRI ?] [? if not national_coalition_ppi : + PPI ?] [? if not national_coalition_ldr : + [+ ldr_name +] ?] [? if not national_coalition_ds : + [+ ds_name +] ?]): [+ new_grand_coalition_r +]%
+New Grand Coalition (<span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> + <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> [? if psu_formed : + <span style="font-weight: bold; color:#E35A5A">PSU</span> ?] [? if pll_formed : + <span style="font-weight: bold; color:#FFD1D9;">PLL</span> ?] [? if pri_prominent: + <span style="font-weight: bold; color:#3CB371">PRI</span> ?] [? if not national_coalition_ppi : + <span style="font-weight: bold; color:#87CEFA;">PPI</span> ?] [? if not national_coalition_ldr : + <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span> ?] [? if not national_coalition_ds : + <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span> ?]): [+ new_grand_coalition_r +]%
 
-National Coalition ([+ ul_name +] [? if national_coalition_ppi : + PPI ?] [? if national_coalition_ldr : + [+ ldr_name +] ?] [? if national_coalition_ds : + [+ ds_name +] ?] + Others): [+ national_coalition_r +]%
+National Coalition (<span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span> [? if national_coalition_ppi : + <span style="font-weight: bold; color:#87CEFA;">PPI</span> ?] [? if national_coalition_ldr : + <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span> ?] [? if national_coalition_ds : + <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span> ?] + Others): [+ national_coalition_r +]%
 
 There are some potential coalition arrangements.
 
@@ -870,23 +870,22 @@ Our worst fears have come true. The National Coalition have managed to gain enou
 
 What now?
 
-- @civil_war: We cannot wait any longer. Mobilise the Red Guards!
+- @civil_war: We cannot wait any longer. Mobilise the <span style="color:#c2352b">Red Guards</span>!
 - @nothing: Bide our time further.
 
 @nothing
 subtitle: This will end the game.
 
-[+ prime_minister +] acts fast, as the PSI and other left-wing parties are continously harassed by the Government. A false-flag blamed on us allows the Interior Ministry to outlaw our party, consolidating right-wing influence over the country for the forseeable future.
+[+ prime_minister +] acts fast, as the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> and other left-wing parties are continously harassed by the Government. A false-flag blamed on us allows the Interior Ministry to outlaw our party, consolidating right-wing influence over the country for the forseeable future.
 
-Italy is lost.
+<span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span> is lost.
 
 - @game_over: Game over.
 
 @new_grand_coalition
-title: Form a 'New Grand Coalition', led by the Socialists.
-subtitle: PSI + PSRI [? if psu_formed : + PSU ?] [? if pll_formed : + PLL ?] [? if pri_prominent: + PRI ?] [? if not national_coalition_ppi : + PPI ?] [? if not national_coalition_ldr : + [+ ldr_name +] ?] [? if not national_coalition_ds : + [+ ds_name +] ?]: [+ new_grand_coalition_r +]%
+title: Form a 'New Grand Coalition', led by the <span style="color:#ED2855">Socialists</span>.
+subtitle: <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> + <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> [? if psu_formed : + <span style="font-weight: bold; color:#E35A5A">PSU</span> ?] [? if pll_formed : + <span style="font-weight: bold; color:#FFD1D9;">PLL</span> ?] [? if pri_prominent: + <span style="font-weight: bold; color:#3CB371">PRI</span> ?] [? if not national_coalition_ppi : + <span style="font-weight: bold; color:#87CEFA;">PPI</span> ?] [? if not national_coalition_ldr : + <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span> ?] [? if not national_coalition_ds : + <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span> ?]: [+ new_grand_coalition_r +]%
 choose-if: new_grand_coalition_r >= 50
-unavailable-subtitle: PSI + PSRI [? if psu_formed : + PSU ?] [? if pri_prominent: + PRI ?] [? if not national_coalition_ppi : + PPI ?] [? if not national_coalition_ldr : + [+ ldr_name +] ?] [? if not national_coalition_ds : + [+ ds_name +] ?]: [+ new_grand_coalition_r +]%
 on-arrival: {!
 Q.leverage = Q.leverage;
 Q.psi_in_government = 1;
@@ -953,7 +952,7 @@ Who should we select to be Prime Minister?
 
 @turati
 title: Filippo Turati for Prime Minister
-subtitle: Turati leads the reformist wing, and is an acceptable candidate for Prime Minister.
+subtitle: Turati leads the <span style="color:#FF6961">reformists</span> wing, and is an acceptable candidate for Prime Minister.
 choose-if: reformists_defect = 0
 unavailable-subtitle: Turati is no longer a member of the [+ psi_name +].
 on-arrival: psi_in_government = 1; prime_minister = "Turati"; prime_minister_party = psi_name;
@@ -964,36 +963,36 @@ Filippo Turati's appointment as Prime Minister is approved by all our potential 
 @bissolati
 title: Ivanoe Bonomi for Prime Minister
 view-if: not bissolati_dead
-subtitle: Bissolati is a prominent leader of the PSRI, formerly affiliated with the [+ psi_name +].
+subtitle: Bissolati is a prominent leader of the <span style="font-weight: bold; color:#FFC0CB;">PSRI</span>, formerly affiliated with the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>.
 on-arrival: psi_in_government = 1; prime_minister = "Bissolati"; prime_minister_party = "PSRI"; leverage += 5; maximalist_dissent += 2; communist_dissent += 5;
 go-to: ministries
 
-This is highly unexpected, but Bissolati's PSRI roots, as well as his committment to socialism, leaves little grumbling from our party.
+This is highly unexpected, but Bissolati's <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> roots, as well as his committment to <span style="color:#ED2855">socialism</span>, leaves little grumbling from our party.
 
 @bonomi
 title: Ivanoe Bonomi for Prime Minister
 view-if: bissolati_dead
-subtitle: Bonomi is a prominent leader of the PSRI, formerly affiliated with the [+ psi_name +].
+subtitle: Bonomi is a prominent leader of the <span style="font-weight: bold; color:#FFC0CB;">PSRI</span>, formerly affiliated with the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>.
 on-arrival: psi_in_government = 1; prime_minister = "Bonomi"; prime_minister_party = "PSRI"; leverage += 5; maximalist_dissent += 4; communist_dissent += 7;
 go-to: ministries
 
-This is highly unexpected, but Bonomi's PSRI roots leaves merely some grumbling from our party.
+This is highly unexpected, but Bonomi's <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> roots leaves merely some grumbling from our party.
 
 @orlando
-title: Let the [+ ldr_name +] have their Prime Minister. This will improve our leverage.
+title: Let the <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span> have their Prime Minister. This will improve our leverage.
 view-if: not national_coalition_ldr
 subtitle: Vittorio Emanuele Orlando will be reappointed Prime Minister. This is unexpected and will cause internal dissent, but may give us a better position in negotiating for other cabinet positions.
 on-arrival: reformist_dissent += 5; maximalist_dissent += 5; communist_dissent += 10; ldr_relation += 10; ds_relation += 5; prime_minister = "Orlando"; prime_minister_party = ldr_name; psi_in_government = 1; leverage += 10
 go-to: ministries
 
 @gasperi
-title: Let the People's Party have their Prime Minister. This will improve over leverage.
+title: Let the <span style="font-weight: bold; color:#87CEFA;">People's Party</span> have their Prime Minister. This will improve over leverage.
 view-if: not national_coalition_ppi
 subtitle: Alcide De Gasperi will be appointed Prime Minister. This is unexpected and will cause internal dissent, but may give us a better position in negotiating for other cabinet positions.
 on-arrival: reformist_dissent += 5; maximalist_dissent += 5; communist_dissent += 10; ppi_relation += 10; prime_minister = "De Gasperi"; prime_minister_party = "PPI"; psi_in_government = 1; leverage += 5
 go-to: ministries
 
-This is highly unexpected, and many in the centre and even the reformists of our party are criticizing this decision.
+This is highly unexpected, and many in the <span style="color:#DC143C">centre</span> and even the <span style="color:#FF6961">reformists</span> of our party are criticizing this decision.
 
 @ministries
 

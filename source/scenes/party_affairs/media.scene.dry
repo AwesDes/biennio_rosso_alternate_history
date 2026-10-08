@@ -9,7 +9,7 @@ card-image: img/Media.jpg
 
 = Media
 
-The [+ psi_name +] runs a veritable media empire, with many newspapers throughout every Italian city and region. We could use the media for various purposes...
+The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> runs a veritable media empire, with many newspapers throughout every <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">al</span><span style="font-weight: bold; color:#CD212A">ian</span> city and region. We could use the media for various purposes...
 
 - @commercial
 - @campaign
@@ -27,14 +27,14 @@ title: Make our newspapers more commercialized by broadening their appeal beyond
 subtitle: This might upset ideological purists, but it may bring in more funds and perhaps expose the middle class to socialist views.
 on-arrival: resources += 1; middle_class_psi += 4*(1 - dissent); communist_dissent += 4; labour_dissent += 7; socialist_sentiment += 2; pcdi_gramsci += 0.5;
 
-Our commercialized newspapers are able to bring in more funds. However, the left and labour factions express their displeasure.
+Our commercialized newspapers are able to bring in more funds. However, the <span style="color:#8B0000">left</span> and <span style="color:#B22222">labour</span> factions express their displeasure.
 
 @campaign
 title: The purpose of our media is to elect more socialists.
 subtitle: Our newspapers will focus on the electoral campaign.
 on-arrival: campaign_media += 1; workers_psi += 4*(1 - dissent); socialist_sentiment += 1*(1-dissent);
 
-Our campaign media is mostly reaching the workers who are already saturated with Socialist propaganda, but it must be doing *something*, or at least that is what we hope.
+Our campaign media is mostly reaching the workers who are already saturated with <span style="color:#ED2855">Socialist</span> propaganda, but it must be doing *something*, or at least that is what we hope.
 
 @ideological
 title: We will have vibrant ideological debate within our newspapers.
@@ -51,7 +51,7 @@ unavailable-subtitle: Not enough resources. (Need 3)
 view-if: radio = 0
 on-arrival: radio += 1; resources -= 3; middle_class_psi += 3*(1 - dissent); industrialists_psi += 5*(1 - dissent); workers_psi += 1*(1 - dissent); labour_dissent += 5; socialist_sentiment += 2*(1 - dissent); nationalist_sentiment -= 3*(1 - dissent) if pacifism > 1; republican_sentiment += 3*(1-dissent) if democratisation > 1; middle_class_psi -= 1*(1-dissent) if nationalisation_adopted; industrialists_psi -= 2*(1-dissent) if nationalisation_adopted; pcdi_gramsci += 1;
 
-A radio station would be one of the first of its kind in Italy, and the first socialist station in the nation. Funding is expensive, and radio's in it of itself seem only affordable to the richest of the middle class, alongside industrialists and landowners, who will be the main consumers of our content, it seems.
+A radio station would be one of the first of its kind in <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>, and the first <span style="color:#ED2855">socialist</span> station in the nation. Funding is expensive, and radio's in it of itself seem only affordable to the richest of the middle class, alongside industrialists and landowners, who will be the main consumers of our content, it seems.
 
 @radio_2
 title: We must keep on building up our radio network.

@@ -10,23 +10,23 @@ Do we wish to shuffle our cabinet? This might upset our current coalition.
 
 Current cabinet:
 
-Labour & Social Security: [+ labour_minister_party +]
+Labour & Social Security: [? if labour_minister_party == ul_name : <span style="font-weight: bold; color:#0047AB">[+ labour_minister_party +]</span> ?][? if labour_minister_party == "PSRI" : <span style="font-weight: bold; color:#FFC0CB">[+ labour_minister_party +]</span> ?][? if labour_minister_party == "PPI" : <span style="font-weight: bold; color:#87CEFA">[+ labour_minister_party +]</span> ?][? if labour_minister_party == ds_name : <span style="font-weight: bold; color:#1E99C5">[+ labour_minister_party +]</span> ?][? if labour_minister_party == psi_name : <span style="font-weight: bold; color:#ED2855">[+ labour_minister_party +]</span> ?]
 
-Interior: [+ interior_minister_party +]
+Interior: [? if interior_minister_party == "PSRI" : <span style="font-weight: bold; color:#FFC0CB">[+ interior_minister_party +]</span> ?][? if interior_minister_party == "PPI" : <span style="font-weight: bold; color:#87CEFA">[+ interior_minister_party +]</span> ?][? if interior_minister_party == "PSU" : <span style="font-weight: bold; color:#E35A5A">[+ interior_minister_party +]</span> ?][? if interior_minister_party == psi_name : <span style="font-weight: bold; color:#ED2855">[+ interior_minister_party +]</span> ?]
 
-Finance: [+ finance_minister_party +]
+Finance: [? if finance_minister_party == ul_name : <span style="font-weight: bold; color:#0047AB">[+ finance_minister_party +]</span> ?][? if finance_minister_party == "PSRI" : <span style="font-weight: bold; color:#FFC0CB">[+ finance_minister_party +]</span> ?][? if finance_minister_party == "PPI" : <span style="font-weight: bold; color:#87CEFA">[+ finance_minister_party +]</span> ?][? if finance_minister_party == ds_name : <span style="font-weight: bold; color:#1E99C5">[+ finance_minister_party +]</span> ?][? if finance_minister_party == psi_name : <span style="font-weight: bold; color:#ED2855">[+ finance_minister_party +]</span> ?][? if finance_minister_party == ldr_name : <span style="font-weight: bold; color:#FFD700">[+ finance_minister_party +]</span> ?]
 
-Treasury: [+ treasury_minister_party +] 
+Treasury: [? if treasury_minister_party == ul_name : <span style="font-weight: bold; color:#0047AB">[+ treasury_minister_party +]</span> ?][? if treasury_minister_party == "PSRI" : <span style="font-weight: bold; color:#FFC0CB">[+ treasury_minister_party +]</span> ?][? if treasury_minister_party == "PPI" : <span style="font-weight: bold; color:#87CEFA">[+ treasury_minister_party +]</span> ?][? if treasury_minister_party == ds_name : <span style="font-weight: bold; color:#1E99C5">[+ treasury_minister_party +]</span> ?][? if treasury_minister_party == psi_name : <span style="font-weight: bold; color:#ED2855">[+ treasury_minister_party +]</span> ?]
 
-Justice: [+ justice_minister_party +]
+Justice: [? if justice_minister_party == ul_name : <span style="font-weight: bold; color:#0047AB">[+ justice_minister_party +]</span> ?][? if justice_minister_party == "PSRI" : <span style="font-weight: bold; color:#FFC0CB">[+ justice_minister_party +]</span> ?][? if justice_minister_party == "PPI" : <span style="font-weight: bold; color:#87CEFA">[+ justice_minister_party +]</span> ?][? if justice_minister_party == psi_name : <span style="font-weight: bold; color:#ED2855">[+ justice_minister_party +]</span> ?][? if justice_minister_party == "I" : <span style="font-weight: bold; color:grey">[+ justice_minister_party +]</span> ?]
 
-Foreign: [+ foreign_minister_party +]
+Foreign: [? if foreign_minister_party == ul_name : <span style="font-weight: bold; color:#0047AB">[+ foreign_minister_party +]</span> ?][? if foreign_minister_party == "PSRI" : <span style="font-weight: bold; color:#FFC0CB">[+ foreign_minister_party +]</span> ?][? if foreign_minister_party == "PPI" : <span style="font-weight: bold; color:#87CEFA">[+ foreign_minister_party +]</span> ?][? if foreign_minister_party == psi_name : <span style="font-weight: bold; color:#ED2855">[+ foreign_minister_party +]</span> ?]
 
-Public Works: [+ public_works_minister_party +]
+Public Works: [? if public_works_minister_party == ds_name : <span style="font-weight: bold; color:#0047AB">[+ public_works_minister_party +]</span> ?][? if public_works_minister_party == "PSRI" : <span style="font-weight: bold; color:#FFC0CB">[+ public_works_minister_party +]</span> ?][? if public_works_minister_party == "PPI" : <span style="font-weight: bold; color:#87CEFA">[+ public_works_minister_party +]</span> ?][? if public_works_minister_party == psi_name : <span style="font-weight: bold; color:#ED2855">[+ public_works_minister_party +]</span> ?]
 
-Public Education: [+ public_education_minister_party +]
+Public Education: [? if public_education_minister_party == ldr_name : <span style="font-weight: bold; color:#FFD700">[+ public_education_minister_party +]</span> ?][? if public_education_minister_party == "PSRI" : <span style="font-weight: bold; color:#FFC0CB">[+ public_education_minister_party +]</span> ?][? if public_education_minister_party == "PPI" : <span style="font-weight: bold; color:#87CEFA">[+ public_education_minister_party +]</span> ?][? if public_education_minister_party == psi_name : <span style="font-weight: bold; color:#ED2855">[+ public_education_minister_party +]</span> ?][? if public_education_minister_party == "PRI" : <span style="font-weight: bold; color:#3CB371">[+ public_education_minister_party +]</span> ?]
 
-Agriculture: [+ agriculture_minister_party +]
+Agriculture: [? if agriculture_minister_party == ldr_name : <span style="font-weight: bold; color:#FFD700">[+ agriculture_minister_party +]</span> ?][? if agriculture_minister_party == "PSRI" : <span style="font-weight: bold; color:#FFC0CB">[+ agriculture_minister_party +]</span> ?][? if agriculture_minister_party == "PPI" : <span style="font-weight: bold; color:#87CEFA">[+ agriculture_minister_party +]</span> ?][? if agriculture_minister_party == psi_name : <span style="font-weight: bold; color:#ED2855">[+ agriculture_minister_party +]</span> ?][? if agriculture_minister_party == ul_name : <span style="font-weight: bold; color:#0047AB">[+ agriculture_minister_party +]</span> ?]
 
 - @shuffle: Yes, do it.
 - @root: No, there is no need.

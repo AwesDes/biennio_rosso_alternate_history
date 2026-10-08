@@ -8,14 +8,14 @@ tags: event
 
 = Return to Normalcy
 
-Italy is finally recovering from the post-war crisis. As the economy gradually improves, the political crisis begins to unravel as well.
+<span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span> is finally recovering from the post-war crisis. As the economy gradually improves, the political crisis begins to unravel as well.
 
-Finally, the PNF has fallen. From a massive party threatening to end Italian democracy, the party has fallen into infighting and strife following the collapse of its party leadership.
+Finally, the <span style="font-weight: bold; color:#3D3D3D;">PNF</span> has fallen. From a massive party threatening to end <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">al</span><span style="font-weight: bold; color:#CD212A">ian</span> democracy, the party has fallen into infighting and strife following the collapse of its party leadership.
 
 [? if not communist_split and not national_congress_seen : However, the Left-wing of the party has begun advocating to begin the revolutionary process, citing the return to normalcy as the final window of opportunity closing on us. ?]
 
 - @celebrate: This is an occasion to celebrate.
-- @complacency: The fascists are still a threat. We must not be too complacent.
+- @complacency: The <span style="color:#3D3D3D;">fascists</span> are still a threat. We must not be too complacent.
 - @normalcy_civil_war: Begin the revolutionary process.
 - @normalcy_refuse: Refuse the communist demands.
 
@@ -27,18 +27,18 @@ on-arrival: participating = 0; maximalist_participating = 1; not_participating =
 go-to: civil_war
 
 @normalcy_refuse
-subtitle: It is likely the left will split from the party.
+subtitle: It is likely the <span style="color:#8B0000">left</span> will split from the party.
 view-if: not communist_split and not national_congress_seen
 on-arrival: communist_dissent += 60; communist_strength -= 17; revolutionary_fervour -= 7
 
-The communists are outraged by this, accusing us of betraying our ideals and threatening a full-on party split.
+The <span style="color:#8B0000">communists</span> are outraged by this, accusing us of betraying our ideals and threatening a full-on party split.
 
 @celebrate
 view-if: communist_split
 
-This is an occasion to celebrate! Hopefully the fascists will no longer be a threat to us.
+This is an occasion to celebrate! Hopefully the <span style="color:#3D3D3D;">fascists</span> will no longer be a threat to us.
 
 @complacency
 view-if: communist_split
 
-Even in their weakened state, the fascists are still a threat. We must not be too complacent.
+Even in their weakened state, the <span style="color:#3D3D3D;">fascists</span> are still a threat. We must not be too complacent.

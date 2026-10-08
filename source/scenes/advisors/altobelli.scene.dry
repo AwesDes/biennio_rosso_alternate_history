@@ -7,28 +7,29 @@ new-page: true
 
 = Argentina Altobelli
 
-Altobelli is a member of the executive of the [+ psi_full_name +]. A member of the reformist faction, she currently leads the *National Federation of Agricultural Workers*, being the first woman to lead a trade union in Italy.
+Altobelli is a member of the executive of the <span style="font-weight: bold; color:#ED2855">[+ psi_full_name +]</span>. Aligned with the <span style="color:#FF6961">reformists</span> within the party, she currently leads and is a founding member of the the *National Federation of Agricultural Workers*, being the first woman to lead a trade union in <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>.
 
 - @womens_rights_altobelli
-- @party_disunity_altobelli
+- @party_discipline_altobelli
 - @agriculture_ministry_altobelli
 - @root: Return to main
 
 @womens_rights_altobelli
 title: Women's Rights
 subtitle: Now that we are in government, we can now reform the laws to improve the status of women.
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not psi_in_government : The [+ psi_name +] is not currently in government. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not psi_in_government : The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> is not currently in government. ?]
 choose-if: advisor_action_timer = 0 and psi_in_government
 on-arrival: advisor_action_timer = 6; last_advisor_action = 1; womens_rights_timer -= 5;
 go-to: womens_rights
 
-@party_disunity_altobelli
-title: Party Disunity
-subtitle: The current state of the party is disunited; factions are quarreling as every side pushes its own ideas.
-choose-if: advisor_action_timer == 0 and (communist_dissent > 0 or reformist_dissent > 0 or labour_dissent > 0 or maximalist_dissent > 0)
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if (communist_dissent = 0 and reformist_dissent = 0 and maximalist_dissent = 0 and labour_dissent = 0) : The party is the most united it has been since its inception. ?]
-on-arrival: advisor_action_timer = 6; last_advisor_action = 1
-go-to: party_disunity
+@party_discipline_altobelli
+title: Party Discipline
+subtitle: Altobelli can leverage her position to mediate <span style="color:#FF6961">reformist</span> and <span style="color:#B22222">labour</span> dissent.
+choose-if: advisor_action_timer == 0 and (reformist_dissent > 0 or labour_dissent > 0)
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if (reformist_dissent = 0 and labour_dissent = 0) : The <span style="color:#FF6961">Reformists</span> and <span style="color:#B22222">Labour</span> are the most united it has been since its inception. ?]
+on-arrival: advisor_action_timer = 6; last_advisor_action = 1; reformist_dissent -= 5; labour_dissent -= 5;
+
+Altobelli is able to leverage her position to quell dissent between <span style="color:#B22222">labour</span> and the <span style="color:#FF6961">reformists</span>, brokering compromises and strengthening the unity of the party.
 
 @agriculture_ministry_altobelli
 title: Agricultural Policy

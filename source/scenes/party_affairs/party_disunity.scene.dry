@@ -13,11 +13,11 @@ tags: party_affairs
 
 The party is being torn apart by internal dissent. Upset at the leadership and general direction, factions have started sabotaging their rivals, hampering our efforts to win votes and carry out our policies.
 
-[? if reformist_dissent > 30 : The reformists are upset at our direction.  ?]
-[? if maximalist_dissent > 30 : The maximalists are displeased with the direction of our party. ?]
-[? if labour_dissent > 30 : The labour unions disagree with our present course of action. ?]
-[? if communist_dissent > 30: Communists are making noises about a party split. ?]
-[? if syndicalist_dissent > 30 : The syndicalists are threatening a split. ?]
+[? if reformist_dissent > 30 : The <span style="color:#FF6961">reformists</span> are upset at our direction.  ?]
+[? if maximalist_dissent > 30 : The <span style="color:#DC143C">maximalists</span> are displeased with the direction of our party. ?]
+[? if labour_dissent > 30 : The <span style="color:#B22222">labour unions</span> disagree with our present course of action. ?]
+[? if communist_dissent > 30: <span style="color:#8B0000">Communists</span> are making noises about a party split. ?]
+[? if syndicalist_dissent > 30 : The <span style="color:#2F2F2F">syndicalists</span> are threatening a split. ?]
 
 Something must be done to reinforce party unity.
 
@@ -41,39 +41,39 @@ Enforcing party discipline reduces dissent, but it could lead to an exit of diss
 # each party has a concessions action and an expulsions action.
 
 @concessions_reformists
-title: Give concessions to the reformists.
+title: Give concessions to the <span style="color:#FF6961">reformists</span>.
 view-if: reformist_dissent > 30
 on-arrival: reformist_dissent -= 7; communist_dissent += 5
 
-We have promised to adopt a more reformist posture. This may alienate the left, however.
+We have promised to adopt a more <span style="color:#FF6961">reformist</span> posture. This may alienate the <span style="color:#8B0000">left</span>, however.
 
 @concessions_center
-title: Give concessions to the maximalists.
+title: Give concessions to the <span style="color:#DC143C">maximalists</span>.
 view-if: maximalist_dissent > 30
 on-arrival: maximalist_dissent -= 7; reformist_dissent += 2; communist_dissent += 2;
 
-We have promised to take more policy suggestions from the maximalists. Both the left and reformist wings of the party might be displeased.
+We have promised to take more policy suggestions from the <span style="color:#DC143C">maximalists</span>. Both the <span style="color:#8B0000">left</span> and <span style="color:#FF6961">reformist</span> wings of the party might be displeased.
 
 @concessions_left
-title: Give concessions to the left.
+title: Give concessions to the <span style="color:#8B0000">left</span>.
 view-if: communist_dissent > 30
 on-arrival: communist_dissent -= 7; reformist_dissent += 5; pcdi_bordiga += 1;
 
-We have promised that we will listen to the left wing of the party. Of course, this leads to increased dissent from the maximalists.
+We have promised that we will listen to the <span style="color:#8B0000">left</span> wing of the party. Of course, this leads to increased dissent from the <span style="color:#DC143C">maximalists</span>.
 
 @concessions_labour
-title: Give concessions to labour.
+title: Give concessions to <span style="color:#B22222">labour</span>.
 view-if: labour_dissent > 30
 on-arrival: labour_dissent -= 7; maximalist_dissent += 5; pcdi_bordiga += 1;
 
-The trade unions will be granted more influence in party decision making. This upsets the maximalists, who would prefer to centralize political decision making within the party.
+The <span style="color:#B22222">trade unions</span> will be granted more influence in party decision making. This upsets the <span style="color:#DC143C">maximalists</span>, who would prefer to centralize political decision making within the party.
 
 @concessions_syndicalist
-title: Give concessions to the syndicalists.
+title: Give concessions to the <span style="color:#2F2F2F">syndicalists</span>.
 view-if: syndicalist_dissent > 30
 on-arrival: syndicalist_dissent -= 7; labour_dissent += 5
 
-The syndicalists will be granted more influence in party decision making. This upsets labour, who dislike us listening to the fringe factions and their union competitor.
+The <span style="color:#2F2F2F">syndicalists</span> will be granted more influence in party decision making. This upsets <span style="color:#B22222">labour</span>, who dislike us listening to the fringe factions and their union competitor.
 
 @do_nothing
 title: Let the factions argue with themselves.

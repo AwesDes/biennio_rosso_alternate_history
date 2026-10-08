@@ -77,7 +77,7 @@ Q.ldr_right += 0.2;
 Q.socialist_sentiment += 2;
 !}
 
-Making the tax system more progressive is popular among our base, but it upsets our bourgeois coalition partners, as well as our minimal number of bourgeois voters.
+Making the tax system more progressive is popular among our base, but it upsets our <span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> coalition partners, as well as our minimal number of <span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> voters.
 
 @raise_rich
 subtitle: +2 Budget
@@ -211,7 +211,7 @@ go-to: ldr_promise_vonc if ldr_promise_failed = 1
 
 Cutting taxes benefits most the rich and middle-class, who pay more taxes than the working class. Our coalition partners are happy at our orthodox economic course.
 
-[? if ldr_promise_failed : Unfortunately, cutting taxes has led us to enter a deficit, breaking our agreement with the Liberals, and their representatives have already requested a meeting with us. ?]
+[? if ldr_promise_failed : Unfortunately, cutting taxes has led us to enter a deficit, breaking our agreement with the <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">rals</span>, and their representatives have already requested a meeting with us. ?]
 
 @raise_overall
 subtitle: +3 budget
@@ -342,7 +342,7 @@ Q.ppi_left -= 0.1;
 Q.ldr_moderates += 0.1;
 !}
 
-Our regressive taxation policy benefits the rich while hurting the poor and working-class. [? if centre_left_coalition :Our bourgeois coalition partners approve of this orthodox economic course. ?][? if socialist_catholic_coalition :Our catholic coalition partner disapprove of this regressive tax policy. ?]
+Our regressive taxation policy benefits the rich while hurting the poor and working-class. [? if centre_left_coalition :Our <span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> coalition partners approve of this orthodox economic course. ?][? if socialist_catholic_coalition :Our <span style="color:#87CEFA;">Catholic</span> coalition partner disapprove of this regressive tax policy. ?]
 
 
 @tariffs
@@ -350,7 +350,7 @@ title: Change tariffs instead.
 
 Tariffs, or taxes on international imports, are another way to finance our government.
 
-Historically, socialists have been in favor of free trade and a low-tariff regime. Workers in export-oriented industries benefit from free trade, and they also benefit from lower prices for imported necessities. Do the present economic circumstances change these calculations?
+Historically, <span style="color:#ED2855">socialists</span> have been in favor of free trade and a low-tariff regime. Workers in export-oriented industries benefit from free trade, and they also benefit from lower prices for imported necessities. Do the present economic circumstances change these calculations?
 
 Current tariff level: [+ tariffs : taxation +]
 
@@ -419,7 +419,7 @@ Q.balkan_relation -= 1;
 Q.ldr_moderates -= 0.2;
 !}
 
-Increasing tariffs leads to higher prices for basic goods, increasing inflation and hurting consumption among the working class. Retaliatory tariffs reduce the competitiveness of German exports, raising unemployment among workers. They also lead to an atmosphere of international suspicion, reducing our ability to negotiate with other countries.
+Increasing tariffs leads to higher prices for basic goods, increasing inflation and hurting consumption among the working class. Retaliatory tariffs reduce the competitiveness of <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">al</span><span style="font-weight: bold; color:#CD212A">ian</span> exports, raising unemployment among workers. They also lead to an atmosphere of international suspicion, reducing our ability to negotiate with other countries.
 
 On the other hand, agricultural producers and some small businesses benefit from higher tariffs, as farmers can now command higher prices for grain, and formerly uncompetitive businesses are now able to function.
 
@@ -483,13 +483,13 @@ Lowering tariffs helps workers and the urban poor by reducing prices for basic n
 
 Farmers are hurt by this policy, as cheap imported grain leads to ruin for some small producers. In general, cheap imports are detrimental for small-scale industries aimed at the domestic market.
 
-[? if ldr_promise_failed : Unfortunately, lowering tariffs has led us to enter a deficit, breaking our agreement with the liberals, and their representatives have already requested a meeting with us. ?]
+[? if ldr_promise_failed : Unfortunately, lowering tariffs has led us to enter a deficit, breaking our agreement with the <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">rals</span>, and their representatives have already requested a meeting with us. ?]
 
 @debts
 title: See our debt situation.
 view-if: uk_debts_over = 0 or us_debts_over = 0
 
-In order to finance the war, Italy took out massive war debts and bonds, mainly to our allies of the United Kingdom and United States.
+In order to finance the war, <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span> took out massive war debts and bonds, mainly to our allies of the <span style="color:#C8102E">United Kingdom</span> and <span style="color:#002868">United</span> <span style="color:#B31942">States</span>.
 
 Now that the war has ended, both nations expect debt repayments, but it is abundantly clear we will not be able to support quick full debt repayments, though it might not hurt to pay off our debts slightly to reassure our allies we are committed to repaying them.
 
@@ -500,7 +500,7 @@ Now that the war has ended, both nations expect debt repayments, but it is abund
 - @easy_discard
 
 @repay_us_debts
-title: Repay American debtors.
+title: Repay <span style="color:#002868">Amer</span><span style="color:#B31942">ican</span> debtors.
 subtitle: -1 Budget
 view-if: american_debts > 0
 choose-if: not national_economic_recovery or budget > 0
@@ -528,10 +528,10 @@ if (Q.economic_growth < 0) {
 !}
 go-to: ldr_promise_vonc if ldr_promise_failed = 1
 
-Paying off some of our American debtors reaffirms our commitment to repaying American war debt while making negotiations in order to resolve those same debts smoother, restoring investment confidence.
+Paying off some of our <span style="color:#002868">Amer</span><span style="color:#B31942">ican</span> debtors reaffirms our commitment to repaying <span style="color:#002868">Amer</span><span style="color:#B31942">ican</span> war debt while making negotiations in order to resolve those same debts smoother, restoring investment confidence.
 
 @repay_uk_debts
-title: Repay British debtors.
+title: Repay <span style="color:#C8102E">British</span> debtors.
 subtitle: -1 Budget
 view-if: uk_debts > 0
 choose-if: not national_economic_recovery or budget > 0
@@ -558,4 +558,4 @@ if (Q.economic_growth < 0) {
 !}
 go-to: ldr_promise_vonc if ldr_promise_failed = 1
 
-Paying off some of our British debtors reaffirms our commitment to repaying British war debt while making negotiations in order to resolve those same debts smoother, restoring investment confidence.
+Paying off some of our <span style="color:#C8102E">British</span> debtors reaffirms our commitment to repaying <span style="color:#C8102E">British</span> war debt while making negotiations in order to resolve those same debts smoother, restoring investment confidence.

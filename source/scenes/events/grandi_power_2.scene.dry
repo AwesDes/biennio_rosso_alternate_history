@@ -8,7 +8,7 @@ on-arrival: grandi_economy_seen = 1; dannunzio_time = time + 3
 
 = Revision of the Labour & Corporative Charter 
 
-With the fall of D'Annunzio from power, Grandi has established the Committee of Economic Reforms to look at and reform the economic reforms put in place in an effort to 'restore business confidence' to Italy. Naturally, the first of which being the Labour and Corporative Charter.
+With the fall of D'Annunzio from power, Grandi has established the Committee of Economic Reforms to look at and reform the economic reforms put in place in an effort to 'restore business confidence' to <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>. Naturally, the first of which being the Labour and Corporative Charter.
 
 - @grandi_annul: Grandi annuls the charter, appointing Alberto de' Stefani as the Minister of Finance.
 
@@ -86,9 +86,9 @@ if (Q.us_debts_over) {
 }
 !}
 
-The Labour and Corporative Charter is annulled, the companies are released back to become independent entities and dissolving the national mandatory union as established by D'Annunzio. Corporate leaders and industrialists have, naturally, praised the abolishment of the Charter back towards a more freer economy, while the workers have seemingly felt betrayed once more by the PNF.
+The Labour and Corporative Charter is annulled, the companies are released back to become independent entities and dissolving the national mandatory union as established by D'Annunzio. Corporate leaders and industrialists have, naturally, praised the abolishment of the Charter back towards a more freer economy, while the workers have seemingly felt betrayed once more by the <span style="font-weight: bold; color:#3D3D3D;">PNF</span>.
 
-In an effort of goodwill as well, Alberto de' Stefani, a prominent conservative economist and free trade supporter has been appointed as Finance Minister in an effort to boost recovery of the Italian economy. Following the annulment, business leaders have also requested a removal to the taxes levied onto corporations in an effort to fund social programs that most likely will no longer exist after the PNF's economic overhaul.
+In an effort of goodwill as well, Alberto de' Stefani, a prominent conservative economist and free trade supporter has been appointed as Finance Minister in an effort to boost recovery of the <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">al</span><span style="font-weight: bold; color:#CD212A">ian</span> economy. Following the annulment, business leaders have also requested a removal to the taxes levied onto corporations in an effort to fund social programs that most likely will no longer exist after the P<span style="font-weight: bold; color:#3D3D3D;">PNF</span>NF's economic overhaul.
 
 - @grandi_taxes_bad: Levies on the corporations are curtailed slightly in an effort to balance the budget.
 - @grandi_taxes_good: Levies on corporations are abolished completely.
@@ -112,7 +112,7 @@ Q.industrialists_pnf += 4;
 view-if: economic_stat <= 0
 go-to: labor_menu
 
-The levies implemented by D'Annunzio are, surprisingly, curtailed rather than abolished fully due to the current economic situation and an effort to keep the budget balanced. Though the industrialists and landowners will certainly see a decrease in taxes, murmurs of discontent within groups have become uncommon, with many criticising Grandi's half-measures to restore business confidence to Italy. 
+The levies implemented by D'Annunzio are, surprisingly, curtailed rather than abolished fully due to the current economic situation and an effort to keep the budget balanced. Though the industrialists and landowners will certainly see a decrease in taxes, murmurs of discontent within groups have become uncommon, with many criticising Grandi's half-measures to restore business confidence to <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>. 
 
 @grandi_taxes_good
 on-arrival: budget -= 3; upper_tax_rates -= 1 if upper_tax_rates >= -5; grandi_good += 1; {!
@@ -133,7 +133,7 @@ Q.industrialists_pnf += 4;
 view-if: economic_stat > 0
 go-to: labor_menu
 
-The levies implemented by D'Annunzio are, unsurprisingly, fully abolished as taxation on the industrialists return to pre-D'Annunzio levels. The industrialists and landowners will certainly see a significant decrease in taxes, as business leaders are firmly on the side of the PNF now.
+The levies implemented by D'Annunzio are, unsurprisingly, fully abolished as taxation on the industrialists return to pre-D'Annunzio levels. The industrialists and landowners will certainly see a significant decrease in taxes, as business leaders are firmly on the side of the <span style="font-weight: bold; color:#3D3D3D;">PNF</span> now.
 
 @labor_menu
 on-arrival: labour_stat = 0; {!
@@ -163,7 +163,7 @@ if (Q.wage_increase > 3) {
 
 !}
 
-The next reforms looked at under the Committee are D'Annunzio's reform to labour law and protections. The Committee surprisingly recommends the continuation of these policies, only curtailed slightly to more 'realistic' standards in an effort to win both workers and appease industrialists back to the PNF. On the other hand, business leaders have been pressuring Grandi for a full repeal, even scaling back reforms further than D'Annunzio pushed them forwards and willing to fund the Squadrismo to suppress dissenting union leaders or workers who oppose these changes.
+The next reforms looked at under the Committee are D'Annunzio's reform to labour law and protections. The Committee surprisingly recommends the continuation of these policies, only curtailed slightly to more 'realistic' standards in an effort to win both workers and appease industrialists back to the <span style="font-weight: bold; color:#3D3D3D;">PNF</span>. On the other hand, business leaders have been pressuring Grandi for a full repeal, even scaling back reforms further than D'Annunzio pushed them forwards and willing to fund the <span style="color:#3D3D3D;">Squadrismo</span> to suppress dissenting union leaders or workers who oppose these changes.
 
 - @grandi_labour_good: Labour law reforms are rolled back to 'realistic' standards.
 - @grandi_labour_bad: Labour Protections are stripped and strikers suppressed by force.
@@ -221,7 +221,7 @@ if (Q.pcdi_formed) {
 !}
 go-to: arts_menu
 
-Under pressure by both business leaders and his fellow *Ras*, Grandi fully rolls back labour protections, completely removing regulations, working hours and maximum working hours, much to the outrage of workers and the delight of the industrialists. Naturally, strikes and strikers become rampant, as newly funded Squadrismo are able to as swiftly and violently put them down. 
+Under pressure by both business leaders and his fellow *Ras*, Grandi fully rolls back labour protections, completely removing regulations, working hours and maximum working hours, much to the outrage of workers and the delight of the industrialists. Naturally, strikes and strikers become rampant, as newly funded <span style="color:#3D3D3D;">Squadrismo</span> are able to as swiftly and violently put them down. 
 
 @arts_menu
 on-arrival: arts_stat = 0; arts_stat += 1 if ((fdc_strength*fdc_militancy) + (ard_strength*ard_militancy) + (abl_strength*abl_militancy)) <= (rg_strength*rg_militancy) {!
@@ -249,11 +249,11 @@ if (Q.blackshirts_formed) {
 }
 !}
 
-The next and final item on the docket is D'Annunzio's lavish spending on the arts; in particular his *Ministry of the Arts*. [? if budget < 0 : With the current deficit of the treasury, it is likely the Ministry will be abolished and its funds repurposed for better use elsewhere instead. ?][? if budget >= 0 : With the budget currently able to finance the current spending on arts, the Committee recommends the utilisation of the Ministry instead of its abolishment, utilising it to glorify Italy, and subsequently, the PNF. ?]
+The next and final item on the docket is D'Annunzio's lavish spending on the arts; in particular his *Ministry of the Arts*. [? if budget < 0 : With the current deficit of the treasury, it is likely the Ministry will be abolished and its funds repurposed for better use elsewhere instead. ?][? if budget >= 0 : With the budget currently able to finance the current spending on arts, the Committee recommends the utilisation of the Ministry instead of its abolishment, utilising it to glorify <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>, and subsequently, the <span style="font-weight: bold; color:#3D3D3D;">PNF</span>. ?]
 
-- @grandi_arts_good: The Ministry of the Arts is directed as an effective propaganda wing of the PNF instead.
+- @grandi_arts_good: The Ministry of the Arts is directed as an effective propaganda wing of the <span style="font-weight: bold; color:#3D3D3D;">PNF</span> instead.
 - @grandi_arts_good_deficit: The Ministry of the Arts is abolished.
-- @grandi_arts_bad: The Ministry of the Arts is expanded further to reward the Squadrismo.
+- @grandi_arts_bad: The Ministry of the Arts is expanded further to reward the <span style="color:#3D3D3D;">Squadrismo</span>.
 - @grandi_arts_bad_deficit: The Ministry of the Arts is curtailed rather than abolished.
 
 @grandi_arts_good
@@ -265,7 +265,7 @@ Q.rural_pnf += 5;
 Q.nationalist_sentiment += 9;
 !}
 
-Under advice from the Committee, the Ministry of the Arts is redirected to glorify the state and PNF, portraying the PNF as heroes and beginning to establish a personality cult around Grandi, with rampant propaganda across Italy. This will hinder our efforts to sway voters against the PNF.
+Under advice from the Committee, the Ministry of the Arts is redirected to glorify the state and <span style="font-weight: bold; color:#3D3D3D;">PNF</span>, portraying the <span style="font-weight: bold; color:#3D3D3D;">PNF</span> as heroes and beginning to establish a personality cult around Grandi, with rampant propaganda across <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>. This will hinder our efforts to sway voters against the <span style="font-weight: bold; color:#3D3D3D;">PNF</span>.
 
 @grandi_arts_good_deficit
 view-if: budget < 0 and arts_stat > 0
@@ -293,9 +293,9 @@ Q.rural_pnf += 5;
 Q.workers_pnf += 3;
 !}
 
-In an effort to appease the violent Squadrismo and bring it under state control, the Ministry is expanded rather than abolished, as artisans, performance artists are hired to expand its reach across Italy, many being in rural areas where the Squadrismo are most rampant.
+In an effort to appease the violent Squadrismo and bring it under state control, the Ministry is expanded rather than abolished, as artisans, performance artists are hired to expand its reach across <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>, many being in rural areas where the Squadrismo are most rampant.
 
-Classical liberals and conservatives have expressed their opposition to this new policy, citing frivolous spending that could be better used someplace else, worsening relations with the conservative parties aligned with Grandi and the National Fascist Party.
+Classical <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">rals</span> and <span style="color:#0047AB;">conservatives</span> have expressed their opposition to this new policy, citing frivolous spending that could be better used someplace else, worsening relations with the <span style="color:#0047AB;">conservatives</span> parties aligned with Grandi and the <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_full_name +]</span>.
 
 @grandi_arts_bad_deficit
 view-if: budget < 0 and arts_stat <= 0
@@ -308,6 +308,6 @@ Q.middle_class_pnf -= 1;
 Q.industrialists_pnf -= 1;
 !}
 
-In an effort to maintain and convert the Ministry into a propaganda wing of the PNF, the Ministry is curtailed rather than abolished entirely, with its remnants converted into producing propaganda for the state. 
+In an effort to maintain and convert the Ministry into a propaganda wing of the <span style="font-weight: bold; color:#3D3D3D;">PNF</span>, the Ministry is curtailed rather than abolished entirely, with its remnants converted into producing propaganda for the state. 
 
-Frustration from conservatives within the Chamber regarding the decision has been mixed, with most criticising the government's 'half-measure' to restore fiscal balance to the treasury, while the remnants of the Ministry is unable sway voters towards the PNF.
+Frustration from <span style="color:#0047AB;">conservatives</span> within the Chamber regarding the decision has been mixed, with most criticising the government's 'half-measure' to restore fiscal balance to the treasury, while the remnants of the Ministry is unable sway voters towards the <span style="font-weight: bold; color:#3D3D3D;">PNF</span>.

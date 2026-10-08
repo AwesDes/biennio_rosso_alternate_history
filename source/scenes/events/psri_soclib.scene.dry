@@ -1,15 +1,15 @@
-title: The Social Liberalism of the PSRI
-subtitle: The PSRI completes its shift rightwards.
+title: The Social Liberalism of the <span style="font-weight: bold; color:#FFC0CB;">PSRI</span>
+subtitle: The <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> completes its shift rightwards.
 new-page: true
 view-if: psri_solo and psri_time <= time and not national_congress_seen
 on-arrival: psri_soclib = 1
 tags: event
 max-visits: 1
 
-= Social Liberalism of the PSRI
+= Social Liberalism of the <span style="font-weight: bold; color:#FFC0CB;">PSRI</span>
 
-Following the PSRI's decision to move to the right and a reshuffling of its leadership, the PSRI has finally completed its shift to the right, opting instead to be elected on Liberal lists to its right rather than the socialist lists it has historically participated in. 
+Following the <span style="font-weight: bold; color:#FFC0CB;">PSRI</span>'s decision to move to the right and a reshuffling of its leadership, the <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> has finally completed its shift to the right, opting instead to be elected on <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">ral</span> lists to its right rather than the <span style="color:#ED2855">socialist</span> lists it has historically participated in. 
 
-Adding to such, our relations with the PSRI have deteriorated slightly as well, as we can no longer count on the party to join in any Leftist coalitions within the Chamber of Deputies.
+Adding to such, our relations with the <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> have deteriorated slightly as well, as we can no longer count on the party to join in any Leftist coalitions within the Chamber of Deputies.
 
 - @root: Expected, but a shame nevertheless.

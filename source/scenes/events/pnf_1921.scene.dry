@@ -1,14 +1,14 @@
-title: 1921 Congress of the PNF
-subtitle: The PNF is established.
+title: 1921 Congress of the <span style="font-weight: bold; color:#3D3D3D;">PNF</span>
+subtitle: The <span style="font-weight: bold; color:#3D3D3D;">PNF</span> is established.
 new-page: true
 view-if: year = 1921 and month = 11 and week = 1 and not pnf_banned
 on-arrival: pnf_formed = 1; pnf_name = "PNF"; pnf_full_name = "National Fascist Party"; pnf_full_italian = "Partito Nazionale Fascista";
 max-visits: 1
 tags: event
 
-= 1921 [+ pnf_full_name +] Congress
+= 1921 <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_full_name +]</span> Congress
 
-The *Partito Nazionale Fascista*, known also as the PNF has been formed officially as a political party, reorganising the existing *Fasces of Combat* into a new entity. The First Congress is to be held to determine the new leader of the Fasci.
+The <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_full_italian +]</span>, known also as the <span style="font-weight: bold; color:#3D3D3D;">PNF</span> has been formed officially as a political party, reorganising the existing <span style="font-weight: bold; color:#3D3D3D;">Fasces of Combat</span> into a new entity. The First Congress is to be held to determine the new leader of the <span style="font-weight: bold; color:#3D3D3D;">Fasci</span>.
 
 [? if pacification_pact: The signing of the *Pacification Pact* has led to a deep rift between the paramilitaries and Mussolini, and it is uncertain whether he will survive this challenge. ?]
 
@@ -28,7 +28,7 @@ With his already-established influence, Mussolini has been able to mediate the p
 @council_1921
 on-arrival: pnf_leader = "Grand Council"; veterans_pnf -= 5; veterans_other += 5; fdc_strength -= 10; pacification_pact = 0 if pacification_pact = 1
 
-With the continued absence of Mussolini, alongside no other prominent leadership, the Grand Council continues to lead, while the Fascist movement continues to weaken, as other Futurist and Fascist parties appear to fill the political vacuum the PNF have left.
+With the continued absence of Mussolini, alongside no other prominent leadership, the Grand Council continues to lead, while the <span style="color:#3D3D3D;">fascist</span> movement continues to weaken, as other Futurist and <span style="color:#3D3D3D;">fascist</span> parties appear to fill the political vacuum the <span style="font-weight: bold; color:#3D3D3D;">PNF</span> have left.
 
 @dannunzio_1921
 on-arrival: pnf_leader = "D'Annunzio"; veterans_pnf += 17; middle_class_pnf += 6; dannunzio_time = time + 2; pnf_left = 0; pnf_right = 0; pacification_pact = 0 if pacification_pact = 1
@@ -37,4 +37,4 @@ achievement: quis_contra_nos
 
 Surprisingly, it seems Gabriele D'Annunzio has taken control of the party, dismissing the current leadership and establishing his own group with overwhelming support. D'Annunzio's leadership has, unfortunately, revitalised the party, bringing the organisation to the forefront of Futurist and far-right politics.
 
-It is however, clear that the party itself will not be subjected to the whims of D'Annunzio. Though the man will certainly hold significant influence and power in leading its movement, its more ideological means and actions still remain, conducted by his deputies who still follow in the ways of Mussolini's *Fasces of Combat*.
+It is however, clear that the party itself will not be subjected to the whims of D'Annunzio. Though the man will certainly hold significant influence and power in leading its movement, its more ideological means and actions still remain, conducted by his deputies who still follow in the ways of Mussolini's <span style="font-weight: bold; color:#3D3D3D;">Fasces of Combat</span>.

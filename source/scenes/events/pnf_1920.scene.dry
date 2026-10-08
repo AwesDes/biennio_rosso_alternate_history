@@ -1,5 +1,5 @@
-title: 1920 Congress of the Fasci Italiani di Combattimento
-subtitle: The Fasci decides its political agenda. 
+title: 1920 Congress of the <span style="font-weight: bold; color:#3D3D3D;">Fasci Italiani di Combattimento</span>
+subtitle: The <span style="font-weight: bold; color:#3D3D3D;">Fasci</span> decides its political agenda. 
 new-page: true
 view-if: year = 1920 and month = 5 and week = 1 and not pnf_banned
 max-visits: 1
@@ -7,7 +7,7 @@ tags: event
 
 = 1920 [+ pnf_full_name +] Congress
 
-The *Fasci Italiani di Combattimento*, known also as the Fasci was formed in March and have begun their second congress to decide the party's agenda. [? if not mussolini_jailed :It seems all but confirmed that Benito Mussolini will come out on top once again. ?][? if mussolini_jailed: With Mussolini in jail, the organisation's future is uncertain. ?]
+The <span style="font-weight: bold; color:#3D3D3D;">Fasci Italiani di Combattimento</span>, known also as the <span style="font-weight: bold; color:#3D3D3D;">Fasci</span> was formed in March and have begun their second congress to decide the party's agenda. [? if not mussolini_jailed :It seems all but confirmed that Benito Mussolini will come out on top once again. ?][? if mussolini_jailed: With Mussolini in jail, the organisation's future is uncertain. ?]
 
 - @fdc_1920: The organisation votes...
 
@@ -25,6 +25,6 @@ Unsurprisingly, Mussolini has triumphed once more. The organisation has however,
 @council_1920
 on-arrival: pnf_leader = "Grand Council"; veterans_pnf -= 5;
 
-With Mussolini absent, the Grand Council of Fascism, comprised of Cesare Forni, Dino Grandi, Emilio De Bono, Italo Balbo and prominent members of the Fasci have formed to control the organisation, with Mussolini *de jure* operating in absentia.
+With Mussolini absent, the Grand Council of Fascism, comprised of Cesare Forni, Dino Grandi, Emilio De Bono, Italo Balbo and prominent members of the <span style="font-weight: bold; color:#3D3D3D;">Fasci</span> have formed to control the organisation, with Mussolini *de jure* operating in absentia.
 
 Regardless, the lack of leadership seems to have weakened the organisation, even if only slightly.

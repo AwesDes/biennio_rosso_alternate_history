@@ -10,12 +10,12 @@ go-to: adp_menu if rg_banned = 1
 
 = Targeting our Enemies
 
-We are not acting alone. Even now, across the nation, the Fasci, Arditismo and Anti-Bolshevik Leagues have their forces out, inciting violence, threatening voters, recruiting forces and the like. Fortunately, we can utilise our own paramilitary forces to combat them.
+We are not acting alone. Even now, across the nation, the <span style="color:#3D3D3D;">Fasci</span>, <span style="color:#3D3D3D;">Arditismo</span> and <span style="color:#3D3D3D;">Anti-Bolshevik Leagues</span> have their forces out, inciting violence, threatening voters, recruiting forces and the like. Fortunately, we can utilise our own paramilitary forces to combat them.
 
-- @rg_fasci: Focus the Red Guard's efforts against the veteran *Fasci Italiani di Combattimento*.
-- @rg_arditi: Focus the Red Guard's efforts against the rural *Arditismo*.
-- @rg_abl: Focus the Red Guard's efforts against the urban *Anti-Bolshevik Leagues*.
-- @rg_keep: Keep the *Red Guards* operating in the current scope.
+- @rg_fasci: Focus the <span style="color:#c2352b">Red Guard</span>'s efforts against the veteran <span style="color:#3D3D3D;">Fasci Italiani di Combattimento</span>.
+- @rg_arditi: Focus the <span style="color:#c2352b">Red Guard</span>'s efforts against the rural <span style="color:#3D3D3D;">Arditismo</span>.
+- @rg_abl: Focus the <span style="color:#c2352b">Red Guard</span>'s efforts against the urban <span style="color:#3D3D3D;">Anti-Bolshevik Leagues</span>.
+- @rg_keep: Keep the <span style="color:#c2352b">Red Guard</span> operating in the current scope.
 - @easy_discard
 
 @rg_fasci
@@ -23,21 +23,21 @@ on-arrival: fasci_rg_active = 1; arditi_rg_active = 0; abl_rg_active = 0;
 view-if: fasci_rg_active = 0 and fasci_adp_active = 0
 go-to: adp_menu if arditi_formed and arditi_cooperation
 
-The Red Guard focuses its targets on the *Fasci Italiani di Combattimento*, slowing down its growth and preventing it's intimidation tactics.
+The <span style="color:#c2352b">Red Guard</span> focuses its targets on the <span style="color:#3D3D3D;">Fasci Italiani di Combattimento</span>, slowing down its growth and preventing it's intimidation tactics.
 
 @rg_arditi  
 on-arrival: arditi_rg_active = 1; fasci_rg_active = 0; abl_rg_active = 0;
 view-if: arditi_rg_active = 0 and arditi_adp_active = 0
 go-to: adp_menu if arditi_formed and arditi_cooperation
 
-The Red Guard focuses its targets on the *Arditismo*, slowing down its growth and preventing it's intimidation tactics on the rural populace.
+The <span style="color:#c2352b">Red Guard</span> focuses its targets on the <span style="color:#3D3D3D;">Arditismo</span>, slowing down its growth and preventing it's intimidation tactics on the rural populace.
 
 @rg_abl  
 on-arrival: abl_rg_active = 1; arditi_rg_active = 0; fasci_rg_active = 0;
 view-if: abl_rg_active = 0 and abl_adp_active = 0
 go-to: adp_menu if arditi_formed and arditi_cooperation
 
-The Red Guard focuses its targets on the *Anti-Bolshevik Leagues*, slowing down its growth and preventing it's intimidation tactics on the urban population.
+The <span style="color:#c2352b">Red Guard</span> focuses its targets on the <span style="color:#3D3D3D;">Anti-Bolshevik Leagues</span>, slowing down its growth and preventing it's intimidation tactics on the urban population.
 
 @rg_keep
 view-if: abl_rg_active = 1 or arditi_rg_active = 1 or fasci_rg_active = 1
@@ -45,27 +45,27 @@ go-to: adp_menu if arditi_formed and arditi_cooperation
 
 @adp_menu
 
-- @adp_fasci: Focus the *Arditi del Popolo's* efforts against the veteran *Fasci Italiani di Combattimento*.
-- @adp_arditi: Focus the *Arditi del Popolo's* efforts against the rural *Arditismo*.
-- @adp_abl: Focus the *Arditi del Popolo's* efforts against the urban *Anti-Bolshevik Leagues*.
-- @adp_keep: Keep the *Arditi del Popolo* operating in the current scope.
+- @adp_fasci: Focus the <span style="color:#2F2F2F">Arditi</span> <span style="color:#3CB371">del</span> <span style="color:#ED2855">Popolo</span>'s efforts against the veteran <span style="color:#3D3D3D;">Fasci Italiani di Combattimento</span>.
+- @adp_arditi: Focus the <span style="color:#2F2F2F">Arditi</span> <span style="color:#3CB371">del</span> <span style="color:#ED2855">Popolo</span>'s efforts against the rural <span style="color:#3D3D3D;">Arditismo</span>.
+- @adp_abl: Focus the <span style="color:#2F2F2F">Arditi</span> <span style="color:#3CB371">del</span> <span style="color:#ED2855">Popolo</span>'s efforts against the urban <span style="color:#3D3D3D;">Anti-Bolshevik Leagues</span>.
+- @adp_keep: Keep the <span style="color:#2F2F2F">Arditi</span> <span style="color:#3CB371">del</span> <span style="color:#ED2855">Popolo</span> operating in the current scope.
 
 @adp_fasci
 on-arrival: fasci_adp_active = 1; arditi_adp_active = 0; abl_adp_active = 0;
 view-if: fasci_adp_active = 0 and fasci_rg_active = 0
 
-The Arditi del Popolo is directed to focus on the *Fasci Italiani di Combattimento*.
+The <span style="color:#2F2F2F">Arditi</span> <span style="color:#3CB371">del</span> <span style="color:#ED2855">Popolo</span> is directed to focus on the <span style="color:#3D3D3D;">Fasci Italiani di Combattimento</span>.
 
 @adp_arditi  
 on-arrival: arditi_adp_active = 1; fasci_adp_active = 0; abl_adp_active = 0;
 view-if: arditi_adp_active = 0 and arditi_rg_active = 0
 
-The *Arditi del Popolo* is directed to focus on the *Arditismo*.  
+The <span style="color:#2F2F2F">Arditi</span> <span style="color:#3CB371">del</span> <span style="color:#ED2855">Popolo</span> is directed to focus on the <span style="color:#3D3D3D;">Arditismo</span>.  
 
 @adp_abl  
 on-arrival: abl_adp_active = 1; arditi_adp_active = 0; fasci_adp_active = 0;
 view-if: abl_adp_active = 0 and abl_rg_active = 0
 
-The *Arditi del Popolo* is directed to focus on the *Anti-Bolshevik Leagues*.  
+The <span style="color:#2F2F2F">Arditi</span> <span style="color:#3CB371">del</span> <span style="color:#ED2855">Popolo</span> is directed to focus on the <span style="color:#3D3D3D;">Anti-Bolshevik Leagues</span>.  
 
 @adp_keep  

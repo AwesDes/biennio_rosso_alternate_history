@@ -1,4 +1,4 @@
-title: The Catholics calls a vote of no confidence against the current government!
+title: The <span style="font-weight: bold; color:#87CEFA;">Catholics</span> calls a vote of no confidence against the current government!
 subtitle: We have angered our coalition partners too much...
 new-page: true
 view-if: psi_in_government = 1 and socialist_catholic_coalition and coalition_dissent >= 3 and psi_seating_disp < 50 and ppi_in_government
@@ -9,7 +9,7 @@ go-to: vonc_menu
 
 = Vote of No Confidence
 
-The Italian People's Party have called for a vote of no confidence against us, due to our various policies and disagreements. If this succeeds, there will be a new government formed.
+The <span style="font-weight: bold; color:#87CEFA;">Italian People's Party</span> have called for a vote of no confidence against us, due to our various policies and disagreements. If this succeeds, there will be a new government formed.
 
 @vonc_menu
 
@@ -20,9 +20,9 @@ The Italian People's Party have called for a vote of no confidence against us, d
 
 How do we assuage our partners?
 
-- @white_leagues: Agree to temporarily end contention of influence with the White Leagues.
+- @white_leagues: Agree to temporarily end contention of influence with the <span style="color:#C0DCED;">White Leagues</span>.
 - @resources: Use our resources to reduce dissent within the coalition.
-- @support_psri: Could we get the PSRI to abstain?
+- @support_psri: Could we get the <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> to abstain?
 - @let_it_happen: Never mind. Let the vote happen.
 - @let_it_happen_elections: Never mind. Let the vote happen and call for snap elections.
 
@@ -31,7 +31,7 @@ How do we assuage our partners?
 view-if: rg_strength > 0
 on-arrival: coalition_dissent = 0; rural_psi -= 10; middle_class_psi -= 10; rural_ppi += 7; rural_pnf += 3; middle_class_ppi += 5; middle_class_pnf += 5; communist_dissent += 17; maximalist_dissent += 10; labour_dissent += 12; reformist_dissent += 7; rg_strength *= 0.9; rg_militancy -= 0.03; ard_strength += 20; catholic_papacy_timer += 12 if (catholic_papacy_timer == 0 and roman_question_answered == 0) 
 
-Fine. We pull back the Red Guards from rural areas of contention with the catholic White Leagues, allowing the PPI to grab our voters to the dismay of the party. The rural Arditismo capitalises on our absence as well, recruiting more forces and 'campaigning'.
+Fine. We pull back the <span style="color:#c2352b">Red Guards</span> from rural areas of contention with the <span style="color:#87CEFA;">catholic</span> <span style="font-weight: bold; color:#C0DCED;">White Leagues</span>, allowing the <span style="font-weight: bold; color:#87CEFA;">PPI</span> to grab our voters to the dismay of the party. The rural <span style="color:#3D3D3D;">Arditismo</span> capitalises on our absence as well, recruiting more forces and 'campaigning'.
 
 @resources
 choose-if: resources >= 3
@@ -43,7 +43,7 @@ By transferring resources to our coalition partners, we can reduce their dissent
 
 @support_psri
 choose-if: psri_relation >= 40 and left_wing_coalition >= 50
-unavailable-subtitle: [? if psri_relation < 40 : The PSRI is not friendly enough with us. ?] [? if left_wing_coalition < 50: The PSRI does not have enough votes. ?]
+unavailable-subtitle: [? if psri_relation < 40 : The <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> is not friendly enough with us. ?] [? if left_wing_coalition < 50: The <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> does not have enough votes. ?]
 on-departure: {!
 Q.ppi_relation -= 10;
 
@@ -111,7 +111,7 @@ Q.leverage = parseFloat(Q.psi_seating_disp);
 !}
 go-to: election_1919.left_wing_coalition
 
-Both party votes, alongside some defectors from the minor parties are enough for us to maintain control of the government. We owe a massive debt to the PSRI, which could lead to broader cooperation in the future, for better or for worse.
+Both party votes, alongside some defectors from the minor parties are enough for us to maintain control of the government. We owe a massive debt to the <span style="font-weight: bold; color:#FFC0CB;">PSRI</span>, which could lead to broader cooperation in the future, for better or for worse.
 
 @let_it_happen
 on-departure: {!

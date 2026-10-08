@@ -45,9 +45,9 @@ Q.nationalist_sentiment += 2;
 
 = Public Works Minister [+ public_works_minister +] guts funding of existing Public Works
 
-The [+ ul_name +]-led Public Works Ministry have begun to gut funding of the already-existing Public Works constructed by the previous government due to the budget deficit, causing another wave of unemployment.
+The <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span>-led Public Works Ministry have begun to gut funding of the already-existing Public Works constructed by the previous government due to the budget deficit, causing another wave of unemployment.
 
-[? if not psi_in_government : We utilise this as propaganda to show the callousness of the liberal parties, as do the fascists. ?][? if psi_in_government : We are criticised by our worker support base for failing to prevent this, and the fascists use this as propaganda against both us and the liberals callousness. ?]
+[? if not psi_in_government : We utilise this as propaganda to show the callousness of the <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">ral</span> parties, as do the <span style="color:#3D3D3D;">fascists</span>. ?][? if psi_in_government : We are criticised by our worker support base for failing to prevent this, and the <span style="color:#3D3D3D;">fascists</span> use this as propaganda against both us and the <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">rals</span> callousness. ?]
 - @root: There is nothing we can do.
 
 @pw_ppi
@@ -84,7 +84,7 @@ Q.nationalist_sentiment -= 2;
 
 = Public Works Minister [+ public_works_minister +] begins construction of new Public Works
 
-The PPI-led Public Works Ministry have begun to plan and construct new Public Works constructed, hoping to lower inflation and utilise the current budget surplus.
+The <span style="font-weight: bold; color:#87CEFA;">PPI</span>-led Public Works Ministry have begun to plan and construct new Public Works constructed, hoping to lower inflation and utilise the current budget surplus.
 
 This will aid our efforts in reducing unemployment immensely.
 

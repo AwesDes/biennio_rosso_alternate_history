@@ -1,4 +1,4 @@
-title: Papal Conclave
+title: <span style="font-weight: bold; color:#A88D37;">Papal</span> Conclave
 subtitle: Pope Benedict XV has passed away.
 view-if: year = 1922 and month = 2
 new-page: true
@@ -7,9 +7,9 @@ on-arrival: conclave_happened = 1; delval_votes += 1 if radicalisation > 7; delv
 tags: event
 face-image: img/PopeElection.jpg
 
-= 1922 Papal Conclave
+= 1922 <span style="font-weight: bold; color:#A88D37;">Papal</span> Conclave
 
-We have received news from Papacy; Pope Benedict XV has passed away. A new Pope is to be elected in the Sistine Chapel, and though historically, Benedict XV held a rather conciliatory attitude towards us, it is unclear the new Pope will keep with him.
+We have received news from the <span style="font-weight: bold; color:#A88D37;">Holy See</span>; Pope Benedict XV has passed away. A new Pope is to be elected in the Sistine Chapel, and though historically, Benedict XV held a rather conciliatory attitude towards us, it is unclear the new Pope will keep with him.
 
 There are seemingly two factions within the election; The 'Integrationists', led by Cardinal Rafael Merry del Val, favouring the policies of former Pope Pius X, and the 'Conciliatorists', led by Pietro Gasparri, who wish to continue the policies and attitudes of the late Pope Benedict XV.
 
@@ -26,7 +26,7 @@ face-image: img/portraits/del_Val.jpg
 
 = Cardinal Rafael Merry del Val succeeds Benedict XV
 
-It seems our cold relations with the Holy See has pushed neutral cardinals to see us as a bigger threat, electing del Val. Unfortunately, it is clear he will be less cordial than his predecessor.
+It seems our cold relations with the <span style="font-weight: bold; color:#A88D37;">Holy See</span> has pushed neutral cardinals to see us as a bigger threat, electing del Val. Unfortunately, it is clear he will be less cordial than his predecessor.
 
 @gasparri_elected
 on-arrival: pope = "Gasparri"
@@ -34,7 +34,7 @@ face-image: img/portraits/Gasparri.jpg
 
 = Cardinal Pietro Gasparri succeeds Benedict XV
 
-It seems our warm relations with the Holy See has pushed neutral cardinals to continue conciliatory attitudes, electing Gasparri. Fortunately, it seems he will be following along with the attitudes and policies of his predecessor, perhaps even more cordially.
+It seems our warm relations with the <span style="font-weight: bold; color:#A88D37;">Holy See</span> has pushed neutral cardinals to continue conciliatory attitudes, electing Gasparri. Fortunately, it seems he will be following along with the attitudes and policies of his predecessor, perhaps even more cordially.
 
 @ratti_elected
 on-arrival: pope = "Ratti";

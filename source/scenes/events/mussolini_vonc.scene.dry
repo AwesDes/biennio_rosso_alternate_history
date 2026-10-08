@@ -8,7 +8,7 @@ new-page: true
 
 [+ pnf_leader +] has called a Motion of Confidence for his current standing government in an effort to both legitimise his ascension to Prime Minister, especially considering the violent means to power.
 
-Unfortunately for us, however, it seems likely that enough of the Liberal and Catholic Deputies, alongside the fascists will assure [+ pnf_leader +] achieves a successful motion.
+Unfortunately for us, however, it seems likely that enough of the <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">ral</span> and <span style="color:#87CEFA;">Catholic</span> Deputies, alongside the <span style="color:#3D3D3D;">fascists</span> will assure [+ pnf_leader +] achieves a successful motion.
 
 - @voc_success: There is not much we can do.
 
@@ -23,4 +23,4 @@ Q.catholic_pnf *= 1.1;
 Q.women_pnf *= 1.4
 !}
 
-The Vote-of-Confidence succeeds, with enough of the liberal, fascist and dissident catholic Deputies voting in favour. This has reinvigorated support for the [+ pnf_name +], with many giving the party a second look, especially in light of the far-left violence plaguing the nation in the recent years.
+The Vote-of-Confidence succeeds, with enough of the <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">ral</span>, <span style="color:#3D3D3D;">fascist</span> and dissident <span style="color:#87CEFA;">catholic</span> Deputies voting in favour. This has reinvigorated support for the <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_name +]</span>, with many giving the party a second look, especially in light of the far-left violence plaguing the nation in the recent years.

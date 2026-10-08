@@ -7,7 +7,7 @@ new-page: true
 
 = Amadeo Bordiga
 
-Bordiga is one of the prominent figures of the Communist faction of the [+ psi_name +].
+Bordiga is one of the most prominent advocates within the party for absentionism, forming and aligning with the <span style="color:#8B0000">Communist</span> faction within the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>.
 
 - @bordiga_orders
 - @bordiga_revolution
@@ -16,8 +16,8 @@ Bordiga is one of the prominent figures of the Communist faction of the [+ psi_n
 - @root: Return to main
 
 @bordiga_orders
-title: Ordering the Red Guards
-subtitle: We can use the Red Guards to act.
+title: Ordering the <span style="color:#c2352b">Red Guards</span>
+subtitle: We can use the <span style="color:#c2352b">Red Guards</span> to act.
 choose-if: advisor_action_timer = 0 
 view-if: not national_congress_seen
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]

@@ -8,7 +8,7 @@ tags: govt_affairs
 
 = Judiciary Reform
 
-The Judiciary is one of the most reactionary components of the government, along with the military. Many jurists have held office since the days of the Risorgimento. They give violent fascists on the right laughably light sentences, while ruthlessly persecuting leftists and pacifists for lesser crimes.
+The Judiciary is one of the most reactionary components of the government, along with the military. Many jurists have held office since the days of the Risorgimento. They give violent <span style="color:#3D3D3D;">fascists</span> on the right laughably light sentences, while ruthlessly persecuting leftis<span style="color:#ED2855">socialists</span>ts and pacifists for lesser crimes.
 
 [? if judicial_reform <= 0 : There is great demand in our membership for reforming the judiciary, although this may bring us into a collision course with our coalition allies. ?]
 [? if judicial_reform == 1 : We have started on the path to judicial reform. While some of the most antediluvian and biased justices have been replaced, many still remain. More should be done. ?]
@@ -28,7 +28,7 @@ unavailable-subtitle: Not enough budget. (Need 1)
 on-arrival: budget -= 1; democratisation += 2; coalition_dissent += 1 if centre_left_coalition; workers_psi += 5*(1-dissent) if democratisation >= 3 and not in_unstable_coalition; workers_clc += 5*(1-dissent) if democratisation >= 3 and centre_left_coalition; workers_scc += 5*(1-dissent) if democratisation >= 3 and socialist_catholic_coalition; judicial_reform += 2; republican_sentiment += 5*(1-dissent); fasci_coup_progress += 1; ldr_promise_failed = 1 if (budget < 0 and liberal_budget_accepted); socialist_sentiment += 2
 go-to: ldr_promise_vonc if ldr_promise_failed = 1
 
-We investigate jurists who have shown themselves to have biased or corrupt behavior, and try to remove them, replacing them with more democratically-oriented jurists. This obviously raises quite a great deal of ire in conservative circles, including within our coalition. 
+We investigate jurists who have shown themselves to have biased or corrupt behavior, and try to remove them, replacing them with more democratically-oriented jurists. This obviously raises quite a great deal of ire in <span style="color:#0047AB;">conservative</span> circles, including within our coalition. 
 
 @minor_reforms
 on-arrival: democratisation += 1; workers_psi += 3*(1-dissent) if democratisation >= 3; judicial_reform += 1; republican_sentiment += 3*(1-dissent); nationalist_sentiment -= 1*(1-dissent);

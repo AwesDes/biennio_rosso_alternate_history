@@ -1,5 +1,5 @@
-title: 1920 Congress of the Partito Popolare Italiano
-subtitle: The PPI elects its Secretary General.
+title: 1920 Congress of the <span style="font-weight: bold; color:#87CEFA;">Partito Popolare Italiano</span>
+subtitle: The <span style="font-weight: bold; color:#87CEFA;">PPI</span> elects its Secretary General.
 new-page: true
 view-if: year = 1920 and month = 4 and week = 1 and not ppi_banned
 on-arrival: {!
@@ -35,11 +35,11 @@ if (Q.pope === "Del Val") {
 max-visits: 1
 tags: event
 
-= 1920 Partito Popolare Italiano Congress
+= 1920 <span style="font-weight: bold; color:#87CEFA;">Partito Popolare Italiano</span> Congress
 
-The *Partito Popolare Italiano*, known also as the PPI or the Italian People's Party have begun their second Congress. The party has developed significantly over the past year, and a new face has emerged within the party: Alcide De Gasperi.
+The <span style="font-weight: bold; color:#87CEFA;">Partito Popolare Italiano</span>, known also as the <span style="font-weight: bold; color:#87CEFA;">PPI</span> or the <span style="font-weight: bold; color:#87CEFA;">Italian People's Party</span>y have begun their second Congress. The party has developed significantly over the past year, and a new face has emerged within the party: Alcide De Gasperi.
 
-While Sturzo commands the support of the Christian Democrats and the 'White' Peasant Leagues, De Gasperi is supported by Moderate Clericalists and the Clergy.
+While Sturzo commands the support of the Christian Democrats and the 'White' <span style="color:#C0DCED;">Peasant Leagues</span>, De Gasperi is supported by Moderate Clericalists and the Clergy.
 
 - @ppi_first: The party votes...
 
@@ -56,4 +56,4 @@ Unsurprisingly, Luigi Sturzo continues his leadership over the party, continuing
 face-image: img/portraits/DeGasperi.jpg
 on-arrival: ppi_relation -= 7; ppi_leader = "De Gasperi"; ppi_moderates += 2;
 
-Surprisingly, Alcide De Gasperi, with his support base, has been elected the second Secretary General of the Party. He represents a turn from the left, seeking further cooperation with the liberal parties.
+Surprisingly, Alcide De Gasperi, with his support base, has been elected the second Secretary General of the Party. He represents a turn from the left, seeking further cooperation with the <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">ral</span> parties.

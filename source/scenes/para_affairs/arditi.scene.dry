@@ -7,14 +7,14 @@ frequency: 300
 card-image: img/Arditi.png
 tags: para_affairs
 
-= Arditi del Popolo
+= <span style="color:#2F2F2F">Arditi</span> <span style="color:#3CB371">del</span> <span style="color:#ED2855">Popolo</span>
 
-The *Arditi del Popolo* is a broad anti-fascist group, formed to combat the *Fasci Italiani di Combattimento* comprised of the broad left, ranging from Communists, Syndicalists, Anarchists, Socialists, Trade Unionists to Republicans and everything in between. Though some on the Left-wing of the party aren't entirely enthused about our decision to support the Arditi del Popolo due to their broad stance, it seems the growing rise of fascism has forced our hand.
+The <span style="color:#2F2F2F">Arditi</span> <span style="color:#3CB371">del</span> <span style="color:#ED2855">Popolo</span> is a broad anti-fascist group, formed to combat the <span style="font-weight: bold; color:#3D3D3D;">Fasci Italiani di Combattimento</span> comprised of the broad left, ranging from <span style="color:#8B0000">Communists</span>, <span style="color:#2F2F2F">Syndicalists</span>, Anarchists, <span style="color:#ED2855">Socialists</span>, <span style="color:#B22222">Trade Unionists</span> to <span style="color:#3CB371">Republicans</span> and everything in between. Though some on the Left-wing of the party aren't entirely enthused about our decision to support the <span style="color:#2F2F2F">Arditi</span> <span style="color:#3CB371">del</span> <span style="color:#ED2855">Popolo</span> due to their broad stance, it seems the growing rise of <span style="color:#3D3D3D;">fascism</span> has forced our hand.
 
-Though its broad reach has allowed it to remain non-sectarian to any party, they would certainly be willing to cooperate with us or welcome any funds we are to provide to them, being a valuable ally in the event the fascists attempt anything. What should we do?
+Though its broad reach has allowed it to remain non-sectarian to any party, they would certainly be willing to cooperate with us or welcome any funds we are to provide to them, being a valuable ally in the event the <span style="color:#3D3D3D;">fascists</span> attempt anything. What should we do?
 
-- @arditi_funding: Fund the Arditi del Popolo.
-- @arditi_training: Utilise the experienced Arditi members to train the Red Guards.
+- @arditi_funding: Fund the <span style="color:#2F2F2F">Arditi</span> <span style="color:#3CB371">del</span> <span style="color:#ED2855">Popolo</span>.
+- @arditi_training: Utilise the experienced <span style="color:#2F2F2F">Arditi</span> members to train the <span style="color:#c2352b">Red Guards</span>.
 - @arditi_fasci: Co-ordinate raids against the far-right groups.
 - @easy_discard
 - @cancel_advisor_action
@@ -25,14 +25,14 @@ choose-if: para_resources > 0
 unavailable-subtitle: Not enough paramilitary resources. (Need 1)
 on-arrival: para_resources -= 1; adp_strength += 17; adp_militancy += 0.05; socialist_sentiment += 1; republican_sentiment += 3;
 
-Our funding allows the Arditi to grow in number, strengthening our relations with them in the process.
+Our funding allows the <span style="color:#2F2F2F">Arditi</span> to grow in number, strengthening our relations with them in the process.
 
 @arditi_training
 on-arrival: rg_strength += adp_strength*0.06 if adp_strength < 100; rg_strength += adp_strength*0.02 if adp_strength >= 100; rg_militancy += adp_militancy*0.08; arditi_rg_cooperation = 1
 
-The more experienced Arditi offer to help train the Red Guards, growing our strength and making our members more proficient.
+The more experienced <span style="color:#2F2F2F">Arditi</span> offer to help train the <span style="color:#c2352b">Red Guards</span>, growing our strength and making our members more proficient.
 
 @arditi_fasci
 on-arrival: adp_strength -= 17; adp_militancy += 0.02*(1-dissent); rg_militancy += 0.02*(1-dissent); fdc_militancy -= 0.02*(1-dissent); fdc_strength += 28; ard_militancy -= 0.01*(1*dissent); ard_strength += 12; abl_strength += 9; radicalisation += 0.05; communist_strength += 7*(1-dissent); communist_dissent -= 5*(1-dissent); nationalist_sentiment -= 2; middle_class_psi -= 3*(1-dissent); rural_psi += 1*(1-dissent); strife -= 0.005;
 
-The Arditi, under our guidance, are able to carry out raids against far-right forces, seizing weapons and equipment. Our move secures weaponry for the Arditi and our own Red Guards, though the right take the opportunity to paint us as aggressive radicals to their backers, securing funding.
+The <span style="color:#2F2F2F">Arditi</span>, under our guidance, are able to carry out raids against far-right forces, seizing weapons and equipment. Our move secures weaponry for the Arditi and our own <span style="color:#c2352b">Red Guards</span>, though the right take the opportunity to paint us as aggressive radicals to their backers, securing funding.

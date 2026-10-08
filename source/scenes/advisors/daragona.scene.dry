@@ -7,7 +7,7 @@ new-page: true
 
 = Ludovico D'Aragona
 
-D'Aragona is a long-serving member of the [+ psi_full_name +], founding the party in 1892, as well as Secretary of the Italian *General Confederation of Labour*.
+D'Aragona is a long-serving member of the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>, having joined the party in 1892, as well as Secretary of the *General Confederation of Labour*.
 
 - @labour_rights_daragona
 - @emergency_fundraising_daragona
@@ -18,7 +18,7 @@ D'Aragona is a long-serving member of the [+ psi_full_name +], founding the part
 title: Labour Rights
 subtitle: Now that we are in government, we can reform labour laws to help out our main support base, the workers.
 choose-if: advisor_action_timer <= 0 and psi_in_government and labour_minister_party == psi_name
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not psi_in_government : The [+ psi_name +] is not in government to influence policy. ?][? if not labour_minister_party == psi_name : The [+ psi_name +] does not control the Labour and Social Security Ministry. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not psi_in_government : The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> is not in government to influence policy. ?][? if not labour_minister_party == psi_name : The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> does not control the Labour and Social Security Ministry. ?]
 on-arrival: advisor_action_timer = 6; last_advisor_action = 1
 go-to: labour_rights
 

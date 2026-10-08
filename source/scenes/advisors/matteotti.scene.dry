@@ -7,7 +7,7 @@ new-page: true
 
 = Giacomo Matteotti
 
-Matteotti is a long-time deputy of the [+ psi_name +] in the Chamber of Deputies, as well as a member of the reformist faction under Turati.
+Matteotti is a charismatic speaker and ardent reformist within the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>, commonly aligned and known as the protégé of Filippo Turati.
 
 - @constitutional_reform_matteotti
 - @foreign_policy_matteotti
@@ -17,7 +17,7 @@ Matteotti is a long-time deputy of the [+ psi_name +] in the Chamber of Deputies
 @constitutional_reform_matteotti
 title: Constitutional Reform
 subtitle: Having gathered enough support in the Chamber, it is time to reform the Italian Constitution into one more suited to our likeness.
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if not psi_in_government : The [+ psi_name +] is not in government. ?] [? if psi_in_government and coalition_dissent > 3 : Coalition dissent is too high for us to even suggest reforming the Constitution. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if not psi_in_government : The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> is not in government. ?] [? if psi_in_government and coalition_dissent > 3 : Coalition dissent is too high for us to even suggest reforming the Constitution. ?]
 choose-if: advisor_action_timer = 0 and psi_in_government
 view-if: not national_congress_seen
 on-arrival: advisor_action_timer = 6; constitutional_reform_timer -= 9; last_advisor_action = 1
@@ -26,14 +26,14 @@ go-to: constitutional_reform
 @foreign_policy_matteotti
 title: Foreign Policy
 subtitle: Having control of the Foreign Ministry, we can alter Italy's relations with the world.
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not psi_in_government : The [+ psi_name +] is not currently in government. ?][? if not foreign_minister_party == psi_name : The [+ psi_name +] does not control the Foreign Ministry. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not psi_in_government : The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> is not currently in government. ?][? if not foreign_minister_party == psi_name : The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> does not control the Foreign Ministry. ?]
 choose-if: psi_in_government and foreign_minister_party == psi_name and advisor_action_timer == 0
 on-arrival: advisor_action_timer = 6; foreign_policy_timer -= 5; last_advisor_action = 1;
 go-to: foreign_policy
 
 @fasci_urgency_matteotti
-title: Fasci Urgency
-subtitle: We should warn the party about the growing [+ pnf_name +].
+title: <span style="font-weight: bold; color:#3D3D3D;">Fasci</span> Urgency
+subtitle: We should warn the party about the growing <span style="font-weight: bold;">[+ pnf_name +]</span>.
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 choose-if: advisor_action_timer == 0
 view-if: not national_congress_seen

@@ -8,12 +8,12 @@ card-image: img/InterPartyRelationships.jpg
 
 = Inter-Party Relationships
 
-The [+ psi_name +] cannot govern by itself yet. Though we have not historically been any coalitions or in government, if we are to change that or take a more reformist turn, improving our relations with the bourgeois parties is certainly necessary to do so, or we could continue going alone.
+The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> cannot govern by itself yet. Though we have not historically been any coalitions or in government, if we are to change that or take a more <span style="color:#FF6961">reformist</span> turn, improving our relations with the <span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> parties is certainly necessary to do so, or we could continue going alone.
 
-- @liberals: Strengthen our bonds with the liberal [+ ldr_name +] and [+ ul_name +] parties.
-- @catholic_party: Strengthen our bonds with the Catholic People's Party.
-- @leftists: Strengthen our bonds with our ideological allies in the PSRI and [+ ds_name +][? if pll_formed :, as well as the PLL ?][? if not pri_prominent :.?] [? if pri_prominent : and the PRI. ?]
-- @splinters: Strengthen our bonds with our splinter parties; [? if pcdi_formed : the PCd'I ?] [? if pcdi_formed and psu_formed : and ?] [? if psu_formed : the PSU ?].
+- @liberals: Strengthen our bonds with the <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">ral</span> <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span> and <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span> parties.
+- @catholic_party: Strengthen our bonds with the <span style="color:#87CEFA;">Catholic</span> <span style="font-weight: bold; color:#87CEFA;">People's Party</span>.
+- @leftists: Strengthen our bonds with our ideological allies in the <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> and <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span>[? if pll_formed :, as well as the <span style="font-weight: bold; color:#FFD1D9;">PLL</span> ?][? if not pri_prominent :.?] [? if pri_prominent : and the <span style="font-weight: bold; color:#3CB371">PRI</span>. ?]
+- @splinters: Strengthen our bonds with our splinter parties; [? if pcdi_formed : the <span style="font-weight: bold; color:#C72F35">PCd'I</span> ?] [? if pcdi_formed and psu_formed : and ?] [? if psu_formed : the <span style="font-weight: bold; color:#E35A5A">PSU</span> ?].
 - @psi_alone: The [+ psi_name +] can stand alone for now.
 - @easy_discard
 - @cancel_advisor_action
@@ -33,11 +33,11 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources. (Need 1)
 on-arrival: resources -= 1; psri_relation += 8; ds_relation += 8; ds_relation += 5 if ds_leader = "Giuffrida"; ds_relation -= 5 if ds_leader = "Carnazza"; communist_dissent += 4*(1-dissent); pri_relation += 5 if pri_prominent; ds_left += 0.5; pll_relation += 8; pri_relation -= 5 if pri_denounced and pri_prominent
 
-We strengthen our contacts with the PSRI and the [+ ds_name +][? if pll_formed :, as well as the PLL ?], improving relations.
+We strengthen our contacts with the <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> and the <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span>[? if pll_formed :, as well as the <span style="font-weight: bold; color:#FFD1D9;">PLL</span> ?], improving relations.
 
-[? if pri_prominent and not pri_denounced : We also reach out to the PRI, which respond warmly. ?]
+[? if pri_prominent and not pri_denounced : We also reach out to the <span style="font-weight: bold; color:#3CB371">PRI</span>, which respond warmly. ?]
 
-[? if pri_prominent and pri_denounced : We reach out to the PRI, who coldly respond to our outreach. ?]
+[? if pri_prominent and pri_denounced : We reach out to the <span style="font-weight: bold; color:#3CB371">PRI</span>, who coldly respond to our outreach. ?]
 
 @catholic_party
 subtitle: -1 resources

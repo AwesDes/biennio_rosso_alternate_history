@@ -9,7 +9,7 @@ tags: govt_affairs
 
 = Dealing with Veterans' Welfare
 
-Following our defeat at Caporetto and the subsequent formation of the *Opera Nazionale Combattenti*, the previous liberal government promised soldiers welfare as high as the moon to re-moralise them, and now it is up to us to actually take care of our veterans and fufill these promises. 
+Following our defeat at Caporetto and the subsequent formation of the *Opera Nazionale Combattenti*, the previous <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">ral</span> government promised soldiers welfare as high as the moon to re-moralise them, and now it is up to us to actually take care of our veterans and fufill these promises. 
 
 What do we do?
 
@@ -25,7 +25,7 @@ What do we do?
 - @cancel_advisor_action
 
 @unemployment_insurance_program
-subtitle: -2 Budget - This will be a burden to our budget if we expand the scope too far. [? if catholic_charity_accepted : The creation of an non-Catholic welfare program would violate our coalition agreements! ?][? if budget < 2 and liberal_budget_accepted : This will put us into a deficit! ?]
+subtitle: -2 Budget - This will be a burden to our budget if we expand the scope too far. [? if catholic_charity_accepted : The creation of an non-<span style="color:#87CEFA;">Catholic</span> welfare program would violate our coalition agreements! ?][? if budget < 2 and liberal_budget_accepted : This will put us into a deficit! ?]
 view-if: not unemployment_insurance_founded 
 choose-if: not national_economic_recovery or budget > 1
 unavailable-subtitle: Not enough budget. (Need 2)
@@ -76,7 +76,7 @@ Proposed by one of our deputies, the unemployment insurance program would place 
 Unfortunately, our current financial situation limits the scope of this welfare program to unemployed and disabled veterans.
 
 @expand_insurance
-subtitle: -2 Budget - This will expand the scope of the current program. [? if catholic_charity_accepted : The expansion of an non-Catholic welfare program would violate our coalition agreements! ?][? if budget < 2 and liberal_budget_accepted : This will put us into a deficit! ?]
+subtitle: -2 Budget - This will expand the scope of the current program. [? if catholic_charity_accepted : The expansion of an non-<span style="color:#87CEFA;">Catholics</span> welfare program would violate our coalition agreements! ?][? if budget < 2 and liberal_budget_accepted : This will put us into a deficit! ?]
 view-if: unemployment_insurance_founded 
 choose-if: not national_economic_recovery or budget > 1
 unavailable-subtitle: Not enough budget. (Need 2)
@@ -123,31 +123,31 @@ go-to: ldr_promise_vonc if ldr_promise_failed == 1; catholic_promise_vonc if ppi
 
 Now that our financial situation is better, we can expand the scope of the program further, at least temporarily.
 
-[? if ldr_promise_failed : Unfortunately, increasing funding has led us to enter a deficit, breaking our agreement with the Liberals, and their representatives have already requested a meeting with us. ?]
-[? if ppi_promise_failed : Unfortunately, the creation of the Unemployment Insurance Program has broken our agreement with the Catholics, and their representatives have already requested a meeting with us. ?]
+[? if ldr_promise_failed : Unfortunately, increasing funding has led us to enter a deficit, breaking our agreement with the <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">rals</span>, and their representatives have already requested a meeting with us. ?]
+[? if ppi_promise_failed : Unfortunately, the creation of the Unemployment Insurance Program has broken our agreement with the <span style="color:#87CEFA;">Catholics</span>, and their representatives have already requested a meeting with us. ?]
 
 @veterans_organisations_gov
-subtitle: -1 Budget [? if catholic_charity_accepted :- The funding of an non-Catholic welfare program would violate our coalition agreements! ?][? if budget < 1 and liberal_budget_accepted :- This will put us into a deficit! ?]
+subtitle: -1 Budget [? if catholic_charity_accepted :- The funding of an non-<span style="color:#87CEFA;">Catholic</span> welfare program would violate our coalition agreements! ?][? if budget < 1 and liberal_budget_accepted :- This will put us into a deficit! ?]
 choose-if: labour_minister_party = psi_name and (not national_economic_recovery or budget >= 1)
-unavailable-subtitle: [? if labour_minister_party != psi_name : The [+ psi_name +] does not control the Labour & Social Security Ministry. ?][? if national_economic_recovery and budget < 1 : Not enough budget. (Need 1) ?]
+unavailable-subtitle: [? if labour_minister_party != psi_name : The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> does not control the Labour & Social Security Ministry. ?][? if national_economic_recovery and budget < 1 : Not enough budget. (Need 1) ?]
 on-arrival: budget -= 1; ldr_promise_failed = 1 if (budget < 0 and liberal_budget_accepted); ppi_promise_failed = 1 if catholic_charity_accepted; veterans_psi += 2*(1-dissent) if not in_unstable_coalition; veterans_clc += 2*(1-dissent) if centre_left_coalition; veterans_scc += 2*(1-dissent) if socialist_catholic_coalition; veterans_pnf -= 2*(1-dissent); economic_growth += 0.3; inflation += 0.2; inflation += 0.1 if budget < 0; economic_growth += 0.1 if economic_growth < 0
 go-to: ldr_promise_vonc if ldr_promise_failed == 1; catholic_promise_vonc if ppi_promise_failed == 1
 
 We begin distributing funds to the *Opera Nazionale Combattenti*, and the funds are reallocated to aid veterans immediately.
 
-[? if ldr_promise_failed : Unfortunately, increasing funding has led us to enter a deficit, breaking our agreement with the Liberals, and their representatives have already requested a meeting with us. ?]
-[? if ppi_promise_failed : Unfortunately, the funding of a non-Catholic aligned welfare organisation has led us to enter a deficit, breaking our agreement with the Catholics, and their representatives have already requested a meeting with us. ?]
+[? if ldr_promise_failed : Unfortunately, increasing funding has led us to enter a deficit, breaking our agreement with the <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">rals</span>, and their representatives have already requested a meeting with us. ?]
+[? if ppi_promise_failed : Unfortunately, the funding of a non-Catholic aligned welfare organisation has led us to enter a deficit, breaking our agreement with the <span style="color:#87CEFA;">Catholics</span>, and their representatives have already requested a meeting with us. ?]
 
 @veterans_organisations_catholic
 subtitle: -1 Budget [? if budget < 1 and liberal_budget_accepted :- This will put us into a deficit! ?]
 choose-if: treasury_minister_party = psi_name and (not national_economic_recovery or budget >= 1)
-unavailable-subtitle: [? if treasury_minister_party != psi_name : The [+ psi_name +] does not control the Treasury Ministry. ?][? if national_economic_recovery and budget < 1 : Not enough budget. (Need 1) ?]
+unavailable-subtitle: [? if treasury_minister_party != psi_name : The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> does not control the Treasury Ministry. ?][? if national_economic_recovery and budget < 1 : Not enough budget. (Need 1) ?]
 on-arrival: budget -= 1; ldr_promise_failed = 1 if (budget < 0 and liberal_budget_accepted); veterans_ppi += 1*(1-dissent); veterans_psi += 1*(1-dissent); veterans_pnf -= 2*(1-dissent); ppi_left += 0.1; economic_growth += 0.3; inflation += 0.2; inflation += 0.1 if budget < 0; economic_growth += 0.1 if economic_growth < 0
 go-to: ldr_promise_vonc if ldr_promise_failed = 1
 
-We begin distributing funds to Catholic-aligned organisations such as Churches, and the funds are reallocated to aid veterans immediately.
+We begin distributing funds to <span style="color:#87CEFA;">Catholic</span>-aligned organisations such as Churches, and the funds are reallocated to aid veterans immediately.
 
-[? if ldr_promise_failed : Unfortunately, increasing funding has led us to enter a deficit, breaking our agreement with the Liberals, and their representatives have already requested a meeting with us. ?]
+[? if ldr_promise_failed : Unfortunately, increasing funding has led us to enter a deficit, breaking our agreement with the <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">rals</span>, and their representatives have already requested a meeting with us. ?]
 
 @no_aid
 

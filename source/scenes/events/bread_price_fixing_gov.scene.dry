@@ -1,5 +1,5 @@
 title: Abolishment of Price Controls
-subtitle: The Liberals floor a controversial bill.
+subtitle: The <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">rals</span> floor a controversial bill.
 tags: event, govt_affairs
 is-card: true
 view-if: year = 1920 and month = 6 and week = 1 and psi_in_government
@@ -11,7 +11,7 @@ new-page: true
 
 = Price Control Measures
 
-The [+ ul_full_name +] has floored a bill that would abolish price controls on essential goods, including a controversial abolishing of price controls on bread. Our support base, allies and the vast majority of our leadership has demanded we vote against the bill, as a general strike has seemingly begun once more in response to this.
+The <span style="font-weight: bold; color:#0047AB;">[+ ul_full_name +]</span> has floored a bill that would abolish price controls on essential goods, including a controversial abolishing of price controls on bread. Our support base, allies and the vast majority of our leadership has demanded we vote against the bill, as a general strike has seemingly begun once more in response to this.
 
 What should we do?
 
@@ -34,7 +34,7 @@ view-if: prime_minister_party != psi_name
 
 Our grassroots party members are shocked by our intransigence! Many party branches have begun agitating against the cabinet, and our own delegation members even plan a full vote on the proposal, contravening the government's decision.
 
-The workers view this as betrayal, as do the unions. The bill is dropped by the liberals regardless in fear of the ongoing general strike.
+The workers view this as betrayal, as do the unions. The bill is dropped by the <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">rals</span> regardless in fear of the ongoing general strike.
 
 @vote_no
 on-arrival: ul_relation -= 10; ldr_relation -= 5; communist_dissent -= 5; labour_dissent -= 5; workers_psi += 3*(1-dissent); coalition_dissent += 1 if in_unstable_coalition;

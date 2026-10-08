@@ -139,7 +139,7 @@ if (Q.soviet_hungary == 1 && Q.labour_government == 1 && Q.soviet_polish_victory
 
 @mussolini_wins
 view-if: prime_minister_party = pnf_name
-title: The Fascists have seized control.
+title: The <span style="color:#3D3D3D;">Fascists</span> have seized control.
 tags: endings
 go-to: eg_menu
 
@@ -153,15 +153,15 @@ title: [+ pnf_leader +] is in power, but we are fighting to stop him.
 tags: endings
 go-to: eg_menu
 
-[+ pnf_leader +] has taken power in Italy, however, we have rallied to oppose him through violent means.
+[+ pnf_leader +] has taken power in <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>, however, we have rallied to oppose him through violent means.
 
 @no_mussolini
 view-if: prime_minister != pnf_leader and not pnf_collapse_seen
-title: [+ pnf_leader +] does not yet control Italy...
+title: [+ pnf_leader +] does not yet control <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>...
 tags: endings
 go-to: eg_menu
 
-[+ pnf_leader +] does not yet control Italy.
+[+ pnf_leader +] does not yet control <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>.
 
 @reformist_civil_war_won
 title: We have won the civil war.
@@ -169,7 +169,7 @@ view-if: kingdom_victory == 1
 tags: endings
 go-to: eg_menu
 
-We have won the civil war against the reactionary forces. Italy will be changed forever, but it is too early to know how.
+We have won the civil war against the <span style="color:#3D3D3D;">reactionary</span> forces. <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span> will be changed forever, but it is too early to know how.
 
 @reformist_civil_war_lost
 title: We lost the civil war.
@@ -177,17 +177,17 @@ view-if: total_defeat == 1
 tags: endings
 go-to: eg_menu
 
-We have lost the civil war. At least it was a quick coup, and ended before Italy could be plunged into total war.
+We have lost the civil war. At least it was a quick coup, and ended before <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span> could be plunged into total war.
 
 @long_war
-title: Italy is gripped by civil war.
+title: <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span> is gripped by civil war.
 view-if: long_war == 1
 tags: endings
 go-to: eg_menu
 
-Italy is currently in the grip of a civil war, a brutal affair that has no obvious end. Thousands of lives have already been extinguished, and it is likely that the war will not stop until Italy's cities are reduced to ruins. 
+<span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span> is currently in the grip of a civil war, a brutal affair that has no obvious end. Thousands of lives have already been extinguished, and it is likely that the war will not stop until <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>'s cities are reduced to ruins. 
 
-[? if soviet_aid >= 1: The Soviet Union has sent limited aid to us, still in the midst of its own civil war. ?][? if entente_relation < 3: Anti-communist sentiment has gripped our former allies, as they are aiding the fascists. ?]
+[? if soviet_aid >= 1: The <span style="font-weight: bold; color:#CC0000">Soviet Union</span> has sent limited aid to us, still in the midst of its own civil war. ?][? if entente_relation < 3: Anti-communist sentiment has gripped our former allies, as they are aiding the <span style="color:#3D3D3D;">fascists</span>. ?]
 
 @italy_government_won
 title: We have toppled the Monarchy!
@@ -195,7 +195,7 @@ view-if: soviet_victory == 1
 tags: endings
 go-to: eg_menu
 
-We have won the war against the bourgeois forces and fascists, establishing a Soviet Republic, the first of its kind in the Mediterranean.
+We have won the war against the <span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> forces and <span style="color:#3D3D3D;">fascists</span>, establishing a Soviet Republic, the first of its kind in the Mediterranean.
 
 @italy_government_lost
 title: We have failed to topple the Monarchy.
@@ -203,15 +203,15 @@ view-if: soviet_victory == 0 and monarchy_gone == 0
 tags: endings
 go-to: eg_menu
 
-Italy remains a Kingdom, gripped by the autocrat Vittorio Emanuele III, [? if psi_in_government : under a government led by us,?][? if not psi_in_government and not pnf_in_government : under an incompetent government,?][? if pnf_in_government : under a fascist dictatorship. ?] [? if not pnf_collapse_seen : and under threat of the fascist [+ pnf_leader +] and his far-right bloc. ?]
+<span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span> remains a Kingdom, gripped by the autocrat Vittorio Emanuele III, [? if psi_in_government : under a government led by us,?][? if not psi_in_government and not pnf_in_government : under an incompetent government,?][? if pnf_in_government : under a <span style="color:#3D3D3D;">fascist</span> dictatorship. ?] [? if not pnf_collapse_seen : and under threat of the <span style="color:#3D3D3D;">fascist</span> [+ pnf_leader +] and his far-right bloc. ?]
 
 @psi_victorious
-title: [+ psi_name +] still in government
+title: <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> still in government
 view-if: psi_in_government == 1 and prime_minister_party == psi_name and total_defeat == 0 and long_war == 0
 tags: endings
 go-to: eg_menu
 
-The [+ psi_name +] is in government, under Prime Minister [+ prime_minister +]. Given the circumstances, this is a substantial accomplishment.
+The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> is in government, under Prime Minister [+ prime_minister +]. Given the circumstances, this is a substantial accomplishment.
 
 @economic_crisis_resolved
 title: Economic crisis resolved!
@@ -219,7 +219,7 @@ view-if: national_economic_recovery = 1
 tags: endings
 go-to: eg_menu
 
-[? if psi_in_government: With our lead, the economic crisis has been brought to a slow, as both unemployment and inflation have reached acceptable levels. ?][? if not psi_in_government: Surprisingly, the bourgeois governments have been able to contain the crisis to a minimal amount. ?]
+[? if psi_in_government: With our lead, the economic crisis has been brought to a slow, as both unemployment and inflation have reached acceptable levels. ?][? if not psi_in_government: Surprisingly, the <span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> governments have been able to contain the crisis to a minimal amount. ?]
 
 @achievements
 title: Achievements
@@ -228,7 +228,7 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 = Completed Achievements in this Playthrough
 
-[? if game_achievement_alleanza_ardita: **Allenza Ardita** - Cooperate with the Arditi del Popolo. ?]
+[? if game_achievement_alleanza_ardita: **Allenza Ardita** - Cooperate with the <span style="color:#2F2F2F">Arditi</span> <span style="color:#3CB371">del</span> <span style="color:#ED2855">Popolo</span>. ?]
 
 [? if game_achievement_guerra_civile: **Guerra Civile** - Enter a long civil war. ?]
 
@@ -244,9 +244,9 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if game_achievement_vittoria_monarchica: **Vittoria Monarchica** - Win the Civil War under the banner of the Kingdom. ?]
 
-[? if game_achievement_sinistra_ascendente: **Sinistra Ascendente** - Form a Left-Wing Coalition. ?]
+[? if game_achievement_sinistra_ascendente: **Sinistra Ascendente** - Form a <span style="color:#ED2855">Left-Wing</span> Coalition. ?]
 
-[? if game_achievement_governo_monocolore: **Governo Monocolore** - Form a PSI-Only Government. ?]
+[? if game_achievement_governo_monocolore: **Governo Monocolore** - Form a <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>-Only Government. ?]
 
 [? if game_achievement_il_traditore_e_sempre_un_infame: **Il Traditore è Sempre un Infame** - Imprison Mussolini. ?]
 
@@ -270,7 +270,7 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if game_achievement_lotta_di_classe: **Lotta di Classe** - Have Worker support over 80%, Middle Class & Rural support below 40%. ?]
 
-[? if game_achievement_trasformazione_socialista: **Trasformazione Socialista** - Begin the transition to a socialist economy. ?]
+[? if game_achievement_trasformazione_socialista: **Trasformazione Socialista** - Begin the transition to a <span style="color:#ED2855">socialist</span> economy. ?]
 
 [? if game_achievement_resistenza_duplice: **Resistenza Duplice** - Survive both a Capital Strike and the March on Rome. ?]
 
@@ -286,7 +286,7 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if game_achievement_seconda_era_giolitti: **Seconda Era Giolitti** - Keep Giolitti as Prime Minister for the entire game. ?]
 
-[? if game_achievement_rivoluzione_permanente: **Rivoluzione Permanente** - Successfully establish a Soviet Republic while having full relations with the RSFSR. ?]
+[? if game_achievement_rivoluzione_permanente: **Rivoluzione Permanente** - Successfully establish a Soviet Republic while having full relations with the <span style="font-weight: bold; color:#CC0000">RSFSR</span>. ?]
 
 [? if game_achievement_far_viaggiare_i_treni_in_orario: **Far Viaggiare i Treni in Orario** - Significantly improve Public Works. ?]
 
@@ -296,13 +296,13 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if game_achievement_debiti_in_fumo: **Debiti in Fumo** - Default on foreign debts. ?]
 
-[? if game_achievement_ascendente_repubblicano: **Ascendente Repubblicano** - Have the PRI become prominent. ?]
+[? if game_achievement_ascendente_repubblicano: **Ascendente Repubblicano** - Have the <span style="font-weight: bold; color:#3CB371">PRI</span> become prominent. ?]
 
 [? if game_achievement_piano_massimo_completato: **Piano Massimo Completato** - Complete the objectives of the Maximum Plan. ?]
 
 [? if game_achievement_piano_minimo_completato: **Piano Minamo Completato** - Complete the objectives of the Minimum Plan. ?]
 
-[? if game_achievement_fronte_diviso: **Fronte Diviso** - Have all factions of the [+ psi_name +] break away. ?]
+[? if game_achievement_fronte_diviso: **Fronte Diviso** - Have all factions of the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> break away. ?]
 
 [? if game_achievement_follia_di_sinistra: **Follia di Sinistra** - Lose the Civil War. ?]
 
@@ -310,11 +310,11 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if game_achievement_andate_in_pace: **Andate In Pace** - Successfully eliminate the paramilitaries after revolution. ?]
 
-[? if game_achievement_quis_contra_nos: **Quis Contra Nos** - Get D'Annunzio elected as leader of the Fascists. ?]
+[? if game_achievement_quis_contra_nos: **Quis Contra Nos** - Get D'Annunzio elected as leader of the <span style="color:#3D3D3D;">Fascists</span>. ?]
 
-[? if game_achievement_spartaco_marcia_ancora: **Spartaco Marcia Ancora** - Cause German October to succeed. ?]
+[? if game_achievement_spartaco_marcia_ancora: **Spartaco Marcia Ancora** - Cause <span style="font-weight: bold; color:#3D3D3D">Ge</span><span style="font-weight: bold; color:#D00000">rm</span><span style="font-weight: bold; color:#FFCE00">an</span> October to succeed. ?]
 
-[? if game_achievement_rivoluzione_permanente_tranne_qui: **Rivoluzione Permanente, Tranne Qui** - Alter the course of socialism in Poland, Hungary, the United Kingdom and the United States, but fail to bring socialism to Italy. ?]
+[? if game_achievement_rivoluzione_permanente_tranne_qui: **Rivoluzione Permanente, Tranne Qui** - Alter the course of <span style="color:#ED2855">socialism</span> in <span style="color:#BD4E84">Poland</span>, <span style="color:#FFA500">Hungary</span>, the <span style="color:#C8102E">United Kingdom</span> and the <span style="color:#002868">United</span> <span style="color:#B31942">States</span>, but fail to bring <span style="color:#ED2855">socialism</span> to <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>. ?]
 
 [? if game_achievement_piu_fanno_rumore_quando_cadono: **Più Fanno Rumore Quando Cadono** - Have Dino Grandi die. ?]
 
@@ -324,7 +324,7 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 = Completed Achievements Overall
 
-[? if achievement_alleanza_ardita: **Allenza Ardita** - Cooperate with the Arditi del Popolo. ?]
+[? if achievement_alleanza_ardita: **Allenza Ardita** - Cooperate with the <span style="color:#2F2F2F">Arditi</span> <span style="color:#3CB371">del</span> <span style="color:#ED2855">Popolo</span>. ?]
 
 [? if achievement_guerra_civile: **Guerra Civile** - Enter a long civil war. ?]
 
@@ -340,9 +340,9 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if achievement_vittoria_monarchica: **Vittoria Monarchica** - Win the Civil War under the banner of the Kingdom. ?]
 
-[? if achievement_sinistra_ascendente: **Sinistra Ascendente** - Form a Left-Wing Coalition. ?]
+[? if achievement_sinistra_ascendente: **Sinistra Ascendente** - Form a <span style="color:#ED2855">Left-Wing</span> Coalition. ?]
 
-[? if achievement_governo_monocolore: **Governo Monocolore** - Form a PSI-Only Government. ?]
+[? if achievement_governo_monocolore: **Governo Monocolore** - Form a <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>-Only Government. ?]
 
 [? if achievement_il_traditore_e_sempre_un_infame: **Il Traditore è Sempre un Infame** - Imprison Mussolini. ?]
 
@@ -366,7 +366,7 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if achievement_lotta_di_classe: **Lotta di Classe** - Have Worker support over 80%, Middle Class & Rural support below 40%. ?]
 
-[? if achievement_trasformazione_socialista: **Trasformazione Socialista** - Begin the transition to a socialist economy. ?]
+[? if achievement_trasformazione_socialista: **Trasformazione Socialista** - Begin the transition to a <span style="color:#ED2855">socialist</span> economy. ?]
 
 [? if achievement_resistenza_duplice: **Resistenza Duplice** - Survive both a Capital Strike and the March on Rome. ?]
 
@@ -382,7 +382,7 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if achievement_seconda_era_giolitti: **Seconda Era Giolitti** - Keep Giolitti as Prime Minister for the entire game. ?]
 
-[? if achievement_rivoluzione_permanente: **Rivoluzione Permanente** - Successfully establish a Soviet Republic while having full relations with the RSFSR. ?]
+[? if achievement_rivoluzione_permanente: **Rivoluzione Permanente** - Successfully establish a Soviet Republic while having full relations with the <span style="font-weight: bold; color:#CC0000">RSFSR</span>. ?]
 
 [? if achievement_far_viaggiare_i_treni_in_orario: **Far Viaggiare i Treni in Orario** - Significantly improve Public Works. ?]
 
@@ -392,13 +392,13 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if achievement_debiti_in_fumo: **Debiti in Fumo** - Default on foreign debts. ?]
 
-[? if achievement_ascendente_repubblicano: **Ascendente Repubblicano** - Have the PRI become prominent. ?]
+[? if achievement_ascendente_repubblicano: **Ascendente Repubblicano** - Have the <span style="font-weight: bold; color:#3CB371">PRI</span> become prominent. ?]
 
 [? if achievement_piano_massimo_completato: **Piano Massimo Completato** - Complete the objectives of the Maximum Plan. ?]
 
 [? if achievement_piano_minimo_completato: **Piano Minamo Completato** - Complete the objectives of the Minimum Plan. ?]
 
-[? if achievement_fronte_diviso: **Fronte Diviso** - Have all factions of the [+ psi_name +] break away. ?]
+[? if achievement_fronte_diviso: **Fronte Diviso** - Have all factions of the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> break away. ?]
 
 [? if achievement_follia_di_sinistra: **Follia di Sinistra** - Lose the Civil War. ?]
 
@@ -406,11 +406,11 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if achievement_andate_in_pace: **Andate In Pace** - Successfully eliminate the paramilitaries after revolution. ?]
 
-[? if achievement_quis_contra_nos: **Quis Contra Nos** - Get D'Annunzio elected as leader of the Fascists. ?]
+[? if achievement_quis_contra_nos: **Quis Contra Nos** - Get D'Annunzio elected as leader of the <span style="color:#3D3D3D;">Fascists</span>. ?]
 
-[? if achievement_spartaco_marcia_ancora: **Spartaco Marcia Ancora** - Cause German October to succeed. ?]
+[? if achievement_spartaco_marcia_ancora: **Spartaco Marcia Ancora** - Cause <span style="font-weight: bold; color:#3D3D3D">Ge</span><span style="font-weight: bold; color:#D00000">rm</span><span style="font-weight: bold; color:#FFCE00">an</span> October to succeed. ?]
 
-[? if achievement_rivoluzione_permanente_tranne_qui: **Rivoluzione Permanente, Tranne Qui** - Alter the course of socialism in Poland, Hungary, the United Kingdom and the United States, but fail to bring socialism to Italy. ?]
+[? if achievement_rivoluzione_permanente_tranne_qui: **Rivoluzione Permanente, Tranne Qui** - Alter the course of <span style="color:#ED2855">socialism</span> in <span style="color:#BD4E84">Poland</span>, <span style="color:#FFA500">Hungary</span>, the <span style="color:#C8102E">United Kingdom</span> and the <span style="color:#002868">United</span> <span style="color:#B31942">States</span>, but fail to bring <span style="color:#ED2855">socialism</span> to <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>. ?]
 
 [? if achievement_piu_fanno_rumore_quando_cadono: **Più Fanno Rumore Quando Cadono** - Have Dino Grandi die. ?]
 
@@ -420,7 +420,7 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 = Incomplete Achievements
 
-[? if not achievement_alleanza_ardita: **Allenza Ardita** - Cooperate with the Arditi del Popolo. ?]
+[? if not achievement_alleanza_ardita: **Allenza Ardita** - Cooperate with the <span style="color:#2F2F2F">Arditi</span> <span style="color:#3CB371">del</span> <span style="color:#ED2855">Popolo</span>. ?]
 
 [? if not achievement_guerra_civile: **Guerra Civile** - Enter a long civil war. ?]
 
@@ -436,9 +436,9 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if not achievement_vittoria_monarchica: **Vittoria Monarchica** - Win the Civil War under the banner of the Kingdom. ?]
 
-[? if not achievement_sinistra_ascendente: **Sinistra Ascendente** - Form a Left-Wing Coalition. ?]
+[? if not achievement_sinistra_ascendente: **Sinistra Ascendente** - Form a <span style="color:#ED2855">Left-Wing</span> Coalition. ?]
 
-[? if not achievement_governo_monocolore: **Governo Monocolore** - Form a PSI-Only Government. ?]
+[? if not achievement_governo_monocolore: **Governo Monocolore** - Form a <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>-Only Government. ?]
 
 [? if not achievement_il_traditore_e_sempre_un_infame: **Il Traditore è Sempre un Infame** - Imprison Mussolini. ?]
 
@@ -462,7 +462,7 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if not achievement_lotta_di_classe: **Lotta di Classe** - Have Worker support over 80%, Middle Class & Rural support below 40%. ?]
 
-[? if not achievement_trasformazione_socialista: **Trasformazione Socialista** - Begin the transition to a socialist economy. ?]
+[? if not achievement_trasformazione_socialista: **Trasformazione Socialista** - Begin the transition to a <span style="color:#ED2855">socialist</span> economy. ?]
 
 [? if not achievement_resistenza_duplice: **Resistenza Duplice** - Survive both a Capital Strike and the March on Rome. ?]
 
@@ -478,7 +478,7 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if not achievement_seconda_era_giolitti: **Seconda Era Giolitti** - Keep Giolitti as Prime Minister for the entire game. ?]
 
-[? if not achievement_rivoluzione_permanente: **Rivoluzione Permanente** - Successfully establish a Soviet Republic while having full relations with the RSFSR. ?]
+[? if not achievement_rivoluzione_permanente: **Rivoluzione Permanente** - Successfully establish a Soviet Republic while having full relations with the <span style="font-weight: bold; color:#CC0000">RSFSR</span>. ?]
 
 [? if not achievement_far_viaggiare_i_treni_in_orario: **Far Viaggiare i Treni in Orario** - Significantly improve Public Works. ?]
 
@@ -488,13 +488,13 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if not achievement_debiti_in_fumo: **Debiti in Fumo** - Default on foreign debts. ?]
 
-[? if not achievement_ascendente_repubblicano: **Ascendente Repubblicano** - Have the PRI become prominent. ?]
+[? if not achievement_ascendente_repubblicano: **Ascendente Repubblicano** - Have the <span style="font-weight: bold; color:#3CB371">PRI</span> become prominent. ?]
 
 [? if not achievement_piano_massimo_completato: **Piano Massimo Completato** - Complete the objectives of the Maximum Plan. ?]
 
-[? if not achievement_piano_minimo_completato: **Piano Minimo Completato** - Complete the objectives of the Minimum Plan. ?]
+[? if not achievement_piano_minimo_completato: **Piano Minamo Completato** - Complete the objectives of the Minimum Plan. ?]
 
-[? if not achievement_fronte_diviso: **Fronte Diviso** - Have all factions of the [+ psi_name +] break away. ?]
+[? if not achievement_fronte_diviso: **Fronte Diviso** - Have all factions of the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> break away. ?]
 
 [? if not achievement_follia_di_sinistra: **Follia di Sinistra** - Lose the Civil War. ?]
 
@@ -502,11 +502,11 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if not achievement_andate_in_pace: **Andate In Pace** - Successfully eliminate the paramilitaries after revolution. ?]
 
-[? if not achievement_quis_contra_nos: **Quis Contra Nos** - Get D'Annunzio elected as leader of the Fascists. ?]
+[? if not achievement_quis_contra_nos: **Quis Contra Nos** - Get D'Annunzio elected as leader of the <span style="color:#3D3D3D;">Fascists</span>. ?]
 
-[? if not achievement_spartaco_marcia_ancora: **Spartaco Marcia Ancora** - Cause German October to succeed. ?]
+[? if not achievement_spartaco_marcia_ancora: **Spartaco Marcia Ancora** - Cause <span style="font-weight: bold; color:#3D3D3D">Ge</span><span style="font-weight: bold; color:#D00000">rm</span><span style="font-weight: bold; color:#FFCE00">an</span> October to succeed. ?]
 
-[? if not achievement_rivoluzione_permanente_tranne_qui: **Rivoluzione Permanente, Tranne Qui** - Alter the course of socialism in Poland, Hungary, the United Kingdom and the United States, but fail to bring socialism to Italy. ?]
+[? if not achievement_rivoluzione_permanente_tranne_qui: **Rivoluzione Permanente, Tranne Qui** - Alter the course of <span style="color:#ED2855">socialism</span> in <span style="color:#BD4E84">Poland</span>, <span style="color:#FFA500">Hungary</span>, the <span style="color:#C8102E">United Kingdom</span> and the <span style="color:#002868">United</span> <span style="color:#B31942">States</span>, but fail to bring <span style="color:#ED2855">socialism</span> to <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>. ?]
 
 [? if not achievement_piu_fanno_rumore_quando_cadono: **Più Fanno Rumore Quando Cadono** - Have Dino Grandi die. ?]
 

@@ -1,5 +1,5 @@
 title: March on Rome
-subtitle: The fascists are making their move!
+subtitle: The <span style="color:#3D3D3D;">fascists</span> are making their move!
 view-if: ((year == 1922 and month == 10) or (fasci_coup_progress >= 10 and year == 1922 and month <= 10)) and ((fdc_banned == 0 or ard_banned == 0 or abl_banned == 0) or (fdc_strength + ard_strength + abl_strength) > 100) and pnf_in_government = 0 and not national_congress_seen and not pnf_banned
 on-arrival: pnf_leader = "Balbo" if pnf_leader == "Grand Council"
 max-visits: 1
@@ -11,18 +11,18 @@ go-to: rome_menu if (maximalist_participating = 0 or (maximalist_participating a
 
 = March on Rome
 
-[? if pnf_leader != "D'Annunzio" : [+ pnf_leader +], alongside his militants, have marched upon Rome, demanding the resignation of the current government. The party is in crisis, as factions scramble to assemble a coherent response to the threat. [? if centre_left_coalition or left_wing_coalition or socialist_catholic_coalition : Our coalition partners not responded to [+ pnf_leader +]'s demands, as frantic calls are made to them to organise meetings. ?] ?][? if pnf_leader == "D'Annunzio" : The Squadrismo, the paramilitary wing of the PNF, have marched upon Rome, demanding the resignation of the current government and the appointment of Gabriele D'Annunzio to Prime Minister. The party is in crisis, as factions scramble to assemble a coherent response to the threat. [? if centre_left_coalition or left_wing_coalition or socialist_catholic_coalition : Our coalition partners not responded to the Squadrismo's demands, as frantic calls are made to them to organise meetings. ?] ?][? if king_relation < 50 : The King has not responded to the demands as well, but we are pessimistic on his response, considering our strained relations. ?][? if king_relation > 49 : The King has not responded to the demands as well, but we are optimistic on his response, considering our warm relations. ?]
+[? if pnf_leader != "D'Annunzio" : [+ pnf_leader +], alongside his militants, have marched upon Rome, demanding the resignation of the current government. The party is in crisis, as factions scramble to assemble a coherent response to the threat. [? if centre_left_coalition or left_wing_coalition or socialist_catholic_coalition : Our coalition partners not responded to [+ pnf_leader +]'s demands, as frantic calls are made to them to organise meetings. ?] ?][? if pnf_leader == "D'Annunzio" : The <span style="color:#3D3D3D;">Squadrismo</span>, the paramilitary wing of the <span style="font-weight: bold; color:#3D3D3D;">PNF</span>, have marched upon Rome, demanding the resignation of the current government and the appointment of Gabriele D'Annunzio to Prime Minister. The party is in crisis, as factions scramble to assemble a coherent response to the threat. [? if centre_left_coalition or left_wing_coalition or socialist_catholic_coalition : Our coalition partners not responded to the <span style="color:#3D3D3D;">Squadrismo</span>'s demands, as frantic calls are made to them to organise meetings. ?] ?][? if king_relation < 50 : The King has not responded to the demands as well, but we are pessimistic on his response, considering our strained relations. ?][? if king_relation > 49 : The King has not responded to the demands as well, but we are optimistic on his response, considering our warm relations. ?]
 
-[? if psi_in_government : We could utilise our government influence to bring down [+ pnf_leader +] and fascism once and for all. ?][? if not_participating = 1 : We cannot rely on the bourgeois parties to defend this nation from fascism. ?] What do we do?
+[? if psi_in_government : We could utilise our government influence to bring down [+ pnf_leader +] and fascism once and for all. ?][? if not_participating = 1 : We cannot rely on the <span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> parties to defend this nation from <span style="color:#3D3D3D;">fascism</span>. ?] What do we do?
 
 @cv_menu
 
-We are at a crossroads. The results of Bologna has resulted in us taking a middle-of-the-line avenue, advocating for both extraparliamentary means and participation in government, at least without the bourgeois parties. The communists on the left, however, argue that this is the perfect opportunity to strike, while the reformists on the left argue for our continued participation in government.
+We are at a crossroads. The results of Bologna has resulted in us taking a middle-of-the-line avenue, advocating for both extraparliamentary means and participation in government, at least without the <span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> parties. The <span style="color:#8B0000">communists</span> on the left, however, argue that this is the perfect opportunity to strike, while the <span style="color:#FF6961">reformists</span> on the left argue for our continued participation in government.
 
 What should we do?
 
-- @cv_fight: The Communists should be heeded; we must use this opportunity!
-- @cv_def: The Reformists should be heeded; we should continue our position in government.
+- @cv_fight: The <span style="color:#8B0000">Communists</span> should be heeded; we must use this opportunity!
+- @cv_def: The <span style="color:#FF6961">Reformists</span> should be heeded; we should continue our position in government.
 
 @cv_fight 
 go-to: civil_war
@@ -33,9 +33,9 @@ go-to: rome_menu
 @rome_menu
 
 - @rome_army_mobilise: Mobilise the Army to stop [+ pnf_leader +]!
-- @rome_police_mobilise: Mobilise the Carabinieri to stop [+ pnf_leader +]!
-- @rome_rg_mobilise: Mobilise the Red Guards to stop [+ pnf_leader +]!
-- @rome_adp_mobilise: Mobilise the Arditi del Popolo to stop [+ pnf_leader +]!
+- @rome_police_mobilise: Mobilise the <span style="color:#FF2400">Carabinieri</span> to stop [+ pnf_leader +]!
+- @rome_rg_mobilise: Mobilise the <span style="color:#c2352b">Red Guards</span> to stop [+ pnf_leader +]!
+- @rome_adp_mobilise: Mobilise the <span style="color:#2F2F2F">Arditi</span> <span style="color:#3CB371">del</span> <span style="color:#ED2855">Popolo</span> to stop [+ pnf_leader +]!
 - @rome_done: We have done all we can.
 - @rome_nothing: There is nothing we can do.
 
@@ -71,54 +71,54 @@ The King refuses to authorise the order, but a number of our loyal forces within
 
 @rome_police_mobilise
 max-visits: 1
-subtitle: The Carabinieri themselves seem to be willing to cooperate, now we have to convince the King...
+subtitle: The <span style="color:#FF2400">Carabinieri</span> themselves seem to be willing to cooperate, now we have to convince the King...
 view-if: psi_in_government
 on-arrival: police_convinced = 1; rome_police_visited = 1
 go-to: rome_police_checks
 
-We send out the order to mobilise the Carabinieri, but it will require the King's authorisation.
+We send out the order to mobilise the <span style="color:#FF2400">Carabinieri</span>, but it will require the King's authorisation.
 
 @rome_police_checks
 
-- @rome_police_king: Request the King formally order the Carabinieri to crackdown.
-- @rome_police_bypass: The King be damned, send the orders out to the Carabinieri already!
+- @rome_police_king: Request the King formally order the <span style="color:#FF2400">Carabinieri</span> to crackdown.
+- @rome_police_bypass: The King be damned, send the orders out to the <span style="color:#FF2400">Carabinieri</span> already!
 
 @rome_police_king
-subtitle: This will result in full mobilisation of the Carabinieri.
+subtitle: This will result in full mobilisation of the <span style="color:#FF2400">Carabinieri</span>.
 choose-if: king_relation > 59
 unavailable-subtitle: [? if king_relation < 60: Our relations with the King are not high enough. ?]
 on-arrival: police_king_successful = 1; police_king_bypassed = 0
 go-to: rome_menu
 
-The King authorises the order, and the entirely of the Carabinieri is mobilised.
+The King authorises the order, and the entirely of the <span style="color:#FF2400">Carabinieri</span> is mobilised.
 
 @rome_police_bypass
 subtitle: Bypassing the King's authorisation will result in many refusing to heed our call.
 on-arrival: police_king_bypassed = 1; police_king_successful = 0
 go-to: rome_menu
 
-The King refuses to authorise the order, but a number of our loyal forces within the Carabinieri mobilise regardless.
+The King refuses to authorise the order, but a number of our loyal forces within the <span style="color:#FF2400">Carabinieri</span> mobilise regardless.
 
 @rome_rg_mobilise
 max-visits: 1
-subtitle: Our forces will begin to March on Rome as well, [? if participating = 1 : in support of the government. ?][? if participating = 0: potentially escalating the situation to a civil war. ?][? if rg_banned = 1 : The Red Guards are banned, and will be weakened. ?]
+subtitle: Our forces will begin to March on Rome as well, [? if participating = 1 : in support of the government. ?][? if participating = 0: potentially escalating the situation to a civil war. ?][? if rg_banned = 1 : The <span style="color:#c2352b">Red Guards</span> are banned, and will be weakened. ?]
 choose-if: communist_dissent < 50 or maximalist_dissent < 50 or reformist_dissent < 50 or labour_dissent < 50
 unavailable-subtitle: [? if (communist_dissent > 50 and maximalist_dissent > 50 and reformist_dissent > 50 and labour_dissent > 50) : The party is too disunited to act. ?]
 on-arrival: rome_rg_visited = 1
 go-to: rome_menu if participating == 1 or maximalist_participating == 1; civil_war if not_participating == 1
 
-The Red Guards mobilise upon our order, beginning the March to Rome to confront [+ pnf_leader +].
+The <span style="color:#c2352b">Red Guards</span> mobilise upon our order, beginning the March to Rome to confront [+ pnf_leader +].
 
 @rome_adp_mobilise
 max-visits: 1
-subtitle: Our forces will begin to March on Rome as well, [? if participating = 1 : in support of the government. ?][? if not_participating = 1: the bourgeois may see this as a threat as well, however. ?]
+subtitle: Our forces will begin to March on Rome as well, [? if participating = 1 : in support of the government. ?][? if not_participating = 1: the <span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> may see this as a threat as well, however. ?]
 choose-if: communist_dissent < 50 or maximalist_dissent < 50 or reformist_dissent < 50 or labour_dissent < 50
 view-if: arditi_cooperation = 1
 unavailable-subtitle: [? if (communist_dissent >= 50 and maximalist_dissent >= 50 and reformist_dissent >= 50 and labour_dissent >= 50) : The party is too disunited to act. ?]
 on-arrival: rome_adp_visited = 1
 go-to: rome_menu
 
-The Anti-Fascist Arditi del Popolo mobilise to stop the far-right.
+The Anti-Fascist <span style="color:#2F2F2F">Arditi</span> <span style="color:#3CB371">del</span> <span style="color:#ED2855">Popolo</span> mobilise to stop the far-right.
 
 @rome_done
 max-visits: 1
@@ -216,9 +216,9 @@ on-arrival: march_succeeded = 1;
 
 = Total Defeat
 
-Our forces have engaged in fierce combat with the Fasci, Arditismo and Anti-Bolshevik Leagues.
+Our forces have engaged in fierce combat with the <span style="font-weight: bold; color:#3D3D3D;">Fasci</span>, <span style="color:#3D3D3D;">Arditismo</span> and <span style="color:#3D3D3D;">Anti-Bolshevik Leagues</span>.
 
-Whatever the case, our initial force has been defeated and forced to retreat, as [+ pnf_leader +] threatens further violence to bring 'order' to the Kingdom. Violence and blood is painted on the streets of Rome, as men across Italy are ordered to take up arms, either in defence of the Kingdom against fascism or socialism.
+Whatever the case, our initial force has been defeated and forced to retreat, as [+ pnf_leader +] threatens further violence to bring 'order' to the Kingdom. Violence and blood is painted on the streets of Rome, as men across <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span> are ordered to take up arms, either in defence of the Kingdom against <span style="color:#3D3D3D;">fascism</span> or <span style="color:#ED2855">socialism</span>.
 
 What happens now?
 
@@ -231,9 +231,9 @@ view-if: rome_total_defeat and king_relation > 59
 
 = Total Defeat
 
-Our forces have engaged in fierce combat with the Fasci, Arditismo and Anti-Bolshevik Leagues.
+Our forces have engaged in fierce combat with the <span style="font-weight: bold; color:#3D3D3D;">Fasci</span>, <span style="color:#3D3D3D;">Arditismo</span> and <span style="color:#3D3D3D;">Anti-Bolshevik Leagues</span>.
 
-Whatever the case, our initial force has been defeated and forced to retreat, as [+ pnf_leader +] threatens further violence to bring 'order' to the Kingdom. Violence and blood is painted on the streets of Rome, as men across Italy are ordered to take up arms, either in defence of the Kingdom against fascism or socialism.
+Whatever the case, our initial force has been defeated and forced to retreat, as [+ pnf_leader +] threatens further violence to bring 'order' to the Kingdom. Violence and blood is painted on the streets of Rome, as men across <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span> are ordered to take up arms, either in defence of the Kingdom against <span style="color:#3D3D3D;">fascism</span> or <span style="color:#ED2855">socialism</span>.
 
 What happens now?
 
@@ -249,7 +249,7 @@ achievement: guerra_civile
 
 It seems the March on Rome has erupted into chaos, as forces across the nation take up arms, pledging support to one side or the other. 
 
-We are in a long, protracted war with the fascists now. This will be sure to shape our future immensely. Time will only tell how.
+We are in a long, protracted war with the <span style="color:#3D3D3D;">fascists</span> now. This will be sure to shape our future immensely. Time will only tell how.
 
 - @game_over: Game over.
 
@@ -261,15 +261,15 @@ on-arrival: march_failed = 1; ard_banned = 1; fdc_banned = 1; abl_banned = 1
 
 = Victory
 
-Our forces easily overwhelm [+ pnf_leader +]'s, as the Fasci are routed and forced to retreat. 
+Our forces easily overwhelm [+ pnf_leader +]'s, as the <span style="font-weight: bold; color:#3D3D3D;">Fasci</span> are routed and forced to retreat. 
 
-Victory is achieved, and fascism is staved off for yet another day.
+Victory is achieved, and <span style="color:#3D3D3D;">fascism</span> is staved off for yet another day.
 
 - @post_war_cv: It is time to decide our new agenda.
 
 @post_war_cv
 
-- @pressure_ban: Ban the [+ pnf_name +].
+- @pressure_ban: Ban the <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_name +]</span>.
 - @none: We have done all we can for the moment.
 
 @pressure_ban
@@ -277,11 +277,11 @@ view-if: pnf_banned = 0
 on-arrival: pnf_banned = 1
 go-to: post_war_cv
 
-We are able to pressure the King, as well as convince the other parties to outlaw the [+ pnf_name +] for this attempted March on Rome.
+We are able to pressure the King, as well as convince the other parties to outlaw the <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_name +]</span> for this attempted March on Rome.
 
 @none
 on-arrival: nationalist_sentiment -= 9; republican_sentiment += 7
 
-Regardless, the failure of the March on Rome has bolstered republican opposition within the country, who view the March as the result of the King's incompetence and inability to lead this nation in crisis.
+Regardless, the failure of the March on Rome has bolstered <span style="color:#3CB371">republicans</span> opposition within the country, who view the March as the result of the King's incompetence and inability to lead this nation in crisis.
 
-Similarly, nationalist sentiments within the country have been besmirched by this failed coup attempt.
+Similarly, <span style="color:#522A00">nationalist</span> sentiments within the country have been besmirched by this failed coup attempt.

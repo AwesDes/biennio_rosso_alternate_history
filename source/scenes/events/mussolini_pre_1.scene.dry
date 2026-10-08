@@ -7,17 +7,17 @@ new-page: true
 
 = Pact of Pacification
 
-Benito Mussolini, leader of the [+ pnf_name +] and the *Italian Fasces of Combat*, the paramilitary forces that have been plaguing us, have come to us for an offer of peace. The peace, known as the *Pacification Pact*, would end hostilities between the Red Guards and the Fascists, calling to an end assaults, threats and violence of any sorts.
+Benito Mussolini, leader of the <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_name +]</span> and the paramilitary forces that have been plaguing us, have come to us for an offer of peace. The peace, known as the *Pacification Pact*, would end hostilities between the <span style="color:#c2352b">Red Guards</span> and the <span style="color:#3D3D3D;">fascists</span>, calling to an end assaults, threats and violence of any sorts.
 
-Many within the party are conflicted; the left-wing is wary of a trap by our enemies, while the right is supportive of the pact, willing to place down arms in favour of peace. Even from the fascists, rumors of numerous *Ras* up in arms regarding Mussolini's offer is widespread, as an internal coup might be on the horizon.
+Many within the party are conflicted; the left-wing is wary of a trap by our enemies, while the right is supportive of the pact, willing to place down arms in favour of peace. Even from the <span style="color:#3D3D3D;">fascists</span>, rumors of numerous *Ras* up in arms regarding Mussolini's offer is widespread, as an internal coup might be on the horizon.
 
 What should we do?
 
 - @querfront: Accept the offer.
-- @fuck_off: No deals with fascists!
+- @fuck_off: No deals with <span style="color:#3D3D3D;">fascists</span>!
 
 @querfront
-subtitle: This will prevent us from using the Red Guards.
+subtitle: This will prevent us from using the <span style="color:#c2352b">Red Guards</span>.
 on-arrival: fdc_militancy -= 0.05; abl_militancy -= 0.02; ard_militancy -= 0.03; rg_militancy -= 0.1; pacification_pact = 1; reformist_strength += 5; syndicalist_strength += 12; communist_dissent += 5
 
 The *Pacification Pact* is signed, and we see an immediate decrease in paramilitary violent in the following days. The right-wing of the party reassures us that this is the right course of action.

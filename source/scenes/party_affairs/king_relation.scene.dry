@@ -11,8 +11,8 @@ card-image: img/portraits/VitorioEmanuel.jpg
 Our relationship with the King can be described as wary as best, due to our diametrically opposed ideals. However, if we are to make any solid reforms, we will need to have the King on our side.
 
 - @king_funds: Arrange some meetings with the King.
-- @king_ldr: Utilise our influence with the [+ ldr_name +] to sway the King.
-- @king_ul: Utilise our influence with the [+ ul_name +] to sway the King.
+- @king_ldr: Utilise our influence with the <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span> to sway the King.
+- @king_ul: Utilise our influence with the <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span> to sway the King.
 - @return: Let's not do this for now.
 - @easy_discard
 
@@ -26,14 +26,14 @@ We are received with wariness, though the King does not turn us away outright. [
 
 @king_ldr
 choose-if: ldr_relation >= 64.9
-unavailable-subtitle: Our relationship with the [+ ldr_name +] isn't high enough.
+unavailable-subtitle: Our relationship with the <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span> isn't high enough.
 on-arrival: ldr_relation -= 5; king_relation += 3
 
 With some meetings and agreements, they agree to put a good word for us with the King.
 
 @king_ul
 choose-if: ul_relation >= 64.9
-unavailable-subtitle: Our relationship with the [+ ul_name +] isn't high enough.
+unavailable-subtitle: Our relationship with the <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span> isn't high enough.
 on-arrival: ul_relation -= 5; king_relation += 3
 
 With some meetings and agreements, they agree to sway some of their Senate-aligned members towards us, which in turn sways the King.

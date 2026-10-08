@@ -7,11 +7,11 @@ tags: event
 
 = Foreign Minister [+ foreign_minister +] authorizes foreign aid cuts
 
-Foreign Minister [+ foreign_minister +] has authorised cuts to foreign aid, particularly to the Soviet Union that we have given during our party's previous tenure as Foreign Minister.
+Foreign Minister [+ foreign_minister +] has authorised cuts to foreign aid, particularly to the <span style="font-weight: bold; color:#CC0000">Soviet Union</span> that we have given during our party's previous tenure as Foreign Minister.
 
 - @fm_nothing: There is nothing we can do.
 
 @fm_nothing
 on-arrival: soviet_relation -= 2; budget += 1; soviet_aid_given -= 1; communist_dissent += 7; maximalist_dissent += 4; soviet_end_timer += 1 if not rcw_over; soviet_recovery_timer += 1 if soviet_recovery_timer > 0;
 
-The cuts easily pass, and the Foreign Ministry cuts off aid given to the Soviet Union, and we see notice Soviet attitudes with us have gotten colder, regardless whether or not it was us who cut the funding. The Left-wing of the party is furious at our inability to prevent this.
+The cuts easily pass, and the Foreign Ministry cuts off aid given to the <span style="font-weight: bold; color:#CC0000">Soviet Union</span>, and we see notice <span style="font-weight: bold; color:#CC0000">Soviet</span> attitudes with us have gotten colder, regardless whether or not it was us who cut the funding. The <span style="color:#8B0000">Left</span>-wing of the party is furious at our inability to prevent this.

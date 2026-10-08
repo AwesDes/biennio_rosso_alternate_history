@@ -1,9 +1,9 @@
-title: Government bans the Red Guards!
-subtitle: The reactionary judicial system has banned the Red Guards.
+title: Government bans the <span style="color:#c2352b">Red Guards</span>!
+subtitle: The <span style="color:#3D3D3D;">reactionary</span> judicial system has banned the <span style="color:#c2352b">Red Guards</span>.
 view-if: not psi_in_government and (radicalisation > 8 or pnf_in_government) and not_participating = 1 and judicial_reform < 2 and rg_banned = 0
 on-arrival: rg_banned = 1; rg_strength *= 0.85; rg_militancy -= 0.04; socialist_sentiment -= 4;
 tags: event
 
-= Government crackdown on the Red Guard!
+= Government crackdown on the <span style="color:#c2352b">Red Guard</span>!
 
-Judges have decided to ban the Red Guards, as government forces crack down hard, limiting their abilities and growth.
+Judges have decided to ban the <span style="color:#c2352b">Red Guards</span>, as government forces crack down hard, limiting their abilities and growth.

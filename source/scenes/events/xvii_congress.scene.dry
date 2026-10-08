@@ -1,4 +1,4 @@
-title: XVII Congress of the [+ psi_full_name +]
+title: XVII Congress of the <span style="font-weight: bold; color:#ED2855">[+ psi_full_name +]</span>
 subtitle: A divergence in paths is to be decided once more.
 new-page: true
 tags: event
@@ -6,27 +6,27 @@ view-if: year = 1921 and month = 1
 max-visits: 1
 face-image: img/XVIICongress.jpg
 
-= XVII Congress of the [+ psi_full_name +]
+= XVII Congress of the <span style="font-weight: bold; color:#ED2855">[+ psi_full_name +]</span>
 
-Debates and speeches from many are heard, as differing voices voice their opinions to the crowd. The 17th Congress of the [+ psi_full_name +] has begun. The agenda on the table is the 21 new conditions by the Communist International, of which one has stood out: The expelling of the reformists, now considered counter-revolutionaries.
+Debates and speeches from many are heard, as differing voices voice their opinions to the crowd. The 17th Congress of the <span style="font-weight: bold; color:#ED2855">[+ psi_full_name +]</span> has begun. The agenda on the table is the 21 new conditions by the <span style="font-weight: bold; color:#CE0000">Communist International</span>, of which one has stood out: The expelling of the <span style="color:#FF6961">reformists</span>, now considered counter-revolutionaries.
 
-The Maximalists are caught in the centre, as the Communists and Reformists argue whether or not to toe the International line. It seems the party can no longer hold with compromise, one faction has to go.
+The <span style="color:#DC143C">Maximalists</span> are caught in the centre, as the <span style="color:#8B0000">Communists</span> and <span style="color:#FF6961">Reformists</span> argue whether or not to toe the International line. It seems the party can no longer hold with compromise, one faction has to go.
 
-- @refuse_comintern: The [+ psi_name +] must stand with its reformists. They will not be expelled.
-- @accept_comintern: The [+ psi_name +] must toe the Communist International line. The Reformists will be expelled.
+- @refuse_comintern: The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> must stand with its <span style="color:#FF6961">reformists</span>. They will not be expelled.
+- @accept_comintern: The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> must toe the <span style="font-weight: bold; color:#CE0000">Communist International</span> line. The <span style="color:#FF6961">Reformists</span> will be expelled.
 
 @refuse_comintern
-subtitle: It is likely the [? if pcdi_formed :remaining?] Communists will split from the party.
+subtitle: It is likely the [? if pcdi_formed :remaining?] <span style="color:#8B0000">Communists</span> will split from the party.
 choose-if: maximalist_participating = 1 or participating = 1 or pcdi_formed
 unavailable-subtitle: [? if participating = 0 and maximalist_participating = 0: The XVI Congress has already forced us to adopt a revolutionary stance. ?]
 on-arrival: communist_strength -= 100; communist_dissent += 100; pcdi_formed = 1; revolutionary_fervour -= 10; soviet_relations -= 3;
 
-[? if communist_split = 1 : Even as the communist faction remains minimal after the founding of the Italian Communist Party, ?] The communist faction has resigned, with the majority [? if communist_split = 1 : joining the existing PCI. ?][? if communist_split = 0 : creating a new party called the Italian Communist Party. ?] 
+[? if communist_split = 1 : Even as the <span style="color:#8B0000">communists</span> faction remains minimal after the founding of the <span style="font-weight: bold; color:#C72F35">Italian Communist Party</span>, ?] The communist faction has resigned, with the majority [? if communist_split = 1 : joining the existing <span style="font-weight: bold; color:#C72F35">PCI</span>. ?][? if communist_split = 0 : creating a new party called the <span style="font-weight: bold; color:#C72F35">Italian Communist Party</span>. ?] 
 
-The Communist International has also expelled us, supporting the new PCI instead; it seems we can no longer rely on them for aid.
+The <span style="font-weight: bold; color:#CE0000">Communist International</span> has also expelled us, supporting the new <span style="font-weight: bold; color:#C72F35">PCI</span> instead; it seems we can no longer rely on them for aid.
 
 @accept_comintern
-subtitle: It is likely the [? if psu_formed :remaining?] Reformists will split from the party.
+subtitle: It is likely the [? if psu_formed :remaining?] <span style="color:#FF6961">Reformists</span> will split from the party.
 choose-if: participating = 0 or psu_formed
 unavailable-subtitle: [? if participating = 1 : The XVI Congress has already forced us to adopt a parliamentary stance. ?]
 on-arrival: reformist_strength -= 100; reformist_dissent += 100; reformists_expelled = 1; revolutionary_fervour += 10; psu_formed = 1; changed_name = 1; psi_name = "PC - SIIC"; psi_full_name = "Communist Party - Italian Section of the Communist International"; psi_full_italian = "Partito Comunista - Sezione Italiana dell'Internazionale Comunista"; {!
@@ -71,4 +71,4 @@ if (Q.public_education_minister_party == "PSI") {
 }
 !}
 
-[? if reformists_defect = 1 : Even as the reformist faction remains minimal after its defection to the PSU, ?] The reformist faction has been expelled, with the majority joining the PSRI.
+[? if reformists_defect = 1 : Even as the reformist faction remains minimal after its defection to the <span style="font-weight: bold; color:#E35A5A">PSU</span>, ?] The <span style="color:#FF6961">reformist</span> faction has been expelled, with the majority joining the <span style="font-weight: bold; color:#FFC0CB;">PSRI</span>.

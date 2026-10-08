@@ -9,42 +9,42 @@ tags: govt_affairs, national_def
 
 = Foreign Policy
 
-Being in control of Foreign Policy, we can direct it to advance our policies, whether that is aiding our socialist allies in the East, or negotiating war debts to alleviate the current economic situation.
+Being in control of Foreign Policy, we can direct it to advance our policies, whether that is aiding our <span style="color:#ED2855">socialist</span> allies in the East, or negotiating war debts to alleviate the current economic situation.
 
 # foreign ministry stuff
 
-- @improve_balkan_ties: Establish diplomatic ties with our Yugoslav neighbour.
-- @improve_allied_relations: Improve ties with our european Entente allies.
-- @aid_entente: Send aid to the Entente allies.
-- @improve_american_relations: Improve ties with the United States.
-- @improve_soviet_relations: Establish diplomatic ties with the Russian SFSR.
-- @aid_soviet_union: Send aid to the Red Army.
-- @improve_papal_relations: Improve ties with the Papacy.
-- @negotiate_us: Negotiate regarding our war debts with the United States.
-- @negotiate_uk: Negotiate regarding our war debts with the United Kingdom.
-- @negotiate_done_us: The US is finally willing to make a deal regarding our debt!
-- @negotiate_done_uk: The UK is finally willing to make a deal regarding our debt!
+- @improve_balkan_ties: Establish diplomatic ties with our <span style="color:#6A0080">Yugoslav</span> neighbour.
+- @improve_allied_relations: Improve ties with our european <span style="font-weight: bold; color:#C8102E">Ent</span><span style="font-weight: bold; color:#000091">ente</span> allies.
+- @aid_entente: Send aid to the <span style="font-weight: bold; color:#C8102E">Ent</span><span style="font-weight: bold; color:#000091">ente</span> allies.
+- @improve_american_relations: Improve ties with the <span style="color:#002868">United</span> <span style="color:#B31942">States</span>.
+- @improve_soviet_relations: Establish diplomatic ties with the <span style="font-weight: bold; color:#CC0000">Russian SFSR</span>.
+- @aid_soviet_union: Send aid to the <span style="color:#CC0000">Red Army</span>.
+- @improve_papal_relations: Improve ties with the <span style="font-weight: bold; color:#A88D37;">Papacy</span>.
+- @negotiate_us: Negotiate regarding our war debts with the <span style="color:#002868">United</span> <span style="color:#B31942">States</span>.
+- @negotiate_uk: Negotiate regarding our war debts with the <span style="color:#C8102E">United Kingdom</span>.
+- @negotiate_done_us: The <span style="color:#002868">U</span><span style="color:#B31942">S</span> is finally willing to make a deal regarding our debt!
+- @negotiate_done_uk: The <span style="color:#C8102E">UK</span> is finally willing to make a deal regarding our debt!
 - @reopen_negotiations: Perhaps it is time to resolve the Roman Question?
 - @root: Keep the Foreign Ministry as is.
 - @easy_discard
 - @cancel_advisor_action
 
 @aid_soviet_union
-subtitle: -1 Budget - We will provide support to the Soviets. [? if liberal_aid_accepted : Providing aid to the Russian SFSR would violate coalition agreements! ?][? if liberal_budget_accepted and budget < 1 : This will put us into a deficit! ?][? if liberal_foreign_accepted and soviet_relation <= entente_relation : This will disrupt our alignment with the Entente! ?]
+subtitle: -1 Budget - We will provide support to the <span style="font-weight: bold; color:#CC0000">Soviets</span>. [? if liberal_aid_accepted : Providing aid to the <span style="font-weight: bold; color:#CC0000">Russian SFSR</span> would violate coalition agreements! ?][? if liberal_budget_accepted and budget < 1 : This will put us into a deficit! ?][? if liberal_foreign_accepted and soviet_relation <= entente_relation : This will disrupt our alignment with the <span style="font-weight: bold; color:#C8102E">Ent</span><span style="font-weight: bold; color:#000091">ente</span>! ?]
 view-if: not rcw_over or soviet_recovery_timer > 0 or (violent_revolution and soviet_influence > 0)
 choose-if: not national_economic_recovery or budget > 0
 unavailable-subtitle: Not enough budget. (Need 1)
 on-arrival: coalition_dissent += 1 if in_unstable_coalition; soviet_aid_given += 1; budget -= 1; soviet_end_timer -= 1 if not rcw_over; soviet_recovery_timer -= 1 if soviet_recovery_timer > 0; soviet_relation += 2; ldr_relation -= 7*(1-dissent); ul_relation -= 4*(1-dissent); psri_relation += 3*(1-dissent); ldr_promise_failed = 1 if ((budget < 0 and liberal_budget_accepted) or liberal_aid_accepted or (liberal_foreign_accepted and soviet_relation > entente_relation)); ldr_right += 0.2; ds_left -= 0.1; soviet_influence -= 1 if violent_revolution; pcdi_gramsci += 1;
 go-to: ldr_promise_vonc if ldr_promise_failed = 1
 
-We are able to send aid to the Red Army via our diplomatic channels, and the Soviets thank us for the aid. [? if in_unstable_coalition : Our coalition partners, however, are less than happy, calling our aid a 'waste of funds'. ?]
+We are able to send aid to the <span style="color:#CC0000">Red Army</span> via our diplomatic channels, and the <span style="font-weight: bold; color:#CC0000">Soviets</span> thank us for the aid. [? if in_unstable_coalition : Our coalition partners, however, are less than happy, calling our aid a 'waste of funds'. ?]
 
-[? if ldr_promise_failed : Unfortunately, our decision to send aid has violated our agreement with the liberals, who have already requested a meeting with us. ?]
+[? if ldr_promise_failed : Unfortunately, our decision to send aid has violated our agreement with the <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">rals</span>, who have already requested a meeting with us. ?]
 
 @improve_balkan_ties
 on-arrival: balkan_relation += 1; foreign_invasion_time += 3 if violent_revolution
 
-We begin improving our relations with the newly established state of Yugoslavia, whom are naturally wary of us. [? if adriatic_timer > 0 : The Adriatic Question hangs over our relations, as well. ?]
+We begin improving our relations with the newly established state of <span style="font-weight: bold; color:#6A0080">Yugoslavia</span>, whom are naturally wary of us. [? if adriatic_timer > 0 : The Adriatic Question hangs over our relations, as well. ?]
 
 @improve_allied_relations 
 on-arrival: entente_relation += 1; ldr_relation += 4*(1-dissent); ul_relation += 4*(1-dissent); ldr_right -= 0.1; ul_giolitti += 0.1; foreign_invasion_time += 3 if violent_revolution
@@ -52,60 +52,60 @@ on-arrival: entente_relation += 1; ldr_relation += 4*(1-dissent); ul_relation +=
 We continue improving our relations with our former allies in the Entente. [? if centre_left_coalition : Our coalition partners are pleased at our continued alignment. ?]
 
 @aid_entente
-subtitle: -1 Budget - We will provide support to the Entente. [? if liberal_aid_accepted : Providing aid to the Russian SFSR would violate coalition agreements! ?][? if liberal_budget_accepted and budget < 1 : This will put us into a deficit! ?][? if liberal_foreign_accepted and soviet_relation <= entente_relation : This will disrupt our alignment with the Entente! ?]
+subtitle: -1 Budget - We will provide support to the <span style="font-weight: bold; color:#C8102E">Ent</span><span style="font-weight: bold; color:#000091">ente</span>. [? if liberal_aid_accepted : Providing aid to the Russian SFSR would violate coalition agreements! ?][? if liberal_budget_accepted and budget < 1 : This will put us into a deficit! ?][? if liberal_foreign_accepted and soviet_relation <= entente_relation : This will disrupt our alignment with the Entente! ?]
 view-if: violent_revolution
 choose-if: not national_economic_recovery or budget > 0
 unavailable-subtitle: Not enough budget. (Need 1)
 on-arrival: coalition_dissent += 1 if in_unstable_coalition; budget -= 1; entente_relation += 2; ldr_promise_failed = 1 if ((budget < 0 and liberal_budget_accepted) or liberal_aid_accepted or (liberal_foreign_accepted and soviet_relation > entente_relation)); foreign_invasion_time += 12 
 go-to: ldr_promise_vonc if ldr_promise_failed = 1
 
-We are able to send aid to the Entente via our diplomatic channels, and they thank us for the aid, hopefully delaying any plans regarding us as well. [? if in_unstable_coalition : Our coalition partners, however, are less than happy, calling our aid a 'waste of funds'. ?]
+We are able to send aid to the <span style="font-weight: bold; color:#C8102E">Ent</span><span style="font-weight: bold; color:#000091">ente</span> via our diplomatic channels, and they thank us for the aid, hopefully delaying any plans regarding us as well. [? if in_unstable_coalition : Our coalition partners, however, are less than happy, calling our aid a 'waste of funds'. ?]
 
-[? if ldr_promise_failed : Unfortunately, our decision to send aid has violated our agreement with the liberals, who have already requested a meeting with us. ?]
+[? if ldr_promise_failed : Unfortunately, our decision to send aid has violated our agreement with the <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">rals</span>, who have already requested a meeting with us. ?]
 
 @improve_american_relations 
 on-arrival: american_relation += 1;
 
-We continue improving our relations with our former ally in the war of the United States. 
+We continue improving our relations with our former ally in the war of the <span style="color:#002868">United</span> <span style="color:#B31942">States</span>. 
 
 @negotiate_us
-subtitle: Debt negotiation, especially with the United States, will be a long affair.
+subtitle: Debt negotiation, especially with the <span style="color:#002868">United</span> <span style="color:#B31942">States</span>, will be a long affair.
 choose-if: (american_relation >= 2 and not violent_revolution) or (american_relation >= 3)
 view-if: in_default = 0 and global_economic_recovery and american_debts > 0
-unavailable-subtitle: Our relations with the United States are too poor to attempt negotiations.
+unavailable-subtitle: Our relations with the <span style="color:#002868">United</span> <span style="color:#B31942">States</span> are too poor to attempt negotiations.
 on-arrival: american_relation -= 2; american_debts -= 1;
 
-We continue negotiating the terms of the debts we have accumulated to the United States, attempting to pause or at the very least lengthen our debt payment intervals.
+We continue negotiating the terms of the debts we have accumulated to the <span style="color:#002868">United</span> <span style="color:#B31942">States</span>, attempting to pause or at the very least lengthen our debt payment intervals.
 
 @negotiate_uk
 subtitle: Debt negotiation will be a long affair.
 choose-if: (entente_relation >= 2 and not violent_revolution) or (entente_relation >= 3)
 view-if: in_default = 0 and global_economic_recovery and uk_debts > 0
-unavailable-subtitle: Our relations with the Entente are too poor to attempt negotiations.
+unavailable-subtitle: Our relations with the <span style="font-weight: bold; color:#C8102E">Ent</span><span style="font-weight: bold; color:#000091">ente</span> are too poor to attempt negotiations.
 on-arrival: entente_relation -= 2; uk_debts -= 1; entente_relation += 1 if labour_government;
 
-We continue negotiating the terms of the debts we have accumulated to the United Kingdom, attempting to pause or at the very least lengthen our debt payment intervals.
+We continue negotiating the terms of the debts we have accumulated to the <span style="color:#C8102E">United Kingdom</span>, attempting to pause or at the very least lengthen our debt payment intervals.
 
 @negotiate_done_us
 subtitle: Our negotiations have been successful.
 view-if: american_debts <= 0 and us_debts_over = 0 and in_default = 0
 on-arrival: us_debts_over = 1; budget += 3; coalition_dissent -= 1 if coalition_dissent > 1; coalition_dissent -= 1 if coalition_dissent > 0; workers_psi += 12*(1-dissent); industrialists_psi += 9*(1-dissent); middle_class_psi += 7*(1-dissent); rural_psi += 8*(1-dissent); capital_strike_progress -= 3 if capital_strike_progress > 3; economic_growth += 0.8; economic_growth += 0.2 if economic_growth < 0
 
-Finally, after perilous negotiations with the United States, we have devised a amortisation fund plan. This plan will pay out our debts over the span of 62 years, with the redemption of debt increasing from 1931 onwards. Thankfully, the reparations paid out by the Weimar Republic and other defeated powers will be able to pay off this debt for us. 
+Finally, after perilous negotiations with the <span style="color:#002868">United</span> <span style="color:#B31942">States</span>, we have devised a amortisation fund plan. This plan will pay out our debts over the span of 62 years, with the redemption of debt increasing from 1931 onwards. Thankfully, the reparations paid out by the <span style="font-weight: bold; color:#3D3D3D">We</span><span style="font-weight: bold; color:#D00000">im</span><span style="font-weight: bold; color:#FFCE00">ar</span> <span style="font-weight: bold;">Republic</span> and other defeated powers will be able to pay off this debt for us. 
 
-The new plan has boosted confidence of our economy, as well as allowed American investors once banned to invest into Italy once more, giving us significantly more budget to work with.
+The new plan has boosted confidence of our economy, as well as allowed <span style="color:#002868">Amer</span><span style="color:#B31942">ican</span> investors once banned to invest into <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span> once more, giving us significantly more budget to work with.
 
 @negotiate_done_uk
 subtitle: Our negotiations have been successful.
 view-if: uk_debts <= 0 and uk_debts_over = 0 and in_default = 0
 on-arrival: uk_debts_over = 1; budget += 2; coalition_dissent -= 1 if coalition_dissent > 0; workers_psi += 8*(1-dissent); industrialists_psi += 5*(1-dissent); middle_class_psi += 5*(1-dissent); rural_psi += 5*(1-dissent); capital_strike_progress -= 2 if capital_strike_progress > 2; economic_growth += 0.6; economic_growth += 0.1 if economic_growth < 0
 
-Finally, after perilous negotiations with the United Kingdom, we have devised a amortisation fund plan. This plan will pay out our debts over the span of 62 years, with the redemption of debt increasing from 1928 onwards. Thankfully, the reparations paid out by the Weimar Republic and other defeated powers will be able to pay off this debt for us. 
+Finally, after perilous negotiations with the <span style="color:#C8102E">United Kingdom</span>, we have devised a amortisation fund plan. This plan will pay out our debts over the span of 62 years, with the redemption of debt increasing from 1928 onwards. Thankfully, the reparations paid out by the <span style="font-weight: bold; color:#3D3D3D">We</span><span style="font-weight: bold; color:#D00000">im</span><span style="font-weight: bold; color:#FFCE00">ar</span> <span style="font-weight: bold;">Republic</span> and other defeated powers will be able to pay off this debt for us. 
 
 The new plan has boosted confidence of our economy, giving us more budget to work with.
 
 @improve_soviet_relations
-subtitle: [? if liberal_foreign_accepted and soviet_relation + 1 >= entente_relation : This will disrupt our alignment with the Entente! ?]
+subtitle: [? if liberal_foreign_accepted and soviet_relation + 1 >= entente_relation : This will disrupt our alignment with the <span style="font-weight: bold; color:#C8102E">Ent</span><span style="font-weight: bold; color:#000091">ente</span>! ?]
 on-arrival: {! 
 Q.soviet_relation += 1; 
 Q.ldr_relation -= 4*(1-Q.dissent); 
@@ -119,16 +119,16 @@ Q.pcdi_gramsci += 0.5;
 !}
 go-to: ldr_promise_vonc if ldr_promise_failed = 1
 
-Our overtures to the Russian SFSR are noticed, and welcomed with open arms by our allies. [? if not rcw_over : However, they are still plagued by a fierce civil war with anti-socialist forces. ?]
+Our overtures to the <span style="font-weight: bold; color:#CC0000">Russian SFSR</span> are noticed, and welcomed with open arms by our allies. [? if not rcw_over : However, they are still plagued by a fierce civil war with anti-socialist forces. ?]
 
-[? if ldr_promise_failed : Unfortunately, our recent attempts to turn Italy away from the Entente have angered our coalition partners, who have called a meeting with us. ?]
+[? if ldr_promise_failed : Unfortunately, our recent attempts to turn <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span> away from the <span style="font-weight: bold; color:#C8102E">Ent</span><span style="font-weight: bold; color:#000091">ente</span> have angered our coalition partners, who have called a meeting with us. ?]
 
 @improve_papal_relations
 on-arrival: papal_relation += 1; ppi_relation += 4*(1-dissent); ppi_left += 0.1;
 
 We begin slowly mending diplomatic ties between both of our countries[? if not roman_question_answered :, though the Roman Question still hangs above us.?][? if roman_question_answered :. ?]
 
-The PPI appreciates our efforts, regardless.
+The <span style="font-weight: bold; color:#87CEFA;">PPI</span> appreciates our efforts, regardless.
 
 @reopen_negotiations
 view-if: not roman_question_answered

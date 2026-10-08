@@ -1,13 +1,13 @@
 title: Rinaldo Rigola
 is-pinned-card: true 
-tags: advisor, labour
+tags: advisor, reformist
 card-image: img/portraits/RinaldoRigola.png
 new-page: true
 view-if: rigola_advisor = 1
 
 = Rinaldo Rigola
 
-Rigola is the former Secretary-General of the General Confederation of Labour and is a member of the Trade Unionist faction in the [+ psi_name +].
+Rigola is the founding and former Secretary-General of the General Confederation of Labour, though currently aligns more with the <span style=" color:#FF6961">reformist</span> current within the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>.
 
 - @emergency_fundraising_rigola
 - @minimum_program_implementation_rigola
@@ -27,7 +27,7 @@ We have gained +[+ dues +] resources.
 title: Implementing the Minimum Plan
 subtitle: Now that we are in government, we can begin implementing our party plans.
 choose-if: advisor_action_timer <= 0 and psi_in_government and moderate_plan_adopted
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not psi_in_government : The [+ psi_name +] is not in government to influence policy. ?][? if not moderate_plan_adopted : We have not yet adopted the Minimum Plan. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not psi_in_government : The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> is not in government to influence policy. ?][? if not moderate_plan_adopted : We have not yet adopted the Minimum Plan. ?]
 on-arrival: advisor_action_timer = 6; last_advisor_action = 1
 go-to: minimum_program
 
@@ -35,6 +35,6 @@ go-to: minimum_program
 title: Dealing with Veteran's Welfare
 subtitle: Now that we are in government, we can help out with welfare for our new veterans.
 choose-if: advisor_action_timer <= 0 and psi_in_government and labour_minister_party == psi_name
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not psi_in_government : The [+ psi_name +] is not in government to affect policy. ?][? if not labour_minister_party == psi_name : The [+ psi_name +] does not control the Labour and Social Security Ministry. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not psi_in_government : The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> is not in government to affect policy. ?][? if not labour_minister_party == psi_name : The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> does not control the Labour and Social Security Ministry. ?]
 on-arrival: advisor_action_timer = 6; last_advisor_action = 1
 go-to: welfare_gov

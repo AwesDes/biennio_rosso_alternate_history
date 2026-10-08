@@ -1,11 +1,11 @@
-title: [+ interior_minister_party +] cracks down on the Red Guards
+title: [? if interior_minister_party == ul_name : <span style="font-weight: bold; color:#0047AB;">[+ interior_minister_party +]</span> ?][? if interior_minister_party == ldr_name : <span style="font-weight: bold; color:#FFD700;">[+ interior_minister_party +]</span> ?][? if interior_minister_party == ds_name : <span style="font-weight: bold; color:#1E99C5;">[+ interior_minister_party +]</span> ?][? if interior_minister_party == pnf_name : <span style="font-weight: bold; color:#3D3D3D;">[+ interior_minister_party +]</span> ?] cracks down on the <span style="color:#c2352b">Red Guards</span>
 subtitle: Interior Minister [+ interior_minister +] is utilising the Ministry against us.
 view-if: (((interior_minister_party == ul_name or interior_minister_party == ldr_name or interior_minister_party == ds_name) and radicalisation > 7) or interior_minister_party == pnf_name) and gov_interior_timer <= 0 and gov_cooldown_timer <= 0 and psi_in_government = 0 and not national_congress_seen
 on-arrival: gov_cooldown_timer = 3; gov_interior_timer = 6; rg_strength *= 0.93; rg_militancy -= 0.03; sov_rg_strength *= 0.93 if pcdi_formed; sov_rg_militancy -= 0.03 if pcdi_formed
 new-page: true
 tags: event
 
-= [+ interior_minister +] cracks down on the Guardie Rosse
+= [+ interior_minister +] cracks down on the <span style="color:#c2352b">Guardie Rosse</span>
 
 [? if prime_minister != interior_minister : In a speech supported by Prime Minister [+ prime_minister +], Interior Minister [+ interior_minister +] has continued its repression against us, ?] [? if prime_minister == interior_minister : In a speech by Prime Minister [+ prime_minister +], who also holds the position of Interior Minister, [+ prime_minister +] has continued its repression against us, ?] declaring us 'violent and chaotic rebels' and proclaiming that the Interior Ministry restore order to Italy and eliminate us. Already we have seen our forces under attack, factories re-taken and headquarters raided, and it is unlikely these will end any time soon.
 

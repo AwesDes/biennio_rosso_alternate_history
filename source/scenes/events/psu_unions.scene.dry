@@ -1,10 +1,10 @@
-title: PSU consolidates support base
+title: <span style="font-weight: bold; color:#E35A5A">PSU</span> consolidates support base
 new-page: true 
 tags: event
 view-if: psu_formed and unions_break
 on-arrival: workers_psu *= 1.4; workers_psu *= 1.2 if pcdi_formed = 0; veterans_psu *= 1.1; veterans_psu *= 1.1 if pcdi = 0; middle_class_psu += 5; socialist_sentiment += 2; republican_sentiment += 4;
 max-visits: 1
 
-= PSU Consolidates support base 
+= <span style="font-weight: bold; color:#E35A5A">PSU</span> Consolidates support base 
 
-Though the recent split of the Reformist faction to form the *Partito Socialista Unitario* as a splinter party was originally thought to be moribund, our Labour faction breaking with us as well has resulted in the labour union *Confederazione Generale del Lavoro* to defect to the party, as the PSU seems to have consolidated and become a competitor to our party.  
+Though the recent split of the <span style="color:#FF6961">Reformist</span> faction to form the <span style="font-weight: bold; color:#E35A5A">Partito Socialista Unitario</span> as a splinter party was originally thought to be moribund, our <span style="color:#B22222">Labour</span> faction breaking with us as well has resulted in the labour union *Confederazione Generale del Lavoro* to defect to the party, as the <span style="font-weight: bold; color:#E35A5A">PSU</span> seems to have consolidated and become a competitor to our party.  

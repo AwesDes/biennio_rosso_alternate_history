@@ -1,14 +1,14 @@
-title: [+ pnf_full_name +] Collapses!
+title: <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_full_name +]</span> Collapses!
 view-if: year == 1922 and month == 11 and march_failed = 1
 on-arrival: workers_pnf *= 0.35; rural_pnf *= 0.35; industrialists_pnf *= 0.1; veterans_pnf *= 0.5; middle_class_pnf *= 0.4; pnf_collapse_seen = 1; king_emergency = time + 2
 max-visits: 1
 tags: event
 new-page: true
 
-= [+ pnf_full_name +] Collapses!
+= <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_full_name +]</span> Collapses!
 
-Following the March on Rome, the National Fascist Party, known also as the PNF, has collapsed. [+ pnf_leader +] has fled to Switzerland in exile, while his subordinates have been arrested and are being trialed. The Fasces of Combat have collapsed, as Dino Grandi and other prominent paramilitary leaders have been arrested in the wake of their march.
+Following the March on Rome, the <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_full_name +]</span>, known also as the <span style="font-weight: bold; color:#3D3D3D;">PNF</span>, has collapsed. [+ pnf_leader +] has fled to Switzerland in exile, while his subordinates have been arrested and are being trialed. The <span style="font-weight: bold; color:#3D3D3D;">Fasces of Combat</span> have collapsed, as Dino Grandi and other prominent paramilitary leaders have been arrested in the wake of their march.
 
-Fascism is dead, at least in Italy.
+<span style="color:#3D3D3D;">Fascism</span> is dead, at least in <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>.
 
 - @root: Thus falls the failed experiment.

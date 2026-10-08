@@ -9,13 +9,13 @@ tags: para_affairs
 
 = Preparing the Revolution
 
-Though our end goal is to achieve a soviet state like the Bolsheviks in Russia, actually going through with this plan will require extensive planning, from securing allies to weaponry.
+Though our end goal is to achieve a soviet state like the <span style="font-weight: bold; color:#CC0000">Bolsheviks</span> in <span style="font-weight: bold; color:#CC0000">Russia</span>, actually going through with this plan will require extensive planning, from securing allies to weaponry.
 
-- @rev_weapons: Infiltrate and secure weaponry for the Red Guards.
+- @rev_weapons: Infiltrate and secure weaponry for the <span style="color:#c2352b">Red Guards</span>.
 - @rev_loyalty: Infiltrate and secure loyalties of government forces.
 - @rev_sabotage: Infiltrate and sabotage the reactionaries.
 - @rev_finish: Finish up the last of the plans.
-- @rev_begin: Mobilise the Red Guards and the workers!
+- @rev_begin: Mobilise the <span style="color:#c2352b">Red Guards</span> and the workers!
 - @root: Do nothing for now.
 - @easy_discard
 - @cancel_advisor_action
@@ -27,7 +27,7 @@ unavailable-subtitle: Not enough paramilitary resources. (Need 1)
 on-arrival: weaponry_rg += 1; para_resources -= 1; rg_militancy += 0.07*(1-dissent);
 max-visits: 3
 
-We continue arming the Red Guards, turning them into a true fighting force.
+We continue arming the <span style="color:#c2352b">Red Guards</span>, turning them into a true fighting force.
 
 @rev_loyalty
 subtitle: -1 Paramilitary Budget
@@ -36,7 +36,7 @@ unavailable-subtitle: Not enough paramilitary resources. (Need 1)
 on-arrival: loyalty_rg += 1; para_resources -= 1; army_loyalty += 0.032*(1-dissent); interior_police_loyalty += 0.045*(1-dissent); socialist_sentiment += 1*(1-dissent)
 max-visits: 3
 
-Via some...unconventional means, we are able to sway some of the Regio Esercito and Carabinieri to our side.
+Via some...unconventional means, we are able to sway some of the <span style="color:#008C45">Regi</span><span style="color:#CFCFCF">o Eser</span><span style="color:#CD212A">cito</span> and <span style="color:#FF2400">Carabinieri</span> to our side.
 
 @rev_sabotage
 subtitle: -1 Paramilitary Budget
@@ -45,7 +45,7 @@ unavailable-subtitle: Not enough paramilitary resources. (Need 1)
 on-arrival: sabotage_rg += 1; para_resources -= 1; fdc_strength -= 15*(1-dissent); abl_strength -= 15*(1-dissent); ard_strength -= 15*(1-dissent); 
 max-visits: 3
 
-Through some carefully placed information and contacts, the Carabinieri 'discover' far-right paramilitary bases, raiding them and arresting their forces.
+Through some carefully placed information and contacts, the <span style="color:#FF2400">Carabinieri</span> 'discover' far-right paramilitary bases, raiding them and arresting their forces.
 
 @rev_finish
 choose-if: weaponry_rg == 3 and loyalty_rg == 3 and sabotage_rg == 3

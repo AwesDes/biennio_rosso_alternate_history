@@ -1,5 +1,5 @@
 title: [+ prime_minister +] improves Public Education funding
-subtitle: Funding is expanded for Public Education
+subtitle: Funding is expanded for Public Education.
 view-if: gov_education_timer <= 0 and gov_cooldown_timer <= 0 and psi_in_government = 0 and not national_congress_seen and prime_minister = "D'Annunzio" and budget > -5 and dannunzio_council_seen and dannunzio_time <= time
 on-arrival: gov_cooldown_timer = 3; gov_education_timer = 6; budget -= 1; education_funded += 1; workers_pnf += 3*(1-dissent); middle_class_pnf += 3*(1-dissent); industrialists_pnf -= 3*(1-dissent); inflation += 0.2; inflation += 0.1 if budget < 0; economic_growth += 0.2; economic_growth += 0.1 if economic_growth < 0; unemployment -= 0.3; unemployment -= 0.1 if unemployment >= 8; dannunzio_education_seen = 1; dannunzio_time = time + 4; pnf_left += 0.5
 new-page: true

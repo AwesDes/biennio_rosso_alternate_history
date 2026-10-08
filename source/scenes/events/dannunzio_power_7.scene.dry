@@ -1,5 +1,5 @@
 title: Rumors of a Struggle
-subtitle: The PNF isn't as stable as it seems...
+subtitle: The <span style="font-weight: bold; color:#3D3D3D;">PNF</span> isn't as stable as it seems...
 view-if: pnf_in_power and pnf_leader = "D'Annunzio" and dannunzio_strike_seen and dannunzio_time <= time
 max-visits: 1
 tags: event
@@ -8,11 +8,11 @@ on-arrival: pnf_right += 1; dannunzio_struggle_seen = 1; dannunzio_time = time +
 
 = Rumors of a Internal Struggle
 
-Reports of an internal factional struggle within the PNF have reached our ears as disagreements regarding policy matters and actions taken by D'Annunzio continues, as two factions forming; The Left-wing of the party, comprised of National Syndicalists and Futurists, follow the lead of Prime Minister Gabriele D'Annunzio, supporting his policies and ideals as established in the Italian Regency of Carnaro. On the other end, the Nationalists have turned on D'Annunzio, comprised of leaders of the *Ras* once loyal to Mussolini, seeing his policies as too socialist and left-wing and supported by industrialists and conservatives who have seen D'Annunzio's policies as a betrayal.
+Reports of an internal factional struggle within the <span style="font-weight: bold; color:#3D3D3D;">PNF</span> have reached our ears as disagreements regarding policy matters and actions taken by D'Annunzio continues, as two factions forming; The Left-wing of the party, comprised of National <span style="color:#2F2F2F">Syndicalists</span> and Futurists, follow the lead of Prime Minister Gabriele D'Annunzio, supporting his policies and ideals as established in the <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">al</span><span style="font-weight: bold; color:#CD212A">ian</span> Regency of Carnaro. On the other end, the <span style="color:#522A00">Nationalists</span> have turned on D'Annunzio, comprised of leaders of the *Ras* once loyal to Mussolini, seeing his policies as too <span style="color:#ED2855">socialism</span> and left-wing and supported by industrialists and <span style="color:#0047AB;">conservatives</span> who have seen D'Annunzio's policies as a betrayal.
 
-Dino Grandi, formerly one of the many leaders of the *Ras*, has risen to lead the faction opposing D'Annunzio, seeking to oust the Poet and assume control over the PNF – and the position of Prime Minister himself.
+Dino Grandi, formerly one of the many leaders of the *Ras*, has risen to lead the faction opposing D'Annunzio, seeking to oust the Poet and assume control over the <span style="font-weight: bold; color:#3D3D3D;">PNF</span> – and the position of Prime Minister himself.
 
-Though we clearly do not have a horse in this race, there are, naturally, benefits for helping either side. Keeping D'Annunzio in power who, at least partly, aligns with us ideologically would naturally be optimal, combined with being able to weaken the paramilitaries would allow our own Red Guards to dominate the streets. On the other hand, though risky, allowing Grandi, a man with no political experience and under influence of the *Ras*, to seize control would severely weaken the King's trust in the PNF, potentially ousting him.
+Though we clearly do not have a horse in this race, there are, naturally, benefits for helping either side. Keeping D'Annunzio in power who, at least partly, aligns with us ideologically would naturally be optimal, combined with being able to weaken the paramilitaries would allow our own <span style="color:#c2352b">Red Guards</span> to dominate the streets. On the other hand, though risky, allowing Grandi, a man with no political experience and under influence of the *Ras*, to seize control would severely weaken the King's trust in the <span style="font-weight: bold; color:#3D3D3D;">PNF</span>, potentially ousting him.
 
 What should we do, if anything?
 

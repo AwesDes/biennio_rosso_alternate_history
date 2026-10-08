@@ -7,7 +7,7 @@ new-page: true
 
 = Filippo Turati
 
-Turati is the leader of the Reformist faction of the [+ psi_name +]. He seeks to achieve revolution through parliamentary means.
+Turati is the leader of the <span style=" color:#FF6961">Reformist</span> faction and co-founder of the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>. He seeks to achieve revolution through parliamentary means.
 
 - @turati_coalition
 - @turati_king
@@ -19,7 +19,7 @@ Turati is the leader of the Reformist faction of the [+ psi_name +]. He seeks to
 title: Negotiating with the Coalition
 subtitle: Turati can improve our relationships with our centrist and centre-left coalition partners in the Chamber of Deputies.
 choose-if: advisor_action_timer <= 0 and (centre_left_coalition or socialist_catholic_coalition or left_wing_coalition)
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if not centre_left_coalition and not left_wing_coalition and not socialist_catholic_coalition : The [+ psi_name +] is not currently in a coalition. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if not centre_left_coalition and not left_wing_coalition and not socialist_catholic_coalition : The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> is not currently in a coalition. ?]
 on-arrival: advisor_action_timer = 6; coalition_dissent -= 1; ldr_relation += 7 if centre_left_coalition; ds_relation += 5 if centre_left_coalition; psri_relation += 9; ppi_relation += 7 if socialist_catholic_coalition;
 
 We have improved our relations with our coalition partners and reduced tensions with the coalition.
@@ -38,14 +38,14 @@ We have improved our relations with the King and reduced tensions with him.
 title: Interior Policy
 subtitle: Now that we are in control of the Interior Ministry, we can quell internal violence across the nation.
 choose-if: advisor_action_timer <= 0 and psi_in_government and (interior_minister_party == psi_name or liberal_crackdown_accepted)
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not psi_in_government : The [+ psi_name +] is not in government to influence policy. ?][? if not interior_minister_party == psi_name : The [+ psi_name +] does not control the Interior Ministry. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not psi_in_government : The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> is not in government to influence policy. ?][? if not interior_minister_party == psi_name : The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> does not control the Interior Ministry. ?]
 on-arrival: advisor_action_timer = 6; last_advisor_action = 1
 go-to: interior_policy
 
 @snap_election
 title: Snap Election
 subtitle: [? if not national_congress_seen : Advise the King to dissolve the Chamber and have an election. ?][? if national_congress_seen : Call for new elections and dissolve the sitting assembly. ?]
-unavailable-subtitle: [? if prime_minister != "Turati": Turati must be the Prime Minister. ?][? if not psi_in_government : The [+ psi_name +] is not in government. ?][? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if king_relation < 20 : The King detests us, and would not heed our advice. ?]
+unavailable-subtitle: [? if prime_minister != "Turati": Turati is not currently the Prime Minister. ?][? if not psi_in_government : The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> is not in government. ?][? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if king_relation < 20 : The King detests us, and would not heed our advice. ?]
 choose-if: advisor_action_timer == 0 and prime_minister = "Turati" and king_relation >= 20 and psi_in_government
 on-arrival: advisor_action_timer = 6; next_election_time = time + 6 if next_election_time > time+6; next_election_month = month + 3 if next_election_time >= time+6; next_election_year = year if next_election_time >= time+6; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12; 
 

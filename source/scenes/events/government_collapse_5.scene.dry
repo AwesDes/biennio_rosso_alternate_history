@@ -29,4 +29,4 @@ tags: event
 
 = Bonomi I Government Collapses!
 
-The current governing coalition has collapsed, failing to secure a majority in a Vote-of-No-Confidence. The Liberals negotiate and appoint Giolitti, arguing that he is the only one to bring order to Italy, like he had done before. [? if ppi_in_government and ppi_leader = "Sturzo" : However, Sturzo, alongside various dissenting members are able to force Giolitti to refuse the offer, instead appointing Luigi Facta instead. ?]
+The current governing coalition has collapsed, failing to secure a majority in a Vote-of-No-Confidence. The <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">rals</span> negotiate and appoint Giolitti, arguing that he is the only one to bring order to Italy, like he had done before. [? if ppi_in_government and ppi_leader = "Sturzo" : However, Sturzo, alongside various dissenting members are able to force Giolitti to refuse the offer, instead appointing Luigi Facta instead. ?]

@@ -1,19 +1,19 @@
-title: PSRI in Crisis!
-subtitle: The PSRI is having a crisis of leadership...
+title: <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> in Crisis!
+subtitle: The <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> is having a crisis of leadership...
 new-page: true
 view-if: psri_stable and psri_r < 3 and psri_votes < 4 and year < 1924 and not national_congress_seen and not left_wing_coalition
 on-arrival: psri_stable = 0
 tags: event
 max-visits: 1
 
-= PSRI in Crisis 
+= <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> in Crisis 
 
-The PSRI, also known as the Italian Reformist Socialist Party, is in crisis following it's recent electoral results, going from [+ old_psri_r +]% to [+ psri_r +]% in just six years. The party has gone from a fairly important force, representing the left-wing of the political sphere willing to cooperate with the liberals to a now almost defunct party, as the party struggles to keep its now rapidly defecting support base. 
+The <span style="font-weight: bold; color:#FFC0CB;">PSRI</span>, also known as the <span style="font-weight: bold; color:#FFC0CB;">Italian Reformist Socialist Party</span>, is in crisis following it's recent electoral results, going from [+ old_psri_r +]% to [+ psri_r +]% in just six years. The party has gone from a fairly important force, representing the left-wing of the political sphere willing to cooperate with the <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">rals</span> to a now almost defunct party, as the party struggles to keep its now rapidly defecting support base. 
 
-There is significant efforts within the party, including Bonomi, who are pushing for a shift in the party's ideology in order to counteract it's association with the [+ psi_name +] and to allow closer collaboration with the existing liberal parties, though there is fierce opposition against such a response as well. The party will also have to figure out how to contest the next elections, without a suitable organisation to campaign for the party, it is likely that it will be forced to collaborate and form joint lists with other parties.
+There is significant efforts within the party, including Bonomi, who are pushing for a shift in the party's ideology in order to counteract it's association with the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> and to allow closer collaboration with the existing <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">ral</span> parties, though there is fierce opposition against such a response as well. The party will also have to figure out how to contest the next elections, without a suitable organisation to campaign for the party, it is likely that it will be forced to collaborate and form joint lists with other parties.
 
-- @psri_left: The PSRI reaffirms its commitment to social democracy.
-- @psri_moderate: The PSRI begins a shift towards social liberalism.
+- @psri_left: The <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> reaffirms its commitment to social democracy.
+- @psri_moderate: The <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> begins a shift towards social liberalism.
 
 @psri_left
 choose-if: (psu_formed and (psi_votes >= 37 or radicalisation >= 8)) or ((pri_prominent or pll_formed) and bissolati_dead != 1)
@@ -49,11 +49,11 @@ if (options.length > 0) {
 
 The opposition is able to succeed, continuing the party's ideological commitment to social democracy and left-wing ideals.
 
-[? if psri_joint_pll : The PSRI have come to an agreement with the PLL, officially forming a joint-list with them as a junior partner and stemming the bleed of the party's support. ?]
+[? if psri_joint_pll : The <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> have come to an agreement with the <span style="font-weight: bold; color:#FFD1D9;">PLL</span>, officially forming a joint-list with them as a junior partner and stemming the bleed of the party's support. ?]
 
-[? if psri_joint_psu : The PSRI have come to a wary agreement with the PSU, officially forming a joint-list with them as a junior partner. This has occurred primarily because of our popularity, as well as our increasing radicalisation, which has prompted a consolidation of the reformist left. ?]
+[? if psri_joint_psu : The <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> have come to a wary agreement with the <span style="font-weight: bold; color:#E35A5A">PSU</span>, officially forming a joint-list with them as a junior partner. This has occurred primarily because of our popularity, as well as our increasing radicalisation, which has prompted a consolidation of the reformist left. ?]
 
-[? if psri_joint_pri : The PSRI have come to an agreement with the PRI, officially forming a joint-list with the them as a junior partner. and stemming the bleed of the party's support. ?]
+[? if psri_joint_pri : The <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> have come to an agreement with the <span style="font-weight: bold; color:#3CB371">PRI</span>, officially forming a joint-list with the them as a junior partner. and stemming the bleed of the party's support. ?]
 
 @psri_moderate
 view-if: (not psu_formed or (psi_votes < 37 and radicalisation < 8 or (not not_participating or not maximalist_participating) or radicalisation < 7)) and ((not pri_prominent and not pll_formed) or bissolati_dead = 1)
@@ -81,4 +81,4 @@ Q.catholic_psri *= 0.5;
 Q.women_psri *= 0.5;
 !}
 
-The exponents are able to succeed; with Bonomi's lead, the PSRI begins a change in course, pivoting to the right towards liberalism. This only seems to exacerbate the party's bleed however, as members of its left defect, becoming independents or joining the other left-wing parties.
+The exponents are able to succeed; with Bonomi's lead, the <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> begins a change in course, pivoting to the right towards <span style="color:#0047AB;">liber</span><span style="color:#FFD700;">alism</span>. This only seems to exacerbate the party's bleed however, as members of its left defect, becoming independents or joining the other left-wing parties.

@@ -1,14 +1,13 @@
 title: Claudio Treves
 is-pinned-card: true
-tags: advisor, labour
+tags: advisor, reformist
 card-image: img/portraits/ClaudioTreves.jpg
 view-if: treves_advisor = 1
 new-page: true
-#face-image: img/portraits/ClaudioTreves.jpg
 
 = Claudio Treves
 
-Treves is a member of the Trade Unionist faction of the [+ psi_name +], as well as a journalist for the newspaper *Avanti!*.
+Treves is a prominent journalist within the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>, having written for several newspapers from *Avanti!* to *Critica Sociale*, whilst aligning himself with the <span style=" color:#FF6961">reformists</span> within the party.
 
 - @judicial_reform_treves
 - @media_treves
@@ -17,9 +16,9 @@ Treves is a member of the Trade Unionist faction of the [+ psi_name +], as well 
 
 @judicial_reform_treves
 title: Judicial Reform
-subtitle: Now that we are in control of the Justice Ministry, we are able to reform it to purge corruption and reactionary forces.
+subtitle: Now that we are in control of the Justice Ministry, we are able to reform it to purge corruption and <span style="color:#3D3D3D;">reactionary</span> forces.
 choose-if: advisor_action_timer <= 0 and psi_in_government and justice_minister_party == psi_name
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not psi_in_government : The [+ psi_name +] is not currently in government. ?][? if not justice_minister_party == psi_name : The [+ psi_name +] does not currently control the Justice Ministry. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not psi_in_government : The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> is not currently in government. ?][? if not justice_minister_party == psi_name : The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> does not currently control the Justice Ministry. ?]
 on-arrival: advisor_action_timer = 6; last_advisor_action = 1; judiciary_reform_timer -= 5;
 go-to: judiciary_reform
 
@@ -35,6 +34,6 @@ go-to: media
 title: Labour Rights
 subtitle: Now that we are in government, we can reform labour laws to help out our main support base, the workers.
 choose-if: advisor_action_timer <= 0 and psi_in_government and labour_minister_party == psi_name
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not psi_in_government : The [+ psi_name +] is not in government to influence policy. ?][? if not labour_minister_party == psi_name : The [+ psi_name +] does not control the Labour and Social Security Ministry. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not psi_in_government : The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> is not in government to influence policy. ?][? if not labour_minister_party == psi_name : The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> does not control the Labour and Social Security Ministry. ?]
 on-arrival: advisor_action_timer = 6; last_advisor_action = 1
 go-to: labour_rights

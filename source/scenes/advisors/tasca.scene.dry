@@ -7,7 +7,7 @@ view-if: tasca_advisor = 1
 
 = Angelo Tasca
 
-Tasca is a member of the Communist faction of the [+ psi_name +]. A writer and historian, Tasca is a writer of *Avanti!*
+Tasca is a Turin-based member of the <span style=" color:#8B0000">Communist</span> faction of the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>, as well as an ardent anti-interventionist.
 
 - @media_tasca
 - @implement_plan_tasca

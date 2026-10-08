@@ -157,11 +157,11 @@ go-to: war_menu
 
 = The Array of Forces
 
-Our enemies are the paramilitary Arditismo, with [+ ard_strength +] thousand troops, the Far-right Fasci, with [+ fdc_strength +] thousand troops and the Anti-Bolshevik Leagues, with [+ abl_strength +] thousand troops. The loyalties of the Regio Esercito, with its [+ army_strength +] thousand regular soldiers, and Carabinieri, with [+ interior_police_strength +] thousand members, are unclear. [? if pcdi_formed : It is unclear whether we can count on the radical forces of the Red Guards to aid us. ?]
+Our enemies are the paramilitary <span style="color:#3D3D3D;">Arditismo</span>, with [+ ard_strength +] thousand troops, the Far-right <span style="font-weight: bold; color:#3D3D3D;">Fasci</span>, with [+ fdc_strength +] thousand troops and the <span style="color:#3D3D3D;">Anti-Bolshevik Leagues</span>, with [+ abl_strength +] thousand troops. The loyalties of the <span style="color:#008C45">Regi</span><span style="color:#CFCFCF">o Eser</span><span style="color:#CD212A">cito</span>, with its [+ army_strength +] thousand regular soldiers, and <span style="color:#FF2400">Carabinieri</span>, with [+ interior_police_strength +] thousand members, are unclear. [? if pcdi_formed : It is unclear whether we can count on the radical forces of the <span style="color:#c2352b">Red Guards</span> to aid us. ?]
 
-On our side, we have the Red Guards, at [+ rg_strength +] thousand members. [? if dissent > 0.15 and dissent <= 0.25: It is somewhat weakened by dissent within the party, and some members choose not to fight. ?][? if dissent > 0.25 and dissent < 0.5: It is weakened by dissent within the party, and many members choose not to fight. ?][? if dissent >= 0.5: It is heavily weakened by dissent within the party, and a substantial portion of members choose not to fight. ?]
+On our side, we have the <span style="color:#c2352b">Red Guards</span>, at [+ rg_strength +] thousand members. [? if dissent > 0.15 and dissent <= 0.25: It is somewhat weakened by dissent within the party, and some members choose not to fight. ?][? if dissent > 0.25 and dissent < 0.5: It is weakened by dissent within the party, and many members choose not to fight. ?][? if dissent >= 0.5: It is heavily weakened by dissent within the party, and a substantial portion of members choose not to fight. ?]
 
-[? if rg_militancy < 0.25 : Unfortunately, the Red Guards are poorly trained and equipped, and will not be able to stand against our more militarised opponents. ?][? if rg_militancy >= 0.25 and rg_militancy < 0.5 : We have spent some resources training and equipping the Red Guard. Let us hope our people can persist. ?][? if rg_militancy >= 0.5 : We have spent quite a great deal of resources on turning the Guard into a fighting force. Let us hope that they survive. ?]
+[? if rg_militancy < 0.25 : Unfortunately, the <span style="color:#c2352b">Red Guards</span> are poorly trained and equipped, and will not be able to stand against our more militarised opponents. ?][? if rg_militancy >= 0.25 and rg_militancy < 0.5 : We have spent some resources training and equipping the <span style="color:#c2352b">Red Guards</span>. Let us hope our people can persist. ?][? if rg_militancy >= 0.5 : We have spent quite a great deal of resources on turning the <span style="color:#c2352b">Guards</span> into a fighting force. Let us hope that they survive. ?]
 
 What else do we have?
 
@@ -169,11 +169,11 @@ What else do we have?
 
 @war_menu
 
-- @re_help: Appeal to the Regio Esercito to join our side.
-- @soviet_help: Call for support from the Soviet Union.
-- @pcdi_aid: Will the PCd'I help us?
+- @re_help: Appeal to the <span style="color:#008C45">Regi</span><span style="color:#CFCFCF">o Eser</span><span style="color:#CD212A">cito</span> to join our side.
+- @soviet_help: Call for support from the <span style="font-weight: bold; color:#CC0000">Soviet Union</span>.
+- @pcdi_aid: Will the <span style="font-weight: bold; color:#C72F35">PCd'I</span> help us?
 - @general_strike: Call a general strike!
-- @loyal_police: Call up the loyal portions of the Carabinieri.
+- @loyal_police: Call up the loyal portions of the <span style="color:#FF2400">Carabinieri</span>.
 - @war_outcome: Now, the battle...
 
 @re_help
@@ -181,18 +181,18 @@ max-visits: 1
 go-to: war_menu
 on-arrival: war_choices += 1
 
-We have urged the Regio Esercito to join us, to support our side in the civil war. [? if army_loyalty < 0.2 : Unfortunately, few heed our calls; the Regio Esercito detest us. ?][? if army_loyalty >= 0.2 and army_loyalty < 0.4 : Some officers and troops heed our calls to not fight against us. Some even join us. ?][? if army_loyalty >= 0.4 and army_loyalty < 0.6 : The Army is split. Many avoid taking a side, or join our side. ?][? if army_loyalty >= 0.6 : Surprisingly, the majority of the Army is on our side! Our preparations have worked. ?]
+We have urged the <span style="color:#008C45">Regi</span><span style="color:#CFCFCF">o Eser</span><span style="color:#CD212A">cito</span> to join us, to support our side in the civil war. [? if army_loyalty < 0.2 : Unfortunately, few heed our calls; the <span style="color:#008C45">Regi</span><span style="color:#CFCFCF">o Eser</span><span style="color:#CD212A">cito</span> detest us. ?][? if army_loyalty >= 0.2 and army_loyalty < 0.4 : Some officers and troops heed our calls to not fight against us. Some even join us. ?][? if army_loyalty >= 0.4 and army_loyalty < 0.6 : The Army is split. Many avoid taking a side, or join our side. ?][? if army_loyalty >= 0.6 : Surprisingly, the majority of the Army is on our side! Our preparations have worked. ?]
 
 @soviet_help
 max-visits: 1 
 go-to: war_menu
 on-arrival: war_choices += 1;
 
-We have request aid from the Soviet Union to fight against the far-right groups, [? if participating = 0 :as well as the bourgeois parties,?] [? if not rcw_over : though not much can be sent as they are in their own civil war as well. ?]
+We have request aid from the <span style="font-weight: bold; color:#CC0000">Soviet Union</span> to fight against the far-right groups, [? if participating = 0 :as well as the <span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> parties,?] [? if not rcw_over : though not much can be sent as they are in their own civil war as well. ?]
 
-[? if soviet_relation < 3 : The Soviet Union sends refuses to send us any aid owing to our terrible relations, though international forces flock to our aid. ?][? if (soviet_relation > 2 and soviet_relation < 6) : The Soviet Union sends us the bare minimum, owing to our strained relations. ?][? if (soviet_relation > 5 and soviet_relation < 8) : The Soviet Union sends us a force of willing volunteers, aiding our cause. ?][? if soviet_relation >= 8 : Owing to our good relations, the Soviet Union has sent us substantial aid, giving us a massive advantage. ?]
+[? if soviet_relation < 3 : The <span style="font-weight: bold; color:#CC0000">Soviet Union</span> sends refuses to send us any aid owing to our terrible relations, though international forces flock to our aid. ?][? if (soviet_relation > 2 and soviet_relation < 6) : The <span style="font-weight: bold; color:#CC0000">Soviet Union</span> sends us the bare minimum, owing to our strained relations. ?][? if (soviet_relation > 5 and soviet_relation < 8) : The <span style="font-weight: bold; color:#CC0000">Soviet Union</span> sends us a force of willing volunteers, aiding our cause. ?][? if soviet_relation >= 8 : Owing to our good relations, the <span style="font-weight: bold; color:#CC0000">Soviet Union</span> has sent us substantial aid, giving us a massive advantage. ?]
 
-[? if soviet_germany : International Aid is further strengthened by volunteers from Soviet Germany. ?]
+[? if soviet_germany : International Aid is further strengthened by volunteers from <span style="font-weight: bold; color:#CC0000">Soviet</span> <span style="font-weight: bold; color:#3D3D3D">Ger</span><span style="font-weight: bold; color:#D00000">ma</span><span style="font-weight: bold; color:#FFCE00">ny</span>. ?]
 
 @pcdi_aid
 view-if: friendly_king = 0 and (not_participating = 1 or maximalist_participating = 1 or royal_coup = 1) and pcdi_formed
@@ -200,23 +200,23 @@ max-visits: 1
 go-to: war_menu
 on-arrival: war_choices += 1;
 
-[? if pcdi_relation >= 60 : Though reluctant, the PCd'I are willing to put aside their differences to aid us in the fight against the reactionaries. ?]
+[? if pcdi_relation >= 60 : Though reluctant, the <span style="font-weight: bold; color:#C72F35">PCd'I</span> are willing to put aside their differences to aid us in the fight against the <span style="color:#3D3D3D;">reactionaries</span>. ?]
 
-[? if pcdi_relation < 60 : The PCd'I refuse to aid us in our fight, primarily due to our strained relations. ?]
+[? if pcdi_relation < 60 : The <span style="font-weight: bold; color:#C72F35">PCd'I</span> refuse to aid us in our fight, primarily due to our strained relations. ?]
 
 @general_strike
 max-visits: 1
 go-to: war_menu
 on-arrival: war_choices += 1
 
-General strikes are a significant tool we have against both the bourgeois and the far-right, and it can help us out now. [? if normalised_workers_total > 70 : The workers are largely united with us. ?][? if normalised_workers_total >= 50 and normalised_workers_total <= 70 : There is some dissent within labour, but a majority of workers support the general strike. ?][? if normalised_workers_total > 30 and normalised_workers_total < 50 : However, there is substantial dissent within labour, and less than half support the general strike. ?][? if normalised_workers_total <= 30 : However, labour is deeply divided, and most workers do not heed the call to strike. ?]
+General strikes are a significant tool we have against both the <span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> and the <span style="color:#3D3D3D;">far-right</span>, and it can help us out now. [? if normalised_workers_total > 70 : The workers are largely united with us. ?][? if normalised_workers_total >= 50 and normalised_workers_total <= 70 : There is some dissent within <span style="color:#B22222">labour</span>, but a majority of workers support the general strike. ?][? if normalised_workers_total > 30 and normalised_workers_total < 50 : However, there is substantial dissent within <span style="color:#B22222">labour</span>, and less than half support the general strike. ?][? if normalised_workers_total <= 30 : However, <span style="color:#B22222">labour</span> is deeply divided, and most workers do not heed the call to strike. ?]
 
 @loyal_police
 max-visits: 1
 go-to: war_menu
 on-arrival: war_choices += 1
 
-We urge the Carabinieri, the force of the Interior police, to join our cause. [? if interior_police_loyalty < 0.4 : Unfortunately, the Carabinieri are politically unreliable at best. ?][? if interior_police_loyalty >= 0.4 and interior_police_loyalty < 0.65 : In this crucial hour, the Carabinieri are split, with about half actively supporting our efforts. ?][? if interior_police_loyalty >= 0.65 : Most join in supporting our efforts. Our efforts in cultivating socialist loyalties in the Carabinieri have proven their worth. ?]
+We urge the <span style="color:#FF2400">Carabinieri</span>, the force of the Interior police, to join our cause. [? if interior_police_loyalty < 0.4 : Unfortunately, the <span style="color:#FF2400">Carabinieri</span> are politically unreliable at best. ?][? if interior_police_loyalty >= 0.4 and interior_police_loyalty < 0.65 : In this crucial hour, the <span style="color:#FF2400">Carabinieri</span> are split, with about half actively supporting our efforts. ?][? if interior_police_loyalty >= 0.65 : Most join in supporting our efforts. Our efforts in cultivating <span style="color:#ED2855">socialism</span> loyalties in the <span style="color:#FF2400">Carabinieri</span> have proven their worth. ?]
 
 @war_outcome
 view-if: war_choices >= 2
@@ -227,7 +227,7 @@ achievement: follia_di_sinistra
 
 = Total Defeat
 
-Our forces are no match for those of the reactionaries. Red Guard forces are quickly overpowered by the forces of the Arditismo, Fasci, and Regio Esercito. Many are killed before the rest surrender. Our remaining leaders flee the country or face execution, as the reactionaries take absolute power over Italy.
+Our forces are no match for those of the <span style="color:#3D3D3D;">reactionaries</span>. <span style="color:#c2352b">Red Guards</span> forces are quickly overpowered by the forces of the <span style="color:#3D3D3D;">Arditismo</span>, <span style="font-weight: bold; color:#3D3D3D;">Fasci</span>, and <span style="color:#008C45">Regi</span><span style="color:#CFCFCF">o Eser</span><span style="color:#CD212A">cito</span>. Many are killed before the rest surrender. Our remaining leaders flee the country or face execution, as the <span style="color:#3D3D3D;">reactionaries</span> take absolute power over <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>.
 
 Our resistance will be recorded in the history books, and in the future, our names will be honored. But for now, all is lost.
 
@@ -251,9 +251,9 @@ achievement: vittoria_monarchica
 
 = Victory for the Kingdom
 
-The battle lines hold, and the Fasci, Arditismo, and pro-coup Regio Esercito forces are defeated. Today, the forces of the kingdom prevail over the fascists. It will be tough to recover once more before we have even recovered from our involvement in the First World War, but we are confident.
+The battle lines hold, and the <span style="font-weight: bold; color:#3D3D3D;">Fasci</span>, <span style="color:#3D3D3D;">Arditismo</span>, and pro-coup <span style="color:#008C45">Regi</span><span style="color:#CFCFCF">o Eser</span><span style="color:#CD212A">cito</span> forces are defeated. Today, the forces of the kingdom prevail over the <span style="color:#3D3D3D;">fascists</span>. It will be tough to recover once more before we have even recovered from our involvement in the First World War, but we are confident.
 
-Italy holds strong, against fascism.
+<span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span> holds strong, against fascism.
 
 - @post_war_cv: It is time to decide our new agenda.
 
@@ -261,17 +261,17 @@ Italy holds strong, against fascism.
 on-arrival: soviet_victory = 1; prime_minister = "Bacci"; prime_minister_party = psi_name; 
 achievement: vittoria_sovietica
 
-= Victory for the Socialists
+= Victory for the <span style="color:#ED2855">Socialists</span>
 
-The bourgeois and fascists lines shatter, as their forces are quickly overwhelmed by pro-socialist forces and the Red Guard, forcing a surrender. The Monarchy has been abolished, as bourgeois leaders are arrested and trialed in people's courts across the nation. The 18th Congress has been scheduled to occur within a few months to determine the state and organisation of the new nation.
+The <span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> and <span style="color:#3D3D3D;">fascist</span> lines shatter, as their forces are quickly overwhelmed by pro-<span style="color:#ED2855">socialist</span> forces and the <span style="color:#c2352b">Red Guard</span>, forcing a surrender. The Monarchy has been abolished, as <span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> leaders are arrested and trialed in people's courts across the nation. The 18th Congress has been scheduled to occur within a few months to determine the state and organisation of the new nation.
 
-Italy has toppled its bourgeois oppressors and established a revolutionary state.
+<span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span> has toppled its <span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> oppressors and established a revolutionary state.
 
 - @post_war_force: It is time to decide the new agenda.
 
 @post_war_cv
 
-- @pressure_ban: Ban the [+ pnf_name +].
+- @pressure_ban: Ban the <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_name +]</span>.
 - @none: We have done all we can for the moment.
 
 @pressure_ban
@@ -279,11 +279,11 @@ view-if: pnf_banned = 0
 on-arrival: pnf_banned = 1
 go-to: post_war_cv
 
-We are able to pressure the King, as well as convince the other parties to outlaw the [+ pnf_name +] for this attempted March on Rome.
+We are able to pressure the King, as well as convince the other parties to outlaw the <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_name +]</span> for this attempted March on Rome.
 
 @none
 on-arrival: nationalist_sentiment -= 9; republican_sentiment += 7
 
-Regardless, the failure of the March on Rome has bolstered republican opposition within the country, who view the March as the result of the King's incompetence and inability to lead this nation in crisis.
+Regardless, the failure of the March on Rome has bolstered <span style="color:#3CB371">republican</span> opposition within the country, who view the March as the result of the King's incompetence and inability to lead this nation in crisis.
 
-Similarly, nationalist sentiments within the country have been besmirched by this failed coup attempt.
+Similarly, <span style="color:#522A00">nationalist</span> sentiments within the country have been besmirched by this failed coup attempt.

@@ -31,17 +31,17 @@ We have already formulated an economic plan. Now we have to implement it. [? if 
 @max_nationalise_1
 subtitle: Neither our allies in the Chamber of Deputies, nor the industrialists will like this.
 view-if: max_seize = 0 and psi_in_government
-unavailable-subtitle: [? if not labour_minister_party = psi_name: The [+ psi_name +] does not control the Labour & Social Security Ministry. ?][? if judicial_reform <= 2: The judiciary would oppose this action. ?]
+unavailable-subtitle: [? if not labour_minister_party = psi_name: The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> does not control the Labour & Social Security Ministry. ?][? if judicial_reform <= 2: The judiciary would oppose this action. ?]
 choose-if: judicial_reform > 2 and labour_minister_party = psi_name
 on-arrival: maximum_done_gov += 1; max_seize += 1; unemployment -= 0.2 if unemployment >= 8; workers_psi += 6*(1-dissent); veterans_psi += 4*(1-dissent); middle_class_pnf += 3; radicalisation += 0.3; unemployment -= 0.5; economic_growth -= 0.2; industrialists_pnf += 8; capital_strike_progress += 3; fasci_coup_progress += 2; coalition_dissent += 2 if in_unstable_coalition; ldr_relation -= 10; ul_relation -= 10; ppi_relation -= 4; ds_right += 1; ldr_right += 1; ppi_right += 0.5; socialist_sentiment += 3;
 
-We begin forcefully seizing idle industries, nationalising vast sums of the economy without compensating the greedy industrialists a single cent. They are, of course, outraged, and utilise their backings and support from the liberal parties. The [+ pnf_name +] use this as propaganda, fearmongering to the middle class and other industrialists who are swayed to support them.
+We begin forcefully seizing idle industries, nationalising vast sums of the economy without compensating the greedy industrialists a single cent. They are, of course, outraged, and utilise their backings and support from the <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">ral</span> parties. The <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_name +]</span> use this as propaganda, fearmongering to the middle class and other industrialists who are swayed to support them.
 
 @max_nationalise_2
 subtitle: This will worsen our conflict with the industrialists.
 view-if: max_seize > 0 and psi_in_government
 choose-if: labour_minister_party = psi_name 
-unavailable-subtitle: [? if not labour_minister_party = psi_name: The [+ psi_name +] does not control the Labour & Social Security Ministry. ?][? if judicial_reform <= 2: The judiciary would oppose this action. ?]
+unavailable-subtitle: [? if not labour_minister_party = psi_name: The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> does not control the Labour & Social Security Ministry. ?][? if judicial_reform <= 2: The judiciary would oppose this action. ?]
 max-visits: 2
 on-arrival: maximum_done_gov += 1; max_seize += 1; unemployment -= 0.1 if unemployment >= 8; unemployment -= 0.2 if max_seize > 1; workers_psi += 4*(1-dissent)*max_seize; veterans_psi += 2*(1-dissent)*max_seize; radicalisation += 0.4; economic_growth -= 0.2; industrialists_pnf += 4*max_seize; middle_class_pnf += 2*max_seize; capital_strike_progress += 2; fasci_coup_progress += 1; coalition_dissent += 1 if in_unstable_coalition; ldr_relation -= 5; ul_relation -= 5; ppi_relation -= 2; ds_right += 0.8; ldr_right += 0.8; ppi_right += 0.3; socialist_sentiment += 2
 
@@ -54,7 +54,7 @@ on-arrival: maximum_done_gov += 1; max_seize += 1; unemployment -= 0.1 if unempl
 @max_gov_councils_1
 subtitle: We can use our position to strengthen representative bodies of factory workers.
 view-if: max_councils = 0 and psi_in_government 
-unavailable-subtitle: [? if not labour_minister_party = psi_name: The [+ psi_name +] does not control the Labour & Social Security Ministry. ?][? if judicial_reform <= 2: The judiciary would oppose this action. ?]
+unavailable-subtitle: [? if not labour_minister_party = psi_name: The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> does not control the Labour & Social Security Ministry. ?][? if judicial_reform <= 2: The judiciary would oppose this action. ?]
 choose-if: judicial_reform > 1 and labour_minister_party = psi_name
 on-arrival: maximum_done_gov += 1; max_councils += 1; workers_psi += 7*(1-dissent); labour_dissent -= 4; syndicalist_dissent -= 6 if syndicalist_active; labour_strength += 4; syndicalist_strength += 6; ldr_relation -= 5; coalition_dissent += 1 if centre_left_coalition; ldr_right += 0.2; socialist_sentiment += 2;
 
@@ -63,7 +63,7 @@ We encourage and allow workers' councils to develop, utilising Soviet-style and 
 @max_gov_councils_2
 subtitle: We continue strengthening representative bodies of factory workers and empower them.
 view-if: max_councils > 0 and psi_in_government 
-unavailable-subtitle: [? if not labour_minister_party = psi_name: The [+ psi_name +] does not control the Labour & Social Security Ministry. ?][? if judicial_reform <= 2: The judiciary would oppose this action. ?]
+unavailable-subtitle: [? if not labour_minister_party = psi_name: The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> does not control the Labour & Social Security Ministry. ?][? if judicial_reform <= 2: The judiciary would oppose this action. ?]
 choose-if: judicial_reform > 1 and labour_minister_party = psi_name
 max-visits: 2
 on-arrival: maximum_done_gov += 1; max_councils += 1; workers_psi += 4*(1-dissent); capital_strike_progress += 1; labour_dissent -= 2; syndicalist_dissent -= 5 if syndicalist_active; labour_strength += 2; syndicalist_strength += 5; ldr_relation -= 3; coalition_dissent += 1 if centre_left_coalition; economic_growth += 0.1 if economic_growth < 3; unemployment -= 2 if unemployment > 5 and max_councils = 3; workers += 2 if max_councils = 3; ldr_right += 0.1; socialist_sentiment += 1;
@@ -81,7 +81,7 @@ unavailable-subtitle: [? if not violent_revolution : Not enough paramilitary res
 choose-if: (para_resources >= 2 and not violent_revolution) or violent_revolution
 on-arrival: para_resources -= 2 if not violent_revolution; budget -= 2 if violent_revolution; max_land_seize += 1; rural_psi += 7*(1-dissent); fasci_coup_progress += 1; ldr_relation -= 7; ul_relation -= 10; coalition_dissent += 1 if in_unstable_coalition; industrialists_pnf += 3*(dissent); ldr_right += 0.1; rural += 3; unemployment -= 0.2; socialist_sentiment += 3;
 
-We utilise our paramilitary organisation to occupy and hand out land to landless workers, lowering unemployment and expanding our support base in rural areas. The bourgeois and landowners, obviously, oppose our blatant actions.
+We utilise our paramilitary organisation to occupy and hand out land to landless workers, lowering unemployment and expanding our support base in rural areas. The <span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> and landowners, obviously, oppose our blatant actions.
 
 @max_land_2
 subtitle: -2 [? if not violent_revolution : Paramilitary ?] Resources - We can continue break up estates and hand out land to landless workers.
@@ -91,7 +91,7 @@ choose-if: (para_resources >= 2 and not violent_revolution) or violent_revolutio
 max-visits: 2
 on-arrival: para_resources -= 2 if not violent_revolution; budget -= 2 if violent_revolution; max_land_seize += 1; rural_psi += 7*(1-dissent); fasci_coup_progress += 1; ldr_relation -= 5; ul_relation -= 7; coalition_dissent += 1 if in_unstable_coalition; economic_growth += 0.1 if economic_growth < 0; unemployment -= 0.3 if unemployment > 8 and max_land_seize = 3; rural += 2; communist_strength += 5; communist_dissent -= 5; industrialists_pnf += 3*(dissent); ldr_right += 0.1; socialist_sentiment += 2;
 
-[? if max_land_seize = 2: We continue seizing land and redistributing them to landless or unemployed workers, preventing poverty and stimulating economic growth. The bourgeois and landowners, protest this, using their influence in the [+ ldr_name +] and [+ ul_name +] to sway them against us. ?]
+[? if max_land_seize = 2: We continue seizing land and redistributing them to landless or unemployed workers, preventing poverty and stimulating economic growth. The <span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> and landowners, protest this, using their influence in the <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span> and <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span> to sway them against us. ?]
 
 [? if max_land_seize = 3: We seize vast sums of land from large estates, making many occupy these lands as landowners are in an uproar, all the while the left wing of the party applauds our decisive action. ?]
 
@@ -104,7 +104,7 @@ unavailable-subtitle: [? if not violent_revolution : Not enough paramilitary res
 choose-if: (para_resources >= 2 and not violent_revolution) or violent_revolution
 on-arrival: maximum_done_opp += 1; para_resources -= 2 if not violent_revolution; budget -= 2 if violent_revolution; max_seize_councils += 1; workers_psi += 7*(1-dissent); capital_strike_progress += 2; labour_dissent -= 6; syndicalist_dissent -= 6 if syndicalist_active; labour_strength += 6; syndicalist_strength += 8; ldr_relation -= 10; ul_relation -= 7; fasci_coup_progress += 1; ldr_right += 0.4; workers += 1; socialist_sentiment += 2; unemployment -= 0.2; unemployment -= 0.1 if unemployment >= 8
 
-We order the Red Guards to support and establish new workers' councils, utilising Soviet-style and Turin-style councils as inspiration, giving workers a larger voice in their workplace.
+We order the <span style="color:#c2352b">Red Guards</span> to support and establish new workers' councils, utilising Soviet-style and Turin-style councils as inspiration, giving workers a larger voice in their workplace.
 
 @max_force_councils_2
 subtitle: -2 [? if not violent_revolution : Paramilitary ?] Resources - We empower and strengthen workers councils utilising our paramilitary forces.
@@ -121,16 +121,16 @@ on-arrival: maximum_done_opp += 1; para_resources -= 2 if not violent_revolution
 - @root: Excellent.
 
 @max_occupation_1
-subtitle: -[+ occupation_cost +] [? if not violent_revolution : Paramilitary ?] Resources - We can encourage and aid workers in seizing the means of production. [? if rg_militancy >= 0.44 : The high militancy of the Red Guards have reduced the cost of this action. ?]
+subtitle: -[+ occupation_cost +] [? if not violent_revolution : Paramilitary ?] Resources - We can encourage and aid workers in seizing the means of production. [? if rg_militancy >= 0.44 : The high militancy of the <span style="color:#c2352b">Red Guards</span> have reduced the cost of this action. ?]
 view-if: not psi_in_government and max_seize_factories = 0
 unavailable-subtitle: [? if not violent_revolution : Not enough paramilitary resources. (Need 3) ?] [? if violent_revolution : Not enough resources. (Need 3) ?]
 choose-if: (para_resources >= occupation_cost and not violent_revolution) or (resources >= occupation_cost and violent_revolution)
 on-arrival: maximum_done_opp += 1; para_resources -= occupation_cost if not violent_revolution; resources -= occupation_cost if violent_revolution; max_seize_factories += 1; unemployment -= 0.8 if unemployment >= 8; workers_psi += 7*(1-dissent); veterans_psi += 5*(1-dissent); middle_class_pnf += 6; radicalisation += 0.6; industrialists_pnf += 7; inflation += 1.3; fasci_coup_progress += 2; ldr_relation -= 15; ul_relation -= 15; ppi_relation -= 10; ppi_right += 1; ldr_right += 1.2; socialist_sentiment += 5;
 
-We begin forcefully seizing idle industries, arming and aiding workers in seizing their workplaces. Industrialists are, of course, outraged, and utilise their backings and support from the liberal parties. The [+ pnf_name +] use this as propaganda, fearmongering to the middle class and other industrialists who are swayed to support them.
+We begin forcefully seizing idle industries, arming and aiding workers in seizing their workplaces. Industrialists are, of course, outraged, and utilise their backings and support from the <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">ral</span> parties. The <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_name +]</span> use this as propaganda, fearmongering to the middle class and other industrialists who are swayed to support them.
 
 @max_occupation_2
-subtitle: -[+ occupation_cost +] [? if not violent_revolution : Paramilitary ?] Resources - This will deepen our conflict with the industrialists and the governing coalition. [? if rg_militancy >= 0.44 : The high militancy of the Red Guards have reduced the cost of this action. ?]
+subtitle: -[+ occupation_cost +] [? if not violent_revolution : Paramilitary ?] Resources - This will deepen our conflict with the industrialists and the governing coalition. [? if rg_militancy >= 0.44 : The high militancy of the <span style="color:#c2352b">Red Guards</span> have reduced the cost of this action. ?]
 view-if: not psi_in_government and max_seize_factories > 0
 unavailable-subtitle: [? if not violent_revolution : Not enough paramilitary resources. (Need [+ occupation_cost +]) ?] [? if violent_revolution : Not enough resources. (Need [+ occupation_cost +]) ?]
 choose-if: (para_resources >= occupation_cost and not violent_revolution) or (resources >= occupation_cost and violent_revolution)

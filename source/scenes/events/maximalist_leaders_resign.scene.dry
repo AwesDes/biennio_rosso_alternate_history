@@ -1,11 +1,11 @@
-title: Maximalist leaders resign
+title: <span style="color:#DC143C">Maximalist</span> leaders resign
 new-page: true 
-subtitle: Maximalist disagreements with our policies have grown too severe.
+subtitle: <span style="color:#DC143C">Maximalist</span> disagreements with our policies have grown too severe.
 tags: event
 view-if: maximalist_dissent >= 60
 on-arrival: maximalist_strength *= 0.3; workers_psi *= 0.85; n_advisors -= 1 if bombacci_advisor == 1; n_advisors -= 1 if serrati_advisor == 1; n_advisors -= 1 if lazzari_advisor == 1; serrati_advisor = 0; lazzari_advisor = 0; bombacci_advisor = 0; rg_strength -= maximalist_strength; maximalists_resign = 1;
 max-visits: 1
 
-= Maximalist leaders resign
+= <span style="color:#DC143C">Maximalist</span> leaders resign
 
-Our policy choices have greatly offended the Maximalist faction, who have resigned and given up leadership of the party. Unfortunately, their absence has only exacerbated the conflict between the left and right wings of the party, without any faction to mediate.
+Our policy choices have greatly offended the <span style="color:#DC143C">Maximalist</span> faction, who have resigned and given up leadership of the party. Unfortunately, their absence has only exacerbated the conflict between the left and right wings of the party, without any faction to mediate.

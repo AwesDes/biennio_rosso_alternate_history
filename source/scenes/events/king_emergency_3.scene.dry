@@ -17,7 +17,7 @@ go-to: action_menu
 
 = Turin & Bologna Headquarters Raided
 
-A series of military crackdowns have wracked the country in recent days. The Regio Esercito, under command of Armando Diaz, have raided our offices and headquarters, particularly in Turin and Bologna. Our offices at *Avanti!* have been hit, members of the *Red Guards* [? if arditi_cooperation : and Arditi del Popolo ?] have been arrested, including leading members of the party.
+A series of military crackdowns have wracked the country in recent days. The <span style="color:#008C45">Regi</span><span style="color:#CFCFCF">o Eser</span><span style="color:#CD212A">cito</span>, under command of Armando Diaz, have raided our offices and headquarters, particularly in Turin and Bologna. Our offices at *Avanti!* have been hit, members of the <span style="color:#c2352b">Red Guards</span> [? if arditi_cooperation : and <span style="color:#2F2F2F">Arditi</span> <span style="color:#3CB371">del</span> <span style="color:#ED2855">Popolo</span> ?] have been arrested, including leading members of the party.
 
 Though we naturally protest and argue that this is unconstitutional, the King and Cabinet have declared the locations and members are traitors to the Kingdom, in which their rights are no longer guaranteed. Unfortunately, our actions for the time being will be severely limited, and the influence of *Avanti* in these affected regions will also be significantly impacted.
 
@@ -25,7 +25,7 @@ Though we naturally protest and argue that this is unconstitutional, the King an
 
 - @advisor_deactivate: Our advisors are arrested.
 - @avanti_deactivate: *Avanti!* will be temporarily out of commission.
-- @red_guard_deactivate: The Red Guards are outlawed by the Interior Ministry.
+- @red_guard_deactivate: The <span style="color:#c2352b">Red Guards</span> are outlawed by the Interior Ministry.
 - @council_deactivate: The Factory Councils are placed under military occupation.
 
 @advisor_deactivate
@@ -42,7 +42,7 @@ on-arrival: newspaper_seized = 1;
 max-visits: 1
 go-to: action_menu
 
-The regional branches of *Avanti!* are ransacked, raided by the Carabinieri, editors dragged off and arrested and branches left in ruins. Whatever the case, *Avanti!*'s capacity to reach workers and readers will be limited until operations are brought back to life.
+The regional branches of *Avanti!* are ransacked, raided by the <span style="color:#FF2400">Carabinieri</span>, editors dragged off and arrested and branches left in ruins. Whatever the case, *Avanti!*'s capacity to reach workers and readers will be limited until operations are brought back to life.
 
 @red_guard_deactivate
 view-if: rg_banned != 1

@@ -11,15 +11,15 @@ view-if: psi_in_government = 1 and interior_minister_party = psi_name and not na
 
 As we have control over the Interior Ministry, we can direct police and intelligence services to investigate internal enemies. We can proscribe various organisations.
 
-- @unban_rg: Unban the Red Guards.
-- @ban_fdc: Ban the Fasci Italiani di Combattimento.
-- @unban_fdc: Unban the Fasci Italiani di Combattimento.
+- @unban_rg: Unban the <span style="color:#c2352b">Red Guards</span>.
+- @ban_fdc: Ban the <span style="font-weight: bold; color:#3D3D3D;">Fasci Italiani di Combattimento</span>.
+- @unban_fdc: Unban the <span style="font-weight: bold; color:#3D3D3D;">Fasci Italiani di Combattimento</span>.
 - @persecute_fdc
-- @ban_ard: Ban the Arditismo.
-- @unban_ard: Unban the Arditismo.
+- @ban_ard: Ban the <span style="color:#3D3D3D;">Arditismo</span>.
+- @unban_ard: Unban the <span style="color:#3D3D3D;">Arditismo</span>.
 - @persecute_ard
-- @ban_abl: Ban the Anti-Bolshevik Leagues.
-- @unban_abl: Unban the Anti-Bolshevik Leagues.
+- @ban_abl: Ban the <span style="color:#3D3D3D;">Anti-Bolshevik Leagues</span>.
+- @unban_abl: Unban the <span style="color:#3D3D3D;">Anti-Bolshevik Leagues</span>.
 - @persecute_abl
 - @root: Take no action for now. [? if fasci_urgency < 3 : It's not like the far-right pose a threat. ?]
 
@@ -27,67 +27,67 @@ As we have control over the Interior Ministry, we can direct police and intellig
 view-if: rg_banned == 1
 on-arrival: rg_banned = 0; rg_strength += 5; socialist_sentiment += 6;
 
-The Red Guards are no longer banned.
+The <span style="color:#c2352b">Red Guards</span> are no longer banned.
 
 @ban_fdc
 view-if: fasci_urgency >= 3 and fdc_banned == 0
 on-arrival: fdc_strength *= 0.85; fdc_strength *= 0.7 if interior_police_loyalty >= 0.7; fdc_banned = 1; ul_relation -= 3; interior_police_loyalty -= 0.05; fdc_ban_timer = 6; fdc_militancy -= 0.04; nationalist_sentiment -= 4; ds_right += 0.2; ldr_right += 0.2;
 
-As it turns out, the Fasci have many allies in the police and bureaucracy. Our relationship with the Carabinieri weakens, and the Fasci can still organize illegally, right under the police's noses. [? if interior_police_loyalty >= 0.7 : Nevertheless, the Fasci are substantially weakened by our ban. ?]
+As it turns out, the <span style="font-weight: bold; color:#3D3D3D;">Fasci</span> have many allies in the police and bureaucracy. Our relationship with the <span style="color:#FF2400">Carabinieri</span> weakens, and the <span style="font-weight: bold; color:#3D3D3D;">Fasci</span> can still organize illegally, right under the police's noses. [? if interior_police_loyalty >= 0.7 : Nevertheless, the <span style="font-weight: bold; color:#3D3D3D;">Fasci</span> are substantially weakened by our ban. ?]
 
 @unban_fdc
 view-if: fdc_banned == 1
 on-arrival: fdc_banned = 0; fdc_strength += 20; fdc_militancy += 0.04; nationalist_sentiment += 6;
 
-The Fasci is no longer banned. They immediately go on a recruiting spree.
+The <span style="font-weight: bold; color:#3D3D3D;">Fasci</span> is no longer banned. They immediately go on a recruiting spree.
 
 @persecute_fdc
-title: Further persecute the Fasci.
+title: Further persecute the <span style="font-weight: bold; color:#3D3D3D;">Fasci</span>.
 view-if: fdc_banned == 1
 choose-if: judicial_reform >= 3 and interior_police_loyalty >= 0.7
-unavailable-subtitle: [? if judicial_reform < 3 : The judiciary would not allow this. ?] [? if interior_police_loyalty < 0.7 : The Carabinieri are too disloyal to be trusted with this. ?]
+unavailable-subtitle: [? if judicial_reform < 3 : The judiciary would not allow this. ?] [? if interior_police_loyalty < 0.7 : The <span style="color:#FF2400">Carabinieri</span> are too disloyal to be trusted with this. ?]
 on-arrival: fdc_strength *= 0.7; fdc_militancy -= 0.03; nationalist_sentiment -= 2; ds_right -= 0.1; ldr_right -= 0.1;
 
-We have arrested more of the Fasci's leaders and confiscated their weapons.
+We have arrested more of the <span style="font-weight: bold; color:#3D3D3D;">Fasci</span>'s leaders and confiscated their weapons.
 
 @ban_ard
 on-arrival: ard_strength *= 0.85; ard_strength *= 0.7 if interior_police_loyalty >= 0.7; ard_banned = 1; ds_relation -= 5; interior_police_loyalty -= 0.05; ard_ban_timer = 6; ard_militancy -= 0.04; nationalist_sentiment -= 4;
 view-if: fasci_urgency >= 3 and ard_banned == 0
 
-Banning the Arditismo weakens our relationship with the political right and the police. In addition, the Arditismo still operates out of public sight.
+Banning the <span style="color:#3D3D3D;">Arditismo</span> weakens our relationship with the political right and the police. In addition, the <span style="color:#3D3D3D;">Arditismo</span> still operates out of public sight.
 
 @unban_ard
 view-if: ard_banned == 1
 on-arrival: ard_banned = 0; ard_strength += 5; nationalist_sentiment += 6;
 
-The Arditismo is no longer banned.
+The <span style="color:#3D3D3D;">Arditismo</span> is no longer banned.
 
 @persecute_ard
-title: Further persecute the Arditismo.
+title: Further persecute the <span style="color:#3D3D3D;">Arditismo</span>.
 view-if: ard_banned == 1
 choose-if: judicial_reform >= 4 and interior_police_loyalty >= 0.7
 unavailable-subtitle: [? if judicial_reform < 4 : The judiciary would not allow this. ?] [? if interior_police_loyalty < 0.7 : The police are too disloyal to be trusted with this. ?]
 on-arrival: ard_strength *= 0.7; ard_militancy -= 0.03; ul_relation -= 5; interior_police_loyalty -= 0.05; nationalist_sentiment -= 2; ds_right -= 0.1; ldr_right -= 0.1;
 
-We have arrested more of the Arditismo's leaders and confiscated their weapons.
+We have arrested more of the <span style="color:#3D3D3D;">Arditismo</span>'s leaders and confiscated their weapons.
 
 @ban_abl
 on-arrival: abl_strength *= 0.85; abl_strength *= 0.7 if interior_police_loyalty >= 0.7; abl_banned = 1; industrialists_pnf += 5*(1-dissent); interior_police_loyalty -= 0.05; abl_ban_timer = 6; abl_militancy -= 0.04; nationalist_sentiment -= 4;
 view-if: fasci_urgency >= 3 and abl_banned == 0
 
-Banning the Anti-Bolshevik League's weakens our relationship with the landowners and industrialists.
+Banning the <span style="color:#3D3D3D;">Anti-Bolshevik League</span>'s weakens our relationship with the landowners and industrialists.
 
 @unban_abl
 view-if: abl_banned == 1
 on-arrival: abl_banned = 0; abl_strength += 5; nationalist_sentiment += 6;
 
-The Anti-Bolshevik Leagues are no longer banned.
+The <span style="color:#3D3D3D;">Anti-Bolshevik Leagues</span> are no longer banned.
 
 @persecute_abl
-title: Further persecute the Anti-Bolshevik Leagues.
+title: Further persecute the <span style="color:#3D3D3D;">Anti-Bolshevik Leagues</span>.
 view-if: abl_banned == 1
 choose-if: judicial_reform >= 4 and interior_police_loyalty >= 0.7
 unavailable-subtitle: [? if judicial_reform < 4 : The judiciary would not allow this. ?] [? if interior_police_loyalty < 0.7 : The police are too disloyal to be trusted with this. ?]
 on-arrival: abl_strength *= 0.7; abl_militancy -= 0.03; industrialists_pnf += 5*(1-dissent); interior_police_loyalty -= 0.05; nationalist_sentiment -= 2; ds_right -= 0.1; ldr_right -= 0.1;
 
-We have arrested more of the Anti-Bolshevik League's leaders and confiscated their weapons.
+We have arrested more of the <span style="color:#3D3D3D;">Anti-Bolshevik League</span>'s leaders and confiscated their weapons.

@@ -7,7 +7,7 @@ new-page: true
 
 = Mussolini Arrested!
 
-Following the end of the latest elections, we have been informed that Benito Mussolini, head of the relatively unknown [+ pnf_full_italian +] and former member of our own socialist party, has been arrested in his hometown of Predappio, under allegation of harbouring illegal weapons as well as operating a violent organisation.
+Following the end of the latest elections, we have been informed that Benito Mussolini, head of the relatively unknown <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_full_italian +]</span> and former member of our own <span style="color:#ED2855">socialist</span> party, has been arrested in his hometown of Predappio, under allegation of harbouring illegal weapons as well as operating a violent organisation.
 
 What should we do?
 
@@ -20,7 +20,7 @@ on-arrival: mussolini_jailed = 1; fdc_militancy += 0.08; fdc_strength += 7; muss
 
 We keep Mussolini in prison, awaiting trial. His trial is to be in [+ mussolini_trial_timer +] months, and we should gather enough evidence to convict him by then.
 
-In his absence however, the Fasci grow more and more rowdy, terrorising the local populace and gaining a notorious reputation for themselves.
+In his absence however, the <span style="font-weight: bold; color:#3D3D3D;">Fasci</span> grow more and more rowdy, terrorising the local populace and gaining a notorious reputation for themselves.
 
 - @interior_investigations: Let's get to work then, shall we?
 

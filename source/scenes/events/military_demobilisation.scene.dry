@@ -12,7 +12,7 @@ The Military is to continue its demobilisation of its forces back to post-war le
 
 - @delay_demobilise: Influence the army to delay the orders.
 - @stop_demobilise: Influence the army to end demobilisation.
-- @sway_demobilise: Recruit the newly discharged soldiers to the Red Guards.
+- @sway_demobilise: Recruit the newly discharged soldiers to the <span style="color:#c2352b">Red Guards</span>.
 - @allow_demobilise
 
 @delay_demobilise 
@@ -39,11 +39,11 @@ choose-if: para_resources > 0
 unavailable-subtitle: Not enough paramilitary resources. (Need 1).
 on-arrival: para_resources -= 1; rg_strength += 15*revolutionary_exhaustion; rg_militancy += 0.02; army_strength -= 692; unemployment += 1.9; budget += 1; demobilise_timer += 6; fdc_strength += 15; ard_strength += 10; abl_strength += 5; veterans += 2;
 
-We are able to utilise our resources to recruit and bolster our own forces, as the fascists do the same.
+We are able to utilise our resources to recruit and bolster our own forces, as the <span style="color:#3D3D3D;">fascists</span> do the same.
 
 @allow_demobilise
 title: Let them demobilise.
 subtitle: +1 Budget
 on-arrival: army_strength -= 692; unemployment += 1.9; budget += 1; demobilise_timer += 6; fdc_strength += 15; ard_strength += 10; abl_strength += 5; veterans += 2;
 
-The Regio Esercito continues its post-war demobilisation, as the fascists utilise the opportunity to bolster their ranks.
+The <span style="color:#008C45">Regi</span><span style="color:#CFCFCF">o Eser</span><span style="color:#CD212A">cito</span> continues its post-war demobilisation, as the <span style="color:#3D3D3D;">fascists</span> utilise the opportunity to bolster their ranks.

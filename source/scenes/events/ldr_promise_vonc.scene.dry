@@ -1,11 +1,11 @@
-title: Meeting with the Liberals
+title: Meeting with the <span style="font-weight: bold; color:#FFD700;">Liberal Democrats</span>
 view-if: psi_in_government and centre_left_coalition and ldr_promise_failed or (liberal_crackdown_complete == 0 and liberal_crackdown_accepted == 1 and liberal_crackdown_timer <= 0) and ldr_in_government
 new-page: true
 tags: event
 
 = Promises given, Promises broken
 
-The [+ ldr_full_name +] are, understandably upset at our failure to maintain the agreement that has held this coalition together and are considering a Vote of No Confidence against the government.
+The <span style="font-weight: bold; color:#FFD700;">[+ ldr_full_name +]</span> are, understandably upset at our failure to maintain the agreement that has held this coalition together and are considering a Vote of No Confidence against the government.
 
 - @lib_promise_results: And...
 
@@ -13,8 +13,8 @@ The [+ ldr_full_name +] are, understandably upset at our failure to maintain the
 on-arrival: ldr_relation -= 5; ldr_total_broken += 1; ldr_promise_failed = 0; coalition_dissent += 1 if (ldr_relation >= 50 and ldr_total_broken < 2); liberal_crackdown_timer += 6 if (ldr_relation >= 50 and ldr_total_broken < 2 and liberal_crackdown_accepted and liberal_crackdown_complete == 0);
 go-to: liberal_vote_of_no_confidence if (ldr_relation < 50 or ldr_total_broken >= 2 or coalition_dissent >= 3)
 
-[? if ldr_relation < 50 or ldr_total_broken >= 2 or coalition_dissent >= 3 : Unfortunately, the [+ ldr_name +] have decided to call a Vote of No Confidence against us. ?]
+[? if ldr_relation < 50 or ldr_total_broken >= 2 or coalition_dissent >= 3 : Unfortunately, the <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span> have decided to call a Vote of No Confidence against us. ?]
 
-[? if ldr_relation >= 50 and ldr_total_broken < 2 and coalition_dissent < 2: Fortunately, owing to our good relations, the [+ ldr_name +] have decided against a vote, though our relations have taken a hit. ?]
+[? if ldr_relation >= 50 and ldr_total_broken < 2 and coalition_dissent < 2: Fortunately, owing to our good relations, the <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span> have decided against a vote, though our relations have taken a hit. ?]
 
 [? if ldr_relation >= 50 and ldr_total_broken < 2 and liberal_crackdown_accepted and liberal_crackdown_complete == 0 : We have been given 6 more months to crackdown on the paramilitaries. ?]

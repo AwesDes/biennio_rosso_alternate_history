@@ -8,13 +8,13 @@ new-page: true
 
 = [+ pnf_leader +] Appointed Prime Minister!
 
-Popular sentiment within the bourgeois parties against us has led [+ pnf_leader +] and the National Fascist Party to form an 'Anti-Socialist' coalition and convince the centre-right majority to support him. The King has officially appointed [+ pnf_leader +] as Prime Minister, as many fear he will quickly consolidate power and bring the full force of the government towards us.
+Popular sentiment within the <span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> parties against us has led [+ pnf_leader +] and the <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_full_name +]</span> to form an 'Anti-Socialist' coalition and convince the centre-right majority to support him. The King has officially appointed [+ pnf_leader +] as Prime Minister, as many fear he will quickly consolidate power and bring the full force of the government towards us.
 
-He has promised a campaign of staunch anti-socialism, as reports have come out of violence across Italy already. Contacts between the Fasci Italiani di Combattimento and the army has strengthened, as seemingly more military arms appear more frequent in paramilitary hands.
+He has promised a campaign of staunch anti-socialism, as reports have come out of violence across <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span> already. Contacts between the <span style="font-weight: bold; color:#3D3D3D;">Fasci Italiani di Combattimento</span> and the army has strengthened, as seemingly more military arms appear more frequent in paramilitary hands.
 
 What are we to do now?
 
-- @fight: Mobilise the Red Guards and authorise workers to begin taking up arms against [+ pnf_leader +]'s rule!
+- @fight: Mobilise the <span style="color:#c2352b">Red Guards</span> and authorise workers to begin taking up arms against [+ pnf_leader +]'s rule!
 - @keep_on: Await our opportunity to strike.
 
 

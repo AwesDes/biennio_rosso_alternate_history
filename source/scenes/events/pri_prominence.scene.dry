@@ -1,5 +1,5 @@
-title: PRI rises in prominence
-subtitle: The Republicans rise from obscurity.
+title: <span style="font-weight: bold; color:#3CB371">PRI</span> rises in prominence
+subtitle: The <span style="color:#3CB371">Republicans</span> rise from obscurity.
 new-page: true
 view-if: republican_sentiment > 40 and (workers_other_normalised > 10 or middle_class_other_normalised > 10 or rural_other_normalised > 5 or industrialists_other_normalised > 10 or veterans_other_normalised > 10 or catholic_other_normalised > 10)
 on-arrival: {!
@@ -39,10 +39,10 @@ Q.republican_sentiment += 4;
 max-visits: 1
 tags: event
 
-= PRI regains Prominence
+= <span style="font-weight: bold; color:#3CB371">PRI</span> regains Prominence
 
-The *Partito Repubblicano Italiano*, known also as the Italian Republican Party, was a formidable force following the end of the 19th and early 20th century, reaching over 5% in the Chamber of Deputies, before falling into obscurity. However, it seems the party has made a comeback, primarily due to the increased support for Republicanism throughout the last couple months.
+The <span style="font-weight: bold; color:#3CB371">Partito Repubblicano Italiano</span>, known also as the <span style="font-weight: bold; color:#3CB371">Italian Republican Party</span>, was a formidable force following the end of the 19th and early 20th century, reaching over 5% in the Chamber of Deputies, before falling into obscurity. However, it seems the party has made a comeback, primarily due to the increased support for <span style="color:#3CB371">Republicanism</span> throughout the last couple months.
 
-Whatever the case, the PRI have been our historic allies, [? if participating = 1:and we are optimistic to renew the bonds between our parties to be a strong force in politics. ?][? if not_participating = 1:it seems it will have to come to an end. ?]
+Whatever the case, the <span style="font-weight: bold; color:#3CB371">PRI</span> have been our historic allies, [? if participating = 1:and we are optimistic to renew the bonds between our parties to be a strong force in politics. ?][? if not_participating = 1:it seems it will have to come to an end. ?]
 
 - @root: Only time will tell what this new force will do.

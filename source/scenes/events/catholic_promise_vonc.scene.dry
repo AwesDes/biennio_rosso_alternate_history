@@ -1,11 +1,11 @@
-title: Meeting with the Catholics
+title: Meeting with the <span style="font-weight: bold; color:#87CEFA;">Catholics</span>
 view-if: psi_in_government and socialist_catholic_coalition and ppi_promise_failed or (catholic_papacy_accepted and catholic_papacy_timer == 0 and roman_question_answered == 0) and ppi_in_government
 new-page: true
 tags: event
 
 = Promises given, Promises broken
 
-The Italian People's Party is, understandably upset at our failure to maintain the agreement that has held this coalition together and are considering a Vote of No Confidence against the government.
+The <span style="font-weight: bold; color:#87CEFA;">Italian People's Party</span> is, understandably upset at our failure to maintain the agreement that has held this coalition together and are considering a Vote of No Confidence against the government.
 
 - @catholic_promise_results: And...
 
@@ -13,7 +13,7 @@ The Italian People's Party is, understandably upset at our failure to maintain t
 on-arrival: ppi_relation -= 5; ppi_total_broken += 1; ppi_promise_failed = 0; coalition_dissent += 1 if (ppi_relation >= 50 and ppi_total_broken < 2); catholic_papacy_timer += 6 if (ppi_relation >= 50 and ppi_total_broken < 2 and catholic_papacy_timer == 0 and roman_question_answered == 0)
 go-to: catholic_vote_of_no_confidence if (ppi_relation < 50 or ppi_total_broken >= 2 or coalition_dissent >= 3)
 
-[? if ppi_relation >= 50 and ppi_total_broken < 2 and coalition_dissent < 2: Fortunately, owing to our good relations, the PPI have decided against a vote, though our relations have taken a hit. ?]
+[? if ppi_relation >= 50 and ppi_total_broken < 2 and coalition_dissent < 2: Fortunately, owing to our good relations, the <span style="font-weight: bold; color:#87CEFA;">PPI</span> have decided against a vote, though our relations have taken a hit. ?]
 
 [? if ppi_relation >= 50 and ppi_total_broken < 2 and coalition_dissent < 2 and catholic_papacy_accepted : We have been given an extra 6 months to negotiate an agreement with the Holy See. ?]
 

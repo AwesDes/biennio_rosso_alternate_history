@@ -1,12 +1,12 @@
-title: [+ ds_name +] Fractures!
+title: <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span> Fractures!
 subtitle: The party's internal machinations have caused its collapse.
 new-page: true
 view-if: ds_r > ul_r and ds_r > ldr_r and ds_party and not ds_fractured and not pcs_formed and not pll_formed
 tags: event
 
-= [+ ds_name +] Fractures!
+= <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span> Fractures!
 
-The [+ ds_name +] has always been a historically unstable party, having had members from left to right wings of the political sphere. However, these ideological differences have typically been placed in check by the party's leadership, notably Giovanni Antonio Colonna di Cesarò. However, the rise of the [+ ds_full_name +] as the dominant party in the liberal sphere has resulted in an worsening of these party internal politics, as arguments and fights between members break out regularly.
+The <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span> has always been a historically unstable party, having had members from left to right wings of the political sphere. However, these ideological differences have typically been placed in check by the party's leadership, notably Giovanni Antonio Colonna di Cesarò. However, the rise of the <span style="font-weight: bold; color:#1E99C5;">[+ ds_full_name +]</span> as the dominant party in the liberal sphere has resulted in an worsening of these party internal politics, as arguments and fights between members break out regularly.
 
 The party can no longer hold through compromise.
 
@@ -126,4 +126,4 @@ for (var record of Q.party_support_records) {
 
 !}
 
-Both the 'Christian Social Party', led by Gabriello Carnazza and the 'Liberal Workers' Party', led by Vincenzo Giuffrida have been founded, as the remnants of the [+ ds_name +] have been left as the party becomes defunct, a shadow of its former self.
+Both the <span style="font-weight: bold; color:#656573;">Christian Social Party</span>, led by Gabriello Carnazza and the <span style="font-weight: bold; color:#FFD1D9;">Liberal Workers' Party</span>, led by Vincenzo Giuffrida have been founded, as the remnants of the <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span> have been left as the party becomes defunct, a shadow of its former self.

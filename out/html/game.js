@@ -124,13 +124,24 @@
       document.body.classList.add('dark-mode');
       window.dendryUI.saveSettings();
   }
-
+    window.enableColorText = function() {
+        window.dendryUI.colored_text = true;
+        document.body.classList.remove('color-off-mode');
+        window.dendryUI.saveSettings();
+  };
+  window.disableColorText = function() {
+      window.dendryUI.colored_text = false;
+      document.body.classList.add('color-off-mode');
+      window.dendryUI.saveSettings();
+  }
+  
   // populates the checkboxes in the options view
   window.populateOptions = function() {
     var disable_bg = window.dendryUI.disable_bg;
     var animate = window.dendryUI.animate;
     var disable_audio = window.dendryUI.disable_audio;
     var show_portraits = window.dendryUI.show_portraits;
+    window.dendryUI.colored_text = true;
     if (disable_bg) {
         $('#backgrounds_no')[0].checked = true;
     } else {
@@ -155,6 +166,11 @@
         $('#dark_mode')[0].checked = true;
     } else {
         $('#light_mode')[0].checked = true;
+    }
+    if (window.dendryUI.colored_text) {
+        $('#colored_text')[0].checked = true;
+    } else {
+        $('#no_colored_text')[0].checked = true;
     }
   };
 

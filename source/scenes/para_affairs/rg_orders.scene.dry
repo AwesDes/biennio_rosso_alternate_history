@@ -6,24 +6,24 @@ view-if: rg_orders_timer <= 0 and participating = 0 and rg_banned = 0
 card-image: img/RedGuards.jpg
 on-arrival: week_actions += 1; rg_orders_timer = 3;
 
-= Red Guards
+= <span style="color:#c2352b">Red Guards</span>
 
-The *Guardie Rosse*, following our continued goal of violent revolution, will be pivotal to our cause and as such, we can command the organisation to aid our cause.
+The <span style="color:#c2352b">Guardie Rosse</span>, following our continued goal of violent revolution, will be pivotal to our cause and as such, we can command the organisation to aid our cause.
 
-- @fighting: Utilise the Red Guards and test our forces against the fascists.
-- @occupations: Utilise the Red Guards to occupy factories.
-- @protests: Utilise the Red Guards to strike and demand better conditions.
-- @return: Keep the Red Guards as it is.
+- @fighting: Utilise the <span style="color:#c2352b">Red Guards</span> and test our forces against the <span style="color:#3D3D3D;">fascists</span>.
+- @occupations: Utilise the <span style="color:#c2352b">Red Guards</span> to occupy factories.
+- @protests: Utilise the <span style="color:#c2352b">Red Guards</span> to strike and demand better conditions.
+- @return: Keep the <span style="color:#c2352b">Red Guards</span> as it is.
 - @easy_discard
 - @cancel_advisor_action
 
 @fighting
-subtitle: -3 Paramilitary Resources - Test the Red Guards against the Arditsmo.
+subtitle: -3 Paramilitary Resources - Test the <span style="color:#c2352b">Red Guards</span> against the <span style="color:#3D3D3D;">Arditismo</span>.
 choose-if: para_resources >= 3
 unavailable-subtitle: Not enough paramilitary resources. (Need 3)
 on-arrival: para_resources -= 3; radicalisation += 0.1; revolutionary_fervour += 5; rg_strength -= 30*revolutionary_exhaustion; rg_militancy += 0.03*revolutionary_exhaustion; ard_strength -= 30*rg_militancy; revolutionary_exhaustion += 0.03 if not_participating = 1; middle_class_psi -= 6*(1-dissent); 
 
-Our forces begin intercepting and picking fights with the Arditismo, allowing them to gain combat experience and reinvigorating the party.
+Our forces begin intercepting and picking fights with the <span style="color:#3D3D3D;">Arditismo</span>, allowing them to gain combat experience and reinvigorating the party.
 
 @occupations
 subtitle: -1 Paramilitary Resources - Aid factory workers to seize control of their workplaces.
@@ -31,7 +31,7 @@ choose-if: para_resources >= 1
 unavailable-subtitle: Not enough paramilitary resources. (Need 1)
 on-arrival: para_resources -= 1; radicalisation += 0.05; revolutionary_fervour += 3; rg_strength -= 10*revolutionary_exhaustion; workers_psi += 4; revolutionary_exhaustion += 0.02 if not_participating = 1; industrialists_psi -= 4; factory_takeovers += 1;  middle_class_psi -= 4*(1-dissent); 
 
-We have seized control of more factories and kicked the bourgeois industrialists out! This has reinvigorated the party, and convinced more workers to our side.
+We have seized control of more factories and kicked the <span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> industrialists out! This has reinvigorated the party, and convinced more workers to our side.
 
 @protests
 subtitle: -1 Paramilitary Resources - Protest and strike against the current working conditions.
@@ -39,4 +39,4 @@ choose-if: para_resources >= 1
 unavailable-subtitle: Not enough paramilitary resources. (Need 1)
 on-arrival: para_resources -= 1; radicalisation += 0.02; revolutionary_fervour += 1; rg_strength -= 5*revolutionary_exhaustion; workers_psi += 2; revolutionary_exhaustion += 0.01 if not_participating = 1; industrialists_psi -= 2;  middle_class_psi -= 2*(1-dissent); 
 
-We utilise the Red Guards to aid the workers, forcing the hands of the industrialists to grant better conditions for the workers such as higher wages, lower hours and better benefits.
+We utilise the <span style="color:#c2352b">Red Guards</span> to aid the workers, forcing the hands of the industrialists to grant better conditions for the workers such as higher wages, lower hours and better benefits.

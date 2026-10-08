@@ -1,5 +1,5 @@
-title: D'Annunzio consolidates control over the PNF
-subtitle: The Squadrismo are purged.
+title: D'Annunzio consolidates control over the <span style="font-weight: bold; color:#3D3D3D;">PNF</span>
+subtitle: The <span style="color:#3D3D3D;">Squadrismo</span> are purged.
 view-if: pnf_in_power and pnf_leader = "D'Annunzio" and dannunzio_coup_seen and dannunzio_time <= time
 max-visits: 1
 tags: event
@@ -15,9 +15,9 @@ Q.abl_strength *= 0.4;
 Q.abl_militancy *= 0.2;
 !} next_election_time = time + 6; next_election_month = month + 3; next_election_year = year; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12
 
-= Squadrismo Purged
+= <span style="color:#3D3D3D;">Squadrismo</span> Purged
 
-Following the coup attempt, a purge of the Squadrismo has occurred, removing disloyal *Ras* and officers from their position. This has thankfully, weakened them severely too, as inexperienced men take their place. Our ability to control the streets with the Red Guards will be easier. 
+Following the coup attempt, a purge of the <span style="color:#3D3D3D;">Squadrismo</span> has occurred, removing disloyal *Ras* and officers from their position. This has thankfully, weakened them severely too, as inexperienced men take their place. Our ability to control the streets with the <span style="color:#c2352b">Red Guards</span> will be easier. 
 
 Elections have been rescheduled to stabilise the situation.
 

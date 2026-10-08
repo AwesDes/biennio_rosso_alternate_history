@@ -1,15 +1,15 @@
-title: The End of the Russian Civil War
+title: The End of the <span style="font-weight: bold; color:#CC0000">Russian</span> Civil War
 new-page: true
-subtitle: Have our Soviet allies won?
+subtitle: Have our <span style="font-weight: bold; color:#CC0000">Soviet</span> allies won?
 tags: event
 view-if: soviet_end_timer <= 0
 on-arrival: rcw_over = 1; soviet_recovery_timer = 4; communist_dissent -= 7; reformist_dissent -= 7; maximalist_dissent -= 7; labour_dissent -= 7; syndicalist_dissent -= 7 if syndicalist_active; communist_strength += 7*(1-dissent)
 max-visits: 1
 face-image: img/RCWOver.jpg
 
-= The End of the Russian Civil War
+= The End of the <span style="font-weight: bold; color:#CC0000">Russian</span> Civil War
 
-News is pouring out of the Russian state, as our contacts have informed us that the last of the White Army has surrendered to Lenin and the Red Army. Already, celebration has broken out amongst our allies at the establishment of the first socialist state to ever exist.
+News is pouring out of the Russian state, as our contacts have informed us that the last of the White Army has surrendered to Lenin and the <span style="color:#CC0000">Red Army</span>. Already, celebration has broken out amongst our allies at the establishment of the first <span style="color:#ED2855">socialist</span> state to ever exist.
 
 The state is far from stable, however, and will require quite a long time to recover from its civil war. Regardless, the party is understandably in a celebratory mood.
 

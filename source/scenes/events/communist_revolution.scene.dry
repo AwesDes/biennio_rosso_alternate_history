@@ -1,5 +1,5 @@
 title: [+ month : month +] Revolution
-subtitle: The Communists are launching a revolution!
+subtitle: The <span style="color:#8B0000">Communists</span> are launching a revolution!
 view-if: not national_congress_seen and ((sov_rg_strength*sov_rg_militancy) >= ((fdc_strength*fdc_militancy) + (abl_strength*abl_militancy) + (ard_strength*ard_militancy) * 2) or (sov_rg_strength*sov_rg_militancy) >= ((army_strength*army_militancy) + (interior_police_militancy*interior_police_strength) * 2) or pcdi_votes >= 50) and soviet_leader = "Stalin"
 new-page: true
 tags: event
@@ -15,11 +15,11 @@ Q.army_strength = (Q.army_strength*Q.rg_militancy) + (Q.interior_police_strength
 
 # credit to redux for this, btw
 
-Aided by the Communist International and under pressure by [+ soviet_leader +] the PCd'I has seemingly commenced the revolutionary process. Out of nowhere, a call to general strike is published while radical elements of the Red Guards storms key infrastructure points across the country, attempting especially to secure control over arms with which to distribute to local workers. Streetfighting erupts as fascist militias and police forces opposed to the communists attempt to put down their uprisings while further more expansive ones are launched across the country.
+Aided by the <span style="font-weight: bold; color:#CE0000">Communist International</span> and under pressure by [+ soviet_leader +] the <span style="font-weight: bold; color:#C72F35">PCd'I</span> has seemingly commenced the revolutionary process. Out of nowhere, a call to general strike is published while radical elements of the <span style="color:#c2352b">Red Guards</span> storms key infrastructure points across the country, attempting especially to secure control over arms with which to distribute to local workers. Streetfighting erupts as <span style="color:#3D3D3D;">fascist</span> militias and police forces opposed to the <span style="color:#8B0000">communists</span> attempt to put down their uprisings while further more expansive ones are launched across the country.
 
-Factories are occupied through an initiative of the PCd'I-aligned trade unions and radical elements of the General Confederation of Labour, and PCd'I-backed worker councils formed within them, expanding its reach beyond Turin. Local government offices are seized and occupied, leaving the inprompteau worker councils as the only form of governance, while within those councils PCd'I and Red Guard leaders are elected to direct the ongoing revolution. 
+Factories are occupied through an initiative of the <span style="font-weight: bold; color:#C72F35">PCd'I</span>-aligned trade unions and radical elements of the General Confederation of Labour, and <span style="font-weight: bold; color:#C72F35">PCd'I</span>-backed worker councils formed within them, expanding its reach beyond Turin. Local government offices are seized and occupied, leaving the inprompteau worker councils as the only form of governance, while within those councils <span style="font-weight: bold; color:#C72F35">PCd'I</span> and <span style="color:#c2352b">Red Guard</span> leaders are elected to direct the ongoing revolution. 
 
-- @psi_supports: The [+ psi_name +] stands with the revolution!
+- @psi_supports: The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> stands with the revolution!
 - @social_fascism: This is madness!
 
 @psi_supports
@@ -28,18 +28,18 @@ unavailable-subtitle: The impromptu revolution is doomed to fail.
 on-arrival: psi_revolution = 1; pcdi_relation += 100; ldr_relation -= 100; ul_relation -= 100; ds_relation -= 100; psri_relation -= 100; psu_relation -= 100 if psu_formed; pll_relation -= 100 if pll_formed; ppi_relation -= 100; reformist_dissent += 100;
 go-to: pcdi_survives if pcdi_strength + neutral_strength >= fascist_strength; pcdi_crushed if pcdi_strength + neutral_strength < fascist_strength
 
-We mobilize the moderate Red Guards against the reactionary militias to defend the worker councils, and join the call to general strike. What's left of our party's reformists leave, unwilling to support a violent means of revolution. 
+We mobilize the moderate <span style="color:#c2352b">Red Guards</span> against the <span style="color:#3D3D3D;">reactionary</span> militias to defend the worker councils, and join the call to general strike. What's left of our party's <span style="color:#FF6961">reformists</span> leave, unwilling to support a violent means of revolution. 
 
 @social_fascism
 go-to: pcdi_survives if pcdi_strength >= fascist_strength; pcdi_crushed if pcdi_strength < fascist_strength
 
 @pcdi_survives
 
-The streetfighting in the streets reaches levels one would expect in a civil war before eventually, the communists seem to remain standing. Police stations are stormed across the country, red flags raised above while forces of the Arditismo and Fasci driven out of the cities and into the countryside. Arms are distributed from seized armories to local radical workers, organized into a new fledgling Red Army with one task: the fall of the italian monarchy, and the defense of the councils.
+The streetfighting in the streets reaches levels one would expect in a civil war before eventually, the <span style="color:#8B0000">communists</span> seem to remain standing. Police stations are stormed across the country, red flags raised above while forces of the <span style="color:#3D3D3D;">Arditismo</span> and <span style="font-weight: bold; color:#3D3D3D;">Fasci</span> driven out of the cities and into the countryside. Arms are distributed from seized armories to local radical workers, organized into a new fledgling <span style="color:#c2352b">Red Army</span> with one task: the fall of the <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">al</span><span style="font-weight: bold; color:#CD212A">ian</span> monarchy, and the defense of the councils.
 
-Regio Esercito forces across the country are ordered out of their barracks by the King to quell the uprisings and restore order, only pre-empted in communist strongholds where barracks were stormed by local Red Army contingents. The failure of the bourgeois' first line of defense to suppress this revolutionary attempt has reinvigorated the communists' efforts.
+<span style="color:#008C45">Regi</span><span style="color:#CFCFCF">o Eser</span><span style="color:#CD212A">cito</span> forces across the country are ordered out of their barracks by the King to quell the uprisings and restore order, only pre-empted in <span style="color:#8B0000">communist</span> strongholds where barracks were stormed by local <span style="color:#c2352b">Red Army</span> contingents. The failure of the <span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span>' first line of defense to suppress this revolutionary attempt has reinvigorated the <span style="color:#8B0000">communists</span>' efforts.
 
-Now, the question on everyone's minds will be answered - can the communists defend against the full force of the state?
+Now, the question on everyone's minds will be answered - can the <span style="color:#8B0000">communists</span> defend against the full force of the state?
 
 - @neutrality: It would be best to wait the chaos out.
 - @pcdi_vs_army: The state is nothing without the support of the workers!
@@ -48,7 +48,7 @@ Now, the question on everyone's minds will be answered - can the communists defe
 view-if: not spd_revolution
 go-to: pcdi_vs_army
 
-By firmly taking a side we would split, as the communists want us to. We will wait the chaos out.
+By firmly taking a side we would split, as the <span style="color:#8B0000">communists</span> want us to. We will wait the chaos out.
 
 @pcdi_vs_army
 view-if: psi_revolution
@@ -57,13 +57,13 @@ go-to: pcdi_aftermath
 
 @pcdi_aftermath
 
-[? if pcdi_victory : The answer seems to be yes, as, somehow, the Red Army drive Regio Esercito forces back into their barracks which are then besieged and occupied one by one. The flames of civil war have been ignited and the communists are prepared to fight this uphill battle to bring about the dictatorship of the proletariat they so desire. ?]
+[? if pcdi_victory : The answer seems to be yes, as, somehow, the <span style="color:#c2352b">Red Army</span> drive <span style="color:#008C45">Regi</span><span style="color:#CFCFCF">o Eser</span><span style="color:#CD212A">cito</span> forces back into their barracks which are then besieged and occupied one by one. The flames of civil war have been ignited and the <span style="color:#8B0000">communists</span> are prepared to fight this uphill battle to bring about the dictatorship of the proletariat they so desire. ?]
 
-[? if pcdi_beaten : The answer seems to be no, as, predictably, the Regio Esercito drive the Red Army forces back into their councils which are then besieged and occupied one by one. The flames of civil war have been ignited but the communists seem after all to not be ready for what is to come. ?]
+[? if pcdi_beaten : The answer seems to be no, as, predictably, the <span style="color:#008C45">Regi</span><span style="color:#CFCFCF">o Eser</span><span style="color:#CD212A">cito</span> drive the <span style="color:#c2352b">Red Army</span> forces back into their councils which are then besieged and occupied one by one. The flames of civil war have been ignited but the <span style="color:#8B0000">communists</span> seem after all to not be ready for what is to come. ?]
 
 - @long_war: The war settles into fixed battle lines.
-- @true_pcdi_victory: The Communists emerge victorious!
-- @pcdi_crushed: The communists are crushed.
+- @true_pcdi_victory: The <span style="color:#8B0000">Communists</span> emerge victorious!
+- @pcdi_crushed: The <span style="color:#8B0000">communists</span> are crushed.
 - @civil_war_if_psi: It is a civil war.
 
 @long_war
@@ -79,9 +79,9 @@ This will not be a quick coup, but a long civil war. The nation will destroy its
 @true_pcdi_victory
 view-if: not psi_revolution and (pcdi_strength*0.6) >= fascist_strength
 
-The Red Army descends upon Italy, picking off reactionary holdout after reactionary holdout in its crusade against capital. Eventually, it emerges unmistakeably victorious, most of Italy under its control. After sweeping up the remnants of reactionary forces, the eyes of the Communists turn to us, the very leftists who refused to aid them in their victorious revolution.
+The <span style="color:#c2352b">Red Army</span> descends upon Italy, picking off <span style="color:#3D3D3D;">reactionary</span> holdout after <span style="color:#3D3D3D;">reactionary</span> holdout in its crusade against capital. Eventually, it emerges unmistakeably victorious, most of <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span> under its control. After sweeping up the remnants of <span style="color:#3D3D3D;">reactionary</span> forces, the eyes of the <span style="color:#8B0000">Communists</span> turn to us, the very leftists who refused to aid them in their victorious revolution.
 
-Revolution has reached Italy. Merely no longer on our terms.
+Revolution has reached <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>. Merely no longer on our terms.
 
 - @game_over: Game over.
 
@@ -94,4 +94,4 @@ go-to: civil_war
 view-if: not psi_revolution and (fascist_strength*0.6) >= pcdi_strength
 on-arrival: rg_banned = 1; sov_rg_strength *= 0.1; sov_rg_militancy *= 0.4; workers_pcdi *= 0.4; veterans_pcdi *= 0.6; workers_psi *= 0.9; workers_psi *= 0.7 if psi_revolution; workers_pnf += 10; veterans_pnf += 10; workers_ul += 10
 
-The communists are predictably crushed. Worker councils are shuttered and leading conspirators executed. The Red Guards in its entirely is banned, and so are most communist publications. The PCd'I's leaders are arrested - those that are not summarily executed, anyway.
+The <span style="color:#8B0000">communists</span> are predictably crushed. Worker councils are shuttered and leading conspirators executed. The <span style="color:#c2352b">Red Guards</span> in its entirely is banned, and so are most <span style="color:#8B0000">communist</span> publications. The <span style="font-weight: bold; color:#C72F35">PCd'I</span>'s leaders are arrested - those that are not summarily executed, anyway.

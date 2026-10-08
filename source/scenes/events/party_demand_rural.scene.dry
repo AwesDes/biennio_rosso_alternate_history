@@ -76,7 +76,7 @@ choose-if: not national_economic_recovery or budget > 0
 unavailable-subtitle: Not enough budget. (Need 1)
 on-arrival: budget -= 1; agricultural_policy += 1; rural_psi += 7*(1-dissent); rural_pnf -= 3*(1-dissent); unemployment -= 0.3 if unemployment >= 8; communist_dissent += 8; maximalist_dissent += 6; labour_dissent += 3; economic_growth += 0.2; economic_growth += 0.3 if economic_growth < 0
 
-We have increased financial support for small farmers, providing aid through credit and insurance. The left and maximalists are unsurprisingly opposed to our policies, seeing them as handouts to petite-bourgeois farmers.
+We have increased financial support for small farmers, providing aid through credit and insurance. The <span style="color:#8B0000">left</span> and <span style="color:#DC143C">maximalists</span> are unsurprisingly opposed to our policies, seeing them as handouts to petite-<span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> farmers.
 
 @rural_demand_refuse
 on-arrival: {!

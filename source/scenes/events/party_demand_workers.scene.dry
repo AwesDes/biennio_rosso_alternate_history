@@ -33,7 +33,7 @@ We will have to choose one to complete, or we could refuse their demands entirel
 view-if: max_seize < 3 and prime_minister = "Bordiga"
 on-arrival: max_seize += 1; unemployment -= 0.4 if unemployment >= 8; workers_psi += 6*(1-dissent); veterans_psi += 4*(1-dissent); middle_class_pnf += 3; radicalisation += 0.3; unemployment -= 0.7; economic_growth -= 0.4; industrialists_pnf += 8; capital_strike_progress += 3; fasci_coup_progress += 2; ldr_relation -= 10; ul_relation -= 10; ppi_relation -= 4; ds_right += 1; ldr_right += 1; ppi_right += 0.5; socialist_sentiment += 3;
 
-We begin forcefully seizing idle industries, nationalising vast sums of the economy without compensating the greedy industrialists a single cent. They are, of course, outraged, and utilise their backings and support from the liberal parties. The [+ pnf_name +] use this as propaganda, fearmongering to the middle class and other industrialists who are swayed to support them.
+We begin forcefully seizing idle industries, nationalising vast sums of the economy without compensating the greedy industrialists a single cent. They are, of course, outraged, and utilise their backings and support from the <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">ral</span> parties. The <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_name +]</span> use this as propaganda, fearmongering to the middle class and other industrialists who are swayed to support them.
 
 @workers_demand_serrati
 subtitle: -2 Budget
@@ -78,12 +78,12 @@ Q.economic_growth += 0.1;
 Q.budget -= 1;
 !}
 
-The liberal parties berate our actions, criticising our lack of care for the economy and the current economic situation. They use this as a recruiting tool amongst the industrialists and middle class, while we see an increase in support from our workers.
+The <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">ral</span> parties berate our actions, criticising our lack of care for the economy and the current economic situation. They use this as a recruiting tool amongst the industrialists and middle class, while we see an increase in support from our workers.
 
 @workers_demand_wages
 on-arrival: wage_increase += 1; labour_dissent -= 6; labour_strength += 3; workers_psi += 5*(1-dissent); capital_strike_progress += 1 if wage_increase >= 3; socialist_sentiment += 1 if wage_increase >= 3; economic_growth -= 0.3; unemployment += 0.2; inflation -= 0.2; economic_growth -= 0.2 if wage_increase >= 3; unemployment += 0.1 if wage_increase >= 3; inflation -= 0.2 if wage_increase >= 3; 
 
-The Labour Ministry works on developing and enforcing a standard national minimum wage, a new concept developed recently and popularised in the United Kingdom. [? if wage_increase >= 3 : Businesses have begun to argue that the minimum wage is too high, interfering with the economy. ?]
+The Labour Ministry works on developing and enforcing a standard national minimum wage, a new concept developed recently and popularised in the <span style="color:#C8102E">United Kingdom</span>. [? if wage_increase >= 3 : Businesses have begun to argue that the minimum wage is too high, interfering with the economy. ?]
 
 @workers_demand_safety
 on-arrival: workers_safety += 1; labour_dissent -= 5; syndicalist_dissent -= 3 if syndicalist_active; labour_strength += 2; workers_psi += 3*(1-dissent); capital_strike_progress += 1 if workers_safety >= 3; socialist_sentiment += 1 if workers_safety >= 3;
@@ -102,4 +102,4 @@ if (Q.left_wing_coalition) {
 Q.labour_dissent += 5;
 !}
 
-The workers are, unsurprisingly, outraged at our refusal to heed their demands, as is the Labour faction.
+The workers are, unsurprisingly, outraged at our refusal to heed their demands, as is the <span style="color:#B22222">Labour</span> faction.

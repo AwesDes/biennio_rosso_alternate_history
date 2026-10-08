@@ -32,9 +32,9 @@ subtitle: Give factory worker's councils greater influence in their workplace.
 on-arrival: coalition_dissent += 1 if centre_left_coalition; workers_psi += 5*(1-dissent) if not in_unstable_coalition; workers_clc += 5*(1-dissent) if centre_left_coalition; workers_scc += 5*(1-dissent) if socialist_catholic_coalition; labour_dissent -= 4; ldr_relation -= 9; ul_relation -= 7; labour_strength += 4; syndicalist_strength += 6; syndicalist_dissent -= 6 if syndicalist_active; work_councils += 1; industrialists_pnf += 4; industrialists_psi -= 4*(1-dissent) if not in_unstable_coalition; industrialists_clc -= 4*(1-dissent) if centre_left_coalition; industrialists_scc -= 4*(1-dissent) if socialist_catholic_coalition; psri_relation += 5*(1-dissent);
 view-if: work_councils = 0 and councils_empowered = 0
 
-The Turin Factory Councils, a small group of unionised factories under worker-led governments, have received official support from the [+ psi_name +]-led government, granting them legitimacy across Italy. Already, demonstrations are occuring throughout Italy, as workers have begun establish workers councils in their workplaces.
+The Turin Factory Councils, a small group of unionised factories under worker-led governments, have received official support from the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>-led government, granting them legitimacy across <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>. Already, demonstrations are occuring throughout <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>, as workers have begun establish workers councils in their workplaces.
 
-The liberals, with their industrialist backers, are unsurprisingly outraged by this, while syndicalists in our party praise our actions.
+The <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">rals</span>, with their industrialist backers, are unsurprisingly outraged by this, while <span style="color:#2F2F2F">syndicalists</span> in our party praise our actions.
 
 @support_work_councils_2
 subtitle: Continue the expansion of influence for worker's councils.
@@ -44,18 +44,18 @@ max-visits: 2
 
 Worker's councils are now given official recognition and further control of their factories, giving workers more of a voice as they are now able to have direct input into the operations. 
 
-The Liberals, joined now by some Catholics, are outraged as always, while the party praises us for our commitment to our ideals.
+The <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">rals</span>, joined now by some <span style="font-weight: bold; color:#87CEFA;">Catholics</span>, are outraged as always, while the party praises us for our commitment to our ideals.
 
 @enforce_turin_agreement
-subtitle: This will ruin our relations with the Liberals.
+subtitle: This will ruin our relations with the <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">rals</span>.
 view-if: councils_empowered = 1 
 choose-if: (king_relation >= 50 or veto_removed or national_congress_seen) and not centre_left_coalition
-unavailable-subtitle: [? if king_relation < 50 : The Senate and King would kill the bill the moment it reaches them. ?][? if centre_left_coalition : The Liberals are threatening a pre-emptive Vote-of-No-Confidence if this is proposed. ?]
+unavailable-subtitle: [? if king_relation < 50 : The Senate and King would kill the bill the moment it reaches them. ?][? if centre_left_coalition : The <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">rals</span> are threatening a pre-emptive Vote-of-No-Confidence if this is proposed. ?]
 on-arrival: coalition_dissent += 1 if in_unstable_coalition; workers_psi += 12*(1-dissent); ldr_relation -= 17; ds_relation -= 17; labour_strength += 12; syndicalist_strength += 17; labour_dissent -= 17; syndicalist_dissent -= 20 if syndicalist_active; radicalisation += 1; industrialists_pnf += 7; industrialists_ldr -= 4; industrialists_ds -= 5; industrialists_ul -= 4; workers += 3; industrialists_psi -= 8*(1-dissent); psri_relation += 9*(1-dissent); socialist_sentiment += 7; ldr_right += 2; ds_left -= 2;
 
-The *Factory Control Act*, signed in 1922 as an agreement to end the Turin workers conflict, has made its way onto the Chamber's floor once more, proposed now to be expanded across the country, giving the worker's councils extensive power within their workplace to act against the bourgeois businessmen and the industrialists.
+The *Factory Control Act*, signed in 1922 as an agreement to end the Turin workers conflict, has made its way onto the Chamber's floor once more, proposed now to be expanded across the country, giving the worker's councils extensive power within their workplace to act against the <span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> businessmen and the industrialists.
 
-[? if not national_congress_seen : Though thought dead on arrival, the [+ psi_name +], PSRI and defectors from other parties have managed to squeeze the bill through with a slim majority, and it has been approved by the Senate and the King, owing to our good relations and backroom dealings. The industrialists are fuming, and seeing the liberals failing to defend their agenda, many have decided to switch over to [+ pnf_leader +] and his far-right bloc instead, while we are seeing a strong pivot to the right in the liberal parties themselves. ?]
+[? if not national_congress_seen : Though thought dead on arrival, the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>, <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> and defectors from other parties have managed to squeeze the bill through with a slim majority, and it has been approved by the Senate and the King, owing to our good relations and backroom dealings. The industrialists are fuming, and seeing the <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">rals</span> failing to defend their agenda, many have decided to switch over to [+ pnf_leader +] and his far-right bloc instead, while we are seeing a strong pivot to the right in the <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">ral</span> parties themselves. ?]
 
 @nationalise_industries
 subtitle: -1 Budget - We should begin buying out businesses and empower the workers and consumers to govern. [? if budget < 1 and liberal_budget_accepted : This will put us into a deficit! ?][? if liberal_nationalisation_accepted : Nationalising parts of the economy would violate our coalition agreements! ?]
@@ -121,8 +121,8 @@ go-to: ldr_promise_vonc if ldr_promise_failed = 1
 
 We begin buying out now-defunct or bankrupt companies, repurposing and organising them into governing boards made up of state, worker and consumer representatives. The industrialists are not pleased at our intrusion into the economy.
 
-[? if ldr_promise_failed and budget < 0 : Unfortunately, our spending has led us to enter a deficit, breaking our agreement with the Liberals, and their representatives have already requested a meeting with us. ?]
-[? if ldr_promise_failed and liberal_nationalisation_accepted: Unfortunately, our decision to nationalise has led us to enter a deficit, breaking our agreement with the Liberals, and their representatives have already requested a meeting with us. ?]
+[? if ldr_promise_failed and budget < 0 : Unfortunately, our spending has led us to enter a deficit, breaking our agreement with the <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">rals</span>, and their representatives have already requested a meeting with us. ?]
+[? if ldr_promise_failed and liberal_nationalisation_accepted: Unfortunately, our decision to nationalise has led us to enter a deficit, breaking our agreement with the <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">rals</span>, and their representatives have already requested a meeting with us. ?]
 
 @nationalise_more
 subtitle: -1 Budget - We can continue buying out businesses and empower the workers and consumers to govern. [? if budget = 0 and liberal_budget_accepted : This will put us into a deficit! ?][? if liberal_nationalisation_accepted : Nationalising parts of the economy would violate our coalition agreements! ?]
@@ -200,8 +200,8 @@ max-visits: 3
 
 We continue buying out now-defunct or bankrupt companies, repurposing and organising them into governing boards made up of state, worker and consumer representatives. The industrialists are not pleased at our continued intrusion into the economy.
 
-[? if ldr_promise_failed and budget < 0 : Unfortunately, our spending has led us to enter a deficit, breaking our agreement with the Liberals, and their representatives have already requested a meeting with us. ?]
-[? if ldr_promise_failed and liberal_nationalisation_accepted: Unfortunately, our decision to nationalise has led us to enter a deficit, breaking our agreement with the Liberals, and their representatives have already requested a meeting with us. ?]
+[? if ldr_promise_failed and budget < 0 : Unfortunately, our spending has led us to enter a deficit, breaking our agreement with the <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">rals</span>, and their representatives have already requested a meeting with us. ?]
+[? if ldr_promise_failed and liberal_nationalisation_accepted: Unfortunately, our decision to nationalise has led us to enter a deficit, breaking our agreement with the <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">rals</span>, and their representatives have already requested a meeting with us. ?]
 
 @worker_syndicates
 subtitle: -1 Budget - We should begin buying out businesses and establish worker syndicates in their place. [? if budget < 1 and liberal_budget_accepted : This will put us into a deficit! ?][? if liberal_nationalisation_accepted : Nationalising parts of the economy would violate our coalition agreements! ?]
@@ -267,8 +267,8 @@ go-to: ldr_promise_vonc if ldr_promise_failed = 1
 
 We begin buying out now-defunct or bankrupt companies, repurposing and organising them into syndicates controlled by the workers. The industrialists are not pleased at our intrusion into the economy.
 
-[? if ldr_promise_failed and budget < 0 : Unfortunately, our spending has led us to enter a deficit, breaking our agreement with the Liberals, and their representatives have already requested a meeting with us. ?]
-[? if ldr_promise_failed and liberal_nationalisation_accepted: Unfortunately, our decision to nationalise has led us to enter a deficit, breaking our agreement with the Liberals, and their representatives have already requested a meeting with us. ?]
+[? if ldr_promise_failed and budget < 0 : Unfortunately, our spending has led us to enter a deficit, breaking our agreement with the <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">rals</span>, and their representatives have already requested a meeting with us. ?]
+[? if ldr_promise_failed and liberal_nationalisation_accepted: Unfortunately, our decision to nationalise has led us to enter a deficit, breaking our agreement with the <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">rals</span>, and their representatives have already requested a meeting with us. ?]
 
 @syndicates_more
 subtitle: -1 Budget - We can continue buying out businesses and empower worker syndicates to govern. [? if budget = 0 and liberal_budget_accepted : This will put us into a deficit! ?][? if liberal_nationalisation_accepted : Nationalising parts of the economy would violate our coalition agreements! ?]
@@ -345,8 +345,8 @@ max-visits: 3
 
 We continue buying out now-defunct or bankrupt companies, repurposing and organising them into syndicates controlled by workers. The industrialists are not pleased at our continued intrusion into the economy.
 
-[? if ldr_promise_failed and budget < 0 : Unfortunately, our spending has led us to enter a deficit, breaking our agreement with the Liberals, and their representatives have already requested a meeting with us. ?]
-[? if ldr_promise_failed and liberal_nationalisation_accepted: Unfortunately, our decision to nationalise has led us to enter a deficit, breaking our agreement with the Liberals, and their representatives have already requested a meeting with us. ?]
+[? if ldr_promise_failed and budget < 0 : Unfortunately, our spending has led us to enter a deficit, breaking our agreement with the <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">rals</span>, and their representatives have already requested a meeting with us. ?]
+[? if ldr_promise_failed and liberal_nationalisation_accepted: Unfortunately, our decision to nationalise has led us to enter a deficit, breaking our agreement with the <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">rals</span>, and their representatives have already requested a meeting with us. ?]
 
 
 

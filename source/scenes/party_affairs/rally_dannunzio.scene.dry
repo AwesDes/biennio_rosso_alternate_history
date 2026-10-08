@@ -10,7 +10,7 @@ go-to: main_menu
 
 = Rallying against D'Annunzio
 
-Our worst fears have come true. A fascist is in control of Italy, though not the way we expected it. Gabriele D'Annunzio. Poet, Military leader, leader of the Italian Regency of Carnaro, and now, Prime Minister. D'Annunzio receives support from the left-wing of the party, supported by the Syndicalists of De Ambris and his Futurists. Surprisingly, though we are ideological enemies, there is seemingly more in common that connects us than we had initially thought.
+Our worst fears have come true. A <span style="color:#3D3D3D;">fascist</span> is in control of Italy, though not the way we expected it. Gabriele D'Annunzio. Poet, Military leader, leader of the <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">al</span><span style="font-weight: bold; color:#CD212A">ian</span> Regency of Carnaro, and now, Prime Minister. D'Annunzio receives support from the <span style="color:#8B0000">left</span>-wing of the party, supported by the <span style="color:#2F2F2F">Syndicalists</span> of De Ambris and his Futurists. Surprisingly, though we are ideological enemies, there is seemingly more in common that connects us than we had initially thought.
 
 What should we do?
 
@@ -28,7 +28,7 @@ What should we do?
 subtitle: Perhaps getting a closer relationship with D'Annunzio might not be a bad idea...
 on-arrival: dannunzio_relation += 1; communist_dissent += 4; maximalist_dissent += 3; reformist_dissent += 3; labour_dissent -= 3; workers_psi -= 2; workers_pcdi += 2 if pcdi_formed
 
-Though perhaps unsettling to most of the party, D'Annunzio's syndicalist tendencies have not gone unnoticed by some of our allies, who recommend we pursue closer bonds with him rather than oppose the Prime Minister outright.
+Though perhaps unsettling to most of the party, D'Annunzio's <span style="color:#2F2F2F">syndicalist</span> tendencies have not gone unnoticed by some of our allies, who recommend we pursue closer bonds with him rather than oppose the Prime Minister outright.
 
 Pursing close relations with the current Prime Minister as well might grant us enough leverage to influence government policy too.
 
@@ -45,7 +45,7 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources. (Need 1)
 on-arrival: resources -= 1; pnf_right += 1; industrialists_pnf += 3;
 
-Though stable on the surface, the right flank of the PNF, its Nationalist wing, is actively conspiring to remove D'Annunzio, seeing his reforms as a step too far towards ironically, socialism. 
+Though stable on the surface, the right flank of the <span style="font-weight: bold; color:#3D3D3D;">PNF</span>, its Nationalist wing, is actively conspiring to remove D'Annunzio, seeing his reforms as a step too far towards ironically, <span style="color:#ED2855">socialism</span>. 
 
 Through back channels, we can fund the right flank instead, aiding to oust D'Annunzio and replace him with a more Nationalistic, yet inexperienced and weak leader that will hopefully lead to the downfall of the party.
 
@@ -53,32 +53,32 @@ Through back channels, we can fund the right flank instead, aiding to oust D'Ann
 subtitle: D'Annunzio's radicalism mean we might be able to sway the other parties against supporting him.
 on-arrival: ds_relation += 5; ul_relation += 5; ldr_relation += 5; ppi_relation += 5;
 
-D'Annunzio's policies have, surprisingly, antagonised a not so insignificant portion of the Italian political establishment, viewing his erratic leadership as destabilising.
+D'Annunzio's policies have, surprisingly, antagonised a not so insignificant portion of the <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">al</span><span style="font-weight: bold; color:#CD212A">ian</span> political establishment, viewing his erratic leadership as destabilising.
 
 Though naturally wary of us too, we are able to at least convince the parties against siding with D'Annunzio nor trusting him, reaffirming our relations with the other parties.
 
 @favours_menu
 view-if: dannunzio_relation > 0
 
-With at least some goodwill between the [+ psi_name +] and D'Annunzio, we could attempt to influence policy utilising 
+With at least some goodwill between the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> and D'Annunzio, we could attempt to influence policy utilising 
 
 - @favour_vote: Negotiate a deal with D'Annunzio regarding workers.
-- @favour_squadrismo: Negotiate a deal regarding the Red Guards.
+- @favour_squadrismo: Negotiate a deal regarding the <span style="color:#c2352b">Red Guards</span>.
 - @favour_king: Negotiate a deal regarding the King
-- @favour_paramilitary: Negotiate a deal regarding the Squadrismo.
+- @favour_paramilitary: Negotiate a deal regarding the <span style="color:#3D3D3D;">Squadrismo</span>.
 - @main_menu: Return back to rallying.
 
 @favour_vote
 subtitle: Could we use convince D'Annunzio to focus on other voters instead?
 on-arrival: voter_truce_timer += 8; dannunzio_relation -= 1; dannunzio_influence += 1; workers_pnf -= 9; workers_psi += 7;
 
-We are able to negotiate a deal with D'Annunzio, as campaigning towards union workers by D'Annunzio reaches a screeching halt all of a sudden. Syndicalists within the party praise our pragmatism and willingness to plan accordingly.
+We are able to negotiate a deal with D'Annunzio, as campaigning towards union workers by D'Annunzio reaches a screeching halt all of a sudden. <span style="color:#2F2F2F">Syndicalists</span> within the party praise our pragmatism and willingness to plan accordingly.
 
 @favour_squadrismo
 subtitle: Could we convince D'Annunzio to relax suppression on our paramilitaries?
 on-arrival: dannunzio_relation -= 1; dannunzio_influence += 1; rg_strength *= 1.1; rg_militancy += 0.01;
 
-Through a series of deals, we convince the D'Annunzio to pull back the leash on the Squadrismo, allowing the Red Guards to breathe and regroup, with additional promises not to utilise them maliciously.
+Through a series of deals, we convince the D'Annunzio to pull back the leash on the <span style="color:#3D3D3D;">Squadrismo</span>, allowing the <span style="color:#c2352b">Red Guards</span> to breathe and regroup, with additional promises not to utilise them maliciously.
 
 @favour_king
 subtitle: Could we use our influence to sway the King?

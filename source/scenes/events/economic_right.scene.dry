@@ -1,12 +1,12 @@
-title: Minority Parties endorse the [+ pnf_full_name +]
+title: Minority Parties endorse the <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_full_name +]</span>
 view-if: ((radicalisation >= 7 and not_participating = 1) or (radicalisation >= 8 and participating = 1) or largest_party == pnf_name) and pnf_r >= 5
 on-arrival: economic_right = 1;
 max-visits: 1
 tags: event
 new-page: true
 
-= Economic & Agrarian Parties endorse the [+ pnf_name +]
+= Economic & Agrarian Parties endorse the <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_name +]</span>
 
-It seems the radicalisation of our policies has gravely concerned the minor Conservative parties, specifically the *Economic Party* and the *Agrarian Party*, who have both endorsed the [+ pnf_name +], calling upon their base to support the party and forming a joint list with the Fascists for the next elections.
+It seems the radicalisation of our policies has gravely concerned the minor <span style="color:#0047AB;">Conservatives</span> parties, specifically the *Economic Party* and the *Agrarian Party*, who have both endorsed the <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_name +]</span>, calling upon their base to support the party and forming a joint list with the <span style="color:#3D3D3D;">fascists</span> for the next elections.
 
-Regardless, their endorsement has brought a fairly moderate amount of landowners, factory owners and farmers to the Fascist's side.
+Regardless, their endorsement has brought a fairly moderate amount of landowners, factory owners and farmers to the <span style="color:#3D3D3D;">fascists</span> side.

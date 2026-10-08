@@ -8,24 +8,24 @@ face-image: img/Fiume.jpg
 
 = Occupation of Fiume
 
-Gabriele D'Annunzio, a poet and officer of the Regio Esercito, along with his "legionaries", have seized control of the city of Fiume from Entente occupying forces, declaring the "Italian Regency of Carnaro" and demanding Italy annex the city.
+Gabriele D'Annunzio, a poet and officer of the <span style="color:#008C45">Regi</span><span style="color:#CFCFCF">o Eser</span><span style="color:#CD212A">cito</span>, along with his "legionaries", have seized control of the city of Fiume from <span style="font-weight: bold; color:#C8102E">Ent</span><span style="font-weight: bold; color:#000091">ente</span> occupying forces, declaring the "<span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">al</span><span style="font-weight: bold; color:#CD212A">ian</span> Regency of Carnaro" and demanding <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span> annex the city.
 
-D'Annunzio, accompanied by syndicalist Alceste De Ambris, has surprisingly garnered the support of some of the left, most notably the national syndicalist *Italian Labour Union*, even as British and French union organisations have called upon Italian workers to protest this perceived act of imperialism.
+D'Annunzio, accompanied by <span style="color:#2F2F2F">syndicalist</span> Alceste De Ambris, has surprisingly garnered the support of some of the left, most notably the <span style="color:#3D3D3D">national</span> <span style="color:#ED2855">syndicalist</span> *Italian Labour Union*, even as <span style="color:#C8102E">British</span> and <span style="font-weight: bold; color:#1E99C5">French</span> union organisations have called upon <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">al</span><span style="font-weight: bold; color:#CD212A">ian</span> workers to protest this perceived act of imperialism.
 
-This has caused quite a stir internationally, and will certainly delay the resolution of our negotiations with Yugoslavia.
+This has caused quite a stir internationally, and will certainly delay the resolution of our negotiations with <span style="font-weight: bold; color:#6A0080">Yugoslavia</span>.
 
 - @support_fiume: Support D'Annunzio and his revolutionary march!
 - @root: Do not release a comment.
 - @condemn_fiume: Condemn D'Annunzio and his nationalist march! 
 
 @condemn_fiume 
-subtitle: D'Annunzio is popular among our veterans, who see him as regaining Italy's pride.
+subtitle: D'Annunzio is popular among our veterans, who see him as regaining <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>'s pride.
 on-arrival: veterans_psi -= 3; nationalist_sentiment -= 3; communist_dissent -= 5; labour_dissent += 5; reformist_dissent -= 5; syndicalist_strength -= 7; syndicalist_dissent += 7 if syndicalist_active;
 
 We issue a letter of condemnation of D'Annunzio, even as not much of the party agrees.
 
 @support_fiume
-subtitle: De Ambris' participation certainly makes this move popular among the syndicalists.
+subtitle: De Ambris' participation certainly makes this move popular among the <span style="color:#2F2F2F">syndicalists</span>.
 on-arrival: workers_psi += 3; nationalist_sentiment += 3; communist_dissent -= 5; labour_dissent -= 5; reformist_dissent += 5; syndicalist_strength += 7; syndicalist_dissent -= 7 if syndicalist_active;
 
 We issue a letter of support for D'Annunzio, even as not much of the party agrees.

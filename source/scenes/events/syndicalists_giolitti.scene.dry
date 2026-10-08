@@ -1,12 +1,12 @@
-title: Syndicalists Arrested!
+title: <span style="color:#2F2F2F">Syndicalists</span> Arrested!
 view-if: year == 1920 and month = 10 and prime_minister == "Giolitti" and syndicalist_active and ul_relation < 30
 frequency: 1000
 max-visits: 1
 on-arrival: workers_psi -= 7*(1-dissent); rg_strength -= syndicalist_strength*0.8; syndicalist_strength *= 0.2; syndicalist_dissent *= 0.2;
 tags: event
 
-= USI Leadership arrested!
+= <span style="color:#2F2F2F">USI</span> Leadership arrested!
 
-Shockingly, it seems that Prime Minister Giolitti has ordered the Interior Ministry to arrest the leadership of the Italian Syndicalist Union, successfully imprisoning many under charges of disrupting the public order. This has weakened the syndicalist faction significantly.
+Shockingly, it seems that Prime Minister Giolitti has ordered the Interior Ministry to arrest the leadership of the <span style="color:#2F2F2F">Italian Syndicalist Union</span>, successfully imprisoning many under charges of disrupting the public order. This has weakened the <span style="color:#2F2F2F">syndicalist</span> faction significantly.
 
 - @root: Concerning.

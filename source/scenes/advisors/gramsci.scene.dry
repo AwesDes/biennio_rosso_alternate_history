@@ -7,7 +7,7 @@ new-page: true
 
 = Antonio Gramsci
 
-Gramsci is a member of the Communist faction of the [+ psi_name +]. Widely unpopular amongst the other factions, Gramsci was a writer for Avanti!, and is now a founder and writer for *L'Ordine Nuovo*, a far-left newspaper.
+Gramsci is a member of the <span style=" color:#8B0000">Communist</span> faction within the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>. Widely unpopular amongst the other factions, Gramsci was a writer for Avanti!, and is now a founder and writer for *L'Ordine Nuovo*, a Turin-based newspaper advocating for the creation of soviets in Italy.
 
 - @media_gramsci
 - @party_organisations_gramsci

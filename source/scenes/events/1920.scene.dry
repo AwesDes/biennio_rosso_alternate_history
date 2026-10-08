@@ -8,6 +8,6 @@ view-if: year = 1920 and month = 1
 priority: 2
 max-visits: 1
 
-The turn of the decade has arrived. The post-war situation does not seem to be getting better. The economy is still in crisis as unemployment surges and inflation is rampant, [? if psi_in_government :though we are confident our new position in government will fix that. ?][? if not psi_in_government :and our expectations with the seemingly paralysed bourgeois parties to pull us out the crisis are low. ?]
+The turn of the decade has arrived. The post-war situation does not seem to be getting better. The economy is still in crisis as unemployment surges and inflation is rampant, [? if psi_in_government :though we are confident our new position in government will fix that. ?][? if not psi_in_government :and our expectations with the seemingly paralysed <span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> parties to pull us out the crisis are low. ?]
 
 [? if psi_in_government : Our budget has increased due to the yearly tax. ?]

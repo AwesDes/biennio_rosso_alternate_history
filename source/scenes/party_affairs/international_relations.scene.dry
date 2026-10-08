@@ -10,14 +10,14 @@ max-visits: 12
 
 = Comintern Relations
 
-At the Labour and Socialist International, we can forge contacts with our fraternal socialist parties in Europe and across the world.
+At the <span style="font-weight: bold; color:#CE0000">Communist International</span>, we can forge contacts with our fraternal <span style="color:#ED2855">socialist</span> parties in Europe and across the world.
 
-- @fr_uk: Build relationships with the French SFIO and British Labour Party to keep their governments aligned with Italy.
-- @germany: Learn organisation and street fighting from the German communists.
-- @comintern: Expand our contacts and influence with the Soviets through the Comintern.
-- @papacy: Expand our contacts with the Papacy utilising our influence within the PPI.
-- @america: Contact the Socialist party of America.
-- @hungary: Send aid to the Party of Communists in Hungary.
+- @fr_uk: Build relationships with the <span style="font-weight: bold; color:#1E99C5">French</span> SFIO and <span style="font-weight: bold; color:#C8102E">British</span> Labour Party to keep their governments aligned with <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>.
+- @germany: Learn organisation and street fighting from the <span style="font-weight: bold; color:#3D3D3D">Ge</span><span style="font-weight: bold; color:#D00000">rm</span><span style="font-weight: bold; color:#FFCE00">an</span> <span style="font-weight: bold; color:#8B0000">communists</span>.
+- @comintern: Expand our contacts and influence with the <span style="font-weight: bold; color:#CC0000">Soviets</span> through the <span style="font-weight: bold; color:#CE0000">Comintern</span>.
+- @papacy: Expand our contacts with the <span style="font-weight: bold; color:#A88D37;">Papacy</span> utilising our influence within the <span style="font-weight: bold; color:#87CEFA;">PPI</span>.
+- @america: Contact the <span style="color:#ED2855">Socialist Party of America</span>.
+- @hungary: Send aid to the <span style="color:#CC0000">Party of Communists in Hungary</span>.
 - @return: We do not need international contacts at the moment.
 - @easy_discard
 - @cancel_advisor_action
@@ -28,7 +28,7 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources. (Need 1)
 on-arrival: resources -= 1; entente_relation += 1; reformist_strength += 5; foreign_invasion_time += 6 if violent_revolution; supported_entente += 1;
 
-The socialists of France and Britain can influence their governments to be friendlier towards Italy.
+The <span style="color:#ED2855">socialists</span> of <span style="font-weight: bold; color:#1E99C5">France</span> and <span style="font-weight: bold; color:#C8102E">British</span> can influence their governments to be friendlier towards <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>.
 
 [? if violent_revolution : We are able to delay any plans that have towards us, as well. ?]
 
@@ -38,7 +38,7 @@ choose-if: resources >= 1 and soviet_germany != 1
 unavailable-subtitle: [? if resources < 1 : Not enough resources. (Need 1) ?][? if soviet_germany : The Spartakusbund is no longer under threat. ?]
 on-arrival: communist_strength += 5; radicalisation += 0.3; rg_militancy += 0.04*revolutionary_exhaustion; resources -= 1; pcdi_bordiga += 1;
 
-Germany is in turmoil. With memories of the Spartacist Uprising still fresh, and the Spartacus League higher command under threat from right-wing forces, we can offer them refuge, welcoming them as exiles to Italy and training our forces with their experience in the Spartakusbund.
+<span style="font-weight: bold; color:#3D3D3D">Ger</span><span style="font-weight: bold; color:#D00000">ma</span><span style="font-weight: bold; color:#FFCE00">ny</span> is in turmoil. With memories of the Spartacist Uprising still fresh, and the Spartacus League higher command under threat from right-wing forces, we can offer them refuge, welcoming them as exiles to <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span> and training our forces with their experience in the Spartakusbund.
 
 @comintern
 subtitle: -1 resources
@@ -46,17 +46,17 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources. (Need 1)
 on-arrival: resources -= 1; soviet_relation += 1; soviet_end_timer -= 1 if not rcw_over; soviet_recovery_timer -= 1 if rcw_over; pcdi_gramsci += 1; supported_ussr += 1; rg_militancy += 0.04*revolutionary_exhaustion if soviet_leader = "Trotsky"
 
-Our efforts are welcomed by the Soviets, and [? if not rcw_over :we aid them in their civil war against the White Army. ?][? if rcw_over :we aid them in their post-war recovery. ?]
+Our efforts are welcomed by the <span style="font-weight: bold; color:#CC0000">Soviets</span>, and [? if not rcw_over :we aid them in their civil war against the White Army. ?][? if rcw_over :we aid them in their post-war recovery. ?]
 
-[? if soviet_leader = "Trotsky" : Secretary-General Trotsky sends us military equipment to arm the Red Guards in response. ?]
+[? if soviet_leader = "Trotsky" : Secretary-General Trotsky sends us military equipment to arm the <span style="color:#c2352b">Red Guards</span> in response. ?]
 
 @papacy
 subtitle: -2 resources
 choose-if: resources >= 2 and ppi_relation >= 55
-unavailable-subtitle: [? if resources < 2 : Not enough resources. (Need 2) ?][? if ppi_relation < 55 : Our influence within the PPI is too low. ?]
+unavailable-subtitle: [? if resources < 2 : Not enough resources. (Need 2) ?][? if ppi_relation < 55 : Our influence within the <span style="font-weight: bold; color:#87CEFA;">PPI</span> is too low. ?]
 on-arrival: papal_relation += 1; ppi_relation -= 10; resources -= 2; 
 
-We utilise our influence within the PPI to expand our contact amongst the PPI. We notice an increase in attitude with the Holy See.
+We utilise our influence within the <span style="font-weight: bold; color:#87CEFA;">PPI</span> to expand our contact amongst the <span style="font-weight: bold; color:#87CEFA;">PPI</span>. We notice an increase in attitude with the <span style="font-weight: bold; color:#A88D37;">Holy See</span>.
 
 @america
 subtitle: -1 resources
@@ -64,7 +64,7 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources. (Need 1)
 on-arrival: resources -= 1; supported_usa += 1;
 
-The Socialist Party of America is tiny and has limited support, especially following their loss in the recent elections. There is not much we can do for them, and conversely, not much they can do for us.
+The <span style="color:#ED2855">Socialist Party of America</span> is tiny and has limited support, especially following their loss in the recent elections. There is not much we can do for them, and conversely, not much they can do for us.
 
 @hungary
 subtitle: -1 resources
@@ -73,4 +73,4 @@ view-if: year < 1920 and month <= 8
 unavailable-subtitle: Not enough resources. (Need 1)
 on-arrival: resources -= 1; supported_hungary += 1;
 
-The Hungarian Communists are in an opportune time to seize power, and we can only hope our aid helps them spread the cause further.
+The <span style="color:#CC0000">Party of Communists in Hungary</span> are in an opportune time to seize power, and we can only hope our aid helps them spread the cause further.

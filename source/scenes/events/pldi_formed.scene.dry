@@ -1,4 +1,4 @@
-title: Formation of the Italian Democratic Liberal Party
+title: Formation of the <span style="font-weight: bold; color:#FFD700;">Italian Democratic Liberal Party</span>
 on-arrival: ldr_name = "PLDI"; ldr_full_italian = "Partito Liberale Democratico Italiano"; ldr_full_name = "Italian Democratic Liberal Party"; ldr_party = 1; ldr_list = 0; prime_minister_party = ldr_name if prime_minister_party == "LDR"; ldr_congress_trigger = 1; pldi_formed = 1
 view-if: year = 1921 and month = 4 and week = 1 and ldr_list = 1
 new-page: true
@@ -6,8 +6,8 @@ max-visits: 1
 tags: event
 face-image: img/PLDI.png
 
-= Formation of the Italian Democratic Liberal Party
+= Formation of the <span style="font-weight: bold; color:#FFD700;">Italian Democratic Liberal Party</span>
 
-The Liberals, Democrats and Radicals list, also known as Liberali, democratici e radicali, under Orlando and Nitti, has reorganised itself, alongside the remnants of the Radical Party, under a new party from its current state as an electoral list, known as the Italian Democratic Liberal Party. The party still represents its former ideals, though it seems there will be a new party congress soon to establish its leadership.
+The <span style="font-weight: bold; color:#FFD700;">Liberals, Democrats and Radicals</span>, also known as Liberali, democratici e radicali, under Orlando and Nitti, has reorganised itself, alongside the remnants of the Radical Party, under a new party from its current state as an electoral list, known as the <span style="font-weight: bold; color:#FFD700;">Italian Democratic Liberal Party</span>. The party still represents its former ideals, though it seems there will be a new party congress soon to establish its leadership.
 
 - @root: Interesting.

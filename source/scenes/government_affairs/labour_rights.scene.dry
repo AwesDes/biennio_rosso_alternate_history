@@ -27,7 +27,7 @@ With control of the Labour & Social Security Ministry, we can set national stand
 view-if: working_hours < 2
 on-arrival: working_hours += 1; labour_dissent -= 5; syndicalist_dissent -= 2 if syndicalist_active; labour_strength += 5; syndicalist_strength += 2; workers_psi += 5*(1-dissent) if not in_unstable_coalition; workers_clc += 5*(1-dissent) if centre_left_coalition; workers_scc += 5*(1-dissent) if socialist_catholic_coalition; ldr_relation -= 4; ds_relation -= 4; coalition_dissent += 1 if centre_left_coalition; inflation += 0.1; economic_growth -= 0.1; unemployment += 0.1;
 
-The Kingdom of Italy does not have a current labour code, nor a set maximum amount of hours per work week. However, taking from our allies in the Entente and the Weimar Republic, the party advocates for a new 40-hour work week. 
+The <span style="font-weight: bold; color:#008C45">Kingdom</span> <span style="font-weight: bold; color:#CFCFCF">of</span> <span style="font-weight: bold; color:#CD212A">Italy</span> does not have a current labour code, nor a set maximum amount of hours per work week. However, taking from our allies in the <span style="font-weight: bold; color:#C8102E">Ent</span><span style="font-weight: bold; color:#000091">ente</span> and the <span style="font-weight: bold; color:#3D3D3D">We</span><span style="font-weight: bold; color:#D00000">im</span><span style="font-weight: bold; color:#FFCE00">ar</span> <span style="font-weight: bold;">Republic</span>, the party advocates for a new 40-hour work week. 
 
 Now, with the force of the Labour Ministry, we are able to implement this work week. The bourgeoisie and their political representatives are displeased.
 
@@ -46,10 +46,10 @@ The Labour Ministry works on developing and enforcing safety regulations, in ord
 @wage
 on-arrival: wage_increase += 1; labour_dissent -= 6; labour_strength += 3; workers_psi += 5*(1-dissent) if not in_unstable_coalition; workers_clc += 5*(1-dissent) if centre_left_coalition; workers_scc += 5*(1-dissent) if socialist_catholic_coalition; capital_strike_progress += 1 if wage_increase >= 3; socialist_sentiment += 1 if wage_increase >= 3; economic_growth -= 0.1; unemployment += 0.1; inflation -= 0.2; economic_growth -= 0.2 if wage_increase >= 3; unemployment += 0.1 if wage_increase >= 3; inflation -= 0.2 if wage_increase >= 3; 
 
-The Labour Ministry works on developing and enforcing a standard national minimum wage, a new concept developed recently and popularised in the United Kingdom. [? if wage_increase >= 3 : Businesses have begun to argue that the minimum wage is too high, interfering with the economy. ?]
+The Labour Ministry works on developing and enforcing a standard national minimum wage, a new concept developed recently and popularised in the <span style="color:#C8102E">United Kingdom</span>. [? if wage_increase >= 3 : Businesses have begun to argue that the minimum wage is too high, interfering with the economy. ?]
 
 @unemployment_insurance
-subtitle: -2 Budget - This will be a burden to our budget if we expand the scope too far. [? if catholic_charity_accepted : The creation of an non-Catholic welfare program would violate our coalition agreements! ?][? if budget < 2 and liberal_budget_accepted : This will put us into a deficit! ?]
+subtitle: -2 Budget - This will be a burden to our budget if we expand the scope too far. [? if catholic_charity_accepted : The creation of an non-<span style="color:#87CEFA;">Catholic</span> welfare program would violate our coalition agreements! ?][? if budget < 2 and liberal_budget_accepted : This will put us into a deficit! ?]
 view-if: not unemployment_insurance_founded
 choose-if: not national_economic_recovery or budget > 1
 unavailable-subtitle: Not enough budget. (Need 2)

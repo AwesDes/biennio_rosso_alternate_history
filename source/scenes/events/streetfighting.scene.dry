@@ -19,11 +19,11 @@ Q.abl_streetfighting = Q.abl_strength * Q.abl_militancy
 
 = Streetfighting
 
-Frequently, and more often than not, our forces — whether that is the Red Guards or merely workers intending to defend themselves — face off against far-right paramilitaries. Whether that is the Anti-Bolshevik Leagues, funded by their elite backers, the Arditismo, former members of the *Arditi* special forces radicalised or even the Fasci themselves, determined to eliminate us. 
+Frequently, and more often than not, our forces — whether that is the <span style="color:#c2352b">Red Guards</span> or merely workers intending to defend themselves — face off against far-right paramilitaries. Whether that is the <span style="color:#3D3D3D;">Anti-Bolshevik Leagues</span>, funded by their elite backers, the <span style="color:#3D3D3D;">Arditismo</span>, former members of the *Arditi* special forces radicalised or even the <span style="font-weight: bold; color:#3D3D3D;">Fasci</span> themselves, determined to eliminate us. 
 
-- @engage_fdc: Engage our forces with the Fasci.
-- @engage_ard: Engage our forces with the Arditismo.
-- @engage_abl: Engage our forces with the Anti-Bolshevik Leagues.
+- @engage_fdc: Engage our forces with the <span style="color:#3D3D3D;">Fasci</span>.
+- @engage_ard: Engage our forces with the <span style="color:#3D3D3D;">Arditismo</span>.
+- @engage_abl: Engage our forces with the <span style="color:#3D3D3D;">Anti-Bolshevik Leagues</span>.
 
 @engage_fdc
 on-arrival: fdc_fought = 1;

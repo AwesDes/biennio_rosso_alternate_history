@@ -1,5 +1,5 @@
-title: 1921 Congress of the Partito Popolare Italiano
-subtitle: The PPI elects its Secretary General.
+title: 1921 Congress of the <span style="font-weight: bold; color:#87CEFA;">Partito Popolare Italiano</span>
+subtitle: The <span style="font-weight: bold; color:#87CEFA;">PPI</span> elects its Secretary General.
 new-page: true
 view-if: year = 1921 and month = 10 and week = 3 and not ppi_banned
 on-arrival: {!
@@ -35,11 +35,11 @@ if (Q.pope === "Del Val") {
 max-visits: 1
 tags: event
 
-= 1921 Partito Popolare Italiano Congress
+= 1921 <span style="font-weight: bold; color:#87CEFA;">Partito Popolare Italiano</span> Congress
 
-The *Partito Popolare Italiano*, known also as the PPI or the Italian People's Party have begun their third Congress. The party continues its two factional bloc, with Sturzo on the left-wing of the party and De Gasperi representing moderate wing of the party.
+The <span style="font-weight: bold; color:#87CEFA;">Partito Popolare Italiano</span>, known also as the <span style="font-weight: bold; color:#87CEFA;">PPI</span> or the <span style="font-weight: bold; color:#87CEFA;">Italian People's Party</span> have begun their third Congress. The party continues its two factional bloc, with Sturzo on the left-wing of the party and De Gasperi representing moderate wing of the party.
 
-While Sturzo commands the support of the Christian Democrats and the 'White' Peasant Leagues, De Gasperi is supported by Moderate Clericalists and the Clergy.
+While Sturzo commands the support of the Christian Democrats and the 'White' <span style="color:#C0DCED;">Peasant Leagues</span>, De Gasperi is supported by Moderate Clericalists and the Clergy.
 
 - @ppi_second: The party votes...
 
@@ -56,7 +56,7 @@ It seems the progressives have managed to sway the party, as Luigi Sturzo is ele
 face-image: img/portraits/DeGasperi.jpg
 on-arrival: ppi_relation -= 7; ppi_leader = "De Gasperi"; ppi_moderates += 2;
 
-Alcide De Gasperi, with his support base, has been elected the third Secretary General of the Party. Representing a turn from the left, the PPI will cooperate further with the liberal parties.
+Alcide De Gasperi, with his support base, has been elected the third Secretary General of the Party. Representing a turn from the left, the <span style="font-weight: bold; color:#87CEFA;">PPI</span> will cooperate further with the <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">ral</span> parties.
 
 @triumvirate_1921
 on-arrival: ppi_left -= 2; ppi_moderates -= 1; ppi_leader = "Triumvirate"; ppi_right += 2;

@@ -1,5 +1,5 @@
-title: [+ year +] [+ ul_name +] Party Congress
-subtitle: The [+ ul_name +] holds its Biennial Congress.
+title: [+ year +] <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span> Party Congress
+subtitle: The <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span> holds its Biennial Congress.
 new-page: true
 view-if: ul_congress_trigger = 1 and not ul_banned
 on-arrival: {!
@@ -26,13 +26,13 @@ if ((Q.ul_r - Q.old_ul_r) > 0) {
 !}
 tags: event
 
-= [+ year +] [+ ul_name +] Party Congress
+= [+ year +] <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span> Party Congress
 
-The Biennial Party Congress of the [+ ul_full_name +] has begun in order to elect the party's next leader. Alberto Giovannini has continued his role as Secretary-General, though a vote will be held on electing the party's leadership to represent it for the next two years.
+The Biennial Party Congress of the <span style="font-weight: bold; color:#0047AB;">[+ ul_full_name +]</span> has begun in order to elect the party's next leader. Alberto Giovannini has continued his role as Secretary-General, though a vote will be held on electing the party's leadership to represent it for the next two years.
 
-The party is split into two factions; [? if not ldr_defunct : Following the failure of the merger of the PLDI and the PLI and his subsequent defection, ?][? if ldr_defunct : Following the merger of the PLDI with the PLI, ?] Antonio Salandra, former leader of the PLDI, has been able to secure influence within the right of party, advocating for further and deepened cooperation with [+ pnf_leader +]'s [+ pnf_full_name +] in order to combat the left-wing radicals.
+The party is split into two factions; [? if not ldr_defunct : Following the failure of the merger of the <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span> and the <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span> and his subsequent defection, ?][? if ldr_defunct : Following the merger of the <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span> with the <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span>, ?] Antonio Salandra, former leader of the <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span>, has been able to secure influence within the right of party, advocating for further and deepened cooperation with [+ pnf_leader +]'s <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_full_name +]</span> in order to combat the left-wing radicals.
 
-On the other side of the party lies Giovanni Giolitti, wielding immense influence over the party and supported by the moderate wing, alongside reluctant support from the left-wing of the party against Salandra, Giolitti advocates cautious cooperation with the [+ pnf_full_name +], viewing them as somewhat of a threat as well.
+On the other side of the party lies Giovanni Giolitti, wielding immense influence over the party and supported by the moderate wing, alongside reluctant support from the left-wing of the party against Salandra, Giolitti advocates cautious cooperation with the <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_full_name +]</span>, viewing them as somewhat of a threat as well.
 
 - @giolitti_elected: Giovanni Giolitti is elected leader.
 - @salandra_elected: Antonio Salandra and the right are voted in.
@@ -43,11 +43,11 @@ choose-if: ul_giolitti >= ul_salandra
 unavailable-subtitle: Our actions have pushed the party towards the right.
 on-arrival: ul_leader = "Giolitti"
 
-Giovanni Giolitti has able to secure the leadership of the party once more, promising a continuance of the liberal vision and his "Giolittian System". Though hesitant to turn to the right, Giolitti's leadership does not represent a change in our relations, as the party still views us with distrust. Regardless, the moderate wing of the party taking the reigns is better than Salandra.
+Giovanni Giolitti has able to secure the leadership of the party once more, promising a continuance of the <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">ral</span> vision and his "Giolittian System". Though hesitant to turn to the right, Giolitti's leadership does not represent a change in our relations, as the party still views us with distrust. Regardless, the moderate wing of the party taking the reigns is better than Salandra.
 
 @salandra_elected
 view-if: ul_salandra > ul_giolitti
 on-arrival: ul_leader = "Salandra"
 
-Antonio Salandra has secured the leadership of the party with the support of the right-wing of the party, promising to defend liberalism against the threat of radicals and revolutionaries from the left. Whatever the case, this does not bode well for our relations with the PLI, as it is almost certain the Salandra will lead the PLI's shift further towards the right.
+Antonio Salandra has secured the leadership of the party with the support of the right-wing of the party, promising to defend <span style="color:#0047AB;">liber</span><span style="color:#FFD700;">alism</span> against the threat of radicals and revolutionaries from the left. Whatever the case, this does not bode well for our relations with the <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span>, as it is almost certain the Salandra will lead the <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span>'s shift further towards the right.
 

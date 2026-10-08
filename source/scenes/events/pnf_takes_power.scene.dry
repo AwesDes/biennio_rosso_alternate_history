@@ -14,7 +14,7 @@ The March on Rome has succeeded, as the threat of violence and outright civil wa
 
 What are we to do now?
 
-- @fight: Mobilise the Red Guards and authorise workers to begin taking up arms against [+ pnf_leader +]'s rule!
+- @fight: Mobilise the <span style="color:#c2352b">Red Guards</span> and authorise workers to begin taking up arms against [+ pnf_leader +]'s rule!
 - @keep_on: Await our opportunity to strike.
 
 
@@ -70,7 +70,7 @@ Q.agriculture_minister_party = "PLI";
 Q.agriculture_minister = "Acerbo";
 Q.public_education_minister_party = "I";
 Q.public_education_minister = "Gentile";
-Q.public_works_minister_party = "DS";
+Q.public_works_minister_party = Q.ds_name;
 Q.public_works_minister = "Carnazza";
 
 Q.next_election_year = 1924; 

@@ -1,14 +1,14 @@
 title: Women's Rights rolled back
-subtitle: The PPI have begun obstructing reforms to women's rights.
+subtitle: The <span style="font-weight: bold; color:#87CEFA;">PPI</span> have begun obstructing reforms to women's rights.
 view-if: ppi_relation <= 30 and gov_women_timer <= 0 and gov_cooldown_timer <= 0 and year >= 1920 and womens_rights > 0 and ppi_in_government and psi_in_government
 on-arrival: gov_cooldown_timer = 3; gov_justice_timer = 9; womens_rights -= 1; ppi_relation -= 5; middle_class_psi -= 2*(1-dissent); workers_psi -= 3*(1-dissent); catholic_psi -= 4; womens_work -= 1 if womens_work > 0; family_law -= 1 if family_law > 0;
 new-page: true
 tags: event
 
-= PPI Leader [+ ppi_leader +] criticises [+ psi_name +] policies
+= <span style="font-weight: bold; color:#87CEFA;">PPI</span> Leader [+ ppi_leader +] criticises [+ psi_name +] policies
 
 In a recent speech to the assembly, [+ ppi_leader +] has issued a scathing criticism of our policies, particularly in regards to women's rights, deeming our reforms as too radical.
 
-Already, we have seem PPI Ministers attempt to undermine our efforts, and we are facing considerable setback in regards to our policy.
+Already, we have seem <span style="font-weight: bold; color:#87CEFA;">PPI</span> Ministers attempt to undermine our efforts, and we are facing considerable setback in regards to our policy.
 
 - @root: There is nothing we can do.

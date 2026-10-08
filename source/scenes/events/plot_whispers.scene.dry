@@ -8,11 +8,11 @@ tags: event
 
 = Whispers of a Plot
 
-Our sources have sent us concerning behaviour regarding the Fasci. They have been militarising further, as meetings between the fascists and the military have increased in frequency, with some even floating the rumor that the [+ pnf_leader +] is planning a coup.
+Our sources have sent us concerning behaviour regarding the <span style="font-weight: bold; color:#3D3D3D;">Fasci</span>. They have been militarising further, as meetings between the fascists and the military have increased in frequency, with some even floating the rumor that the [+ pnf_leader +] is planning a coup.
 
 How should we react to these claims?
 
-- @expand_paramilitaries: Expand the Red Guards.
+- @expand_paramilitaries: Expand the <span style="color:#c2352b">Red Guards</span>.
 - @increase_relations: Improve our relation with our coalition allies and the King.
 - @root: What's the worst that could happen?
 
@@ -22,7 +22,7 @@ unavailable-subtitle: [? if resources < 1 : Not enough resources. (Need 1) ?][? 
 choose-if: resources > 0 and revolutionary_fervour > 39
 on-arrival: resources -= 1; rg_strength += 20;
 
-The expansion of the Red Guards is accepted by most of the factions as a necessity, especially seeing the violence occurring daily within Italy.
+The expansion of the <span style="color:#c2352b">Red Guards</span> is accepted by most of the factions as a necessity, especially seeing the violence occurring daily within <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>.
 
 @increase_relations
 subtitle: Stronger relations with our allies in government might help in the event of anything.

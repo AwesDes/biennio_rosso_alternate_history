@@ -11,9 +11,9 @@ tags: party_affairs, govt_affairs
 
 Our party is wracked as to how to deal with the economic crisis, as well as the reorient of our current party program. Post-war inflation has forced us to limit our spending, so we will have to take caution. The party in it of itself however, is divided into two distinct programs, both originating from Karl Kautsky and Eduard Bernstein's *Erfurt Program*.
 
-The Left-wing of the Party, alongside the Maximalists are in favour of the *Maximum Program*, believing this to be an opportunity for us to end capitalism and begin the mass socialisation of the economy, land redistributions and expanding the current work councils.
+The <span style="color:#8B0000">Left</span>-wing of the Party, alongside the <span style="color:#DC143C">Maximalists</span> are in favour of the *Maximum Program*, believing this to be an opportunity for us to end capitalism and begin the mass socialisation of the economy, land redistributions and expanding the current work councils.
 
-On the other hand, the Reformists, alongside our Trade Unions, are in favour of the *Minimum Program*, instead advocating for more immediate social and economic reforms to improve the lives of its workers, such as Progressive Taxation, Labour laws, Social security or public works without incurring or worsening the current inflation and deficit. 
+On the other hand, the <span style="color:#FF6961">Reformists</span>, alongside our <span style="color:#B22222">Trade Unions</span>, are in favour of the *Minimum Program*, instead advocating for more immediate social and economic reforms to improve the lives of its workers, such as Progressive Taxation, Labour laws, Social security or public works without incurring or worsening the current inflation and deficit. 
 
 - @support_left: Support the Maximum Program.
 - @support_moderate: Support the Minimum Program.
@@ -21,33 +21,33 @@ On the other hand, the Reformists, alongside our Trade Unions, are in favour of 
 
 @support_left
 subtitle: Support the call for mass nationalisations and the transformation of the economy.
-unavailable-subtitle: The Left and Maximalist factions are not strong enough.
+unavailable-subtitle: The <span style="color:#8B0000">Left</span> and <span style="color:#DC143C">Maximalist</span> factions are not strong enough.
 choose-if: historical_mode == 0 or (communist_strength + maximalist_strength >= labour_strength + reformist_strength)
 on-arrival: communist_strength += 5; maximalist_strength += 5; syndicalist_strength += 5; reformist_dissent += 5; labour_dissent += 5; nationalisation_support += 1
 go-to: support_left_progress if nationalisation_support < 2; adopt_left if nationalisation_support >= 2
 
 @support_left_progress
 
-We attempt to convince the party to support the Maximum Program. Leftists argue that this policy is in accordance with our long-standing socialist platform, while reformists and some trade unionists argue that the plan is unrealistic, and that we need to focus on more immediate improvements to workers' lives.
+We attempt to convince the party to support the Maximum Program. <span style="color:#8B0000">Leftists</span> argue that this policy is in accordance with our long-standing <span style="color:#ED2855">socialist</span> platform, while <span style="color:#FF6961">reformists</span> and some <span style="color:#B22222">trade unionists</span> argue that the plan is unrealistic, and that we need to focus on more immediate improvements to workers' lives.
 
 We have not yet formally adopted the plan. More work needs to be done.
 
 @adopt_left
 on-arrival: syndicalist_strength += 10; communist_strength += 15; communist_dissent -= 10; reformist_dissent += 10; labour_dissent += 6; nationalisation_adopted = 1; fasci_coup_progress += 1; economic_plan = 1; ldr_moderates -= 0.2; ds_left -= 0.2; radicalisation += 0.1;
 
-With our hard work, we have convinced the majority of the party to adopt the socialist economic plan! Bourgeois opposition is likely to be fierce. [? if psi_in_government == 0 : It might be difficult to enact the plan, given present conditions. ?]
+With our hard work, we have convinced the majority of the party to adopt the <span style="color:#ED2855">socialist</span> economic plan! <span style="color:#0047AB;">Bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> opposition is likely to be fierce. [? if psi_in_government == 0 : It might be difficult to enact the plan, given present conditions. ?]
 
 @support_moderate
 subtitle: Support the call for extensive economic and labour reforms - This will require participation in government.
 view-if: not_participating = 0
-unavailable-subtitle: The Reformist and Labour factions are not strong enough.
+unavailable-subtitle: The <span style="color:#FF6961">Reformist</span> and <span style="color:#B22222">Labour</span> factions are not strong enough.
 choose-if: historical_mode == 0 or (reformist_strength + labour_strength >= maximalist_strength + communist_strength)
 on-arrival: moderate_plan_support += 1; reformist_strength += 7; labour_strength += 3; maximalist_dissent += 5; communist_dissent += 5; syndicalist_dissent += 5 if syndicalist_active
 go-to: adopt_moderate if moderate_plan_support >= 2; support_moderate_progress if moderate_plan_support < 2
 
 @support_moderate_progress
 
-We attempt to convince the party to support the Minimum Plan. Advocates of the plan argue that this plan is most likely to receive support from the bourgeois parties, and most practical in the immediate term. Opponents in the left and maximalist factions criticize the plan for being inadequate in its ambition.
+We attempt to convince the party to support the Minimum Plan. Advocates of the plan argue that this plan is most likely to receive support from the <span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> parties, and most practical in the immediate term. Opponents in the <span style="color:#8B0000">left</span> and <span style="color:#DC143C">maximalists</span> factions criticize the plan for being inadequate in its ambition.
 
 We have not yet adopted the plan. More work needs to be done.
 

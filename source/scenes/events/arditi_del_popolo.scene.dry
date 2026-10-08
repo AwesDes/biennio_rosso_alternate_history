@@ -1,4 +1,4 @@
-title: Formation of the Arditi del Popolo
+title: Formation of the <span style="color:#2F2F2F">Arditi</span> <span style="color:#3CB371">del</span> <span style="color:#ED2855">Popolo</span>
 view-if: fasci_urgency > 5 or pnf_seating_disp > 25 or (year = 1921 and month = 6) and (not pnf_collapse_seen or not violent_revolution)
 on-arrival: arditi_formed = 1; adp_strength += 20;
 max-visits: 1
@@ -6,11 +6,11 @@ new-page: true
 tags: event
 face-image: img/ArditidelPopolo.jpg
 
-= Formation of the Arditi del Popolo
+= Formation of the <span style="color:#2F2F2F">Arditi</span> <span style="color:#3CB371">del</span> <span style="color:#ED2855">Popolo</span>
 
-Reports have been flowing in about a new organisation forming in Rome. The Arditi del Popolo, formed as an anti-fascist militant organisation by former 'Arditi' members has gained significant popularity, attracting a broad popular front from the Communists of the Far-Left to the Republicans of the Centre.
+Reports have been flowing in about a new organisation forming in Rome. The <span style="color:#2F2F2F">Arditi</span> <span style="color:#3CB371">del</span> <span style="color:#ED2855">Popolo</span>, formed as an anti-fascist militant organisation by former 'Arditi' members has gained significant popularity, attracting a broad popular front from the <span style="color:#8B0000">Communists</span> of the Far-Left to the <span style="color:#3CB371">Republicans</span> of the Centre.
 
-The party is split on how we should react to this new organisation. The reformists advocate for broader cooperation, seeing the group as an ally against fascism and far-right paramilitaries that have been plaguing us, while the Left wing of the party has criticised the groups willingness to cooperate with non-communists in its ranks. [? if pcdi_formed and pcdi_leader = "Bordiga" : The PCd'I has officially adopted a non-cooperative stance towards the group, ordering its members to quit the organisation and threatening those who support it with disciplinary action. ?] [? if pcdi_formed and pcdi_leader = "Gramsci" : The PCd'I has officially adopted a cooperative stance towards the group, allowing its members to join, albeit warily. ?] 
+The party is split on how we should react to this new organisation. The <span style="color:#FF6961">reformists</span> advocate for broader cooperation, seeing the group as an ally against <span style="color:#3D3D3D;">fascism</span> and <span style="color:#3D3D3D;">far-right</span> paramilitaries that have been plaguing us, while the <span style="color:#8B0000">Left</span> wing of the party has criticised the groups willingness to cooperate with non-communists in its ranks. [? if pcdi_formed and pcdi_leader = "Bordiga" : The <span style="font-weight: bold; color:#C72F35">PCd'I</span> has officially adopted a non-cooperative stance towards the group, ordering its members to quit the organisation and threatening those who support it with disciplinary action. ?] [? if pcdi_formed and pcdi_leader = "Gramsci" : The <span style="font-weight: bold; color:#C72F35">PCd'I</span> has officially adopted a cooperative stance towards the group, allowing its members to join, albeit warily. ?] 
 
 How should we respond?
 
@@ -20,16 +20,16 @@ How should we respond?
 @adp_event_cooperation
 subtitle: They will be a valuable ally against fascism.
 choose-if: communist_strength < reformist_strength or picelli_advisor
-unavailable-subtitle: The Communists are able to sway the party against this.
+unavailable-subtitle: The <span style="color:#8B0000">Communists</span> are able to sway the party against this.
 on-arrival: arditi_cooperation = 1; communist_dissent += 7*(dissent); adp_strength += 20; adp_strength += 20 if communist_split and pcdi_leader = "Gramsci"; adp_militancy += 0.07 if communist_split and pcdi_leader = "Gramsci"
 achievement: alleanza_ardita
 
-The Ariti respond warmly to our efforts, and are willing to entertain further cooperation with us and the Red Guards.
+The <span style="color:#2F2F2F">Arditi</span> respond warmly to our efforts, and are willing to entertain further cooperation with us and the <span style="color:#c2352b">Red Guards</span>.
 
 @adp_event_refuse
 subtitle: Their inclusion of anti-socialist forces within their ranks is controversial within the party. 
 choose-if: reformist_strength <= communist_strength
-unavailable-subtitle: The Reformists are able to sway the party against this.
+unavailable-subtitle: The <span style="color:#FF6961">Reformists</span> are able to sway the party against this.
 on-arrival: reformist_dissent += 7*(dissent); adp_strength += 20; 
 
-Very well. We refuse any form of cooperation with the Arditi del Popolo.
+Very well. We refuse any form of cooperation with the <span style="color:#2F2F2F">Arditi</span> <span style="color:#3CB371">del</span> <span style="color:#ED2855">Popolo</span>.

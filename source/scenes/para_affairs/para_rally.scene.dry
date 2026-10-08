@@ -12,9 +12,9 @@ go-to: main_rally; far_right_disrupt if prime_minister_party = "PNF" and (fdc_ba
 
 The far-right paramilitaries are disrupting our rally! Their street troops are preventing us from meeting.
 
-- @rg_defend: Use the Red Guards to protect our rally.
-- @adp_defend: Use the Arditi del Popolo to protect our rally.
-- @both_defend: The Red Guards and Arditi del Popolo should work together to protect our rally.
+- @rg_defend: Use the <span style="color:#c2352b">Red Guards</span> to protect our rally.
+- @adp_defend: Use the <span style="color:#2F2F2F">Arditi</span> <span style="color:#3CB371">del</span> <span style="color:#ED2855">Popolo</span> to protect our rally.
+- @both_defend: The <span style="color:#c2352b">Red Guards</span> and <span style="color:#2F2F2F">Arditi</span> <span style="color:#3CB371">del</span> <span style="color:#ED2855">Popolo</span> should work together to protect our rally.
 - @cancel: Cancel the rally.
 
 @rg_defend
@@ -24,12 +24,12 @@ go-to: rg_protect_win if rg_defend_success >= 0; rg_protect_lose if rg_defend_su
 @rg_protect_win 
 go-to: main_rally
 
-The Red Guards have successfully defended our rally, so it can go ahead as usual.
+The <span style="color:#c2352b">Red Guards</span> have successfully defended our rally, so it can go ahead as usual.
 
 @rg_protect_lose
 on-arrival: workers_pnf += 3
 
-Unfortunately, the Red Guards were unable to hold back the far-right mob. The fascists have won this show of strength.
+Unfortunately, the R<span style="color:#c2352b">Red Guards</span> were unable to hold back the far-right mob. The fascists have won this show of strength.
 
 @adp_defend
 view-if: arditi_cooperation
@@ -39,29 +39,29 @@ go-to: adp_protect_win if rg_defend_success >= 0; adp_protect_lose if rg_defend_
 @adp_protect_win 
 go-to: main_rally
 
-The Arditi del Popolo have successfully defended our rally, so it can go ahead as usual.
+The <span style="color:#2F2F2F">Arditi</span> <span style="color:#3CB371">del</span> <span style="color:#ED2855">Popolo</span> have successfully defended our rally, so it can go ahead as usual.
 
 @adp_protect_lose
 on-arrival: workers_pnf += 3
 
-Unfortunately, the Arditi del Popolo were unable to hold back the far-right mob. The fascists have won this show of strength.
+Unfortunately, the <span style="color:#2F2F2F">Arditi</span> <span style="color:#3CB371">del</span> <span style="color:#ED2855">Popolo</span> were unable to hold back the far-right mob. The fascists have won this show of strength.
 
 @both_defend
 view-if: arditi_cooperation
 choose-if: arditi_rg_cooperation
-unavailable-subtitle: The Arditi del Popolo have never cooperated with the Red Guards before.
+unavailable-subtitle: The <span style="color:#2F2F2F">Arditi</span> <span style="color:#3CB371">del</span> <span style="color:#ED2855">Popolo</span> have never cooperated with the <span style="color:#c2352b">Red Guards</span> before.
 on-arrival: both_defend_success = ((adp_strength*adp_militancy) + (rg_strength*rg_militancy)) - disrupt_strength
 go-to: both_protect_win if both_defend_success >= 0; both_protect_lose if both_defend_success < 0
 
 @both_protect_win 
 go-to: main_rally
 
-The Red Guards and Arditi del Popolo have successfully defended our rally, so it can go ahead as usual.
+The <span style="color:#c2352b">Red Guards</span> and <span style="color:#2F2F2F">Arditi</span> <span style="color:#3CB371">del</span> <span style="color:#ED2855">Popolo</span> have successfully defended our rally, so it can go ahead as usual.
 
 @both_protect_lose
 on-arrival: workers_pnf += 3
 
-Unfortunately, the Red Guards and Arditi del Popolo were unable to hold back the far-right mob. The fascists have won this show of strength.
+Unfortunately, the <span style="color:#c2352b">Red Guards</span> and <span style="color:#2F2F2F">Arditi</span> <span style="color:#3CB371">del</span> <span style="color:#ED2855">Popolo</span> were unable to hold back the far-right mob. The <span style="color:#3D3D3D;">fascists</span> have won this show of strength.
 
 @cancel
 on-arrival: workers_pnf += 3
@@ -72,12 +72,12 @@ The far-right have won this show of strength.
 
 = Paramilitary Rally
 
-Though not its usual tasks, the Red Guards are able to utilise its numbers to rally for party support, as well as sway the party to a more favourable side. What should we do?
+Though not its usual tasks, the <span style="color:#c2352b">Red Guards</span> are able to utilise its numbers to rally for party support, as well as sway the party to a more favourable side. What should we do?
 
-- @defense: Rally for defense against the fascists and the far-right.
-- @revolution: Rally for revolution against the bourgeois parties and the king.
-- @pacifism: Rally for pacifism, against nationalism and war.
-- @republic: Rally for further republicanism and against the monarchy.
+- @defense: Rally for defense against the <span style="color:#3D3D3D;">fascists</span> and the far-right.
+- @revolution: Rally for revolution against the <span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> parties and the king.
+- @pacifism: Rally for pacifism, against <span style="color:#522A00">nationalism</span> and war.
+- @republic: Rally for further <span style="color:#3CB371">republicanism</span> and against the monarchy.
 - @economy: Rally for economic recovery, decreased unemployment and against government inaction.
 - @easy_discard
 
@@ -86,24 +86,24 @@ subtitle: -[+ rg_militarisation_cost +] paramilitary resources
 choose-if: para_resources >= rg_militarisation_cost
 on-arrival: para_resources -= rg_militarisation_cost; rg_strength += 15*(1-dissent); rg_militancy += 0.05*(1-dissent); communist_dissent += 4*(1-dissent); fasci_urgency += 1; workers_pnf -= 3*(1-dissent); nationalist_sentiment -= 2;
 
-The Red Guards rallies against the fascists, urging members of the party to be weary of this new threat and recruiting members to our cause. The Left wing of the party is critical of our silence towards the bourgeois parties, however.
+The <span style="color:#c2352b">Red Guards</span> rallies against the <span style="color:#3D3D3D;">fascists</span>, urging members of the party to be weary of this new threat and recruiting members to our cause. The <span style="color:#8B0000">Left</span> wing of the party is critical of our silence towards the <span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> parties, however.
 
 @revolution
 subtitle: -[+ rg_militarisation_cost +] paramilitary resources
 choose-if: para_resources >= rg_militarisation_cost
 on-arrival: para_resources -= rg_militarisation_cost; rg_strength += 15*(1-dissent); rg_militancy += 0.05*(1-dissent); reformist_dissent += 4*(1-dissent); ldr_relation -= 4; ul_relation -= 4; ds_relation -= 4; king_relation -= 5; workers_psi += 5*(1-dissent); radicalisation += 0.1; socialist_sentiment += 2*(1-dissent); republican_sentiment += 2*(1-dissent); revolutionary_fervour += 3
 
-The Red Guards rally against the bourgeois parties and the king, reaffirming our commitment to the left and swaying some of the more radical voters back into our bloc. The King and the bourgeois are unsurprisingly shocked by our rhetoric, decreasing relations, as is the reformist wing of the party.
+The <span style="color:#c2352b">Red Guards</span> rally against the <span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> parties and the king, reaffirming our commitment to the left and swaying some of the more radical voters back into our bloc. The King and the <span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> are unsurprisingly shocked by our rhetoric, decreasing relations, as is the <span style="color:#FF6961">reformist</span> wing of the party.
 
 @pacifism
 on-arrival: pacifism += 1; nationalist_sentiment -= 5; workers_psi += 5*(1-dissent) if pacifism >= 4; veterans_psi += 4*(1-dissent) if pacifism >= 4; middle_class_psi += 4*(1-dissent) if pacifism >= 4
 
-The Red Guards toes the party line, advocating for pacifism and our anti-war stance.
+The <span style="color:#c2352b">Red Guards</span> toes the party line, advocating for pacifism and our anti-war stance.
 
 @republic
 on-arrival: republican_sentiment += 5*(1-dissent); democratisation += 1; workers_psi += 5*(1-dissent) if democratisation >= 4; veterans_psi += 4*(1-dissent) if democratisation >= 4; middle_class_psi += 4*(1-dissent) if democratisation >= 4; king_relation -= 5*(1-dissent); socialist_sentiment += 2*(1-dissent);
 
-The Red Guards rallies for republicanism and against the monarchy, earning us some support from the Italian Republican Party.
+The <span style="color:#c2352b">Red Guards</span> rallies for <span style="color:#3CB371">republicanism</span> and against the monarchy, earning us some support from the <span style="font-weight: bold; color:#3CB371">Italian Republican Party</span>.
 
 @economy
 choose-if: unemployment > 5 or economic_growth < 0 or national_economic_recovery
@@ -111,4 +111,4 @@ unavailable-subtitle: The economic crisis is largely over now, and the public is
 view-if: not psi_in_government and economic_plan = 1 and pnf_in_government = 0
 on-arrival: workers_psi += 2*(1-dissent); veterans_psi += 3*(1-dissent); middle_class_psi += 1*(1-dissent); rural_psi += 2*(1-dissent); ppi_relation -= 5; ldr_relation -= 5; ul_relation -= 5; ds_relation -= 5;
 
-The Red Guards are able to utilise the current recession to criticise the government, forming broad popular support against government inaction. The coalition in power are less receptive towards our efforts, unsurprisingly.
+The <span style="color:#c2352b">Red Guards</span> are able to utilise the current recession to criticise the government, forming broad popular support against government inaction. The coalition in power are less receptive towards our efforts, unsurprisingly.

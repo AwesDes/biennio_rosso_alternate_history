@@ -11,26 +11,26 @@ go-to: main_rally; far_right_disrupt if prime_minister_party = "PNF" and (fdc_ba
 
 The far-right paramilitaries are disrupting our rally! Their street troops are preventing us from meeting.
 
-- @rg_defend: Use the Red Guards to protect our rally.
-- @adp_defend: Use the Arditi del Popolo to protect our rally.
-- @both_defend: The Red Guards and Arditi del Popolo should work together to protect our rally.
+- @rg_defend: Use the <span style="color:#c2352b">Red Guards</span> to protect our rally.
+- @adp_defend: Use the <span style="color:#2F2F2F">Arditi</span> <span style="color:#3CB371">del</span> <span style="color:#ED2855">Popolo</span> to protect our rally.
+- @both_defend: The <span style="color:#c2352b">Red Guards</span> and <span style="color:#2F2F2F">Arditi</span> <span style="color:#3CB371">del</span> <span style="color:#ED2855">Popolo</span> should work together to protect our rally.
 - @cancel: Cancel the rally.
 
 @rg_defend
 choose-if: not rg_banned
-unavailable-subtitle: The Red Guards are banned.
+unavailable-subtitle: The <span style="color:#c2352b">Red Guards</span> are banned.
 on-arrival: rg_defend_success = rg_strength*rg_militancy - disrupt_strength
 go-to: rg_protect_win if rg_defend_success >= 0; rg_protect_lose if rg_defend_success < 0
 
 @rg_protect_win 
 go-to: main_rally
 
-The Red Guards have successfully defended our rally, so it can go ahead as usual.
+The <span style="color:#c2352b">Red Guards</span> have successfully defended our rally, so it can go ahead as usual.
 
 @rg_protect_lose
 on-arrival: workers_pnf += 3
 
-Unfortunately, the Red Guards were unable to hold back the far-right mob. The fascists have won this show of strength.
+Unfortunately, the <span style="color:#c2352b">Red Guards</span> were unable to hold back the far-right mob. The <span style="color:#3D3D3D;">fascists</span> have won this show of strength.
 
 @adp_defend
 view-if: arditi_cooperation
@@ -40,29 +40,29 @@ go-to: adp_protect_win if adp_defend_success >= 0; adp_protect_lose if adp_defen
 @adp_protect_win 
 go-to: main_rally
 
-The Arditi del Popolo have successfully defended our rally, so it can go ahead as usual.
+The <span style="color:#2F2F2F">Arditi</span> <span style="color:#3CB371">del</span> <span style="color:#ED2855">Popolo</span> have successfully defended our rally, so it can go ahead as usual.
 
 @adp_protect_lose
 on-arrival: workers_pnf += 3
 
-Unfortunately, the Arditi del Popolo were unable to hold back the far-right mob. The fascists have won this show of strength.
+Unfortunately, the <span style="color:#2F2F2F">Arditi</span> <span style="color:#3CB371">del</span> <span style="color:#ED2855">Popolo</span> were unable to hold back the far-right mob. The <span style="color:#3D3D3D;">fascists</span> have won this show of strength.
 
 @both_defend
 view-if: arditi_cooperation
 choose-if: arditi_rg_cooperation
-unavailable-subtitle: The Arditi del Popolo have never cooperated with the Red Guards before.
+unavailable-subtitle: The <span style="color:#2F2F2F">Arditi</span> <span style="color:#3CB371">del</span> <span style="color:#ED2855">Popolo</span> have never cooperated with the Red Guards before.
 on-arrival: both_defend_success = ((adp_strength*adp_militancy) + (rg_strength*rg_militancy)) - disrupt_strength
 go-to: both_protect_win if both_defend_success >= 0; both_protect_lose if both_defend_success < 0
 
 @both_protect_win 
 go-to: main_rally
 
-The Red Guards and Arditi del Popolo have successfully defended our rally, so it can go ahead as usual.
+The <span style="color:#c2352b">Red Guards</span> and <span style="color:#2F2F2F">Arditi</span> <span style="color:#3CB371">del</span> <span style="color:#ED2855">Popolo</span> have successfully defended our rally, so it can go ahead as usual.
 
 @both_protect_lose
 on-arrival: workers_pnf += 3
 
-Unfortunately, the Red Guards and Arditi del Popolo were unable to hold back the far-right mob. The fascists have won this show of strength.
+Unfortunately, the <span style="color:#c2352b">Red Guards</span> and <span style="color:#2F2F2F">Arditi</span> <span style="color:#3CB371">del</span> <span style="color:#ED2855">Popolo</span> were unable to hold back the far-right mob. The <span style="color:#3D3D3D;">fascists</span> have won this show of strength.
 
 @cancel
 on-arrival: workers_pnf += 3
@@ -77,8 +77,8 @@ Mass rallies are a common feature of social democratic life, especially in the l
 
 - @class_struggle: The class struggle of the proletariat against the bourgeoisie.
 - @welfare: The maintenance and expansion of social welfare programs, especially due to the post-war struggle.
-- @democracy: Continuing the democratisation of the government and rallying against the current monarchists and fascists.
-- @pacifism: Opposing war, nationalism, and militarism at all costs.
+- @democracy: Continuing the democratisation of the government and rallying against the current monarchists and <span style="color:#3D3D3D;">fascists</span>.
+- @pacifism: Opposing war, <span style="color:#522A00">nationalism</span>, and militarism at all costs.
 - @economic: Ending this economic crisis and inaction of the government.
 - @local: A mixture of various local and national concerns that resonate most with the audience.
 - @easy_discard
@@ -87,12 +87,12 @@ Mass rallies are a common feature of social democratic life, especially in the l
 @class_struggle
 on-arrival: workers_psi += 4*(1-dissent); veterans_psi += 3*(1-dissent) if communist_strength > reformist_strength; workers_psi += 4*(1-dissent) if nationalisation_progress > 0 or max_seize > 0; veterans_psi += 3*(1-dissent) if nationalisation_progress > 0; communist_strength += 5; communist_dissent -= 5; middle_class_psi -= 3; industrialists_psi -= 2; revolutionary_fervour += 3
 
-Our message of class struggle appeals to the left wing of the working class, while potentially alienating the middle class. [? if nationalisation_progress > 0 : Our achievements in nationalisation have assisted our messaging. ?]
+Our message of class struggle appeals to the <span style="color:#8B0000">left</span>-wing of the working class, while potentially alienating the middle class. [? if nationalisation_progress > 0 : Our achievements in nationalisation have assisted our messaging. ?]
 
 @welfare
 on-arrival: veterans_psi += 3*(1-dissent); workers_psi += 3*(1-dissent) if welfare > 0; veterans_psi += 3*(1-dissent) if welfare > 0; veterans_psi += 4*(1-dissent) if welfare > 1; reformist_strength += 3; labour_strength += 4; reformist_dissent -= 3; labour_dissent -= 3;
 
-The reformist message appeals to the organized workers, whose benefits are the accomplishments of social democracy. [? if welfare > 1 : Our achievements in expanding welfare have made this message more effective. ?]
+The <span style="color:#FF6961">reformist</span> message appeals to the organized workers, whose benefits are the accomplishments of social democracy. [? if welfare > 1 : Our achievements in expanding welfare have made this message more effective. ?]
 
 @democracy
 on-arrival: democratisation += 1; republican_sentiment += 2*(1 - dissent); workers_psi += 4*(1-dissent) if democratisation >= 3; veterans_psi += 3*(1-dissent) if democratisation >= 3; socialist_sentiment += 1*(1 - dissent) if democratisation >= 3; middle_class_psi += 4*(1-dissent) if democratisation >= 3; republican_sentiment += 4*(1 - dissent) if democratisation >= 3; king_relation -= 3; king_relation -= 4 if democratisation >= 3; radicalisation -= 0.1; radicalisation += 0.05 if democratisation >= 3; republican_sentiment += 2 if king_event; socialist_sentiment += 2 if king_event; workers_psi += 3 if king_event;

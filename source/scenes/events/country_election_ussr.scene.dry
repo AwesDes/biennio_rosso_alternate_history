@@ -1,4 +1,4 @@
-title: 13th Congress of the Russian Communist Party
+title: 13th Congress of the <span style="color:#CC0000">Russian Communist Party</span>
 view-if: year == 1924 and month >= 5 and week == 3
 max-visits: 1
 on-arrival: {!
@@ -56,13 +56,13 @@ tags: event
 set-bg: img/BgUSSR.jpg
 new-page: true
 
-= 13th Congress of the Russian Communist Party
+= 13th Congress of the <span style="color:#CC0000">Russian Communist Party</span>
 
-The 13th Congress of the Russian Communist Party has officially begun. The first Congress to take place following the death of Vladmir Lenin, various prominent figures of the parties have risen in an attempt to succeed Lenin in becoming General-Secretary of the Soviet Union. Plagued by the economic instability of the *New Economic Policy*, it is unclear how the future lies for the five men vying for control.
+The 13th Congress of the <span style="color:#CC0000">Russian Communist Party</span> has officially begun. The first Congress to take place following the death of Vladmir Lenin, various prominent figures of the parties have risen in an attempt to succeed Lenin in becoming General-Secretary of the <span style="font-weight: bold; color:#CC0000">Soviet Union</span>. Plagued by the economic instability of the *New Economic Policy*, it is unclear how the future lies for the five men vying for control.
 
 On the Left, Leon Trotsky has risen to form the *Left Opposition*, advocating for rapid industrialisation, the expansion of democracy as well as the policy of *Permanent Revolution*. Trotsky holds the support of intellectuals locally, and holds himself well internationally with his policies. On the Right, *Nikolai Bukharin* has consolidated influence, advocating for the continuation of the *New Economic Policy* and the policy of *Socialism in one Country*. And in the Centre, Joesph Stalin currently holds the reigns of the nation, leading the nation as General-Secretary following the death of Lenin. Joined alongside him are Grigory Zinoviev and Lev Kamenev, forming a *Triumvirate* of men in an effort to prevent Trotsky's ascension to power.
 
-After fierce deliberations and voting, the Congress elects the 13th Central Committee of the Russian Communist Party.
+After fierce deliberations and voting, the Congress elects the 13th Central Committee of the <span style="color:#CC0000">Russian Communist Party</span>.
 
 - @stalin_elected: Joseph Stalin retains his position as General-Secretary.
 - @trotsky_elected: Leon Trotsky and his 'Left Opposition' sways enough of the party in his favour.
@@ -73,11 +73,11 @@ After fierce deliberations and voting, the Congress elects the 13th Central Comm
 on-arrival: soviet_leader = "Stalin"
 set-bg: img/background.png
 choose-if: stalin_influence >= trotsky_influence and stalin_influence >= bukharin_influence and stalin_influence >= duumvirate_influence
-unavailable-subtitle: [? if pcdi_formed : A more aligned PCd'I could swing the Congress in his favour. ?][? if not pcdi_formed : A party split might just be the way for Stalin to seize control. ?]
+unavailable-subtitle: [? if pcdi_formed : A more aligned <span style="font-weight: bold; color:#C72F35">PCd'I</span> could swing the Congress in his favour. ?][? if not pcdi_formed : A party split might just be the way for Stalin to seize control. ?]
 
 Joseph Stalin is able to consolidate power by the end of the Congress, preventing the publishing of *Lenin's Testament* as well as letting the other parties fight against one another. He retains the position of General-Secretary, and is posed to control the party for the foreseeable future. 
 
-Some within the party are concerned by this development, especially with Stalin's theory of *Socialism in One Country* and the suspicion of Stalin's consolidation and attempts to subject the Communist International to his will.
+Some within the party are concerned by this development, especially with Stalin's theory of *Socialism in One Country* and the suspicion of Stalin's consolidation and attempts to subject the <span style="font-weight: bold; color:#CE0000">Communist International</span> to his will.
 
 @trotsky_elected
 on-arrival: soviet_leader = "Trotsky"
@@ -87,23 +87,23 @@ unavailable-subtitle: Perhaps the vindication of Trotsky's *Permanent Revolution
 
 Leon Trotsky is able to sway the delegates in his favour, publishing *Lenin's Testament* and ousting Joseph Stalin as General-Secretary alongside the backing of Zinoviev and Kamenev. He assumes the position of General-Secretary, and is posed to control the party for the foreseeable future.
 
-Some within the party are relieved; Trotsky's *Permanent Revolution* and support of a united front could possibly mean more support for us in our fight against the reactionaries.
+Some within the party are relieved; Trotsky's *Permanent Revolution* and support of a united front could possibly mean more support for us in our fight against the <span style="color:#3D3D3D;">reactionaries</span>.
 
 @bukharin_elected
 on-arrival: soviet_leader = "Bukharin"
 set-bg: img/background.png
 choose-if: bukharin_influence > stalin_influence and bukharin_influence > trotsky_influence and bukharin_influence > duumvirate_influence
-unavailable-subtitle: A more moderate yet friendly [+ psi_name +] might potentially swing the Congress towards him.
+unavailable-subtitle: A more moderate yet friendly <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> might potentially swing the Congress towards him.
 
 Nikolai Bukharin, alongside Rykov and Tomsky and the Right-Opposition, is able to outmaneuver both Stalin and Trotsky by utilising his position in *Pravda*, allowing him barely enough votes to succeed. He assumes the position of General-Secretary, and is posed to control the party for the foreseeable future.
 
-Most within the party are relieved; Bukharin's foreign policy outlook is seemingly less aggressive than both Trotsky's and Stalin's, meaning we will no longer have to worry about subversion from the Communist International.
+Most within the party are relieved; Bukharin's foreign policy outlook is seemingly less aggressive than both Trotsky's and Stalin's, meaning we will no longer have to worry about subversion from the <span style="font-weight: bold; color:#CE0000">Communist International</span>.
 
 @duumvirate_elected
 on-arrival: soviet_leader = "Duumvirate"
 set-bg: img/background.png
 choose-if: duumvirate_influence > stalin_influence and duumvirate_influence > trotsky_influence and duumvirate_influence > bukharin_influence
-unavailable-subtitle: A significantly more moderate yet friendly [+ psi_name +] could deadlock the Congress.
+unavailable-subtitle: A significantly more moderate yet friendly <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> could deadlock the Congress.
 
 Lev Kamenev and Grigory Zinoviev are able to seize control of the party, sidelining Stalin and merging with Trotsky's Left Opposition and successfully deadlocking the Congress as no figure is able to come up on top, placing them both as joint leadership in a bid to preserve unity. Both leaders assume positions of equal footing, and are posed to control the party for the foreseeable future.
 

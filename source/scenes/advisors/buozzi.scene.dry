@@ -7,7 +7,7 @@ new-page: true
 
 = Bruno Buozzi
 
-Buozzi is an outspoken member of the reformist faction of the [+ psi_name +], as well as the leader of the *Italian Federation of Metallurgical Workers*.
+Buozzi is an outspoken member of the <span style="color:#FF6961">reformist</span> current of the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>, as well as both the leader of the *Italian Federation of Metallurgical Workers* and a member of the leadership of the *General Confederation of Labour*. 
 
 - @child_labour_buozzi
 - @economic_democracy_buozzi
@@ -17,7 +17,7 @@ Buozzi is an outspoken member of the reformist faction of the [+ psi_name +], as
 @child_labour_buozzi
 title: Child Labour
 subtitle: Now that we are in government, we can now reform the laws to improve the status of child labour, or end it entirely.
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not psi_in_government : The [+ psi_name +] is not currently in government. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not psi_in_government : The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> is not currently in government. ?]
 choose-if: advisor_action_timer = 0 and psi_in_government
 on-arrival: advisor_action_timer = 6; last_advisor_action = 1;
 go-to: child_labour
@@ -26,7 +26,7 @@ go-to: child_labour
 title: Economic Democracy
 subtitle: Now that we are in control of the Labour Ministry, we can make the economic more democratic.
 choose-if: advisor_action_timer <= 0 and psi_in_government and labour_minister_party == psi_name
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not psi_in_government : The [+ psi_name +] is not in government to influence policy. ?][? if not labour_minister_party == psi_name : The [+ psi_name +] does not control the Labour and Social Security Ministry. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not psi_in_government : The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> is not in government to influence policy. ?][? if not labour_minister_party == psi_name : The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> does not control the Labour and Social Security Ministry. ?]
 on-arrival: advisor_action_timer = 6; last_advisor_action = 1
 go-to: economic_democracy
 
@@ -34,6 +34,6 @@ go-to: economic_democracy
 title: Implementing the Minimum Plan
 subtitle: Now that we are in government, we can begin implementing our party plans.
 choose-if: advisor_action_timer <= 0 and psi_in_government and moderate_plan_adopted
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not psi_in_government : The [+ psi_name +] is not in government to influence policy. ?][? if not moderate_plan_adopted : We have not yet adopted the Minimum Plan. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not psi_in_government : The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> is not in government to influence policy. ?][? if not moderate_plan_adopted : We have not yet adopted the Minimum Plan. ?]
 on-arrival: advisor_action_timer = 6; last_advisor_action = 1
 go-to: minimum_program

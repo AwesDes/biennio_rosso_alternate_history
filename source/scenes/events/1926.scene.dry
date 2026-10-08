@@ -5,6 +5,6 @@ view-if: year = 1926 and month = 1
 priority: 2
 max-visits: 1
 
-A new year has come to Italy.
+A new year has come to <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>.
 
 [? if psi_in_government : Our budget has increased due to the yearly tax. ?]

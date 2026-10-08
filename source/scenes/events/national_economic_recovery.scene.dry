@@ -1,4 +1,4 @@
-title: Italian Economic Recovery!
+title: <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">al</span><span style="font-weight: bold; color:#CD212A">ian</span> Economic Recovery!
 tags: event
 view-if: economic_growth > 0 and inflation < 5 and inflation > 0 and unemployment < 8
 on-arrival: {!

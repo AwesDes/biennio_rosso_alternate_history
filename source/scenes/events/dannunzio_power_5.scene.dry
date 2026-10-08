@@ -8,6 +8,6 @@ on-arrival: dannunzio_arts_seen = 1; dannunzio_time = time + 5; budget -= 1; mid
 
 = The Office of the Arts
 
-D'Annunzio has established an 'Ministry of the Arts', introducing the Ministry as a means to promote fine art, music and Italian culture. Significant funding has been allocated to the Ministry to aid in the construction of new schools of music and art, much to the concern and dismay of conservatives concerned about public spending.
+D'Annunzio has established an 'Ministry of the Arts', introducing the Ministry as a means to promote fine art, music and <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">al</span><span style="font-weight: bold; color:#CD212A">ian</span> culture. Significant funding has been allocated to the Ministry to aid in the construction of new schools of music and art, much to the concern and dismay of conservatives concerned about public spending.
 
 - @root: Unsurprising.

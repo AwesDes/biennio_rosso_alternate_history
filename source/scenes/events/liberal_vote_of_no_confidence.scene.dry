@@ -1,4 +1,4 @@
-title: The Liberals calls a vote of no confidence against the current government!
+title: The <span style="font-weight: bold; color:#FFD700;">Liberal Democrats</span> calls a vote of no confidence against the current government!
 subtitle: We have angered our coalition partners too much...
 new-page: true
 view-if: psi_in_government = 1 and centre_left_coalition and coalition_dissent >= 4 and psi_seating_disp < 50 and ldr_in_government
@@ -9,7 +9,7 @@ go-to: vonc_menu
 
 = Vote of No Confidence
 
-The [+ ldr_full_name +] have called for a vote of no confidence against us, due to our various policies and disagreements. If this succeeds, there will be a new government formed.
+The <span style="font-weight: bold; color:#FFD700;">[+ ldr_full_name +]</span> have called for a vote of no confidence against us, due to our various policies and disagreements. If this succeeds, there will be a new government formed.
 
 @vonc_menu
 
@@ -110,9 +110,9 @@ Q.party_demands_timer = 6;
 Q.leverage = Q.psi_seating_disp;
 !}
 go-to: election_1919.left_wing_coalition
-unavailable-subtitle: [? if psri_relation < 40 : The PSRI is not friendly enough with us. ?] [? if left_wing_coalition < 50: The PSRI does not have enough votes. ?]
+unavailable-subtitle: [? if psri_relation < 40 : The <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> is not friendly enough with us. ?] [? if left_wing_coalition < 50: The <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> does not have enough votes. ?]
 
-Both our votes, alongside some defectors from the minor parties are enough for us to maintain control of the government. We owe a massive debt to the PSRI, which could lead to broader cooperation in the future, for better or for worse.
+Both our votes, alongside some defectors from the minor parties are enough for us to maintain control of the government. We owe a massive debt to the <span style="font-weight: bold; color:#FFC0CB;">PSRI</span>, which could lead to broader cooperation in the future, for better or for worse.
 
 @let_it_happen
 on-departure: {!

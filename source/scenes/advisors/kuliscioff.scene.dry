@@ -7,7 +7,7 @@ new-page: true
 
 = Anna Kuliscioff
 
-Kuliscioff is a Russian-born member of the Reformist faction of the [+ psi_name +]. She is an influential member of the Reformists, alongside Turati and an editor for *Critica Sociale*, a socialist newspaper.
+Kuliscioff is a Russian-born member and co-leader of the <span style=" color:#FF6961">Reformist</span> faction of the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> alongside Turati and a long-time advocate for women's rights, having co-founded the <span style="font-weight: bold; color:#ED2855">[+ psi_full_name +]</span> in 1892.
 
 - @womens_rights_kuliscioff
 - @dealing_with_welfare
@@ -17,7 +17,7 @@ Kuliscioff is a Russian-born member of the Reformist faction of the [+ psi_name 
 @womens_rights_kuliscioff
 title: Women's Rights
 subtitle: Now that we are in government, we can now reform the laws to improve the status of women.
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not psi_in_government : The [+ psi_name +] is not currently in government. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not psi_in_government : The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> is not currently in government. ?]
 choose-if: advisor_action_timer = 0 and psi_in_government
 on-arrival: advisor_action_timer = 6; last_advisor_action = 1; womens_rights_timer -= 5;
 go-to: womens_rights
@@ -26,7 +26,7 @@ go-to: womens_rights
 title: Dealing with Veteran's Welfare
 subtitle: Now that we are in government, we can help out with welfare for our new veterans.
 choose-if: advisor_action_timer <= 0 and psi_in_government and labour_minister_party == psi_name
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not psi_in_government : The [+ psi_name +] is not in government to affect policy. ?][? if not labour_minister_party == psi_name : The [+ psi_name +] does not control the Labour and Social Security Ministry. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not psi_in_government : The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> is not in government to affect policy. ?][? if not labour_minister_party == psi_name : The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> does not control the Labour and Social Security Ministry. ?]
 on-arrival: advisor_action_timer = 6; last_advisor_action = 1
 go-to: welfare_gov
 
@@ -34,6 +34,6 @@ go-to: welfare_gov
 title: Labour Rights
 subtitle: Now that we are in government, we can reform labour laws to help out our main support base, the workers.
 choose-if: advisor_action_timer <= 0 and psi_in_government and labour_minister_party == psi_name
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not psi_in_government : The [+ psi_name +] is not in government to influence policy. ?][? if not labour_minister_party == psi_name : The [+ psi_name +] does not control the Labour and Social Security Ministry. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not psi_in_government : The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> is not currently in government. ?][? if not labour_minister_party == psi_name : The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> does not control the Labour and Social Security Ministry. ?]
 on-arrival: advisor_action_timer = 6; last_advisor_action = 1
 go-to: labour_rights

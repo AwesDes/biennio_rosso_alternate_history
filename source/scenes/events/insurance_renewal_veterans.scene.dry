@@ -13,9 +13,9 @@ Funding for the Unemployment Insurance Program has once again dried up, and the 
 - @await_government: We have to await the Finance Minister's decision.
 
 @fund_insurance
-subtitle: -2 Budget - Keep the Program running for another year. [? if catholic_charity_accepted = 1: Any funding of any non-Catholic welfare program would violate our coalition agreements! ?][? if (budget < 2 and liberal_budget_accepted = 1) : This will put us into a deficit! ?]
+subtitle: -2 Budget - Keep the Program running for another year. [? if catholic_charity_accepted = 1: Any funding of any non-<span style="font-weight: bold; color:#87CEFA;">Catholic</span> welfare program would violate our coalition agreements! ?][? if (budget < 2 and liberal_budget_accepted = 1) : This will put us into a deficit! ?]
 choose-if: finance_minister_party = psi_name and (not national_economic_recovery or budget >= 2)
-unavailable-subtitle: [? if finance_minister_party != psi_name : The [+ psi_name +] does not control the Finance Ministry. ?][? if national_economic_recovery and budget < 2 : Not enough budget. (Need 2) ?]
+unavailable-subtitle: [? if finance_minister_party != psi_name : The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> does not control the Finance Ministry. ?][? if national_economic_recovery and budget < 2 : Not enough budget. (Need 2) ?]
 on-arrival: {!
 Q.unemployment_insurance_veterans_funded += 1; 
 Q.insurance_payments_veterans_timer = 12; 

@@ -1,8 +1,8 @@
-title: Fasci unbanned
-subtitle: The judges have re-legalized the Fasci.
+title: <span style="font-weight: bold; color:#3D3D3D;">Fasci</span> unbanned
+subtitle: The judges have re-legalized the <span style="font-weight: bold; color:#3D3D3D;">Fasci</span>.
 new-page: true
 view-if: fdc_banned == 1 and fdc_ban_timer == 0 and (judicial_reform < 2 or pnf_in_government) and not national_congress_seen and not pnf_banned and not march_failed
 on-arrival: fdc_banned = 0; fdc_strength += 20; fdc_militancy += 0.04; nationalist_sentiment += 6;
 tags: event
 
-Judges have ordered the Fasci Italiani di Combattimento to be re-legalized. They immediately return to mass recruiting and arming.
+Judges have ordered the <span style="font-weight: bold; color:#3D3D3D;">Fasci Italiani di Combattimento</span> to be re-legalized. They immediately return to mass recruiting and arming.

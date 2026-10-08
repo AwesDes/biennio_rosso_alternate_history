@@ -8,14 +8,14 @@ card-image: img/portraits/FilippoTurati.jpg
 
 = Internal Security
 
-[? if interior_minister_party = psi_name: Being in control of the Interior Ministry, we hold control of the Carabinieri, the national gendarmerie, alongside the War Ministry, we can take care of the unstable internal situation of Italy. ?]
+[? if interior_minister_party = psi_name: Being in control of the Interior Ministry, we hold control of the <span style="color:#FF2400">Carabinieri</span>, the national gendarmerie, alongside the War Ministry, we can take care of the unstable internal situation of Italy. ?]
 
-[? if liberal_crackdown_accepted and not interior_minister_party = psi_name : Although not in control of the Interior Ministry, our coalition partners have given us temporary control over matters of the Carabinieri. ?]
+[? if liberal_crackdown_accepted and not interior_minister_party = psi_name : Although not in control of the Interior Ministry, our coalition partners have given us temporary control over matters of the <span style="color:#FF2400">Carabinieri</span>. ?]
 
-- @loyalty_interior: Improve the loyalty of the Carabinieri.
+- @loyalty_interior: Improve the loyalty of the <span style="color:#FF2400">Carabinieri</span>.
 - @investigate_corruption: Investigate corruption by big businesses.
 - @crackdown_far_right: Crack down on paramilitary organisations among the far right.
-- @crackdown_republican: Crack down on paramilitary organisations among the republicans.
+- @crackdown_republican: Crack down on paramilitary organisations among the <span style="color:#3CB371">republicans</span>.
 - @crackdown_far_left: Crack down on paramilitary organisations among the far left.
 - @domestic_enemies: Investigate or ban our domestic enemies.
 - @root: Take no action for now.
@@ -26,9 +26,9 @@ card-image: img/portraits/FilippoTurati.jpg
 view-if: interior_minister_party = psi_name
 on-arrival: interior_police_loyalty += 0.1;
 
-With some specific reassignments and improved training methods, we can root out reactionary and sympathetic fascist influence within the Carabinieri.
+With some specific reassignments and improved training methods, we can root out reactionary and sympathetic <span style="color:#3D3D3D;">fascist</span> influence within the <span style="color:#FF2400">Carabinieri</span>.
 
-Current Carabinieri loyalty: [+ interior_police_loyalty : loyalty +]
+Current <span style="color:#FF2400">Carabinieri</span> loyalty: [+ interior_police_loyalty : loyalty +]
 
 @investigate_corruption
 view-if: interior_minister_party = psi_name
@@ -37,11 +37,11 @@ go-to: investigate_corruption_success if interior_police_loyalty >= 0.5; investi
 @investigate_corruption_success
 on-arrival: investigate_corruption += 1; workers_psi += 5*(1-dissent) if not in_unstable_coalition; middle_class_psi += 2*(1-dissent) if not in_unstable_coalition; workers_clc += 5*(1-dissent) if centre_left_coalition; middle_class_clc += 2*(1-dissent) if centre_left_coalition; workers_scc += 5*(1-dissent) if socialist_catholic_coalition; middle_class_psi += 2*(1-dissent) if socialist_catholic_coalition; inflation -= 0.1 if inflation > 3; inflation -= 0.2 if inflation >= 8
 
-Corruption in big business is rampant, of course. We have uncovered a number of scandals, and publicizing them brings new attention to the work of Interior Minister [+ interior_minister +], building up his popular appeal and that of the [+ psi_name +].
+Corruption in big business is rampant, of course. We have uncovered a number of scandals, and publicizing them brings new attention to the work of Interior Minister [+ interior_minister +], building up his popular appeal and that of the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>.
 
 @investigate_corruption_failure
 
-Unfortunately, our investigations have failed to turn up anything. Rumors are that the targets of our investigation were tipped off by infiltrators within the Carabinieri.
+Unfortunately, our investigations have failed to turn up anything. Rumors are that the targets of our investigation were tipped off by infiltrators within the <span style="color:#FF2400">Carabinieri</span>.
 
 @crackdown_far_right
 go-to: crackdown_far_right_success if interior_police_loyalty >= 0.5 or (liberal_crackdown_accepted and not interior_minister_party = psi_name); crackdown_far_right_failure if interior_police_loyalty < 0.5 and interior_minister_party = psi_name
@@ -53,7 +53,7 @@ A number of coordinated raids and arrests have slightly paralysed the far-right 
 
 @crackdown_far_right_failure
 
-Unfortunately, our raids have turned up empty, our arrest warrants stalled. Rumors are that the targets of our investigation were tipped off by infiltrators within the Carabinieri.
+Unfortunately, our raids have turned up empty, our arrest warrants stalled. Rumors are that the targets of our investigation were tipped off by infiltrators within the <span style="color:#FF2400">Carabinieri</span>.
 
 @crackdown_republican
 view-if: violent_revolution and republican_terror
@@ -62,11 +62,11 @@ go-to: crackdown_republican_success if interior_police_loyalty >= 0.5; crackdown
 @crackdown_republican_success
 on-arrival: republican_bomb_timer += 6 if fascist_terror; 
 
-A number of coordinated raids and arrests have slightly paralysed the republican paramilitaries.
+A number of coordinated raids and arrests have slightly paralysed the <span style="color:#3CB371">republicans</span> paramilitaries.
 
 @crackdown_republican_failure
 
-Unfortunately, our raids have turned up empty, our arrest warrants stalled. Rumors are that the targets of our investigation were tipped off by infiltrators within the Carabinieri.
+Unfortunately, our raids have turned up empty, our arrest warrants stalled. Rumors are that the targets of our investigation were tipped off by infiltrators within the <span style="color:#FF2400">Carabinieri</span>.
 
 @crackdown_far_left
 view-if: liberal_crackdown_accepted or communist_terror
@@ -75,5 +75,5 @@ go-to: crackdown_far_left_success
 @crackdown_far_left_success
 on-arrival: crackdown_far_left += 1 if liberal_crackdown_accepted; communist_bomb_timer += 6 if communist_terror; rg_strength -= 5; communist_dissent += 7*(1-dissent); liberal_crackdown_complete = 1 if crackdown_far_right > 0; democratisation += 1; socialist_sentiment -= 3; coalition_dissent -= 1; violent_prevalence -= 0.01; sov_rg_strength *= 0.98 if pcdi_formed; sov_rg_militancy *= 0.98 if pcdi_formed;
 
-A number of coordinated raids and arrests have slightly paralysed the far-left paramilitaries, as well as orders from party leadership to downsize the Red Guards. The left-wing of the party isn't exactly enthused about our decision, to say the least.
+A number of coordinated raids and arrests have slightly paralysed the far-left paramilitaries, as well as orders from party leadership to downsize the <span style="color:#c2352b">Red Guards</span>. The left-wing of the party isn't exactly enthused about our decision, to say the least.
 

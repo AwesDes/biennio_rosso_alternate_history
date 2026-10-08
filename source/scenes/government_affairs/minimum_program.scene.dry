@@ -24,7 +24,7 @@ We have already formulated an economic plan. Now we have to implement it. Thankf
 - @cancel_advisor_action
 
 @min_tax_1
-subtitle: [? if finance_minister_party = "PPI": Thankfully, the PPI seems willing to aid us. ?][? if finance_minister_party = psi_name: We can make taxes more progressive and root out corruption. ?]
+subtitle: [? if finance_minister_party = "PPI": Thankfully, the <span style="font-weight: bold; color:#87CEFA;">PPI</span> seems willing to aid us. ?][? if finance_minister_party = psi_name: We can make taxes more progressive and root out corruption. ?]
 view-if: tax_reformed = 0
 choose-if: finance_minister_party = psi_name or finance_minister_party = "PPI"
 unavailable-subtitle: We do not control the Financial Ministry.
@@ -33,7 +33,7 @@ on-arrival: tax_reformed += 1; workers_psi += 3*(1-dissent); middle_class_psi -=
 We begin the slow and arduous process of reviewing and revising the tax code, removing loopholes and making it more progressive, albeit not our only goal.
 
 @min_tax_2
-subtitle: [? if finance_minister_party = "PPI": Thankfully, the PPI seems willing to aid us. ?][? if finance_minister_party = psi_name: We can continue making taxes more progressive and root out corruption. ?]
+subtitle: [? if finance_minister_party = "PPI": Thankfully, the <span style="font-weight: bold; color:#87CEFA;">PPI</span> seems willing to aid us. ?][? if finance_minister_party = psi_name: We can continue making taxes more progressive and root out corruption. ?]
 view-if: tax_reformed > 0
 choose-if: finance_minister_party = psi_name or finance_minister_party = "PPI"
 unavailable-subtitle: We do not control the Financial Ministry.
@@ -70,7 +70,7 @@ on-arrival: uncultivated_redistributed += 1; unemployment -= 0.1 if unemployment
 - @root: Excellent.
 
 @min_works_1
-subtitle: -1 Budget - We can utilise our surplus to continue economic development and reduce unemployment. [? if public_works_minister_party != psi_name :- Thankfully, the [+ public_works_minister_party +] seems willing to help us. ?]
+subtitle: -1 Budget - We can utilise our surplus to continue economic development and reduce unemployment. [? if public_works_minister_party != psi_name :- Thankfully, the [? if public_education_minister_party == ul_name : <span style="font-weight: bold; color:#0047AB">[+ public_education_minister_party +]</span> ?][? if public_education_minister_party == ldr_name : <span style="font-weight: bold; color:#FFD700">[+ public_education_minister_party +]</span> ?] seems willing to help us. ?]
 view-if: min_public_works = 0
 choose-if: (public_works_minister_party = psi_name or public_works_minister_party == ldr_name or public_education_minister_party = ul_name) and (budget > 0 or violent_revolution)
 unavailable-subtitle: -1 Budget - [? if not public_works_minister_party = psi_name and not public_works_minister_party == ldr_name and not public_works_minister_party = ul_name : We do not control the Public Works Ministry. ?][? if budget <= 0 : We do not have a surplus. ?]
@@ -79,7 +79,7 @@ on-arrival: budget -= 1; min_public_works += 1; veterans_psi += 3*(1-dissent); r
 We order the construction of railways, canals, streets and more, hiring unemployed workers to do so.
 
 @min_works_2
-subtitle: -[+ min_public_works +] - We can continue utilising our surplus to continue economic development and reduce unemployment. [? if public_works_minister_party != psi_name :- Thankfully, the [+ public_works_minister_party +] seems willing to help us. ?]
+subtitle: -[+ min_public_works +] - We can continue utilising our surplus to continue economic development and reduce unemployment. [? if public_works_minister_party != psi_name :- Thankfully, the [? if public_education_minister_party == ul_name : <span style="font-weight: bold; color:#0047AB">[+ public_education_minister_party +]</span> ?][? if public_education_minister_party == ldr_name : <span style="font-weight: bold; color:#FFD700">[+ public_education_minister_party +]</span> ?] seems willing to help us. ?]
 view-if: min_public_works > 0
 choose-if: (public_works_minister_party = psi_name or public_works_minister_party == ldr_name or public_education_minister_party = ul_name) and (budget >= min_public_works or violent_revolution)
 unavailable-subtitle: -[+ min_public_works +] Budget - [? if not public_works_minister_party = psi_name and not public_works_minister_party == ldr_name and not public_works_minister_party = ul_name : We do not control the Public Works Ministry. ?][? if budget < min_public_works : We do not have a surplus. ?]
@@ -88,7 +88,7 @@ on-arrival: budget -= min_public_works; min_public_works += 1; veterans_psi += 3
 
 [? if min_public_works = 2: We continue constructing public works, improving the transition from the post-war economy. ?]
 
-[? if min_public_works = 3: We have constructed extensive public works across Italy, stimulating the economy, albeit causing some slight inflation. ?]
+[? if min_public_works = 3: We have constructed extensive public works across <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>, stimulating the economy, albeit causing some slight inflation. ?]
 
 - @root: Excellent.
 

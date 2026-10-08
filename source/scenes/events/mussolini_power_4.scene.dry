@@ -8,4 +8,4 @@ max-visits: 1
 
 = Prime Minister [+ prime_minister +] signs the Treaty of Rome
 
-Prime Minister [+ prime_minister +] has negotiated an agreement with the Kingdom of Serbs, Croats and Slovenes, dissolving the Free City of Fiume and integrating it into Italy. Already, we have seen a jump from the veteran bloc, who are in support of [+ prime_minister +]'s revanchist and nationalistic tendencies.
+Prime Minister [+ prime_minister +] has negotiated an agreement with the <span style="color:#6A0080">Kingdom of Serbs, Croats and Slovenes</span>, dissolving the Free City of Fiume and integrating it into <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>. Already, we have seen a jump from the veteran bloc, who are in support of [+ prime_minister +]'s revanchist and <span style="color:#522A00">nationalistic</span> tendencies.

@@ -8,7 +8,7 @@ tags: govt_affairs
 
 = Child Labour
 
-Child Labour is rampant throughout Italy, especially the Southern regions. The previous governments have done some work to attempt to curb this issue, from the Casati Law to the Coppino Act to safety laws, these have done relatively little to mitigate the issue. Now that we are in power, however, we can act decisively to finally fix this system.
+Child Labour is rampant throughout <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>, especially the Southern regions. The previous governments have done some work to attempt to curb this issue, from the Casati Law to the Coppino Act to safety laws, these have done relatively little to mitigate the issue. Now that we are in power, however, we can act decisively to finally fix this system.
 
 # another 'situation' esque thing - like the southern question 
 # labour, public education ministries for the two
@@ -55,7 +55,7 @@ go-to: child_labour_fail if labour_law_support < 50 and not violent_revolution; 
 @child_labour_fail
 on-arrival: ldr_relation -= 4; coalition_dissent += 1 if not socialist_catholic_coalition; workers_psi += 4*(1-dissent) if not in_unstable_coalition; workers_clc += 4*(1-dissent) if centre_left_coalition; workers_scc += 4*(1-dissent) if socialist_catholic_coalition; industrialists_psi -= 5 if not in_unstable_coalition; industrialists_clc -= 5 if centre_left_coalition; industrialists_scc -= 5 if socialist_catholic_coalition; ldr_right += 0.5; socialist_sentiment -= 3
 
-Unfortunately, our proposal is voted down in the Chamber of Deputies, with the [+ pnf_name +]'s and [+ ldr_name +] speaking in particularly vehement opposition. The activists, feeling demoralized from this attempt, have decided to bide their time.
+Unfortunately, our proposal is voted down in the Chamber of Deputies, with the <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_name +]</span>'s and <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span> speaking in particularly vehement opposition. The activists, feeling demoralized from this attempt, have decided to bide their time.
 
 @child_labour_success
 on-arrival: {!
@@ -119,6 +119,6 @@ Q.economic_growth -= 1.2;
 Q.inflation -= 0.1;
 !}
 
-With the support of the left including the PSRI[? if pri_prominent: and the PRI?], we have successfully passed a bill to ban child labour in Italy! This has heartened our more radical supporters, while hurting our relations with the [+ ldr_name +]. With the increasing political discourse around child labour, the [+ ldr_name +] and DS have gained landowner and industrialist votes at the expense of the [+ pnf_name +].
+With the support of the left including the <span style="font-weight: bold; color:#FFC0CB;">PSRI</span>[? if pri_prominent: and the <span style="font-weight: bold; color:#3CB371">PRI</span>?], we have successfully passed a bill to ban child labour in <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>! This has heartened our more radical supporters, while hurting our relations with the <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span>. With the increasing political discourse around child labour, the <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span> and <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span> have gained landowner and industrialist votes at the expense of the <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_name +]</span>.
 
 [? if child_welfare < 3 : Unfortunately, the bill has seemingly backfired, as the new ban on child labour has forced many into further poverty due to a lowered income. ?]

@@ -1,6 +1,6 @@
-title: Communist Split
+title: <span style="color:#8B0000">Communist</span> Split
 new-page: true 
-subtitle: The Left's disagreements with our policies have grown too severe.
+subtitle: The <span style="color:#8B0000">Left</span>'s disagreements with our policies have grown too severe.
 tags: event
 view-if: communist_dissent >= 60
 on-arrival: communist_split = 1; rural_pcdi += rural_psi * 0.3; workers_pcdi += workers_psi * 0.2; workers_other += 3; veterans_pcdi *= veterans_psi * 0.5; workers_psi *= 0.85; veterans_psi *= 0.5; communist_strength *= 0.5; n_advisors -= 1 if terracini_advisor == 1; terracini_advisor = 0; n_advisors -= 1 if togliatti_advisor == 1; togliatti_advisor = 0; n_advisors -= 1 if gramsci_advisor == 1; gramsci_advisor = 0; n_advisors -= 1 if bordiga_advisor == 1; bordiga_advisor = 0; pcdi_formed = 1; n_advisors -= 1 if tasca_advisor == 1; tasca_advisor = 0; pcdi_congress_time = time + 4 {!
@@ -13,7 +13,7 @@ if (Q.rg_militancy >= 0.1) {
 !}
 max-visits: 1
 
-= Left-wing members split
+= <span style="color:#8B0000">Left</span>-wing members split
 
-Our policy choices have greatly offended the left, seeing our turn against revolutionary theory, and many of their leaders have split to form a new party, the PCd'I, or the Communist Party of Italy. They do not count a huge section of our membership, but unfortunately were making up an unequal amount of the Red Guards.
+Our policy choices have greatly offended the left, seeing our turn against revolutionary theory, and many of their leaders have split to form a new party, the <span style="font-weight: bold; color:#C72F35">PCd'I</span>, or the <span style="font-weight: bold; color:#C72F35">Communist Party of Italy</span>. They do not count a huge section of our membership, but unfortunately were making up an unequal amount of the <span style="color:#c2352b">Red Guards</span>.
 

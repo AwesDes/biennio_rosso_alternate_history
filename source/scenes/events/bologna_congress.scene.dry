@@ -1,4 +1,4 @@
-title: XVI Congress of the [+ psi_full_name +]
+title: XVI Congress of the <span style="font-weight: bold; color:#ED2855">[+ psi_full_name +]</span>
 new-page: true
 subtitle: It is time to decide our path for the future.
 view-if: year = 1919 and month = 10
@@ -6,17 +6,17 @@ max-visits: 1
 face-image: img/portraits/NicolaBombacci.jpg
 tags: event
 
-= XVI Congress of the [+ psi_full_name +]
+= XVI Congress of the <span style="font-weight: bold; color:#ED2855">[+ psi_full_name +]</span>
 
 The XVI Congress of Bologna has officially begun. Though the Congress wil be have many debates and discussions on the future of the party, there are two main things to be discussed: deciding on an approach to advance the proletarian revolution and participation in the new November elections. Nicola Bombacci has, at least temporarily, been elected and appointed General-Secretary of the Party.
 
 **This will decide the path you will take.**
 
-The first thing on the agenda is to decide between a reformist or revolutionary approach. The right-wing of the party, the Reformists, are staunch advocates of parliamentary action to achieve a socialist state, while the Communists and majority of the Maximalists advocate for revolutionary action to achieve a Soviet Republic.
+The first thing on the agenda is to decide between a reformist or revolutionary approach. The right-wing of the party, the <span style="color:#FF6961">Reformists</span>, are staunch advocates of parliamentary action to achieve a <span style="color:#ED2855">socialist</span> state, while the <span style="color:#8B0000">Communists</span> and majority of the <span style="color:#DC143C">Maximalists</span> advocate for revolutionary action to achieve a Soviet Republic.
 
--@revolutionary_approach: The Communist and Left-Maximalists sway enough of the party in their favour.
--@maximalist_approach: The Moderate Maximalists are able to establish a compromise that forms a majority.
--@reformist_approach: The Reformists are able to sway enough of the Right-Maximalists to achieve a plurality.
+-@revolutionary_approach: The <span style="color:#8B0000">Communist</span> and <span style="color:#8B0000">Left</span>-<span style="color:#DC143C">Maximalists</span> sway enough of the party in their favour.
+-@maximalist_approach: The Moderate <span style="color:#DC143C">Maximalists</span> are able to establish a compromise that forms a majority.
+-@reformist_approach: The <span style="color:#FF6961">Reformists</span> are able to sway enough of the <span style="color:#FF6961">Right</span>-<span style="color:#DC143C">Maximalists</span> to achieve a plurality.
 
 @revolutionary_approach
 subtitle: The party will fully abandon parliamentary means and pursue a policy of violent revolution.
@@ -25,14 +25,14 @@ unavailable-subtitle: The bulk of the party is opposed to this.
 on-arrival: reformist_dissent *= 1.5; reformist_strength *= 0.5; communist_strength *= 1.5; maximalist_strength *= 1.25; communist_dissent *= 0.5; maximalist_dissent *= 0.75; not_participating = 1; revolutionary_fervour += 5; king_relation -= 7*radicalisation; preparing_rev_active = 1
 go-to: @election_agenda
 
-This result only seems to exacerbate the friction within the party, as Reformist members storm out of the Congress in protest as the results of the votes is announced.
+This result only seems to exacerbate the friction within the party, as <span style="color:#FF6961">Reformist</span> members storm out of the Congress in protest as the results of the votes is announced.
 
 @maximalist_approach
 subtitle: The party will stay the course of revolution via extraparliamentary ways, but will not fully abandon parliamentary means.
 on-arrival: reformist_dissent += 10; reformist_strength -= 5; communist_strength -= 5; maximalist_strength += 5; communist_dissent += 10; maximalist_dissent -= 10; preparing_rev_active = 1
 go-to: @election_agenda
 
-The less radical members of the Communists and Reformists accept the compromise, whilst the more radical members criticise this as effective 'appeasement' to keep the party together.
+The less radical members of the <span style="color:#8B0000">Communists</span> and <span style="color:#FF6961">Reformists</span> accept the compromise, whilst the more radical members criticise this as effective 'appeasement' to keep the party together.
 
 @reformist_approach
 choose-if: communist_strength < reformist_strength
@@ -41,16 +41,16 @@ subtitle: The party will fully abandon extraparliamentary means and pursue a pol
 on-arrival: reformist_dissent *= 0.5; reformist_strength *= 1.5; communist_strength *= 0.5; maximalist_strength *= 0.75; communist_dissent *= 1.5; maximalist_dissent *= 1.25; participating = 1; revolutionary_fervour -= 7; king_relation += 7*(1-(radicalisation/10));
 go-to: @election_agenda
 
-The Reformists, having lost leadership in 1912, are able to achieve a plurality through the vote, stunning many who saw them as having lost most of its support within the party. Already, as the vote is announced, many Communist and Maximalist members storm out of the Congress in protest, leaving the remaining members to continue the Congress.
+The <span style="color:#FF6961">Reformists</span>, having lost leadership in 1912, are able to achieve a plurality through the vote, stunning many who saw them as having lost most of its support within the party. Already, as the vote is announced, many <span style="color:#8B0000">Communist</span> and <span style="color:#DC143C">Maximalist</span> members storm out of the Congress in protest, leaving the remaining members to continue the Congress.
 
 @election_agenda
 new-page: false
 
-The second and final thing on the agenda is whether or not the [+ psi_name +] should participate in the November elections. The Reformists advocate for full participation, the Maximists token participation and the Communists full abstention.
+The second and final thing on the agenda is whether or not the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> should participate in the November elections. The <span style="color:#FF6961">Reformists</span> advocate for full participation, the <span style="color:#DC143C">Maximalists</span> token participation and the <span style="color:#8B0000">Communists</span> full abstention.
 
-- @communist_arguments: The Communists are able to convince the rest of the party against the bourgeois elections.
-- @maximalist_arguments: The Maximalists utilise their majority to convince the rest of the party to compromise.
-- @reformist_arguments: The Reformists are able to eek through with support from the sympathetic Maximalist members.
+- @communist_arguments: The <span style="color:#8B0000">Communists</span> are able to convince the rest of the party against the <span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> elections.
+- @maximalist_arguments: The <span style="color:#DC143C">Maximalists</span> utilise their majority to convince the rest of the party to compromise.
+- @reformist_arguments: The <span style="color:#FF6961">Reformists</span> are able to eek through with support from the sympathetic <span style="color:#DC143C">Maximalists</span> members.
 
 @communist_arguments
 subtitle: The party will fully refuse to participate in the upcoming election.
@@ -58,15 +58,15 @@ choose-if: participating = 0
 unavailable-subtitle: [? if participating = 1 : We have already chosen to achieve socialism via parliamentary means. ?]
 on-arrival: reformist_dissent += 7; reformist_strength -= 7; communist_strength += 7; communist_dissent -= 7; not_participating = 1; abstentionist_psi = 1;
 
-The Communists are able to convince the Maximalists that wasting time on participating is a futile use of time, as the party votes for full abstention in the upcoming elections.
+The <span style="color:#8B0000">Communists</span> are able to convince the <span style="color:#DC143C">Maximalists</span> that wasting time on participating is a futile use of time, as the party votes for full abstention in the upcoming elections.
 
 @maximalist_arguments
-subtitle: The party will participate, but not form coalitions with the bourgeois parties.
+subtitle: The party will participate, but not form coalitions with the <span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> parties.
 choose-if: not_participating = 0
 unavailable-subtitle: [? if not_participating = 1: We have already chosen to abandon the reformist approach. ?]
 on-arrival: maximalist_strength += 10; maximalist_dissent -= 10; maximalist_participating = 1;
 
-The Maximalist majority secures a compromise solution, agreeing to participate in the upcoming elections but refusing any sort of coalition with the bourgeois parties. 
+The <span style="color:#DC143C">Maximalist</span> majority secures a compromise solution, agreeing to participate in the upcoming elections but refusing any sort of coalition with the <span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> parties. 
 
 @reformist_arguments
 choose-if: not_participating = 0
@@ -74,4 +74,4 @@ unavailable-subtitle: [? if not_participating = 1 : We have already chosen to ac
 subtitle: The party will fully participate in the upcoming election.
 on-arrival: reformist_dissent -= 7; reformist_strength += 7; communist_strength -= 7; communist_dissent += 7; participating = 1; election_participation = 1;
 
-The Reformists are able to convince sympathetic Maximalist members to support their endeavour to participate in the November elections and form a coalition with the bourgeois parties. The Communists and remaining Maximalists are unsurprisingly, outraged.
+The <span style="color:#FF6961">Reformists</span> are able to convince sympathetic <span style="color:#DC143C">Maximalist</span> members to support their endeavour to participate in the November elections and form a coalition with the <span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> parties. The <span style="color:#8B0000">Communists</span> and remaining <span style="color:#FF6961">Reformists</span> are unsurprisingly, outraged.

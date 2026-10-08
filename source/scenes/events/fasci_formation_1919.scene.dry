@@ -1,0 +1,20 @@
+title: The Formation of the <span style="font-weight: bold; color:#3D3D3D;">Fasci Italiani di Combattimento</span>
+subtitle: Sansepolcrismo is born.
+view-if: year = 1919 and month = 3 and week = 3
+max-visits: 1
+tags: event
+new-page: true
+
+= Forming of the *<span style="font-weight: bold; color:#3D3D3D;">Fasci Italiani di Combattimento</span>*
+
+In the hall of Piazza San Sepolcro, a man speaks. He speaks of equal suffrage, of direct referendums, of nationalism, of how the <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">al</span><span style="font-weight: bold; color:#CD212A">ian</span> people were robbed, given this "mutilated victory" in its wake, as thunderous applause shakes the hall. The <span style="font-weight: bold; color:#3D3D3D;">Fasci Italiani di Combattimento</span> has been formed, and has already picked up momentum within the population.
+
+The party is split on the how we should react to the formation of this new organisation. After all, talks of equal suffrage, of the abolishment of the Senate. Do these demands not reflect ours?
+
+- @distrust_watch_closely: Time will only tell what this entails.
+
+@distrust_watch_closely
+on-arrival: veterans_pnf += 7; fdc_strength += 12; 
+
+Regardless, it seems the organisation is catching fire amongst the population, especially the veterans.
+

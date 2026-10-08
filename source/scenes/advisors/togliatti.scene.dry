@@ -7,18 +7,18 @@ new-page: true
 
 = Palmiro Togliatti
 
-Togliatti is a member of the Communist faction of the [+ psi_name +]. A popular figure on the far-left, he is one of the founders of *L'Ordine Nuovo*, the far-left newspaper.
+Togliatti is a member of the <span style=" color:#8B0000">Communist</span> faction of the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>, one of the few pro-interventionists, as well as aligning and closely collaborating with Antonio Gramsci.
 
 - @togliatti_coalition
 - @public_education
-- @shuffle_cabinet_togliatti
+- @media_togliatti
 - @root: Return to main
 
 @togliatti_coalition
 title: Negotiating with the Coalition
 subtitle: Togliatti can improve our relationships with our centrist and centre-left coalition partners in the Chamber of Deputies.
 choose-if: advisor_action_timer <= 0 and (centre_left_coalition or socialist_catholic_coalition or left_wing_coalition)
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if not centre_left_coalition and not left_wing_coalition and not socialist_catholic_coalition : The [+ psi_name +] is not currently in a coalition. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if not centre_left_coalition and not left_wing_coalition and not socialist_catholic_coalition : The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> is not currently in a coalition. ?]
 on-arrival: advisor_action_timer = 6; coalition_dissent -= 1; ldr_relation += 7 if centre_left_coalition; ds_relation += 5 if centre_left_coalition; psri_relation += 9; ppi_relation += 7 if socialist_catholic_coalition;
 
 We have improved our relations with our coalition partners and reduced tensions with the coalition.
@@ -27,14 +27,14 @@ We have improved our relations with our coalition partners and reduced tensions 
 title: Public Education
 subtitle: As we control the Public Education Ministry, we are able to direct policy, potentially benefitting us.
 choose-if: advisor_action_timer = 0 and psi_in_government and public_education_minister_party == psi_name
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not psi_in_government : The [+ psi_name +] is not currently in government. ?][? if not public_education_minister_party == psi_name : The [+ psi_name +] is not in control of the Public Education Ministry. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not psi_in_government : The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> is not currently in government. ?][? if not public_education_minister_party == psi_name : The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> is not in control of the Public Education Ministry. ?]
 on-arrival: advisor_action_timer = 6; last_advisor_action = 1
 go-to: education_policy
 
-@shuffle_cabinet_togliatti
-title: Shuffle Cabinet 
-subtitle: Perhaps it is time we renegotiate the terms of the coalition with our partners.
-choose-if: advisor_action_timer = 0 and (centre_left_coalition or socialist_catholic_coalition or left_wing_coalition) and coalition_dissent < 3
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not centre_left_coalition or socialist_catholic_coalition or left_wing_coalition : The [+ psi_name +] is not currently in a coalition. ?][? if coalition_dissent >= 3 : Coalition dissent is far too high for us to negotiate with our partners. ?]
-on-arrival: advisor_action_timer = 6; shuffle_cabinet_timer -= 5; last_advisor_action = 1
-go-to: shuffle_cabinet
+@media_togliatti
+title: Media
+subtitle: Organise our media to spread our message further.
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+choose-if: advisor_action_timer == 0
+on-arrival: advisor_action_timer = 6; media_timer -= 6; last_advisor_action = 1
+go-to: media

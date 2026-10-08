@@ -23,7 +23,7 @@ achievement: il_traditore_e_sempre_un_infame
 
 = Mussolini behind bars; Agitator convicted
 
-The Judge has ruled in favour of us. Mussolini is found guilty of his crimes, and sentenced to god knows how long in prison. Regardless, he will no longer lead the fascists, and existing supporters of the organisation leave, not wanting their own image tarnished by a criminal.
+The Judge has ruled in favour of us. Mussolini is found guilty of his crimes, and sentenced to god knows how long in prison. Regardless, he will no longer lead the <span style="color:#3D3D3D;">fascists</span>, and existing supporters of the organisation leave, not wanting their own image tarnished by a criminal.
 
 In response, however, Mussolini's most loyal forces riot, inciting further violence and bloodshed across the nation in response, though we are able to quell the weakened forces easily.
 
@@ -32,13 +32,13 @@ on-arrival: mussolini_jailed = 0; veterans_pnf *= 1.5; industrialists_pnf *= 1.2
 
 = Mussolini Acquitted; State unlawfully holds innocent man for 12 months
 
-The Judge has ruled in favour of Mussolini, acquitting him of all charges we have placed against him due to 'insufficient evidence'. Regardless, our plan has backfired. Mussolini has turned into a martyr, celebrated by his men and the futurist and fascist movement, and has propelled the [+ pnf_name +] to a national stage.
+The Judge has ruled in favour of Mussolini, acquitting him of all charges we have placed against him due to 'insufficient evidence'. Regardless, our plan has backfired. Mussolini has turned into a martyr, celebrated by his men and the futurist and <span style="color:#3D3D3D;">fascists</span> movement, and has propelled the <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_name +]</span> to a national stage.
 
 - @root: Damn it.
 
 @mussolini_pardoned
 on-arrival: mussolini_jailed = 0; veterans_pnf *= 1.8; industrialists_pnf *= 1.4; fdc_strength += 23; fdc_militancy += 0.06; middle_class_psi *= 1.5; pnf_leader = "Mussolini";
 
-= King [+ king +] saves innocent man from [+ psi_name +]'s authoritarianism
+= King [+ king +] saves innocent man from <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>'s authoritarianism
 
-In an unexpected twist, the King has exercised his constitutional rights, pardoning Mussolini and forcing the Ministry to release him. Regardless, our plan has backfired. Mussolini has turned into a martyr, celebrated by his men and the futurist and fascist movement, and has propelled the [+ pnf_name +] to a national stage.
+In an unexpected twist, the King has exercised his constitutional rights, pardoning Mussolini and forcing the Ministry to release him. Regardless, our plan has backfired. Mussolini has turned into a martyr, celebrated by his men and the futurist and <span style="color:#3D3D3D;">fascist</span> movement, and has propelled the <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_name +]</span> to a national stage.

@@ -7,28 +7,27 @@ new-page: true
 
 = Giacinto Menotti Serrati
 
-Serrati is a leader of the Maximalists, one of the factions of the [+ psi_name +].
+Serrati heads the <span style=" color:#DC143C">Maximalist</span> current within the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>, and is the current editor of *Avanti!*.
 
-- @serrati_revolution_or_reformist
+- @media_serrati
 - @party_discipline
 - @implement_plan
 - @root: Return to main
 
-@serrati_revolution_or_reformist
-title: Revolution or Reformist?
-subtitle: Debate our path forward. For Serrati, it is in favour of revolution.
-choose-if: advisor_action_timer = 0
+@media_serrati
+title: Media
+subtitle: Organise our media to spread our message further.
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-on-arrival: communist_dissent -= 7*(1-dissent); reformist_dissent += 7*(1-dissent); radicalisation += 0.5; revolutionary_fervour += 3; communist_strength += 5*(1-dissent); maximalist_strength -= 5*(1-dissent); advisor_action_timer = 6;
-
-We are able to sway some of the more left-wing members of the party to our cause, advocating for a more revolutionary approach. This only further exacerbates the split within the party, however.
+choose-if: advisor_action_timer == 0
+on-arrival: advisor_action_timer = 6; media_timer -= 6; last_advisor_action = 1
+go-to: media
 
 @party_discipline
 title: Party Discipline
 subtitle: Reduce dissent across the party.
 choose-if: advisor_action_timer = 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-on-arrival: advisor_action_timer = 6; communist_dissent -= 5; labour_dissent -= 10; maximalist_dissent -= 10; reformist_dissent -= 10; syndicalist_dissent -= 5
+on-arrival: advisor_action_timer = 6; communist_dissent -= 5; labour_dissent -= 7; maximalist_dissent -= 10; reformist_dissent -= 7; syndicalist_dissent -= 5
 
 We have enforced party discipline to reduce dissent across all factions.
 

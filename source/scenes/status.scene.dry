@@ -21,8 +21,8 @@ Party: [+ resources +]
 
 Paramilitary: [+ para_resources +]
 
-[+ psi_name +] Position: [? if psi_in_government : In Government - ?][? if psi_in_government == 0 : Opposition ?]
-[? if centre_left_coalition and psi_in_government: Centre-Left Coalition ?][? if psi_majority and psi_in_government: [+ psi_name +] majority ?][? if socialist_catholic_coalition and psi_in_government: Catholic-Socialist Coalition ?][? if left_wing_coalition and psi_in_government: Left-Wing Coalition ?]
+<span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> position: [? if psi_in_government : in government - ?][? if psi_in_government == 0 : opposition ?]
+[? if left_wing_coalition and psi_in_government : <span style="color:#ED2855">Left-Wing</span> Coalition ?][? if centre_left_coalition and psi_in_government: <span style="color:#FFD700">Centre</span>-<span style="color:#ED2855">Left</span> Coalition ?][? if socialist_catholic_coalition and psi_in_government: <span style="color:#ED2855">Socialist</span>-<span style="color:#87CEFA">Catholic</span> Coalition ?][? if psi_majority and psi_in_government: <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> majority ?][? if in_minority_government and psi_in_government: Minority government ?]
 
 [? if psi_in_government and not psi_majority: Coalition Dissent: [+ coalition_dissent : coalition_dissent +] ?]
 
@@ -44,29 +44,29 @@ Revolutionary Fervour: [+ revolutionary_fervour +]%
 
 [? if not king_abolished and not king_figurehead : King Approval: [+ king_relation : relationships +] ?]
 
-Prime Minister: [+ prime_minister +] ([+ prime_minister_party +])
+Prime Minister: [+ prime_minister +] ([? if prime_minister_party == ul_name : <span style="font-weight: bold; color:#0047AB">[+ prime_minister_party +]</span>?][? if prime_minister_party == "PSRI" : <span style="font-weight: bold; color:#FFC0CB">[+ prime_minister_party +]</span>?][? if prime_minister_party == "PPI" : <span style="font-weight: bold; color:#87CEFA">[+ prime_minister_party +]</span>?][? if prime_minister_party == ds_name : <span style="font-weight: bold; color:#1E99C5">[+ prime_minister_party +]</span>?][? if prime_minister_party == psi_name : <span style="font-weight: bold; color:#ED2855">[+ prime_minister_party +]</span>?][? if prime_minister_party == pnf_name : <span style="font-weight: bold; color:#3D3D3D">[+ prime_minister_party +]</span>?][? if prime_minister_party == "PSU" : <span style="font-weight: bold; color:#E35A5A">[+ prime_minister_party +]</span>?][? if prime_minister_party == ldr_name : <span style="font-weight: bold; color:#FFD700">[+ prime_minister_party +]</span>?])
 
 Senate: [? if veto_removed == 0: Empowered ?][? if veto_removed == 1: Weakened ?]
 
 Chamber of Deputies composition:
 
-[? if changed_name != 1: {!<span class="tooltip-text" title="Italian Socialist Party">PSI</span>!}: [+ psi_seating_disp +]% ?]
-[? if changed_name = 1 : {!<span class="tooltip-text" title="Communist Party - Italian Section of the Communist International">PC - SIIC</span>!}: [+ psi_seating_disp +]% ?]
-[? if pcdi_formed : {!<span class="tooltip-text" title="Communist Party of Italy">PCd'I</span>!}: [+ pcdi_seating_disp +]% ?]
-[? if psu_formed : {!<span class="tooltip-text" title="Unitary Socialist Party">PSU</span>!}: [+ psu_seating_disp +]% ?]
-[? if not psri_collapse :{!<span class="tooltip-text" title="Italian Reformist Socialist Party">PSRI</span>!}: [+ psri_seating_disp +]% ?]
-[? if pll_formed : {!<span class="tooltip-text" title="Liberal Workers' Party">PLL</span>!}: [+ pll_seating_disp +]% ?]
-[? if pri_prominent : {!<span class="tooltip-text" title="Italian Republican Party">PRI</span>!}: [+ pri_seating_disp +]% ?]
-[? if not pdsi_formed : {!<span class="tooltip-text" title="Social Democracy">DS</span>!}: [+ ds_seating_disp +]% ?]
-[? if pdsi_formed : {!<span class="tooltip-text" title="Italian Social Democratic Party">PDSI</span>!}: [+ ds_seating_disp +]% ?]
-{!<span class="tooltip-text" title="Italian People's Party">PPI</span>!}: [+ ppi_seating_disp +]%
-[? if not pldi_formed : {!<span class="tooltip-text" title="Liberals, Democrats & Radicals">LDR</span>!}: [+ ldr_seating_disp +]% ?]
-[? if pldi_formed : {!<span class="tooltip-text" title="Italian Democratic Liberal Party">PLDI</span>!}: [+ ldr_seating_disp +]% ?]
-[? if not pli_formed : {!<span class="tooltip-text" title="Liberal Union">UL</span>!}: [+ ul_seating_disp +]% ?]
-[? if pli_formed : {!<span class="tooltip-text" title="Italian Liberal Party">PLI</span>!}: [+ ul_seating_disp +]% ?]
-[? if pcs_formed : {!<span class="tooltip-text" title="Christian Social Party">PCS</span>!}: [+ pcs_seating_disp +]% ?]
-[? if not pnf_formed :{!<span class="tooltip-text" title="Italian Fasces of Combat">FdC</span>!}: [+ pnf_seating_disp +]% ?]
-[? if pnf_formed :{!<span class="tooltip-text" title="National Fascist Party">PNF</span>!}: [+ pnf_seating_disp +]% ?]
+[? if changed_name != 1: {!<span class="tooltip-text" title="Italian Socialist Party" style="font-weight: bold; color:#ED2855">PSI</span>!}: [+ psi_seating_disp +]% ?]
+[? if changed_name = 1 : {!<span class="tooltip-text" title="Communist Party - Italian Section of the Communist International" style="font-weight: bold; color:#ED2855">PC - SIIC</span>!}: [+ psi_seating_disp +]% ?]
+[? if pcdi_formed : {!<span class="tooltip-text" title="Communist Party of Italy" style="font-weight: bold; color:#C72F35">PCd'I</span>!}: [+ pcdi_seating_disp +]% ?]
+[? if psu_formed : {!<span class="tooltip-text" title="Unitary Socialist Party" style="font-weight: bold; color:#E35A5A">PSU</span>!}: [+ psu_seating_disp +]% ?]
+[? if not psri_collapse :{!<span class="tooltip-text" title="Italian Reformist Socialist Party" style="font-weight: bold; color:#FFC0CB;">PSRI</span>!}: [+ psri_seating_disp +]% ?]
+[? if pll_formed : {!<span class="tooltip-text" title="Liberal Workers' Party" style="font-weight: bold; color:#FFD1D9;">PLL</span>!}: [+ pll_seating_disp +]% ?]
+[? if pri_prominent : {!<span class="tooltip-text" title="Italian Republican Party" style="font-weight: bold; color:#3CB371">PRI</span>!}: [+ pri_seating_disp +]% ?]
+[? if not pdsi_formed : {!<span class="tooltip-text" title="Social Democracy" style="font-weight: bold; color:#1E99C5;">DS</span>!}: [+ ds_seating_disp +]% ?]
+[? if pdsi_formed : {!<span class="tooltip-text" title="Italian Social Democratic Party" style="font-weight: bold; color:#1E99C5;">PDSI</span>!}: [+ ds_seating_disp +]% ?]
+{!<span class="tooltip-text" title="Italian People's Party" style="font-weight: bold; color:#87CEFA;">PPI</span>!}: [+ ppi_seating_disp +]%
+[? if not pldi_formed : {!<span class="tooltip-text" title="Liberals, Democrats & Radicals" style="font-weight: bold; color:#FFD700;">LDR</span>!}: [+ ldr_seating_disp +]% ?]
+[? if pldi_formed : {!<span class="tooltip-text" title="Italian Democratic Liberal Party" style="font-weight: bold; color:#FFD700;">PLDI</span>!}: [+ ldr_seating_disp +]% ?]
+[? if not pli_formed : {!<span class="tooltip-text" title="Liberal Union" style="font-weight: bold; color:#0047AB;">UL</span>!}: [+ ul_seating_disp +]% ?]
+[? if pli_formed : {!<span class="tooltip-text" title="Italian Liberal Party" style="font-weight: bold; color:#0047AB;">PLI</span>!}: [+ ul_seating_disp +]% ?]
+[? if pcs_formed : {!<span class="tooltip-text" title="Christian Social Party" style="font-weight: bold; color:#656573;">PCS</span>!}: [+ pcs_seating_disp +]% ?]
+[? if not pnf_formed :{!<span class="tooltip-text" title="Italian Fasces of Combat" style="font-weight: bold; color:#3D3D3D;">FdC</span>!}: [+ pnf_seating_disp +]% ?]
+[? if pnf_formed :{!<span class="tooltip-text" title="National Fascist Party" style="font-weight: bold; color:#3D3D3D;">PNF</span>!}: [+ pnf_seating_disp +]% ?]
 Others: [+ other_seating_disp +]%
 
 [? if psi_in_government = 1 : Budget: [+ budget +] ?]
@@ -91,21 +91,21 @@ Next election: [+ next_election_month : month +] [+ next_election_year +]
 
 [? if liberal_budget_accepted : Deficit spending disallowed ?]
 
-[? if liberal_foreign_accepted : Continue Entente alignment ?]
+[? if liberal_foreign_accepted : Continue <span style="font-weight: bold; color:#C8102E">Ent</span><span style="font-weight: bold; color:#000091">ente</span> alignment ?]
 
-[? if liberal_aid_accepted : Soviet Aid disallowed ?]
+[? if liberal_aid_accepted : <span style="font-weight: bold; color:#CC0000">Soviet</span> Aid disallowed ?]
 
 [? if catholic_papacy_accepted and roman_question_answered == 0 : Roman Question resolved: [+ catholic_papacy_timer +] weeks left ?]
 
 [? if catholic_papacy_accepted and roman_question_answered == 1 : Roman Question resolved: Completed ?]
 
-[? if catholic_education_accepted : Catholic Education Reforms disallowed ?]
+[? if catholic_education_accepted : <span style="color:#87CEFA;">Catholic</span> Education Reforms disallowed ?]
 
 [? if catholic_women_accepted : Women's Reforms disallowed ?]
 
-[? if catholic_charity_accepted : Non-Catholic Charity funding disallowed ?]
+[? if catholic_charity_accepted : Non-<span style="color:#87CEFA;">Catholic</span> Charity funding disallowed ?]
 
-[? if catholic_nationalisation_accepted : Anti-Catholic Nationalisations disallowed ?]
+[? if catholic_nationalisation_accepted : Anti-<span style="color:#87CEFA;">Catholic</span> Nationalisations disallowed ?]
 
 = Economics
 
@@ -115,37 +115,37 @@ Economic Growth: [+ economic_growth_2 +]%
 
 Unemployment: [+ unemployment_2 +]%
 
-British Debts: [? if uk_debts > 0 and not in_default : Significant ?] [? if uk_debts_over and not in_default : Amortisation Plan ?] [? if in_default : Defaulted ?]
+<span style="font-weight: bold; color:#C8102E">British</span> Debts: [? if uk_debts > 0 and not in_default : Significant ?] [? if uk_debts_over and not in_default : Amortisation Plan ?] [? if in_default : Defaulted ?]
 
-American Debts: [? if american_debts > 0 and not in_default : Significant ?] [? if us_debts_over and not in_default : Amortisation Plan ?] [? if in_default : Defaulted ?]
+<span style="font-weight: bold; color:#002868">Amer</span><span style="font-weight: bold; color:#B31942">ican</span> Debts: [? if american_debts > 0 and not in_default : Significant ?] [? if us_debts_over and not in_default : Amortisation Plan ?] [? if in_default : Defaulted ?]
 
 @politics
 
 = Inter-party Relations
 
-[? if pcdi_formed : {!<span class="tooltip-text" title="Communist Party of Italy">PCd'I</span>!}: [+ pcdi_relation : relationships +] ?]
+[? if pcdi_formed : {!<span class="tooltip-text" title="Communist Party of Italy" style="font-weight: bold; color:#C72F35">PCd'I</span>!}: [+ pcdi_relation : relationships +] ?]
 
-[? if psu_formed : {!<span class="tooltip-text" title="Unitary Socialist Party">PSU</span>!}: [+ psu_relation : relationships +] ?]
+[? if psu_formed : {!<span class="tooltip-text" title="Unitary Socialist Party" style="font-weight: bold; color:#E35A5A">PSU</span>!}: [+ psu_relation : relationships +] ?]
 
-[? if not psri_collapse : {!<span class="tooltip-text" title="Italian Reformist Socialist Party">PSRI</span>!}: [+ psri_relation : relationships +] ?]
+[? if not psri_collapse : {!<span class="tooltip-text" title="Italian Reformist Socialist Party" style="font-weight: bold; color:#FFC0CB;">PSRI</span>!}: [+ psri_relation : relationships +] ?]
 
-[? if pll_formed : {!<span class="tooltip-text" title="Liberal Workers' Party">PLL</span>!}: [+ pll_relation : relationships +] ?]
+[? if pll_formed : {!<span class="tooltip-text" title="Liberal Workers' Party" style="font-weight: bold; color:#FFD1D9;">PLL</span>!}: [+ pll_relation : relationships +] ?]
 
-[? if pri_prominent = 1: {!<span class="tooltip-text" title="Italian Republican Party">PRI</span>!}: [+ pri_relation : relationships +] ?]
+[? if pri_prominent = 1: {!<span class="tooltip-text" title="Italian Republican Party" style="font-weight: bold; color:#3CB371">PRI</span>!}: [+ pri_relation : relationships +] ?]
 
-[? if not pdsi_formed : {!<span class="tooltip-text" title="Social Democracy">DS</span>!}: [+ ds_relation : relationships +] ?]
-[? if pdsi_formed : {!<span class="tooltip-text" title="Italian Social Democratic Party">PDSI</span>!}: [+ ds_relation : relationships +] ?]
+[? if not pdsi_formed : {!<span class="tooltip-text" title="Social Democracy" style="font-weight: bold; color:#1E99C5;">DS</span>!}: [+ ds_relation : relationships +] ?]
+[? if pdsi_formed : {!<span class="tooltip-text" title="Italian Social Democratic Party" style="font-weight: bold; color:#1E99C5;">PDSI</span>!}: [+ ds_relation : relationships +] ?]
 
-{!<span class="tooltip-text" title="Italian People's Party">PPI</span>!}: [+ ppi_relation : relationships +]
+{!<span class="tooltip-text" title="Italian People's Party" style="font-weight: bold; color:#87CEFA;">PPI</span>!}: [+ ppi_relation : relationships +]
 
-[? if not pldi_formed : {!<span class="tooltip-text" title="Liberals, Democrats and Radicals">LDR</span>!}: [+ ldr_relation : relationships +] ?]
-[? if pldi_formed : {!<span class="tooltip-text" title="Italian Democratic Liberal Party">PLDI</span>!}: [+ ldr_relation : relationships +] ?]
+[? if not pldi_formed : {!<span class="tooltip-text" title="Liberals, Democrats and Radicals" style="font-weight: bold; color:#FFD700;">LDR</span>!}: [+ ldr_relation : relationships +] ?]
+[? if pldi_formed : {!<span class="tooltip-text" title="Italian Democratic Liberal Party" style="font-weight: bold; color:#FFD700;">PLDI</span>!}: [+ ldr_relation : relationships +] ?]
 
-[? if not pli_formed : {!<span class="tooltip-text" title="Liberal Union">UL</span>!}: [+ ul_relation : relationships +] ?]
-[? if pli_formed : {!<span class="tooltip-text" title="Italian Liberal Party">PLI</span>!}: [+ ul_relation : relationships +] ?]
+[? if not pli_formed : {!<span class="tooltip-text" title="Liberal Union" style="font-weight: bold; color:#0047AB;">UL</span>!}: [+ ul_relation : relationships +] ?]
+[? if pli_formed : {!<span class="tooltip-text" title="Italian Liberal Party" style="font-weight: bold; color:#0047AB;">PLI</span>!}: [+ ul_relation : relationships +] ?]
 
-[? if not pnf_formed : {!<span class="tooltip-text" title="Italian Fasces of Combat">FdC</span>!}: [+ pnf_relation : relationships +] ?]
-[? if pnf_formed : {!<span class="tooltip-text" title="National Fascist Party">PNF</span>!}: [+ pnf_relation : relationships +] ?]
+[? if not pnf_formed : {!<span class="tooltip-text" title="Italian Fasces of Combat" style="font-weight: bold; color:#3D3D3D;">FdC</span>!}: [+ pnf_relation : relationships +] ?]
+[? if pnf_formed : {!<span class="tooltip-text" title="National Fascist Party" style="font-weight: bold; color:#3D3D3D;">PNF</span>!}: [+ pnf_relation : relationships +] ?]
 
 = Internal Factions of the [+ psi_name +]
 
@@ -191,45 +191,45 @@ Streetfighting: [+ violent_prevalence : violence +]
 
 = Legality
 
-[? if not national_congress_seen : Fasci: [? if not fdc_banned : Operating?][? if fdc_banned : Banned?][? if fasci_adp_active or fasci_rg_active :, Under Attack ?] ?]
+[? if not national_congress_seen : <span style="font-weight: bold; color:#3D3D3D;">Fasci</span>: [? if not fdc_banned : Operating?][? if fdc_banned : Banned?][? if fasci_adp_active or fasci_rg_active :, Under Attack ?] ?]
 
-[? if not national_congress_seen : Arditismo: [? if not ard_banned : Operating?][? if ard_banned : Banned?][? if arditi_adp_active or arditi_rg_active :, Under Attack ?] ?]
+[? if not national_congress_seen : <span style="font-weight: bold; color:#3D3D3D;">Arditismo</span>: [? if not ard_banned : Operating?][? if ard_banned : Banned?][? if arditi_adp_active or arditi_rg_active :, Under Attack ?] ?]
 
-[? if not national_congress_seen : Anti-Bolshevik Leagues: [? if not abl_banned : Operating?][? if abl_banned : Banned?][? if abl_adp_active or abl_rg_active :, Under Attack ?] ?]
+[? if not national_congress_seen : <span style="font-weight: bold; color:#3D3D3D;">Anti-Bolshevik Leagues</span>: [? if not abl_banned : Operating?][? if abl_banned : Banned?][? if abl_adp_active or abl_rg_active :, Under Attack ?] ?]
 
-[? if not national_congress_seen : Red Guards: [? if not rg_banned : Operating ?][? if rg_banned : Banned ?] ?]
+[? if not national_congress_seen : <span style="font-weight: bold; color:#c2352b">Red Guards</span>: [? if not rg_banned : Operating ?][? if rg_banned : Banned ?] ?]
 
-[? if arditi_formed : Arditi del Popolo: Operating ?]
+[? if arditi_formed : <span style="font-weight: bold; color:#2F2F2F">Arditi</span> <span style="font-weight: bold; color:#3CB371">del</span> <span style="font-weight: bold; color:#ED2855">Popolo</span>: Operating ?]
 
 = Paramilitary Forces
 
-[? if not national_congress_seen and not pcdi_formed : {!<span class="tooltip-text" title="The Red Guards are a paramilitary socialist group asscoiated with the PSI.">Red Guards</span>!} Strength: [+ rg_strength_2 +] thousand ?]
+[? if not national_congress_seen and not pcdi_formed : {!<span class="tooltip-text" title="The Red Guards are a paramilitary socialist group asscoiated with the PSI." style="font-weight: bold; color:#c2352b">Red Guards</span>!} Strength: [+ rg_strength_2 +] thousand ?]
 
-[? if not national_congress_seen and not pcdi_formed : Red Guard Militarization: [+ rg_militancy : militancy +] ?]
+[? if not national_congress_seen and not pcdi_formed : <span style="color:#c2352b">Red Guard</span> Militarization: [+ rg_militancy : militancy +] ?]
 
-[? if not national_congress_seen and pcdi_formed : {!<span class="tooltip-text" title="The Red Guards are a paramilitary socialist group, its radical wing asscoiated with the PCd'I.">Red Guards - PCd'I</span>!} Strength: [+ sov_rg_strength_2 +] thousand ?]
+[? if not national_congress_seen and pcdi_formed : {!<span class="tooltip-text" title="The Red Guards are a paramilitary socialist group, its radical wing asscoiated with the PCd'I." style="font-weight: bold; color:#c2352b">Red Guards - PCd'I</span>!} Strength: [+ sov_rg_strength_2 +] thousand ?]
 
-[? if not national_congress_seen and pcdi_formed : Red Guard - PCd'I Militarization: [+ sov_rg_militancy : militancy +] ?]
+[? if not national_congress_seen and pcdi_formed : <span style="font-weight: bold; color:#c2352b">Red Guard</span> - PCd'I Militarization: [+ sov_rg_militancy : militancy +] ?]
 
-[? if not national_congress_seen and pcdi_formed : {!<span class="tooltip-text" title="The Red Guards are a paramilitary socialist group, its moderate wing asscoiated with the PSI.">Red Guards - PSI</span>!} Strength: [+ rg_strength_2 +] thousand ?]
+[? if not national_congress_seen and pcdi_formed : {!<span class="tooltip-text" title="The Red Guards are a paramilitary socialist group, its moderate wing asscoiated with the PSI." style="font-weight: bold; color:#c2352b">Red Guards - PSI</span>!} Strength: [+ rg_strength_2 +] thousand ?]
 
-[? if not national_congress_seen and pcdi_formed : Red Guard - PSI Militarization: [+ rg_militancy : militancy +] ?]
+[? if not national_congress_seen and pcdi_formed : <span style="font-weight: bold; color:#c2352b">Red Guard</span> - PSI Militarization: [+ rg_militancy : militancy +] ?]
 
-[? if arditi_formed : {!<span class="tooltip-text" title="The Arditi del Popolo is a anti-fascist group composed of anarchists to communists to republicans.">Arditi del Popolo</span>!} Strength: [+ adp_strength_2 +] thousand ?]
+[? if arditi_formed : {!<span class="tooltip-text" title="The Arditi del Popolo is a anti-fascist group composed of anarchists to communists to republicans."><span style="font-weight: bold; color:#2F2F2F">Arditi</span> <span style="font-weight: bold; color:#3CB371">del</span> <span style="font-weight: bold; color:#ED2855">Popolo</span></span>!} Strength: [+ adp_strength_2 +] thousand ?]
 
-[? if arditi_formed: Arditi del Popolo Militarization: [+ adp_militancy : militancy +] ?]
+[? if arditi_formed: <span style="font-weight: bold; color:#2F2F2F">Arditi</span> <span style="font-weight: bold; color:#3CB371">del</span> <span style="font-weight: bold; color:#ED2855">Popolo</span> Militarization: [+ adp_militancy : militancy +] ?]
 
-[? if not national_congress_seen : {!<span class="tooltip-text" title="The Fasci is a right-wing organisation of war veterans associated with the PNF.">Fasci</span>!} Strength: [+ fdc_strength_2 +] thousand ?]
+[? if not national_congress_seen : {!<span class="tooltip-text" title="The Fasci is a right-wing organisation of war veterans associated with the PNF." style="font-weight: bold; color:#3D3D3D;">Fasci</span>!} Strength: [+ fdc_strength_2 +] thousand ?]
 
-[? if not national_congress_seen : Fasci Militarization: [+ fdc_militancy : militancy +] ?]
+[? if not national_congress_seen : <span style="font-weight: bold; color:#3D3D3D;">Fasci</span> Militarization: [+ fdc_militancy : militancy +] ?]
 
-[? if not national_congress_seen : {!<span class="tooltip-text" title="The Arditismo are an organisation associated with the Fasci, comprised of former members of the 'Arditi' in the Italian Army.">Arditismo</span>!} Strength: [+ ard_strength_2 +] thousand ?]
+[? if not national_congress_seen : {!<span class="tooltip-text" title="The Arditismo are an organisation associated with the Fasci, comprised of former members of the 'Arditi' in the Italian Army." style="font-weight: bold; color:#3D3D3D;">Arditismo</span>!} Strength: [+ ard_strength_2 +] thousand ?]
 
-[? if not national_congress_seen : Arditismo Militarization: [+ ard_militancy : militancy +] ?]
+[? if not national_congress_seen : <span style="font-weight: bold; color:#3D3D3D;">Arditismo</span> Militarization: [+ ard_militancy : militancy +] ?]
 
-[? if not national_congress_seen : {!<span class="tooltip-text" title="The Anti-Bolshevik Leagues are local organisations across Italy formed to combat socialist ideologies, funded by landowners and industrialists. ">Anti-Bolshevik Leagues</span>!} Strength: [+ abl_strength_2 +] thousand ?]
+[? if not national_congress_seen : {!<span class="tooltip-text" title="The Anti-Bolshevik Leagues are local organisations across Italy formed to combat socialist ideologies, funded by landowners and industrialists." style="font-weight: bold; color:#3D3D3D;">Anti-Bolshevik Leagues</span>!} Strength: [+ abl_strength_2 +] thousand ?]
 
-[? if not national_congress_seen : Anti-Bolshevik Leagues Militarization: [+ abl_militancy : militancy +] ?]
+[? if not national_congress_seen : <span style="font-weight: bold; color:#3D3D3D;">Anti-Bolshevik Leagues</span> Militarization: [+ abl_militancy : militancy +] ?]
 
 [? if communist_terror : {!<span class="tooltip-text" title="The new Red Guards are a radical paramilitary group asscoiated with the PCd'I.">New Red Guards</span>!} ?]
 
@@ -245,13 +245,13 @@ Streetfighting: [+ violent_prevalence : violence +]
 
 = Government Forces
 
-[? if not national_congress_seen : Regio Esercito: ?][? if national_congress_seen : Esercito Italiano: ?] [+ army_strength +] thousand troops.
+[? if not national_congress_seen : <span style="color:#008C45">Regi</span><span style="color:#CFCFCF">o Eser</span><span style="color:#CD212A">cito</span>: ?][? if national_congress_seen : Esercito Italiano: ?] [+ army_strength +] thousand troops.
 
-[? if not national_congress_seen : Regio Esercito Loyalty: ?][? if national_congress_seen : Esercito Italiano Loyalty: ?] [+ army_loyalty : loyalty +]
+[? if not national_congress_seen : <span style="color:#008C45">Regi</span><span style="color:#CFCFCF">o Eser</span><span style="color:#CD212A">cito</span> Loyalty: ?][? if national_congress_seen : Esercito Italiano Loyalty: ?] [+ army_loyalty : loyalty +]
 
-[? if psi_in_government : Carabinieri: [+ interior_police_strength +] thousand officers ?]
+[? if psi_in_government : <span style="color:#FF2400">Carabinieri</span>: [+ interior_police_strength +] thousand officers ?]
 
-[? if psi_in_government : Carabinieri Loyalty: [+ interior_police_loyalty: loyalty +] ?]
+[? if psi_in_government : <span style="color:#FF2400">Carabinieri</span> Loyalty: [+ interior_police_loyalty: loyalty +] ?]
 
 @polls
 on-arrival: {!
@@ -264,73 +264,73 @@ Q.nationalist_sentiment_disp = Math.round(Q.nationalist_sentiment);
 
 (if the election were to be held now):
 
-[+ psi_name +]: [+ psi_votes +]%
+<span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>: [+ psi_votes +]%
 
-[? if pcdi_formed : PCd'I: [+ pcdi_votes +]% ?]
+[? if pcdi_formed : <span style="font-weight: bold; color:#C72F35">PCd'I</span>: [+ pcdi_votes +]% ?]
 
-[? if psu_formed : PSU: [+ psu_votes +]% ?]
+[? if psu_formed : <span style="font-weight: bold; color:#E35A5A">PSU</span>: [+ psu_votes +]% ?]
 
-[? if not psri_collapse : PSRI : [+ psri_votes +]% ?]
+[? if not psri_collapse : <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> : [+ psri_votes +]% ?]
 
-[? if pll_formed : PLL: [+ pll_votes +]% ?]
+[? if pll_formed : <span style="font-weight: bold; color:#FFD1D9;">PLL</span>: [+ pll_votes +]% ?]
 
-[? if pri_prominent = 1: PRI: [+ pri_votes +]% ?]
+[? if pri_prominent = 1: <span style="font-weight: bold; color:#3CB371">PRI</span>: [+ pri_votes +]% ?]
 
-[+ ds_name +]: [+ ds_votes +]%
+<span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span>: [+ ds_votes +]%
 
-PPI: [+ ppi_votes +]%
+<span style="font-weight: bold; color:#87CEFA;">PPI</span>: [+ ppi_votes +]%
 
-[+ ldr_name +]: [+ ldr_votes +]% 
+<span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span>: [+ ldr_votes +]%
 
-[+ ul_name +]: [+ ul_votes +]%
+<span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span>: [+ ul_votes +]%
 
-[? if pcs_formed : PCS: [+ pcs_votes +]% ?]
+[? if pcs_formed : <span style="font-weight: bold; color:#656573;">PCS</span>: [+ pcs_votes +]% ?]
 
-[+ pnf_name +]: [+ pnf_votes +]%
+[? if not pnf_banned : <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_name +]</span>: [+ pnf_votes +]% ?]
 
 Others: [+ other_votes +]%
 
 = Public Opinion
 
-Support for Democracy: [+ republican_sentiment_disp +]%
+Support for <span style="color:#3CB371">Republicanism</span>: [+ republican_sentiment_disp +]%
 
-Support for Socialism: [+ socialist_sentiment_disp +]%
+Support for <span style="color:#ED2855">Socialism</span>: [+ socialist_sentiment_disp +]%
 
-Support for Nationalism: [+ nationalist_sentiment_disp +]%
+Support for <span style="color:#522A00">Nationalism</span>: [+ nationalist_sentiment_disp +]%
 
 **Detailed results for each demographic**
 
-Urban Workers: [+ psi_name +]: [+ workers_psi_display +]%, [? if pcdi_formed : PCd'I: [+ workers_pcdi_display +]%, ?] [? if psu_formed : PSU: [+ workers_psu_display +]%, ?] PSRI: [+ workers_psri_display +]%, [? if pll_formed : PLL: [+ workers_pll_display +]%, ?] [? if pri_prominent = 1 : PRI: [+ workers_pri_display +]%, ?] [+ ds_name +]: [+ workers_ds_display +]%, PPI: [+ workers_ppi_display +]%, [+ ldr_name +]: [+ workers_ldr_display +]%, [+ ul_name +]: [+ workers_ul_display +]%, [? if pcs_formed = 1 : PCS: [+ workers_pcs_display +]%, ?] [+ pnf_name +]: [+ workers_pnf_display +]%, Others: [+ workers_other_display +]%
+Urban Workers: <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>: [+ workers_psi_display +]%, [? if pcdi_formed : <span style="font-weight: bold; color:#C72F35">PCd'I</span>: [+ workers_pcdi_display +]%, ?] [? if psu_formed : <span style="font-weight: bold; color:#E35A5A">PSU</span>: [+ workers_psu_display +]%, ?] <span style="font-weight: bold; color:#FFC0CB;">PSRI</span>: [+ workers_psri_display +]%, [? if pll_formed : <span style="font-weight: bold; color:#FFD1D9;">PLL</span>: [+ workers_pll_display +]%, ?] [? if pri_prominent = 1 : <span style="font-weight: bold; color:#3CB371">PRI</span>: [+ workers_pri_display +]%, ?] <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span>: [+ workers_ds_display +]%, <span style="font-weight: bold; color:#87CEFA;">PPI</span>: [+ workers_ppi_display +]%, <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span>: [+ workers_ldr_display +]%, <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span>: [+ workers_ul_display +]%, [? if pcs_formed = 1 : <span style="font-weight: bold; color:#656573;">PCS</span>: [+ workers_pcs_display +]%, ?] [? if not pnf_banned : <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_name +]</span>: [+ workers_pnf_display +]%, ?] Others: [+ workers_other_display +]%
 
-Middle Class: [+ psi_name +]: [+ middle_class_psi_display +]%, [? if pcdi_formed : PCd'I: [+ middle_class_pcdi_display +]%, ?] [? if psu_formed : PSU: [+ middle_class_psu_display +]%, ?] PSRI: [+ middle_class_psri_display +]%, [? if pll_formed : PLL: [+ middle_class_pll_display +]%, ?] [? if pri_prominent = 1 : PRI: [+ middle_class_pri_display +]%, ?] [+ ds_name +]: [+ middle_class_ds_display +]%, PPI: [+ middle_class_ppi_display +]%, [+ ldr_name +]: [+ middle_class_ldr_display +]%, [+ ul_name +]: [+ middle_class_ul_display +]%, [? if pcs_formed = 1 : PCS: [+ middle_class_pcs_display +]%, ?] [+ pnf_name +]: [+ middle_class_pnf_display +]%, Others: [+ middle_class_other_display +]%
+Middle Class: <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>: [+ middle_class_psi_display +]%, [? if pcdi_formed : <span style="font-weight: bold; color:#C72F35">PCd'I</span>: [+ middle_class_pcdi_display +]%, ?] [? if psu_formed : <span style="font-weight: bold; color:#E35A5A">PSU</span>: [+ middle_class_psu_display +]%, ?] <span style="font-weight: bold; color:#FFC0CB;">PSRI</span>: [+ middle_class_psri_display +]%, [? if pll_formed : <span style="font-weight: bold; color:#FFD1D9;">PLL</span>: [+ middle_class_pll_display +]%, ?] [? if pri_prominent = 1 : <span style="font-weight: bold; color:#3CB371">PRI</span>: [+ middle_class_pri_display +]%, ?] <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span>: [+ middle_class_ds_display +]%, <span style="font-weight: bold; color:#87CEFA;">PPI</span>: [+ middle_class_ppi_display +]%, <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span>: [+ middle_class_ldr_display +]%, <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span>: [+ middle_class_ul_display +]%, [? if pcs_formed = 1 : <span style="font-weight: bold; color:#656573;">PCS</span>: [+ middle_class_pcs_display +]%, ?] [? if not pnf_banned : <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_name +]</span>: [+ middle_class_pnf_display +]%, ?] Others: [+ middle_class_other_display +]%
 
-Rural Workers & Farmers: [+ psi_name +]: [+ rural_psi_display +]%, [? if pcdi_formed : PCd'I: [+ rural_pcdi_display +]%, ?] [? if psu_formed : PSU: [+ rural_psu_display +]%, ?] PSRI: [+ rural_psri_display +]%, [? if pll_formed : PLL: [+ rural_pll_display +]%, ?] [? if pri_prominent = 1 : PRI: [+ rural_pri_display +]%, ?] [+ ds_name +]: [+ rural_ds_display +]%, PPI: [+ rural_ppi_display +]%, [+ ldr_name +]: [+ rural_ldr_display +]%, [+ ul_name +]: [+ rural_ul_display +]%, [? if pcs_formed = 1 : PCS: [+ rural_pcs_display +]%, ?] [+ pnf_name +]: [+ rural_pnf_display +]%, Others: [+ rural_other_display +]%
+Rural Workers & Farmers: <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>: [+ rural_psi_display +]%, [? if pcdi_formed : <span style="font-weight: bold; color:#C72F35">PCd'I</span>: [+ rural_pcdi_display +]%, ?] [? if psu_formed : <span style="font-weight: bold; color:#E35A5A">PSU</span>: [+ rural_psu_display +]%, ?] <span style="font-weight: bold; color:#FFC0CB;">PSRI</span>: [+ rural_psri_display +]%, [? if pll_formed : <span style="font-weight: bold; color:#FFD1D9;">PLL</span>: [+ rural_pll_display +]%, ?] [? if pri_prominent = 1 : <span style="font-weight: bold; color:#3CB371">PRI</span>: [+ rural_pri_display +]%, ?] <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span>: [+ rural_ds_display +]%, <span style="font-weight: bold; color:#87CEFA;">PPI</span>: [+ rural_ppi_display +]%, <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span>: [+ rural_ldr_display +]%, <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span>: [+ rural_ul_display +]%, [? if pcs_formed = 1 : <span style="font-weight: bold; color:#656573;">PCS</span>: [+ rural_pcs_display +]%, ?] [? if not pnf_banned : <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_name +]</span>: [+ rural_pnf_display +]%, ?] Others: [+ rural_other_display +]%
 
-Industrialists & Landowners: [+ psi_name +]: [+ industrialists_psi_display +]%, [? if pcdi_formed : PCd'I: [+ industrialists_pcdi_display +]%, ?] [? if psu_formed : PSU: [+ industrialists_psu_display +]%, ?] PSRI: [+ industrialists_psri_display +]%, [? if pll_formed : PLL: [+ industrialists_pll_display +]%, ?] [? if pri_prominent = 1 : PRI: [+ industrialists_pri_display +]%, ?] [+ ds_name +]: [+ industrialists_ds_display +]%, PPI: [+ industrialists_ppi_display +]%, [+ ldr_name +]: [+ industrialists_ldr_display +]%, [+ ul_name +]: [+ industrialists_ul_display +]%, [? if pcs_formed = 1 : PCS: [+ industrialists_pcs_display +]%, ?] [+ pnf_name +]: [+ industrialists_pnf_display +]%, Others: [+ industrialists_other_display +]%
+Industrialists & Landowners: <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>: [+ industrialists_psi_display +]%, [? if pcdi_formed : <span style="font-weight: bold; color:#C72F35">PCd'I</span>: [+ industrialists_pcdi_display +]%, ?] [? if psu_formed : <span style="font-weight: bold; color:#E35A5A">PSU</span>: [+ industrialists_psu_display +]%, ?] <span style="font-weight: bold; color:#FFC0CB;">PSRI</span>: [+ industrialists_psri_display +]%, [? if pll_formed : <span style="font-weight: bold; color:#FFD1D9;">PLL</span>: [+ industrialists_pll_display +]%, ?] [? if pri_prominent = 1 : <span style="font-weight: bold; color:#3CB371">PRI</span>: [+ industrialists_pri_display +]%, ?] <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span>: [+ industrialists_ds_display +]%, <span style="font-weight: bold; color:#87CEFA;">PPI</span>: [+ industrialists_ppi_display +]%, <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span>: [+ industrialists_ldr_display +]%, <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span>: [+ industrialists_ul_display +]%, [? if pcs_formed = 1 : <span style="font-weight: bold; color:#656573;">PCS</span>: [+ industrialists_pcs_display +]%, ?] [? if not pnf_banned : <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_name +]</span>: [+ industrialists_pnf_display +]%, ?] Others: [+ industrialists_other_display +]%
 
-Veterans & Unemployed: [+ psi_name +]: [+ veterans_psi_display +]%, [? if pcdi_formed : PCd'I: [+ veterans_pcdi_display +]%, ?] [? if psu_formed : PSU: [+ veterans_psu_display +]%, ?] PSRI: [+ veterans_psri_display +]%, [? if pll_formed : PLL: [+ veterans_pll_display +]%, ?] [? if pri_prominent = 1 : PRI: [+ veterans_pri_display +]%, ?] [+ ds_name +]: [+ veterans_ds_display +]%, PPI: [+ veterans_ppi_display +]%, [+ ldr_name +]: [+ veterans_ldr_display +]%, [+ ul_name +]: [+ veterans_ul_display +]%, [? if pcs_formed = 1 : PCS: [+ veterans_pcs_display +]%, ?] [+ pnf_name +]: [+ veterans_pnf_display +]%, Others: [+ veterans_other_display +]%
+Veterans & Unemployed: <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>: [+ veterans_psi_display +]%, [? if pcdi_formed : <span style="font-weight: bold; color:#C72F35">PCd'I</span>: [+ veterans_pcdi_display +]%, ?] [? if psu_formed : <span style="font-weight: bold; color:#E35A5A">PSU</span>: [+ veterans_psu_display +]%, ?] <span style="font-weight: bold; color:#FFC0CB;">PSRI</span>: [+ veterans_psri_display +]%, [? if pll_formed : <span style="font-weight: bold; color:#FFD1D9;">PLL</span>: [+ veterans_pll_display +]%, ?] [? if pri_prominent = 1 : <span style="font-weight: bold; color:#3CB371">PRI</span>: [+ veterans_pri_display +]%, ?] <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span>: [+ veterans_ds_display +]%, <span style="font-weight: bold; color:#87CEFA;">PPI</span>: [+ veterans_ppi_display +]%, <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span>: [+ veterans_ldr_display +]%, <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span>: [+ veterans_ul_display +]%, [? if pcs_formed = 1 : <span style="font-weight: bold; color:#656573;">PCS</span>: [+ veterans_pcs_display +]%, ?] [? if not pnf_banned : <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_name +]</span>: [+ veterans_pnf_display +]%, ?] Others: [+ veterans_other_display +]%
 
-Catholics: [+ psi_name +]: [+ catholic_psi_display +]%, [? if pcdi_formed : PCd'I: [+ catholic_pcdi_display +]%, ?] [? if psu_formed : PSU: [+ catholic_psu_display +]%, ?] PSRI: [+ catholic_psri_display +]%, [? if pll_formed : PLL: [+ catholic_pll_display +]%, ?] [? if pri_prominent = 1 : PRI: [+ catholic_pri_display +]%, ?] [+ ds_name +]: [+ catholic_ds_display +]%, PPI: [+ catholic_ppi_display +]%, [+ ldr_name +]: [+ catholic_ldr_display +]%, [+ ul_name +]: [+ catholic_ul_display +]%, [? if pcs_formed = 1 : PCS: [+ catholic_pcs_display +]%, ?] [+ pnf_name +]: [+ catholic_pnf_display +]%, Others: [+ catholic_other_display +]%
+Catholics: <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>: [+ catholic_psi_display +]%, [? if pcdi_formed : <span style="font-weight: bold; color:#C72F35">PCd'I</span>: [+ catholic_pcdi_display +]%, ?] [? if psu_formed : <span style="font-weight: bold; color:#E35A5A">PSU</span>: [+ catholic_psu_display +]%, ?] <span style="font-weight: bold; color:#FFC0CB;">PSRI</span>: [+ catholic_psri_display +]%, [? if pll_formed : <span style="font-weight: bold; color:#FFD1D9;">PLL</span>: [+ catholic_pll_display +]%, ?] [? if pri_prominent = 1 : <span style="font-weight: bold; color:#3CB371">PRI</span>: [+ catholic_pri_display +]%, ?] <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span>: [+ catholic_ds_display +]%, <span style="font-weight: bold; color:#87CEFA;">PPI</span>: [+ catholic_ppi_display +]%, <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span>: [+ catholic_ldr_display +]%, <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span>: [+ catholic_ul_display +]%, [? if pcs_formed = 1 : <span style="font-weight: bold; color:#656573;">PCS</span>: [+ catholic_pcs_display +]%, ?] [? if not pnf_banned : <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_name +]</span>: [+ catholic_pnf_display +]%, ?] Others: [+ catholic_other_display +]%
 
-[? if womens_suffrage = 1 : Women: [+ psi_name +]: [+ women_psi_display +]%, [? if pcdi_formed : PCd'I: [+ women_pcdi_display +]%, ?] [? if psu_formed : PSU: [+ women_psu_display +]%, ?] PSRI: [+ women_psri_display +]%, [? if pll_formed : PLL: [+ women_pll_display +]%, ?] [? if pri_prominent = 1 : PRI: [+ women_pri_display +]%, ?] [+ ds_name +]: [+ women_ds_display +]%, PPI: [+ women_ppi_display +]%, [+ ldr_name +]: [+ women_ldr_display +]%, [+ ul_name +]: [+ women_ul_display +]%, [? if pcs_formed = 1 : PCS: [+ women_pcs_display +]%, ?] [+ pnf_name +]: [+ women_pnf_display +]%, Others: [+ women_other_display +]% ?]
+[? if womens_suffrage = 1 : Women: <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>: [+ women_psi_display +]%, [? if pcdi_formed : <span style="font-weight: bold; color:#C72F35">PCd'I</span>: [+ women_pcdi_display +]%, ?] [? if psu_formed : <span style="font-weight: bold; color:#E35A5A">PSU</span>: [+ women_psu_display +]%, ?] <span style="font-weight: bold; color:#FFC0CB;">PSRI</span>: [+ women_psri_display +]%, [? if pll_formed : <span style="font-weight: bold; color:#FFD1D9;">PLL</span>: [+ women_pll_display +]%, ?] [? if pri_prominent = 1 : <span style="font-weight: bold; color:#3CB371">PRI</span>: [+ women_pri_display +]%, ?] <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span>: [+ women_ds_display +]%, <span style="font-weight: bold; color:#87CEFA;">PPI</span>: [+ women_ppi_display +]%, <span style="font-weight: bold; color:#FFD700;">[+ ldr_name +]</span>: [+ women_ldr_display +]%, <span style="font-weight: bold; color:#0047AB;">[+ ul_name +]</span>: [+ women_ul_display +]%, [? if pcs_formed = 1 : <span style="font-weight: bold; color:#656573;">PCS</span>: [+ women_pcs_display +]%, ?] [? if not pnf_banned : <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_name +]</span>: [+ women_pnf_display +]%, ?] Others: [+ women_other_display +]% ?]
 
 @foreign
 
 = Foreign Relations
 
-Holy See: [+ papal_relation : radicalisation +]
+<span style="font-weight: bold; color:#A88D37;">Holy See</span>: [+ papal_relation : radicalisation +]
 
-Entente: [+ entente_relation : radicalisation +]
+<span style="font-weight: bold; color:#C8102E">Ent</span><span style="font-weight: bold; color:#000091">ente</span>: [+ entente_relation : radicalisation +]
 
-United States: [+ american_relation : radicalisation +]
+<span style="font-weight: bold; color:#002868">United</span> <span style="font-weight: bold; color:#B31942">States</span>: [+ american_relation : radicalisation +]
 
-Russian SFSR: [+ soviet_relation : radicalisation +]
+<span style="font-weight: bold; color:#CC0000">Russian SFSR</span>: [+ soviet_relation : radicalisation +]
 
-Yugoslavia: [+ balkan_relation : radicalisation +]
+<span style="font-weight: bold; color:#6A0080">Yugoslavia</span>: [+ balkan_relation : radicalisation +]
 
 = International Situations
 
-Russian Civil War: [? if not rcw_over : Ongoing, Estimated [+ soviet_end_timer +] Months Remaining ?][? if rcw_over : Soviet Victory ?]
+Russian Civil War: [? if not rcw_over : Ongoing, Estimated [+ soviet_end_timer +] Months Remaining ?][? if rcw_over : <span style="font-weight: bold; color:#CC0000">Soviet</span> Victory ?]
 
 Fiume: [? if not resolved_adriatic : Negotiating ?][? if fiume_free : Free City ?][? if fiume_italian : Italian ?]
 

@@ -29,7 +29,7 @@ subtitle: Thankfully, we can persuade our coalition to heed our concerns.
 view-if: in_unstable_coalition
 on-arrival: maximalist_dissent -= 5; reformist_dissent -= 5; communist_dissent -= 5; labour_dissent -= 5; syndicalist_dissent -= 5 if syndicalist_active; coalition_dissent += 1; veterans_psi -= 4; veterans_pnf += 4; army_loyalty -= 0.05;
 
-Our coalition members are able to see reason, at least temporarily, and decide to delay the war until the internal situation improves. Our veteran supporters, however, aren't happy, and the PNF seizes the opportunity to increase their support.
+Our coalition members are able to see reason, at least temporarily, and decide to delay the war until the internal situation improves. Our veteran supporters, however, aren't happy, and the <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_name +]</span> seizes the opportunity to increase their support.
 
 @libya_military_influence
 subtitle: -1 Resource - Thankfully, we can use to influence as well as our coffers to 'delay' the war.
@@ -44,4 +44,3 @@ subtitle: What else could we do?
 on-arrival: maximalist_dissent += 4; reformist_dissent += 4; communist_dissent += 4; labour_dissent += 4; syndicalist_dissent += 4 if syndicalist_active
 
 Realistically, there is nothing we can do. The factions are unsurprisingly outraged by our inaction, but it passes quickly, as usual.
-

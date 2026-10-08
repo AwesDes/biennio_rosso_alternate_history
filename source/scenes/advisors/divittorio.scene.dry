@@ -7,7 +7,7 @@ new-page: true
 
 = Giuseppe Di Vittorio
 
-Di Vittorio is a leader of the syndicalist *Italian Syndicalist Union*. He is a member of the party's newly prominent syndicalist faction.
+Di Vittorio is a leader of the <span style=" color:#2F2F2F">anarcho</span>-<span style=" color:#ED2855">syndicalist</span> <span style=" color:#2F2F2F">Italian Syndicalist Union</span>, aligning with the newly prominent <span style=" color:#2F2F2F">syndicalist</span> faction within the party.
 
 - @southern_question_divittorio
 - @party_organisations_divittorio
@@ -18,7 +18,7 @@ Di Vittorio is a leader of the syndicalist *Italian Syndicalist Union*. He is a 
 title: Southern Question
 subtitle: Now that we are in government, we will be able to deal with the Mezzogiorno, plagued by economic stagnation.
 choose-if: advisor_action_timer = 0 and psi_in_government
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not psi_in_government : The [+ psi_name +] is not in government. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not psi_in_government : The <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> is not in government. ?]
 on-arrival: advisor_action_timer = 6; southern_question_timer -= 5; last_advisor_action = 1
 go-to: southern_question
 

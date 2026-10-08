@@ -8,7 +8,7 @@ go-to: acerbo_menu
 
 = Introduction of the Acerbo Law
 
-The Acerbo Law, an amendment to electoral law, has reached the floor of the Chamber of Deputies, introduced by Giacomo Acerbo, one of the PNF's Deputies. The change in law would result in which gained at least 25 per cent of the votes – gained two-thirds of the seats in parliament. The remaining third was to be shared amongst the other parties proportionally.
+The Acerbo Law, an amendment to electoral law, has reached the floor of the Chamber of Deputies, introduced by Giacomo Acerbo, one of the <span style="font-weight: bold; color:#3D3D3D;">PNF</span>'s Deputies. The change in law would result in which gained at least 25 per cent of the votes – gained two-thirds of the seats in parliament. The remaining third was to be shared amongst the other parties proportionally.
 
 This is an obvious power grab by [+ pnf_leader +], who seeks to consolidate power, and we must oppose this bill, considering the rampant violence and voter intimidation we have seen throughout the country. We can contact the other parties, and hopefully get them to recognise this bill for what it is and vote it down.
 
@@ -17,14 +17,14 @@ What should we do?
 @acerbo_menu
 
 - @psi_convince: Check in on our own deputies.
-- @psu_convince: Contact the Unitary Socialist Party.
-- @pll_convince: Contact the Liberal Workers' Party.
-- @psri_convince: Contact the Reformist Socialist Party.
-- @pri_convince: Contact the Republican Party.
-- @ds_convince: Contact the Social Democratic Party.
-- @ppi_convince: Contact the People's Party.
-- @ldr_convince: Contact the Democratic Liberal Party.
-- @ul_convince: Contact the Liberal Party.
+- @psu_convince: Contact the <span style="font-weight: bold; color:#E35A5A">Unitary Socialist Party</span>.
+- @pll_convince: Contact the <span style="font-weight: bold; color:#FFD1D9;">Liberal Workers' Party</span>.
+- @psri_convince: Contact the <span style="font-weight: bold; color:#FFC0CB;">Reformist Socialist Party</span>.
+- @pri_convince: Contact the <span style="font-weight: bold; color:#3CB371">Republican Party</span>.
+- @ds_convince: Contact the <span style="font-weight: bold; color:#1E99C5;">Social Democratic Party</span>.
+- @ppi_convince: Contact the <span style="font-weight: bold; color:#87CEFA;">People's Party</span>.
+- @ldr_convince: Contact the <span style="font-weight: bold; color:#FFD700;">Democratic Liberal Party</span>.
+- @ul_convince: Contact the <span style="font-weight: bold; color:#0047AB;">Liberal Party</span>.
 - @other_convince: Contact the minor parties on the left.
 - @acerbo_results: We have done all we can.
 
@@ -52,7 +52,7 @@ Q.anti_acerbo_coalition += parseFloat(Q.psu_seating_disp);
 go-to: acerbo_menu
 max-visits: 1
 
-Though we have had our ideological differences, the PSU has assured that its deputies will be voting against this law.
+Though we have had our ideological differences, the <span style="font-weight: bold; color:#E35A5A">PSU</span> has assured that its deputies will be voting against this law.
 
 @psri_convince
 view-if: not psri_collapse
@@ -62,7 +62,7 @@ Q.anti_acerbo_coalition += parseFloat(Q.psri_seating_disp);
 go-to: acerbo_menu
 max-visits: 1
 
-The PSRI has reassured us that its deputies will be voting against the Acerbo Law.
+The <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> has reassured us that its deputies will be voting against the Acerbo Law.
 
 @pri_convince
 view-if: pri_prominent
@@ -72,7 +72,7 @@ Q.anti_acerbo_coalition += parseFloat(Q.pri_seating_disp);
 go-to: acerbo_menu
 max-visits: 1
 
-The Republicans have assured us that their deputies are against the fascists and will vote against the law.
+The <span style="color:#3CB371">Republicans</span> have assured us that their deputies are against the fascists and will vote against the law.
 
 @pll_convince
 view-if: pll_formed
@@ -82,16 +82,16 @@ Q.anti_acerbo_coalition += parseFloat(Q.pll_seating_disp);
 go-to: acerbo_menu
 max-visits: 1
 
-The PLL has reassured us that its deputies will be voting against the Acerbo Law.
+The <span style="font-weight: bold; color:#FFD1D9;">PLL</span> has reassured us that its deputies will be voting against the Acerbo Law.
 
-@ppi_convince 
+@ppi_convince
 subtitle: [? if not ppi_leader = "Sturzo": The PPI is disorganised following Sturzo's recent dismissal. ?]
 on-arrival: anti_acerbo_coalition += ppi_seating_disp if ppi_leader = "Sturzo"
 go-to: acerbo_menu
 max-visits: 1
 
 [? if ppi_leader = "Sturzo" : Our contacts with Sturzo are mildly successful, and he informs us his party will, at the very least, abstain from the vote. ?]
-[? if not ppi_leader = "Sturzo": Unfortunately, the PPI is disorganised without Sturzo's leadership, and is seems there will be many dissident members voting in favour of the law. We cannot rely on them dissenting. ?]
+[? if not ppi_leader = "Sturzo": Unfortunately, the <span style="font-weight: bold; color:#87CEFA;">PPI</span> is disorganised without Sturzo's leadership, and is seems there will be many dissident members voting in favour of the law. We cannot rely on them dissenting. ?]
 
 @ldr_convince
 on-arrival: {!
@@ -107,9 +107,9 @@ if (Q.ldr_leader == "Orlando" && Q.ldr_relation > 75) {
 go-to: acerbo_menu
 max-visits: 1
 
-[? if not ldr_convinced = 1: Unfortunately, and perhaps unsurprisingly, the [+ ldr_full_name +] and [+ ldr_leader +] refuse to support us, seeing the Acerbo Law as a stability measure than the power grab that it is.  ?]
+[? if not ldr_convinced = 1: Unfortunately, and perhaps unsurprisingly, the <span style="font-weight: bold; color:#FFD700;">[+ ldr_full_name +]</span> and [+ ldr_leader +] refuse to support us, seeing the Acerbo Law as a stability measure than the power grab that it is.  ?]
 
-[? if ldr_convinced = 1: Thankfully, and moreso surprisingly, the [+ ldr_full_name +] and [+ ldr_leader +] have agreed to support us, refusing to vote in favour of the Acerbo Law due to our good relations, combined with an at the very least ambivalent leadership. ?]
+[? if ldr_convinced = 1: Thankfully, and moreso surprisingly, the <span style="font-weight: bold; color:#FFD700;">[+ ldr_full_name +]</span> and [+ ldr_leader +] have agreed to support us, refusing to vote in favour of the Acerbo Law due to our good relations, combined with an at the very least ambivalent leadership. ?]
 
 @ul_convince
 subtitle: [? if ul_leader = "Salandra" : We shouldn't be optimistic about their response. ?]
@@ -122,9 +122,9 @@ if (Q.ul_relation >= 75 && Q.ul_leader === "Giolitti") {
 go-to: acerbo_menu
 max-visits: 1
 
-[? if not ul_convinced = 1: Unfortunately, and maybe unsurprisingly, the [+ ul_full_name +] and Giolitti refuse to support us. ?]
+[? if not ul_convinced = 1: Unfortunately, and maybe unsurprisingly, the <span style="font-weight: bold; color:#0047AB;">[+ ul_full_name +]</span> and Giolitti refuse to support us. ?]
 
-[? if ul_convinced = 1: Thankfully, and perhaps more surprisingly, the [+ ul_full_name +] and Giolitti have agreed to support us, refusing to vote in favour of the Acerbo Law. There are, of course, dissident members who will vote in favour regardless. ?]
+[? if ul_convinced = 1: Thankfully, and perhaps more surprisingly, the <span style="font-weight: bold; color:#0047AB;">[+ ul_full_name +]</span> and Giolitti have agreed to support us, refusing to vote in favour of the Acerbo Law. There are, of course, dissident members who will vote in favour regardless. ?]
 
 @ds_convince
 subtitle: [? if ds_leader = "Carnazza" or ds_leader = "Colonna" : We shouldn't be optimistic about their response. ?]
@@ -137,7 +137,7 @@ if (Q.ds_leader == "Giuffrida") {
 go-to: acerbo_menu
 max-visits: 1
 
-[? if not ds_convinced = 1: Unfortunately, and maybe unsurprisingly, the [+ ds_name +] and [+ ds_leader +] refuse to support us. ?]
+[? if not ds_convinced = 1: Unfortunately, and maybe unsurprisingly, the <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span> and [+ ds_leader +] refuse to support us. ?]
 
 [? if ldr_convinced = 1: Thankfully, the Giuffrida's left-wing leadership have agreed to support us, rallying the party against the Acerbo Law. ?]
 
@@ -154,7 +154,7 @@ if (Q.psri_collapse == 1) {
 go-to: acerbo_menu
 max-visits: 1
 
-We contact the left-leaning minor parties, specifically the [? if pri_prominent : Italian Republican Party ?] [? if pri_prominent and psri_collapse : and the ?] [? if psri_collapse : Italian Reformist Socialist Party ?] who agree to vote against the law.
+We contact the left-leaning minor parties, specifically the [? if pri_prominent : <span style="font-weight: bold; color:#3CB371">Italian Republican Party</span> ?] [? if pri_prominent and psri_collapse : and the ?] [? if psri_collapse : <span style="font-weight: bold; color:#FFC0CB;">Italian Reformist Socialist Party</span> ?] who agree to vote against the law.
 
 @acerbo_results
 subtitle: [? if anti_acerbo_coalition < 50 : It seems the law is destined to pass. ?][? if anti_acerbo_coalition >= 50: It seems we have been able to secure enough votes to kill the bill. ?]

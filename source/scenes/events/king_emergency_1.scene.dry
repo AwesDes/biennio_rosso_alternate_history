@@ -8,11 +8,11 @@ new-page: true
 
 = Vittorio Emanuele III invokes Constitutional Power
 
-Following the fall of fascism, seemingly the only real power able to impede us, we have seen King Vittorio Emanuele taking an active role in attempting to rid Italy of socialism. The once passive King has been seen doing speeches, touring the nation with notably anti-socialist undertones, as well as utilising his political influence to wedge a rift between any goodwill we have left with the other parties.
+Following the fall of <span style="color:#3D3D3D;">fascism</span>, seemingly the only real power able to impede us, we have seen King Vittorio Emanuele taking an active role in attempting to rid <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span> of <span style="color:#ED2855">socialism</span>. The once passive King has been seen doing speeches, touring the nation with notably anti-socialist undertones, as well as utilising his political influence to wedge a rift between any goodwill we have left with the other parties.
 
-To the reformists within the party, this spells ruin; an actively aggressive Monarch, combined with conservative backing will bring progress to a screeching halt, while reaffirming the Left-wing of the party. A violent revolution seems to be the only way forward, at this point.
+To the <span style="color:#FF6961">reformists</span> within the party, this spells ruin; an actively aggressive Monarch, combined with <span style="color:#0047AB;">conservative</span> backing will bring progress to a screeching halt, while reaffirming the Left-wing of the party. A violent revolution seems to be the only way forward, at this point.
 
-- @king_limited: [? if socialist_catholic_coalition : The Catholics ?][? if centre_left_coalition : The Liberals ?] collapse the coalition!
+- @king_limited: [? if socialist_catholic_coalition : The <span style="font-weight: bold; color:#87CEFA;">Catholics</span> ?][? if centre_left_coalition : The <span style="color:#0047AB;">Libe</span><span style="color:#FFD700;">rals</span> ?] collapse the coalition!
 - @king_limited_nogov: Prime Minister [+ prime_minister +] reshuffles the Cabinet.
 - @king_gov: The King invokes Article 65, dismissing the current government.
 
@@ -82,7 +82,7 @@ Q.prime_minister_party = Q.ul_name;
 
 Seemingly out of nowhere, our coalition partners have brought a Vote-of-Confidence onto the floor, and with numerous dissenters amongst the ranks of our allies, the vote fails. The current government is dissolved, until a new one is to be found.
 
-As negotiations between parties have begun, however, the King has, for the first time in his reign, intervened within the process and while though completely within his constitutional rights, is of grave concern. Presiding over the Chamber the Deputies, Vittorio Emanuele III has granted a mandate of rule over to the [+ ul_full_name +].
+As negotiations between parties have begun, however, the King has, for the first time in his reign, intervened within the process and while though completely within his constitutional rights, is of grave concern. Presiding over the Chamber the Deputies, Vittorio Emanuele III has granted a mandate of rule over to the <span style="font-weight: bold; color:#0047AB;">[+ ul_full_name +]</span>.
 
 Within days, and as if planned, [+ ul_leader +] has been able to draft a Cabinet, comprised of the most anti-socialist, reactionary men we have seen. Pietro Badoglio as Minister of the Interior. Armando Diaz as Minister of War. The list continues. 
 
@@ -151,9 +151,9 @@ Q.psri_in_government = 0;
 Q.pnf_in_government = 0;
 !}
 
-Seemingly out of nowhere, Prime Minister [+ prime_minister +] has reshuffled Cabinet positions with powers granted to him following our recent constitutional reform; notably expelling all [+ psi_name +] Cabinet members.
+Seemingly out of nowhere, Prime Minister [+ prime_minister +] has reshuffled Cabinet positions with powers granted to him following our recent constitutional reform; notably expelling all <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> Cabinet members.
 
-Most notably, Italian general Pietro Badoglio has been elevated to the Minister of the Interior, while Marshal Armando Diaz has been elevated to Minister of War. Both men, staunch anti-socialists have promised a harsh crackdown on socialist unrest within the country, promising to stabilise the country.
+Most notably, <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">al</span><span style="font-weight: bold; color:#CD212A">ian</span> general Pietro Badoglio has been elevated to the Minister of the Interior, while Marshal Armando Diaz has been elevated to Minister of War. Both men, staunch anti-socialists have promised a harsh crackdown on <span style="color:#ED2855">socialist</span> unrest within the country, promising to stabilise the country.
 
 The board is set up. The hourglass turns.
 
@@ -223,10 +223,10 @@ Q.prime_minister = "Giolitti";
 Q.prime_minister_party = Q.ul_name;
 !}
 
-Citing matters of national urgency and defense, King Vittorio Emanuele III has decided to dissolve the sitting government, deciding to appoint an 'Emergency Cabinet' of his own in order to preside over this 'crisis'. The King, though within his constitutional rights, has only intensified the situation with his actions. On the left, threats and vindication of those who have called for revolution come, while on the right, praise of reactionaries swarm in, thanking the King for bringing order to the nation.
+Citing matters of national urgency and defense, King Vittorio Emanuele III has decided to dissolve the sitting government, deciding to appoint an 'Emergency Cabinet' of his own in order to preside over this 'crisis'. The King, though within his constitutional rights, has only intensified the situation with his actions. On the left, threats and vindication of those who have called for revolution come, while on the right, praise of <span style="color:#3D3D3D;">reactionaries</span> swarm in, thanking the King for bringing order to the nation.
 
-The new Cabinet tells the same story. Giovanni Giolitti as Prime Minister. Pietro Badoglio as Interior Minister, Armando Diaz as Minister of War. Men poised against socialism, longing to kill its ideology now as the highest positions of the land. 
+The new Cabinet tells the same story. Giovanni Giolitti as Prime Minister. Pietro Badoglio as Interior Minister, Armando Diaz as Minister of War. Men poised against <span style="color:#ED2855">socialism</span>, longing to kill its ideology now as the highest positions of the land. 
 
-The Chamber of Deputies is in disarray. The left-half of the Chamber of Deputies, the reactionaries, conservatives. All in thunderous applause. Cheers echo through the chamber. The right-half of the Chamber of Deputies, the socialists, progressives. Empty. Plans and schemes trade hands.
+The Chamber of Deputies is in disarray. The left-half of the Chamber of Deputies, the <span style="color:#3D3D3D;">reactionaries</span>, <span style="color:#0047AB;">conservatives</span>. All in thunderous applause. Cheers echo through the chamber. The right-half of the Chamber of Deputies, the socialists, progressives. Empty. Plans and schemes trade hands.
 
 - @root: Democracy dies in darkness.

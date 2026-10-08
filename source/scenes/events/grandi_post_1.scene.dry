@@ -8,7 +8,7 @@ achievement: follia_di_acerbo
 
 = Repeal of the Acerbo Law
 
-The Acerbo Law has backfired immensely, as the PNF was unable to receive the 25% to secure a majority. Now that we are in power, however, we can remove this corrupt law and restore fair democracy to Italy once more.
+The Acerbo Law has backfired immensely, as the <span style="font-weight: bold; color:#3D3D3D;">PNF</span> was unable to receive the 25% to secure a majority. Now that we are in power, however, we can remove this corrupt law and restore fair democracy to <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span> once more.
 
 - @remove_acerbo: Repeal the Law.
 - @keep_acerbo: Actually...
@@ -31,7 +31,7 @@ We decide to keep the Acerbo Law to maintain our grip within the Chamber of Depu
 
 Recently, however, a letter has been sent from Ivanoe Bonomi to [? if not reformists_defect : Filippo Turati’s ?][? if reformists_defect : Giovanni Bacci's ?] office, concerning the possibility of a sustained Acerbo Law. Though the author has yet to be determined, it can be safely assumed that Vittorio Emanuele III has sent it to us as a warning. 
 
-In it, is a plea to repeal the law, as its preservation could provide the other parties with the opportunity for mass agitation against the [+ psi_name +], and give the party the status of Italy’s pariah within its political sphere. Vittorio might be considered a political ally of ours, but even he cannot defend us should we consider the possibility of taking power in such an unlawful and deceitful manner. After all, we were the ones who pushed the idea of the Anti-Fascist Bloc in the first place, and we could end up being considered no different to the Blackshirts. 
+In it, is a plea to repeal the law, as its preservation could provide the other parties with the opportunity for mass agitation against the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>, and give the party the status of <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>'s pariah within its political sphere. Vittorio might be considered a political ally of ours, but even he cannot defend us should we consider the possibility of taking power in such an unlawful and deceitful manner. After all, we were the ones who pushed the idea of the Anti-Fascist Bloc in the first place, and we could end up being considered no different to the <span style="color:#3D3D3D;">Blackshirts</span>. 
 
 What do we do?
 
@@ -42,8 +42,8 @@ What do we do?
 on-arrival: royal_coup = 1
 subtitle: Is the fallout from keeping the law really worth it?
 
-This has caused an outrage within our own party's right flank, as well with our allies in the Chamber of Deputies, calling us no better than the fascists that attempted to take over the nation.
+This has caused an outrage within our own party's right flank, as well with our allies in the Chamber of Deputies, calling us no better than the <span style="color:#3D3D3D;">fascists</span> that attempted to take over the nation.
 
-Already, the King has mobilised the Regio Esercito and begun raiding our offices, bases and arresting our deputies. We have to strike back.
+Already, the King has mobilised the <span style="color:#008C45">Regi</span><span style="color:#CFCFCF">o Eser</span><span style="color:#CD212A">cito</span> and begun raiding our offices, bases and arresting our deputies. We have to strike back.
 
 - @civil_war: Wait, wha-

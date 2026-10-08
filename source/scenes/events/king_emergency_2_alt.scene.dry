@@ -1,15 +1,15 @@
-title: The Italian Republican Party denounces us!
-subtitle: The PRI views our attitudes as a betrayal.
+title: The <span style="font-weight: bold; color:#3CB371">Italian Republican Party</span> denounces us!
+subtitle: The <span style="font-weight: bold; color:#3CB371">PRI</span> views our attitudes as a betrayal.
 view-if: king_timer_1 <= time and not national_congress_seen and king_allies = 1
 on-arrival: pri_denounced = 1
 max-visits: 1
 tags: event
 new-page: true
 
-= The Italian Republican Party Denouncement
+= The <span style="font-weight: bold; color:#3CB371">Italian Republican Party</span> Denouncement
 
-In a recent event held by the Italian Republican Party, Republican leader [+ pri_leader +] has denounced the [+ psi_name +] as alleged traitors to republicanism, citing warming attitudes between the party and the King. The Republicans allege the socialists are no longer ideologically committed to the goal of the dismantlement of the Monarchy, instead happily receiving the benefits of a friendly Monarch and vowing against collaborating with the [+ psi_name +].
+In a recent event held by the <span style="font-weight: bold; color:#3CB371">Italian Republican Party</span>, <span style="color:#3CB371">Republican</span> leader [+ pri_leader +] has denounced the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span> as alleged traitors to <span style="color:#3CB371">republicanism</span>, citing warming attitudes between the party and the King. The <span style="font-weight: bold; color:#3CB371">Republicans</span> allege the <span style="color:#ED2855">socialists</span> are no longer ideologically committed to the goal of the dismantlement of the Monarchy, instead happily receiving the benefits of a friendly Monarch and vowing against collaborating with the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>.
 
-Though we have naturally denied these claims, we have nevertheless seen a deterioration of relations with the Republicans and should not expect their cooperation in future coalitions.
+Though we have naturally denied these claims, we have nevertheless seen a deterioration of relations with the <span style="color:#3CB371">Republicans</span> and should not expect their cooperation in future coalitions.
 
 - @root: Concerning.

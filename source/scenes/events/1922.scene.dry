@@ -6,6 +6,6 @@ view-if: year = 1922 and month = 1
 priority: 2
 max-visits: 1
 
-A new year begins. The Fasci have only gotten stronger. [? if not psi_in_government: Government inaction has slowed recovery, as well as kept violence high. ?][? if psi_in_government : Government policy has helped stemmed the worst, as people are heading back to work. ?]
+A new year begins. The <span style="font-weight: bold; color:#3D3D3D;">Fasci</span> have only gotten stronger. [? if not psi_in_government: Government inaction has slowed recovery, as well as kept violence high. ?][? if psi_in_government : Government policy has helped stemmed the worst, as people are heading back to work. ?]
 
 [? if psi_in_government : Our budget has increased due to the yearly tax. ?]

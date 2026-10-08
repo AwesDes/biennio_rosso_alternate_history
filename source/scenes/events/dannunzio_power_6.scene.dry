@@ -10,12 +10,12 @@ on-arrival: dannunzio_strike_seen = 1; dannunzio_time = time + 1; inflation -= 0
 
 In a cruel twist of events, Turin has once more broken out in a strike, this time led by the industrialists. The industrialists have refused to comply with D'Annunzio's 'Labour and Corporative Charter', deciding to shut down production and establishing a lockout of the factories and the layoff of thousands of workers.
 
-Public opinion of the strike is split; Workers and voters of the left condemn the strike as unlawful and harming workers, with some unionists and syndicalist leaders pressuring D'Annunzio to act, while conservatives and nationalists praise industrialist bravery against the 'reckless' Charter.
+Public opinion of the strike is split; Workers and voters of the left condemn the strike as unlawful and harming workers, with some <span style="color:#B22222">unionists</span> and <span style="color:#2F2F2F">syndicalist</span> leaders pressuring D'Annunzio to act, while <span style="color:#0047AB;">conservatives</span> and <span style="color:#522A00">nationalists</span> praise industrialist bravery against the 'reckless' Charter.
 
-Unfortunately, our paramilitary forces are unfortunately weakened from the ascendance of the PNF, with violence towards Red Guard affiliated workers becoming more common, thus making us unable to act with force. What should we do, and more importantly, what will D'Annunzio do?
+Unfortunately, our paramilitary forces are unfortunately weakened from the ascendance of the <span style="font-weight: bold; color:#3D3D3D;">PNF</span>, with violence towards <span style="color:#c2352b">Red Guard</span> affiliated workers becoming more common, thus making us unable to act with force. What should we do, and more importantly, what will D'Annunzio do?
 
 - @strike_condemn: Condemn the strikes, supporting the workers.
-- @strike_condemn_together: Could we issue a joint statement with the PNF to condemn the strikes?
+- @strike_condemn_together: Could we issue a joint statement with the <span style="font-weight: bold; color:#3D3D3D;">PNF</span> to condemn the strikes?
 - @strike_support: Utilise the strikes to campaign against D'Annunzio's incompetence.
 - @strike_nothing: We should stay out of this.
 
@@ -27,13 +27,13 @@ go-to: strike_menu
 We condemn the industrialists for the loss of jobs, criticising the strike as illegal alongside our aligned unions. 
 
 @strike_condemn_together
-subtitle: The Unions are warming up to D'Annunzio too...
+subtitle: The <span style="color:#B22222">Unions</span> are warming up to D'Annunzio too...
 choose-if: dannunzio_relation >= 2
 view-if: not unions_break
 unavailable-subtitle: A joint statement with the Syndicalists would be an outrage.
 on-arrival: dannunzio_influence += 1; workers_psi += 6; workers_pnf += 4; rural_psi += 4; rural_pnf += 3; industrialists_pnf -= 4;
 
-In a joint statement by both the Italian Syndicalist Union and General Confederation of Labour, alongside their affiliated parties, the [+ pnf_full_name +] and the [+ psi_full_name +], all four parties have condemned the strike as reckless and disruptive, demanding an end to the strike and the rehiring of the fired workers. 
+In a joint statement by both the <span style="color:#2F2F2F">Italian Syndicalist Union</span> and General Confederation of Labour, alongside their affiliated parties, the <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_full_name +]</span> and the <span style="font-weight: bold; color:#ED2855">[+ psi_full_name +]</span>, all four parties have condemned the strike as reckless and disruptive, demanding an end to the strike and the rehiring of the fired workers. 
 
 @strike_support
 subtitle: -1 Resources
@@ -75,7 +75,7 @@ Q.abl_strength *= 1.4;
 Q.abl_militancy *= 0.8;
 !}
 
-The Regio Esercito is mobilised and deployed to Italy, the strikes forcefully ended as prominent industrialists and strikers are arrested. The factories are placed under state control as workers return to their employment, though this solidifies the industrialists opposition to D'Annunzio.
+The <span style="color:#008C45">Regi</span><span style="color:#CFCFCF">o Eser</span><span style="color:#CD212A">cito</span> is mobilised and deployed to <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>, the strikes forcefully ended as prominent industrialists and strikers are arrested. The factories are placed under state control as workers return to their employment, though this solidifies the industrialists opposition to D'Annunzio.
 
 Rumors of unrest from the *Ras* are more often too, seemingly left out of the responsibility of quelling unrest which they expected to perform.
 
@@ -97,7 +97,7 @@ Q.abl_strength *= 1.3;
 Q.abl_militancy *= 0.9;
 !}
 
-With the loyalties of the Regio Esercito called into question, the Squadrismo have assumed responsibility of quelling unrest, forcefully breaking up the strike, though surprisingly not employing its usually cruel tactics. The factories have reopened, placed under state control as workers are rehired once more.
+With the loyalties of the <span style="color:#008C45">Regi</span><span style="color:#CFCFCF">o Eser</span><span style="color:#CD212A">cito</span> called into question, the <span style="color:#3D3D3D;">Squadrismo</span> have assumed responsibility of quelling unrest, forcefully breaking up the strike, though surprisingly not employing its usually cruel tactics. The factories have reopened, placed under state control as workers are rehired once more.
 
 @negotiation_suppress
 view-if: industrialists_pnf_normalised > workers_pnf_normalised
@@ -111,6 +111,6 @@ Q.inflation += 0.2;
 !}
 achievement: il_mio_nome_e_storpiato_percio
 
-With mediation from conservative leaders, the PNF and business leaders are able to come to an agreement to end the strike. Labour law changes are curtailed slightly, as are changes to levies on taxes in exchange for ending the strike.
+With mediation from <span style="color:#0047AB;">conservative</span> leaders, the <span style="font-weight: bold; color:#3D3D3D;">PNF</span> and business leaders are able to come to an agreement to end the strike. Labour law changes are curtailed slightly, as are changes to levies on taxes in exchange for ending the strike.
 
-Though an amicable end to the strike, this has certainly placed D'Annunzio against the industrialists, once backing the PNF under Mussolini's control. 
+Though an amicable end to the strike, this has certainly placed D'Annunzio against the industrialists, once backing the <span style="font-weight: bold; color:#3D3D3D;">PNF</span> under Mussolini's control. 

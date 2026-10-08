@@ -8,10 +8,10 @@ on-arrival: dannunzio_corporative_seen = 1; dannunzio_time = time + 3; industria
 
 = The Labour & Corporative Charter
 
-In an effort to replicate the economic success of the Italian Regency of Carnaro, Prime Minister D'Annunzio has passed the Labour & Corporative Charter, organising and consolidating the Italian economy into nine corporations, dividing them up by sectors. The bill also introduces mandatory membership to all labour and industries, subordinating private profit to state planning and levying high profit taxes on oligarchic wealth to fund social programs.
+In an effort to replicate the economic success of the <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">al</span><span style="font-weight: bold; color:#CD212A">ian</span> Regency of Carnaro, Prime Minister D'Annunzio has passed the Labour & Corporative Charter, organising and consolidating the Italian economy into nine corporations, dividing them up by sectors. The bill also introduces mandatory membership to all labour and industries, subordinating private profit to state planning and levying high profit taxes on oligarchic wealth to fund social programs.
 
 In regards to labour policy, in both a surprising and unsurprising sense, D'Annunzio has established numerous progressive labour laws, [? if working_hours < 3 : passing a ?][? if working_hours >= 3 : enshrining the already-established ?] 8-hour workday into law, empowering labour councils and improving labour protection laws comprehensively.
 
-The reaction to these laws have been mixed; former backers of the fascists, the Industrialists, Oligarchs and Radical Nationalists have lambasted D'Annunzio for his 'reckless' policy, while winning the support of radical workers and some of our voters, concerningly. Some of the other left-wing parties have welcomed D'Annunzio's attitude and policies towards workers, while the conservative parties remain suspicious of D'Annunzio's goals.
+The reaction to these laws have been mixed; former backers of the <span style="color:#3D3D3D;">fascists</span>, the Industrialists, Oligarchs and Radical Nationalists have lambasted D'Annunzio for his 'reckless' policy, while winning the support of radical workers and some of our voters, concerningly. Some of the other left-wing parties have welcomed D'Annunzio's attitude and policies towards workers, while the conservative parties remain suspicious of D'Annunzio's goals.
 
 - @root: A realignment of voters within the PNF?

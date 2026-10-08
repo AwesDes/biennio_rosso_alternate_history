@@ -11,9 +11,9 @@ tags: para_affairs
 
 For better or for worse, both the party and the paramilitaries cannot exist without money. The question is: How should we divide up our funds?
 
-- @all_fund: Siphon all of our funds into the Red Guards.
-- @big_fund: Siphon large amounts into the Red Guards.
-- @small_fund: Siphon a small amount into the Red Guards.
+- @all_fund: Siphon all of our funds into the <span style="color:#c2352b">Red Guards</span>.
+- @big_fund: Siphon large amounts into the <span style="color:#c2352b">Red Guards</span>.
+- @small_fund: Siphon a small amount into the <span style="color:#c2352b">Red Guards</span>.
 - @small_decrease: Siphon a small amount back into our coffers.
 - @big_decrease: Siphon a large amount back into our coffers.
 - @all_decrease: Siphon all of our funds back into our coffers.
@@ -22,27 +22,27 @@ For better or for worse, both the party and the paramilitaries cannot exist with
 - @cancel_advisor_action
 
 @all_fund
-subtitle: -[+ resources +] Party Resources, +[+ resources +] Paramilitary Resources - This will increase reformist dissent.
+subtitle: -[+ resources +] Party Resources, +[+ resources +] Paramilitary Resources - This will increase <span style="color:#FF6961">reformist</span> dissent.
 view-if: resources > 2
 on-arrival: reformist_dissent += (resources - 2)*7; para_resources += resources; resources = 0;
 
-We pour all of our funds into the Red Guards. The reformist faction is understandably, upset by this.
+We pour all of our funds into the <span style="color:#c2352b">Red Guards</span>. The <span style="color:#FF6961">reformist</span> faction is understandably, upset by this.
 
 @big_fund
 subtitle: -2 Party Resources, +2 Paramilitary Resources
 choose-if: resources > 1
-unavailable-subtitle: [? if resources < 2 : We do not have enough to fund the Red Guards. ?]
+unavailable-subtitle: [? if resources < 2 : We do not have enough to fund the <span style="color:#c2352b">Red Guards</span>. ?]
 on-arrival: resources -= 2; para_resources += 2
 
-Large amounts of funds are sent over to the Red Guards.
+Large amounts of funds are sent over to the <span style="color:#c2352b">Red Guards</span>.
 
 @small_fund
 choose-if: resources > 0
-unavailable-subtitle: [? if resources < 1 : We do not have enough to fund the Red Guards. ?]
+unavailable-subtitle: [? if resources < 1 : We do not have enough to fund the <span style="color:#c2352b">Red Guards</span>. ?]
 subtitle: -1 Party Resources, +1 Paramilitary Resources
 on-arrival: resources -= 1; para_resources += 1;
 
-Small amounts of funds are sent over to the Red Guards.
+Small amounts of funds are sent over to the <span style="color:#c2352b">Red Guards</span>.
 
 @big_decrease
 choose-if: para_resources > 1
@@ -61,8 +61,8 @@ on-arrival: resources += 1; para_resources -= 1;
 Small amounts of funds are transferred back to the party coffers.
 
 @all_decrease
-subtitle: +[+ para_resources +] Party Resources, +[+ para_resources +] Paramilitary Resources - This will increase communist dissent.
+subtitle: +[+ para_resources +] Party Resources, +[+ para_resources +] Paramilitary Resources - This will increase <span style="color:#8B0000">communist</span> dissent.
 view-if: para_resources > 2
 on-arrival: communist_dissent += (para_resources - 2)*7; resources += para_resources; para_resources = 0;
 
-We pour all of our funds back into party coffers. The communist faction is understandably, upset by this.
+We pour all of our funds back into party coffers. The <span style="color:#8B0000">communist</span> faction is understandably, upset by this.

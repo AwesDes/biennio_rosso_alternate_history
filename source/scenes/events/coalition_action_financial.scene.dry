@@ -54,6 +54,6 @@ Q.upper_tax_rates -= 1;
 
 !}
 
-[? if psi_in_government : We attempt to convince the workers and veterans that this is necessary for economic stability. Regardless, support for the [+ finance_minister_party +] from workers and veterans decreases notably, and as do we for tolerating the cuts. The [+ pnf_name +] are able to use this policy to recruit more members. ?]
+[? if psi_in_government : We attempt to convince the workers and veterans that this is necessary for economic stability. Regardless, support for the [? if finance_minister_party == ldr_name : <span style="font-weight: bold; color:#FFD700;">[+ finance_minister_party +]</span> ?][? if finance_minister_party == ul_name : <span style="font-weight: bold; color:#0047AB;">[+ finance_minister_party +]</span> ?] from workers and veterans decreases notably, and as do we for tolerating the cuts. The <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_name +]</span> are able to use this policy to recruit more members. ?]
 
-[? if not psi_in_government : The cuts pass, and we utilise them to recruit workers who have lost faith in the liberal parties, alongside the [+ pnf_name +]. ?]
+[? if not psi_in_government : The cuts pass, and we utilise them to recruit workers who have lost faith in the <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">rals</span> parties, alongside the <span style="font-weight: bold; color:#3D3D3D;">[+ pnf_name +]</span>. ?]

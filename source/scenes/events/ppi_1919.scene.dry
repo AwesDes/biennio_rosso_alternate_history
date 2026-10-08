@@ -1,15 +1,15 @@
-title: 1919 Congress of the Partito Popolare Italiano
-subtitle: The PPI elects its Secretary General.
+title: 1919 Congress of the <span style="font-weight: bold; color:#87CEFA;">Partito Popolare Italiano</span>
+subtitle: The <span style="font-weight: bold; color:#87CEFA;">PPI</span> elects its Secretary General.
 new-page: true
 view-if: year = 1919 and month = 6 and week = 3 and not ppi_banned
 max-visits: 1
 tags: event
 
-= 1919 Partito Popolare Italiano Congress
+= 1919 <span style="font-weight: bold; color:#87CEFA;">Partito Popolare Italiano</span> Congress
 
-The *Partito Popolare Italiano*, known also as the PPI or the Italian People's Party was formed in January and are having their first congress to decide the leader of the party. It seems all but confirmed that Luigi Sturzo will come out on top to lead the party in its next elections.
+The <span style="font-weight: bold; color:#87CEFA;">Partito Popolare Italiano</span>, known also as the <span style="font-weight: bold; color:#87CEFA;">PPI</span> or the <span style="font-weight: bold; color:#87CEFA;">Italian People's Party</span> was formed in January and are having their first congress to decide the leader of the party. It seems all but confirmed that Luigi Sturzo will come out on top to lead the party in its next elections.
 
-Whatever the case, the PPI represents a shift in the Holy See's stance on Italian politics from non-intervention and will be pivotal to the nation's future outlook.
+Whatever the case, the <span style="font-weight: bold; color:#87CEFA;">PPI</span> represents a shift in the <span style="font-weight: bold; color:#A88D37;">Holy See</span>'s stance on <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">al</span><span style="font-weight: bold; color:#CD212A">ian</span> politics from non-intervention and will be pivotal to the nation's future outlook.
 
 - @sturzo_1919: The party votes...
 
@@ -17,4 +17,4 @@ Whatever the case, the PPI represents a shift in the Holy See's stance on Italia
 face-image: img/portraits/LuigiSturzo.jpg
 on-arrival: ppi_left += 2;
 
-As expected, Luigi Sturzo has been elected as the first Secretary General of the Italian People's Party. He represents the more progressive faction of the party, willing to cooperate with us, and we are optimistic we will be able to cooperate.
+As expected, Luigi Sturzo has been elected as the first Secretary General of the <span style="font-weight: bold; color:#87CEFA;">Italian People's Party</span>. He represents the more progressive faction of the party, willing to cooperate with us, and we are optimistic we will be able to cooperate.

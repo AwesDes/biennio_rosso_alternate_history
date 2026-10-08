@@ -7,7 +7,7 @@ new-page: true
 
 = Guido Picelli
 
-Picelli is a founding member of the Red Guards and a fierce anti-fascist. He is not affiliated with any factions of the [+ psi_name +].
+Picelli is a founding member of the <span style=" color:#c2352b">Red Guards</span> and a fierce anti-<span style="color:#3D3D3D;">reactionary</span>, having served in the <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">al</span><span style="font-weight: bold; color:#CD212A">ian</span> <span style=" color:#ED1C24">Red Cross</span> during the Great War. He is not affiliated with any factions of the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>.
 
 - @fasci_urgency_picelli
 - @red_guards_picelli
@@ -16,7 +16,7 @@ Picelli is a founding member of the Red Guards and a fierce anti-fascist. He is 
 
 @fasci_urgency_picelli
 title: Fasci Urgency
-subtitle: We should warn the party about the growing [+ pnf_name +].
+subtitle: We should warn the party about the growing <span style="font-weight: bold;">[+ pnf_name +]</span>.
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 choose-if: advisor_action_timer == 0
 view-if: not national_congress_seen
@@ -24,7 +24,7 @@ on-arrival: advisor_action_timer = 6; last_advisor_action = 1;
 go-to: urgency
 
 @red_guards_picelli
-title: Red Guards
+title: <span style=" color:#c2352b">Red Guards</span>
 subtitle: We can fund our paramilitary.
 choose-if: advisor_action_timer = 0
 view-if: not national_congress_seen
@@ -33,8 +33,8 @@ on-arrival: advisor_action_timer = 6; last_advisor_action = 1
 go-to: red_guards
 
 @arditi_picelli
-title: Arditi del Popolo
-subtitle: We can utilise the Arditi del Popolo.
+title: <span style=" color:#2F2F2F">Arditi</span> <span style=" color:#3CB371">del</span> <span style=" color:#ED2855">Popolo</span>
+subtitle: We can utilise the <span style=" color:#2F2F2F">Arditi</span> <span style=" color:#3CB371">del</span> <span style=" color:#ED2855">Popolo</span>.
 choose-if: advisor_action_timer = 0
 view-if: arditi_cooperation and arditi_formed
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]

@@ -764,7 +764,6 @@ Q.bombacci_advisor = 0; // Nicola Bombacci
 
 // Reformist advisors
 Q.kuliscioff_advisor = 0; // Anna Kuliscioff
-Q.salvemini_advisor = 0; // Gaetano Salvemini
 Q.altobelli_advisor = 0; // Argentina Altobelli
 Q.buozzi_advisor = 0; // Bruno Buozzi
 Q.matteotti_advisor = 0; // Giacomo Matteotti

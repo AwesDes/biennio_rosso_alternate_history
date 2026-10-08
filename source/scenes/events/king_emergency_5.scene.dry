@@ -9,61 +9,61 @@ go-to: natcol_menu
 
 = Backroom Deals
 
-[+ prime_minister +] has unveiled a new organisation; A 'National Coalition' of parties dedicated to stability, anti-socialism and preventing left-wing parties from entering government. Though the coalition only currently consists of the [+ ul_full_name +], rumors of persuasion or intimidation with the other liberal and right-wing parties within the Chamber of Deputies to negotiate their entry have reached our ears, even from the Italian People's Party.
+[+ prime_minister +] has unveiled a new organisation; A 'National Coalition' of parties dedicated to stability, anti-socialism and preventing left-wing parties from entering government. Though the coalition only currently consists of the <span style="font-weight: bold; color:#0047AB;">[+ ul_full_name +]</span>, rumors of persuasion or intimidation with the other liberal and right-wing parties within the Chamber of Deputies to negotiate their entry have reached our ears, even from the <span style="font-weight: bold; color:#87CEFA;">Italian People's Party</span>.
 
 We can only wait for any news or announcements to assess the extent of this Coalition. In other news, our advisors have been released from custody and are now available.
 
 @natcol_menu
 
-- @natcol_ppi: The Italian People's Party joins the National Coalition.
-- @natcol_ldr: The [+ ldr_full_name +] joins the National Coalition.
-- @natcol_ds: The [+ ds_full_name +] joins the National Coalition.
-- @natcol_pcs: The Christian Social Party joins the National Coalition.
-- @natcol_others: The Italian Nationalist Association and the Economic Parties joins the National Coalition.
+- @natcol_ppi: The <span style="font-weight: bold; color:#87CEFA;">Italian People's Party</span> joins the National Coalition.
+- @natcol_ldr: The <span style="font-weight: bold; color:#FFD700;">[+ ldr_full_name +]</span> joins the National Coalition.
+- @natcol_ds: The <span style="font-weight: bold; color:#1E99C5;">[+ ds_full_name +]</span> joins the National Coalition.
+- @natcol_pcs: The <span style="font-weight: bold; color:#656573;">Christian Social Party</span> joins the National Coalition.
+- @natcol_others: The <span style="font-weight: bold; color:#00008B;">Italian Nationalist Association</span> and the Economic Parties joins the National Coalition.
 
 @natcol_ppi 
-subtitle: Unfortunately, we have galvanised the PPI towards the National Coalition.
+subtitle: Unfortunately, we have galvanised the <span style="font-weight: bold; color:#87CEFA;">PPI</span> towards the National Coalition.
 choose-if: (ppi_relation < 55 and ppi_leader == "Sturzo") or (ppi_relation < 75 and ppi_leader == "De Gasperi") or ppi_leader == "Triumvirate"
-unavailable-subtitle: Thankfully, a friendly leadership and cordial relations have let the PPI adopt a 'wait-and-see' approach rather than opposing us outright.
+unavailable-subtitle: Thankfully, a friendly leadership and cordial relations have let the <span style="font-weight: bold; color:#87CEFA;">PPI</span> adopt a 'wait-and-see' approach rather than opposing us outright.
 on-arrival: national_coalition_ppi = 1
 max-visits: 1
 go-to: natcol_menu
 
-In a shocking announcement, the Italian People's Party has decided to join the National Coalition as well, its evident fears and cold relations with us turning it towards the right. Considering the size of the PPI, as well as its voter base, we should be concerned.
+In a shocking announcement, the <span style="font-weight: bold; color:#87CEFA;">Italian People's Party</span> has decided to join the National Coalition as well, its evident fears and cold relations with us turning it towards the right. Considering the size of the <span style="font-weight: bold; color:#87CEFA;">PPI</span>, as well as its voter base, we should be concerned.
 
 @natcol_ldr
-subtitle: An unfriendly leadership & poor relations have pushed the Liberal Democrats into joining the National Coalition.
+subtitle: An unfriendly leadership & poor relations have pushed the <span style="font-weight: bold; color:#FFD700;">Liberal Democrats</span> into joining the National Coalition.
 choose-if: (ldr_relation < 65 and ldr_leader == "Nitti") or (ldr_relation < 75 and ldr_leader == "Orlando") or ldr_leader == "Salandra"
-unavailable-subtitle: Thankfully, the Liberal Democrats are unwilling to collaborate with in the National Coalition – especially with the far-right parties included.
+unavailable-subtitle: Thankfully, the <span style="font-weight: bold; color:#FFD700;">Liberal Democrats</span> are unwilling to collaborate with in the National Coalition – especially with the far-right parties included.
 on-arrival: national_coalition_ldr = 1
 max-visits: 1
 go-to: natcol_menu
 
-The [+ ldr_full_name +] has, unfortunately, joined the National Coalition. It seems the party's wariness of us, or perhaps socialism in general has forced it rightwards, despite its unwillingness.
+The <span style="font-weight: bold; color:#FFD700;">[+ ldr_full_name +]</span> has, unfortunately, joined the National Coalition. It seems the party's wariness of us, or perhaps <span style="color:#ED2855">socialism</span> in general has forced it rightwards, despite its unwillingness.
 
 @natcol_ds
-subtitle: A right-wing [+ ds_name +] has aligned itself with the National Coalition.
+subtitle: A right-wing <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span> has aligned itself with the National Coalition.
 choose-if: ds_leader == "Colonna" or ds_leader == "Carnazza"
-unavailable-subtitle: Thankfully, Giuffrida's leadership role has placed the [+ ds_name +] firmly in our camp.
+unavailable-subtitle: Thankfully, Giuffrida's leadership role has placed the <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span> firmly in our camp.
 on-arrival: national_coalition_ds = 1
 max-visits: 1
 go-to: natcol_menu
 
-The [+ ds_full_name +], under leadership of [+ ds_leader +] has led the party to join the National Coalition, [? if ds_leader == "Colonna" : clearly as a means of opportunism. ?][? if ds_leader == "Carnazza" : as a means to develop and deepen ties with the conservative liberal parties. ?]
+The <span style="font-weight: bold; color:#1E99C5;">[+ ds_full_name +]</span>, under leadership of <span style="font-weight: bold; color:#1E99C5;">[+ ds_name +]</span> has led the party to join the National Coalition, [? if ds_leader == "Colonna" : clearly as a means of opportunism. ?][? if ds_leader == "Carnazza" : as a means to develop and deepen ties with the <span style="color:#0047AB;">conservative</span> liberal parties. ?]
 
 @natcol_pcs
 view-if: pcs_formed
-subtitle: The right-wing Christian Social Party has thrown its weight with the King.
+subtitle: The right-wing <span style="font-weight: bold; color:#656573;">Christian Social Party</span> has thrown its weight with the King.
 max-visits: 1
 go-to: natcol_menu
 
-The conservative PCS has joined the National Coalition, having developed close ties with the [+ ul_full_name +] and former fascists, this was seemingly the expected outcome.
+The conservative <span style="font-weight: bold; color:#656573;">PCS</span> has joined the National Coalition, having developed close ties with the <span style="font-weight: bold; color:#0047AB;">[+ ul_full_name +]</span> and former fascists, this was seemingly the expected outcome.
 
 @natcol_others
-subtitle: The remnants of the fascists and far-right, alongisde the conservatives, align with the King and [+ prime_minister +]
+subtitle: The remnants of the <span style="color:#3D3D3D;">fascists</span> and far-right, alongisde the <span style="color:#0047AB;">conservatives</span>, align with the King and [+ prime_minister +]
 max-visits: 1
 go-to: natcol_menu
 
-Unsurprisingly, the ANI has joined the National Coalition, fervently opposed to socialism and determined to utilise the opportunity to potentially enter government to stamp out the 'instability' caused by us.
+Unsurprisingly, the <span style="font-weight: bold; color:#00008B;">Italian Nationalist Association</span> has joined the National Coalition, fervently opposed to <span style="color:#ED2855">socialism</span> and determined to utilise the opportunity to potentially enter government to stamp out the 'instability' caused by us.
 
 The Economic Parties have joined the National Coalition as well, traditionally aligning themselves with the right and against us.

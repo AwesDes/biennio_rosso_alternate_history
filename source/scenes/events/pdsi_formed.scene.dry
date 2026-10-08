@@ -1,4 +1,4 @@
-title: Formation of the Social Democratic Party
+title: Formation of the <span style="font-weight: bold; color:#1E99C5;">Social Democratic Party</span>
 on-arrival: ds_name = "PDSI"; ds_full_italian = "Partito Democratico Sociale Italiano"; ds_full_name = "Italian Social Democratic Party"; ds_party = 1; ds_list = 0; prime_minister_party = ds_name if prime_minister_party == "DS"; pdsi_formed = 1; ds_congress_trigger = 1;
 view-if: year = 1922 and month = 4 and week = 3 and ds_list = 1
 new-page: true
@@ -6,9 +6,9 @@ max-visits: 1
 tags: event
 face-image: img/DS.png
 
-= Formation of the Italian Social Democratic Party
+= Formation of the <span style="font-weight: bold; color:#1E99C5;">Italian Social Democratic Party</span>
 
-The Democratic List has officially dissolved. Following the establishment of the National Council of Social and Radical Democracy in January alongside the Italian Radical Party, the body has been planning the establishment of its own party, now called the Italian Social Democratic Party; a merger of the various parties under the Democratic List, alongside the Radical Party. 
+The Democratic List has officially dissolved. Following the establishment of the National Council of Social and Radical Democracy in January alongside the Italian Radical Party, the body has been planning the establishment of its own party, now called the <span style="font-weight: bold; color:#1E99C5;">Italian Social Democratic Party</span>; a merger of the various parties under the Democratic List, alongside the Radical Party. 
 
 Leading the party is [+ ds_leader +], who will continue the party in the view of Social Democracy. 
 

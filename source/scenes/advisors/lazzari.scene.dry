@@ -7,20 +7,21 @@ new-page: true
 
 = Constantino Lazzari
 
-Lazzari is a long-time member of the [+ psi_name +], founding the party back in 1892. A member of the Maximalist faction, he holds significant influence in the party, being the current Secretary of the Party.
+Lazzari is a long-time member of the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>, co-founding the party back in 1892. Aligned with the <span style=" color:#DC143C">Maximalists</span>, he leads the current alongside Serrati.
 
-- @party_disunity_lazzari
+- @party_discipline_lazzari
 - @party_rally
 - @fiscal_policy_lazzari
 - @root: Return to main
 
-@party_disunity_lazzari
-title: Party Disunity
-subtitle: The current state of the party is disunited; factions are quarreling as every side pushes its own ideas.
+@party_discipline_lazzari
+title: Party Discipline
+subtitle: Lazzari can leverage his position to mediate dissent within the party.
 choose-if: advisor_action_timer == 0 and (communist_dissent > 0 or reformist_dissent > 0 or labour_dissent > 0 or maximalist_dissent > 0)
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if (communist_dissent = 0 and reformist_dissent = 0 and maximalist_dissent = 0 and labour_dissent = 0) : The party is the most united it has been since its inception. ?]
-on-arrival: advisor_action_timer = 6; last_advisor_action = 1
-go-to: party_disunity
+on-arrival: advisor_action_timer = 6; last_advisor_action = 1; communist_dissent -= 5; reformist_dissent -= 5; labour_dissent -= 5; maximalist_dissent -= 5
+
+Lazzari is able to leverage his position to quell dissent and mediate conflict between the quarreling factions.
 
 @party_rally
 title: Party Rally

@@ -1,10 +1,10 @@
-title: PCd'I consolidates support base
+title: <span style="font-weight: bold; color:#C72F35">PCd'I</span> consolidates support base
 new-page: true 
 tags: event
 view-if: pcdi_formed and unions_break
 on-arrival: workers_pcdi *= 1.3; workers_pcdi *= 1.4 if psu_formed = 0; veterans_pcdi *= 1.5; veterans_pcdi *= 1.3 if psu_formed = 0; socialist_sentiment += 4; republican_sentiment += 2;
 max-visits: 1
 
-= PCd'I Consolidates support base 
+= <span style="font-weight: bold; color:#C72F35">PCd'I</span> Consolidates support base 
 
-Though the recent split of the Left faction to form the *Partito Comunista d'Italia* as a splinter party was originally considered to be moribund, our labour faction breaking with us as well has resulted in the syndicalist *Unione Sindacale Italiana* to defect to the party, as the PCd'I seems to have consolidated and become a competitor to our party.  
+Though the recent split of the <span style="color:#8B0000">Left</span> faction to form the <span style="font-weight: bold; color:#C72F35">Partito Comunista d'Italia</span> as a splinter party was originally considered to be moribund, our <span style="color:#B22222">labour</span> faction breaking with us as well has resulted in the <span style="color:#2F2F2F">syndicalist</span> *Unione Sindacale Italiana* to defect to the party, as the <span style="font-weight: bold; color:#C72F35">PCd'I</span> seems to have consolidated and become a competitor to our party.  

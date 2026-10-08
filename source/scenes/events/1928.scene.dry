@@ -1,12 +1,12 @@
-title: A New Year in Italy
-subtitle: Has fascism been defeated?
+title: A New Year in <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>
+subtitle: Has <span style="color:#3D3D3D;">fascism</span> been defeated?
 tags: event
 priority: 3
 view-if: year = 1928 and month = 1
 max-visits: 1
 new-page: true
 
-= A New Day in Italy
+= A New Day in <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>
 
 We have come a long way from 1919. The March on Rome, the relentless strife of streetfights, the economic crisis, alongside the instability of the government is over.
 

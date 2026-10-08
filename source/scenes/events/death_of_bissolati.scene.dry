@@ -13,42 +13,42 @@ go-to: pm if prime_minister = "Bissolati"; not_pm if prime_minister != "Bissolat
 
 Prime Minister Leonida Bissolati has died while in office. He will be greatly missed. But now, we must select a new Prime Minister.
 
-The PSRI are heavily pushing for us to support Bonomi, Bissolati's successor, as Prime Minister. However, we can support our own candidates, or others.
+The <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> are heavily pushing for us to support Bonomi, Bissolati's successor, as Prime Minister. However, we can support our own candidates, or others.
 
-- @turati_pm: Filippo Turati ([+ psi_name +]) for Prime Minister.
-- @bonomi_pm: Ivanoe Bonomi (PSRI) for Prime Minister.
-- @de_gasperi_pm: Let Alcide De Gasperi of the Catholic Party become Prime Minister.
-- @orlando_pm: Let Vittorio Emanuele Orlando of the Liberal Democrats become Prime Minister.
+- @turati_pm: Filippo Turati (<span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>) for Prime Minister.
+- @bonomi_pm: Ivanoe Bonomi (<span style="font-weight: bold; color:#FFC0CB;">PSRI</span>) for Prime Minister.
+- @de_gasperi_pm: Let Alcide De Gasperi of the <span style="font-weight: bold; color:#87CEFA;">People's Party</span> become Prime Minister.
+- @orlando_pm: Let Vittorio Emanuele Orlando of the <span style="font-weight: bold; color:#FFD700;">Liberal Democrats</span> become Prime Minister.
 
 @turati_pm
 view-if: not reformists_defect
 on-arrival: prime_minister = "Turati"; prime_minister_party = psi_name; psri_relation -= 5; ldr_relation -= 5 if centre_left_coalition; ppi_relation -= 5 if socialist_catholic_coalition
-subtitle: The PSRI argue for their own successor, while the [? if centre_left_coalition : liberals ?][? if socialist_catholic_coalition : Catholics ?] argue for their own man to lead.
+subtitle: The <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> argue for their own successor, while the [? if centre_left_coalition : <span style="color:#0047AB;">libe</span><span style="color:#FFD700;">rals</span> ?][? if socialist_catholic_coalition : <span style="font-weight: bold; color:#87CEFA;">Catholics</span> ?] argue for their own man to lead.
 
 Our coalition partners are reluctant to accept the new Prime Minister, but they do not make loud objections.
 
 @bonomi_pm
 on-arrival: prime_minister = "Bonomi"; prime_minister_party = "PSRI"; psri_relation += 5; ldr_relation -= 3 if centre_left_coalition; ppi_relation -= 3 if socialist_catholic_coalition
-subtitle: The PSRI claims allowing Bonomi to lead is the right thing to do.
+subtitle: The <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> claims allowing Bonomi to lead is the right thing to do.
 
-Our coalition partners on the right are reluctant to accept the new Prime Minister, but they do not make loud objections. The PSRI thanks us for our backing, and we see an improvement in relations.
+Our coalition partners on the right are reluctant to accept the new Prime Minister, but they do not make loud objections. The <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> thanks us for our backing, and we see an improvement in relations.
 
 @de_gasperi_pm
 on-arrival: prime_minister = "De Gasperi"; prime_minister_party = "PPI"; psri_relation -= 3; ppi_relation += 5
 view-if: socialist_catholic_coalition
-subtitle: The Catholic Party claim it is their turn...
+subtitle: The <span style="font-weight: bold; color:#87CEFA;">People's Party</span> claim it is their turn...
 
-The Catholic Party is grateful that we have supported De Gasperi for Prime Minister, while the PSRI are disappointed at our choice.
+The <span style="font-weight: bold; color:#87CEFA;">People's Party</span> Party is grateful that we have supported De Gasperi for Prime Minister, while the <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> are disappointed at our choice.
 
 @orlando_pm
 on-arrival: prime_minister = "Orlando"; prime_minister_party = ldr_name; psri_relation -= 3; ldr_relation += 5
 view-if: centre_left_coalition
-subtitle: The Liberals would prefer a moderate to led the country.
+subtitle: The <span style="color:#FFD700;">Liberals</span> would prefer a moderate to led the country.
 
-The Liberal Democratic Party is grateful that we have supported Orlando for Prime Minister, while the PSRI are disappointed at our choice.
+The <span style="font-weight: bold; color:#FFD700;">Liberal Democratic</span> Party is grateful that we have supported Orlando for Prime Minister, while the <span style="font-weight: bold; color:#FFC0CB;">PSRI</span> are disappointed at our choice.
 
 @not_pm
 
-Leonida Bissolati, right-reformist and leader of the Italian Reformist Socialist Party has passed away. His death represents the weakening of social democracy in the party, and he is succeeded by Ivanoe Bonomi.
+Leonida Bissolati, right-reformist and leader of the <span style="font-weight: bold; color:#FFC0CB;">Italian Reformist Socialist Party</span> has passed away. His death represents the weakening of social democracy in the party, and he is succeeded by Ivanoe Bonomi.
 
 He will be missed.

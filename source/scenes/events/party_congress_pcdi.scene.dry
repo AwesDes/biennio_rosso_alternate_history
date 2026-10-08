@@ -1,15 +1,15 @@
-title: [+ year +] PCd'I Party Congress
-subtitle: The PCd'I holds its first Congress.
+title: [+ year +] <span style="font-weight: bold; color:#C72F35">PCd'I</span> Party Congress
+subtitle: The <span style="font-weight: bold; color:#C72F35">PCd'I</span> holds its first Congress.
 new-page: true
 view-if: communist_split and pcdi_congress_time <= time
 tags: event
 max-visits: 1
 
-= [+ year +] PCd'I Party Congress
+= [+ year +] <span style="font-weight: bold; color:#C72F35">PCd'I</span> Party Congress
 
-The first Party Congress of the PCd'I have begun, following their recent split from the [+ psi_name +]. Bordiga has emerged as temporary leader of the party, pending the new party elections which might result in his resignation.
+The first Party Congress of the <span style="font-weight: bold; color:#C72F35">PCd'I</span> have begun, following their recent split from the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>. Bordiga has emerged as temporary leader of the party, pending the new party elections which might result in his resignation.
 
-The two factions within the PCd'I are Amadeo Bordiga, leading the traditional leftist faction within the party and Antonio Gramsci, leading the *L'Ordine Nuovo* faction in Turin. Bordiga advocates for a more centralised position amongst the party, viewing the party as necessary to have power over the workers' party. Gramsci, on the other hand, is more supportive of workers' councils, pushing for a mass movement, and more importantly, *viewed more positively by the Soviet Union.*
+The two factions within the <span style="font-weight: bold; color:#C72F35">PCd'I</span> are Amadeo Bordiga, leading the traditional leftist faction within the party and Antonio Gramsci, leading the *L'Ordine Nuovo* faction in Turin. Bordiga advocates for a more centralised position amongst the party, viewing the party as necessary to have power over the workers' party. Gramsci, on the other hand, is more supportive of workers' councils, pushing for a mass movement, and more importantly, viewed more positively by the <span style="font-weight: bold; color:#CC0000">Soviet Union</span>.
 
 - @bordiga_elected: Amadeo Bordiga retains his position as Party Secretary.
 - @gramsci_elected: Antonio Gramsci is able to ascend to the position of Party Secretary.

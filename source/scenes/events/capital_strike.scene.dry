@@ -1,5 +1,5 @@
 title: Capital Strike
-subtitle: Italy's industries are idling...
+subtitle: <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>'s industries are idling...
 view-if: capital_strike_progress >= 10 and psi_in_government and not violent_revolution
 new-page: true
 max-visits: 1
@@ -8,7 +8,7 @@ tags: event
 
 = Capital Strike
 
-Our policies have greatly angered the capitalists. Investment has fallen, and factories are idling, preventing the workers from fulfilling their jobs. Meanwhile, the bourgeois press is a constant chorus of venomous invective directed at us and our violent strikes and occupations that seemingly paralysed the economy.
+Our policies have greatly angered the capitalists. Investment has fallen, and factories are idling, preventing the workers from fulfilling their jobs. Meanwhile, the <span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> press is a constant chorus of venomous invective directed at us and our violent strikes and occupations that seemingly paralysed the economy.
 
 What can we do?
 
@@ -23,7 +23,7 @@ unavailable-subtitle: [? if communist_strength <= reformist_strength: The bulk o
 choose-if: communist_strength > reformist_strength and (judicial_reform >= 3 or rg_banned = 0) and work_councils >= 1
 on-arrival: nationalisation_progress += 1; fasci_coup_progress += 6; unemployment -= 2; unemployment -= 1 if work_councils >= 3; veterans -= 1; workers += 1; workers_psi += 10*(1-dissent); veterans_psi += 10*(1-dissent); coalition_dissent += 2; ul_relation -= 4; ldr_relation -= 4; workers_pnf -= 8*(1-dissent); veterans_pnf -= 8*(1-dissent); communist_strength += 12; reformist_dissent += 6; communist_dissent -= 10; factory_takeovers += 1; economic_growth += 2.3; radicalisation += 1; revolutionary_fervour += 7; revolutionary_exhaustion += 0.1; king_relation -= 10;
 
-If the capitalists are going to attack us, then we must hit them back. We have empowered the workers, with help from the Red Guards, to seize and take full control of the factories that the capitalists have idled. The fascists, of course, call us thieves and looters.
+If the capitalists are going to attack us, then we must hit them back. We have empowered the workers, with help from the <span style="color:#c2352b">Red Guards</span>, to seize and take full control of the factories that the capitalists have idled. The <span style="color:#3D3D3D;">fascists</span>, of course, call us thieves and looters.
 
 @capital_controls
 title: Enact capital controls to lessen the impact.

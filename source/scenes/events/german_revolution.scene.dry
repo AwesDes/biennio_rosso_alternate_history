@@ -1,5 +1,5 @@
-title: German October
-subtitle: The dust settles on a new Germany.
+title: <span style="font-weight: bold; color:#3D3D3D">Ge</span><span style="font-weight: bold; color:#D00000">rm</span><span style="font-weight: bold; color:#FFCE00">an</span> October
+subtitle: The dust settles on a new <span style="font-weight: bold; color:#3D3D3D">Ger</span><span style="font-weight: bold; color:#D00000">ma</span><span style="font-weight: bold; color:#FFCE00">ny</span>.
 view-if: year = 1923 and month = 10 and week = 3 and not pcdi_formed and violent_revolution and soviet_polish_victory = 1
 on-arrival: soviet_germany = 1; socialist_sentiment += 7; communist_strength += 10;
 max-visits: 1
@@ -7,10 +7,10 @@ tags: event
 new-page: true
 achievement: spartaco_marcia_ancora
 
-= Establishment of a Soviet Germany
+= Establishment of a <span style="font-weight: bold; color:#CC0000">Soviet</span> <span style="font-weight: bold; color:#3D3D3D">Ger</span><span style="font-weight: bold; color:#D00000">ma</span><span style="font-weight: bold; color:#FFCE00">ny</span>
 
-The *Kommunistische Partei Deutschlands* under the leadership of Paul Levi, have overthrown the Weimar Republic. Following strikes against then-Chancellor Wilhelm Cuno, the KPD was able to enter into coalition governments within numerous states, utilising its position to arm workers and establish paramilitary forces.
+The <span style="font-weight: bold; color:#8B0000">Kommunistische Partei Deutschlands</span> under the leadership of Paul Levi, have overthrown the <span style="font-weight: bold; color:#3D3D3D">We</span><span style="font-weight: bold; color:#D00000">im</span><span style="font-weight: bold; color:#FFCE00">ar</span> <span style="font-weight: bold">Republic</span>. Following strikes against then-Chancellor Wilhelm Cuno, the <span style="font-weight: bold; color:#8B0000">KPD</span> was able to enter into coalition governments within numerous states, utilising its position to arm workers and establish paramilitary forces.
 
-First Saxony, then Thuringia and finally Hamburg. In collaboration with the left-wing of the *Sozialdemokratische Partei Deutschlands*, the KPD formed combat units and following a successful workers' congress in Chemnitz, begun a general strike and mobilised its forces, achieving victory in a swift coup.
+First Saxony, then Thuringia and finally Hamburg. In collaboration with the left-wing of the <span style="font-weight: bold; color:#E3000F">Sozialdemokratische Partei Deutschlands</span>, the <span style="font-weight: bold; color:#8B0000">KPD</span> formed combat units and following a successful workers' congress in Chemnitz, begun a general strike and mobilised its forces, achieving victory in a swift coup.
 
-A wave of socialist sentiment was occurred within Italy following the news, as well as the reinvigoration of optimism within the party, combined with a strengthening of the left-wing of the PSI. Regardless, it seems we will be able to count on further international support should we require it.
+A wave of <span style="color:#ED2855">socialist</span> sentiment was occurred within <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span> following the news, as well as the reinvigoration of optimism within the party, combined with a strengthening of the left-wing of the <span style="font-weight: bold; color:#ED2855">[+ psi_name +]</span>. Regardless, it seems we will be able to count on further international support should we require it.

@@ -5,9 +5,9 @@ view-if: year = 1919 and month = 7
 max-visits: 1
 tags: event
 
-= Food riots break out across Italy!
+= Food riots break out across <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>!
 
-The end of the war resulted in a sharp increase of prices across the country as inflation skyrocketed, including food, which led to obvious discontent amongst the masses. Today, seemingly, that discontent has exploded, as riots have broken out across Italy, starting with the northern regions as the other regions followed suit shortly after.
+The end of the war resulted in a sharp increase of prices across the country as inflation skyrocketed, including food, which led to obvious discontent amongst the masses. Today, seemingly, that discontent has exploded, as riots have broken out across <span style="font-weight: bold; color:#008C45">It</span><span style="font-weight: bold; color:#CFCFCF">a</span><span style="font-weight: bold; color:#CD212A">ly</span>, starting with the northern regions as the other regions followed suit shortly after.
 
 Food and clothing stores have been raided, as shopkeepers have been forced to lower back their prices to acceptable levels. Some have been killed in the midst of the results, though none have taken responsibility.
 
@@ -23,13 +23,13 @@ choose-if: resources > 0
 unavailable-subtitle: Not enough party resources. (Need 1)
 on-arrival: workers_psi += 3*(1-dissent); rural_psi += 4*(1-dissent); veterans_psi += 3*(1-dissent); resources -= 1; ds_left += 0.2
 
-Our actions have earned us new supporters in our tradition worker and rural bases, who appreciate our support
+Our actions have earned us new supporters in our tradition worker and rural bases, who appreciate our support.
 
 @solidarity_protest
 subtitle: Our actions will only exacerbate the situation.
 on-arrival: workers_psi += 2*(1-dissent); rural_psi += 3*(1-dissent); middle_class_psi -= 2*(1-dissent); ldr_relation -= 3; ul_relation -= 5; radicalisation += 0.2;
 
-We protest alongside the protestors and defending the common worker in the face of bourgeois greed, though our actions are seen less fondly by the governing coalition, seeing it as only exacerbating the situation further.
+We protest alongside the protestors and defending the common worker in the face of <span style="color:#0047AB;">bou</span><span style="color:#FFD700;">rge</span><span style="color:#1E99C5;">ois</span> greed, though our actions are seen less fondly by the governing coalition, seeing it as only exacerbating the situation further.
 
 @condemn_protest
 subtitle: Our voting base won't be happy about this.
